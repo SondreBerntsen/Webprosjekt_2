@@ -7,6 +7,7 @@ html {
 }
 body {
   margin-bottom: 0px; /* Margin bottom by footer height */
+  background-color: #f8f9fa!important;
 }
 
 .bg-dark {
@@ -56,4 +57,16 @@ body {
   .redbar {
       height: 40%;
   }
+}
+
+/* Making sure the filter checkboxes are. Looking. Good. */
+
+#filtertags {
+  margin: 0 auto;
+}
+
+/* Styling the Carousel (aka the slider on top of the index page) */
+
+.carousel-item {
+    margin-bottom: 30px;
 }
