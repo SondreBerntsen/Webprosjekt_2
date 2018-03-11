@@ -38,10 +38,17 @@ body {
 .cardAreaInfo{
   position: absolute;
   top: 0;
-  right: 0;
-  width: 150px;
-  height: 70px;
-  background-color: rgba(255,255,255,0.6);
+  left: 0;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding-top: 7px;
+  background-color: rgba(187,76,74,1);
+  border-bottom: 2px solid #f8f9fa;
+  border-right: 2px solid #f8f9fa;
+  border-radius: 3px;
+  color: #f8f9fa;
+  
 
 }
 
