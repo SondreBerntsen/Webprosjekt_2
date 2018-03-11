@@ -24,8 +24,26 @@ body {
     width: 123px;
     margin-right: 29px;
 }
+/* Making sure the filter checkboxes are. Looking. Good. */
 
+#filtertags {
+  margin: 0 auto;
+}
 
+/*Syling the areas that are displayed for filterfunction*/
+.filterAreaCard{
+  position: relative;
+  margin-bottom: 2%;
+}
+.cardAreaInfo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 70px;
+  background-color: rgba(255,255,255,0.6);
+
+}
 
 /* Footer and red bar with white text styling */
 .footer1 {
@@ -59,11 +77,6 @@ body {
   }
 }
 
-/* Making sure the filter checkboxes are. Looking. Good. */
-
-#filtertags {
-  margin: 0 auto;
-}
 
 /* Styling the Carousel (aka the slider on top of the index page) */
 

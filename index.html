@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
@@ -63,116 +64,254 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <div class="container">
+    <div id="filtertags">
+      <div class="row">
+        <div class="col">
+          <h2>Område</h2>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="gudbrandsdalen">
+            <label>Gudbrandsdalen</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="ringsaker">
+            <label>Ringsaker</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="valdres">
+            <label>Valdres</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="sør-trøndelag">
+            <label>Sør-trøndelag</label>
+          </div>
+        </div>
 
-  <div class="container" id="filtertags">
+        <div class="col">
+          <h2>Aktiviteter</h2>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="bading">
+            <label>Bading</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="fisking">
+            <label>Fisking</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="golf">
+            <label>Golf</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="jakt">
+            <label>Jakt</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="alpin">
+            <label>Alpin</label>
+          </div>
+        </div>
+
+        <div class="col">
+          <h2>Fasiliteter</h2>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="butikk">
+            <label>Butikk</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="hotell">
+            <label>Hotell</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="småbåthavn">
+            <label>Småbåthavn</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="løypenett">
+            <label>Løypenett</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="strand">
+            <label>Strand</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="sykkel">
+            <label>Sykkel</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input category_item" type="checkbox" name ="filterData" value="turterreng">
+            <label>Turterreng</label>
+          </div>
+        </div>
+
+        <div class="col">
+          <h2>Infrastruktur</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name ="filterData" value="avløp">
+            <label>Avløp</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name ="filterData" value="strøm">
+            <label>Strøm</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name ="filterData" value="vann">
+            <label>Vann</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name ="filterData" value="vei">
+            <label>Vei</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
     <div class="row">
-      <div class="col">
-        <h2>Område</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="gudbrandsdalen">
-          <label>Gudbrandsdalen</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="ringsaker">
-          <label>Ringsaker</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="valdres">
-          <label>Valdres</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="sør-trøndelag">
-          <label>Sør-trøndelag</label>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei fisking jakt alpin butikk hotell løypenett sykkel  turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\gaalaatoppenImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">GÅLÅTOPPEN (PEER GYNT HYTTEGREND)</h5>
+                <p class="card-text">Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten.</p>
+              </div></a>
         </div>
       </div>
-        
-      <div class="col">
-        <h2>Aktiviteter</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="bading">
-          <label>Bading</label>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei bading fisking golf jakt alpin butikk hotell løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\hafjellImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">HAFJELL TINDEGRENDA</h5>
+                <p class="card-text">En hytte i dette området gir et godt utgangspunkt til fritidsopplevelser både sommer og vinter!</p>
+              </div></a>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="fisking">
-          <label>Fisking</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="golf">
-          <label>Golf</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="jakt">
-          <label>Jakt</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="alpin">
-          <label>Alpin</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="langrenn">
-          <label>Langrenn</label>
-        </div>
-        
-        
-        
-        
       </div>
-        
-      <div class="col">
-        <h2>Fasiliteter</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="butikk">
-          <label>Butikk</label>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei bading fisking jakt hotell småbåthavn løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\haugsetraImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">HAUGSETRA HYTTEGREND</h5>
+                <p class="card-text">Ligger flott til ved Haugsetra like ved Rondablikk. Solrike tomter med Flott utsikt mot Jotunheimen og Rondane.</p>
+              </div></a>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="hotell">
-          <label>Hotell</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="småbåthavn">
-          <label>Småbåthavn</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="løypenett">
-          <label>Løypenett</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="strand">
-          <label>Strand</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="sykkel">
-          <label>Sykkel</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="turterreng">
-          <label>Turterreng</label>
-        </div>
-          
       </div>
-        
-      <div class="col">
-        <h2>Infrastruktur</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="avløp">
-          <label>Avløp</label>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei fisking jakt løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\hjerkinnhoeImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">HJERKINNHØ HYTTEGREND</h5>
+                <p class="card-text">Hyttetomter i spektakulært naturlandskap på nasjonalromantiske Dovrefjell!</p>
+              </div></a>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="strøm">
-          <label>Strøm</label>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei fisking jakt hotell løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\hjerkinnliaImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">HJERKINNLIA FJELLGREND</h5>
+                <p class="card-text">Hyttefelt grenser mot Rondane i sydøst og mot Dovrefjell i nord, med Snøhetta (2286 moh) som majestestisk nabo i vest.</p>
+              </div></a>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="vann">
-          <label>Vann</label>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei fisking jakt butikk løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\hundyrjuImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">HUNDYRJU HYTTEGREND</h5>
+                <p class="card-text">Hyttetomter på Dovrefjell i naturskjønne omgivelser. Hyttegrenda ligger på ca. 900 moh ca. 6,5 km fra Dombås sentrum.</p>
+              </div></a>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name ="filterData" value="vei">
-          <label>Vei</label>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei bading fisking jakt hotell løypenett sykkel turterreng ">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\laavaashaugenImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">LÅVÅSHAUGEN PANORAMA</h5>
+                <p class="card-text">Hyttefeltet ligger på over 1000 moh med panoramautsikt over hele Rondane og Jotunheimen!</p>
+              </div></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei fisking jakt butikk hotell løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\ringebuImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">RINGEBU PANORAMA</h5>
+                <p class="card-text">Ringebu Panorama er et tomteområde med store tomter i naturskjønne omgivelser på Venabygdsfjellet.</p>
+              </div></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei fisking jakt alpin hotell løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\tindegrendaVardenImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">TINDEGRENDA VARDEN</h5>
+                <p class="card-text">ARKITEKTTEGNEDE HYTTER I VARDEN - KVITFJELLS TREDJE FJELLSIDE 6 SOLGT!</p>
+              </div></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item ringsaker avløp strøm vann vei bading fisking jakt butikk hotell småbåthavn strand sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\finsandvikaImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">FINSANDVIKA HYTTEGREND</h5>
+                <p class="card-text">Store hyttetomter ved Mjøsa. Solrikt beliggende med gode aktivitetsmuligheter året rundt!</p>
+              </div></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item ringsaker avløp strøm vann vei bading fisking jakt butikk hotell løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\lillehammerImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">LILLEHAMMER SÆTER III</h5>
+                <p class="card-text">Lillehammerfjellets flotteste hyttetomter selges nå på snøsikre Nordseter!</p>
+              </div></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item valdres avløp strøm vann vei fisking jakt butikk hotell løypenett sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\raudalenImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">RAUDALEN</h5>
+                <p class="card-text">Fantastisk beliggenhet, sommer som vinter. Ved populære Beitostølen, på dørstokken til Jotunheimen. Alpinanlegg og langrennsløyper utenfor kjøkkenvinduet. Tomt, grunnarbeid, nøkkelferdige hytte fra 2.090.000,– Eiendomstomter på størrelse rundt 700m².</p>
+              </div></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 filterAreaCard filter_item sør-trøndelag avløp strøm vann vei bading fisking jakt butikk småbåthavn strand sykkel turterreng">
+        <div class="card">
+          <a href="#" style="text-decoration:none; color:black;">
+                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\aaremsandenImg.jpeg" >
+                <div class="cardAreaInfo"><h4>info</h4></div>
+                <div class="card-body">
+                <h5 class="card-title">AAREMSANDEN</h5>
+                <p class="card-text">Hyttetomter med veldig flott beliggenhet ved Trondheims­fjorden. I nærområdet er det gode tur- og fiskemuligheter på sjøen og til fjells året rundt</p>
+              </div></a>
         </div>
       </div>
     </div>
   </div>
-
+  <!--
   <div class="album py-5 bg-light">
     <div class="container">
 
@@ -224,9 +363,7 @@
         </div>
       </div>
     </div>
-  </div>
-
-
+  </div>-->
   <footer class="redbar">
     <div class="container">
       <div class="redbartext">
@@ -240,14 +377,11 @@
       </div>
     </div>
   </footer>
-
-
   <footer class="footer1">
     <div class="container">
       <span>Copyright © Tinde Utvikling AS</span>
     </div>
   </footer>
-
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
