@@ -48,7 +48,7 @@ body {
   border-right: 1px solid #f8f9fa;
   border-radius: 3px;
   color: #f8f9fa;
-  
+
 
 }
 
@@ -90,6 +90,33 @@ body {
 .carousel-item {
     margin-bottom: 30px;
 }
-.hide{
+.hide {
     display: none;
+}
+
+/* Red bar with white text on top of the Områder page */
+.redbar2 {
+    background-color: #BB4C4A;
+    padding: 2%;
+    color: #FFFFFF;
+    margin-top: -30px;
+}
+
+/* Red header */
+.redheader {
+  color: #BB4C4A;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Paragraph styling for områder page */
+
+.omraade_text {
+  text-align: center;
+  margin: 30px;
+}
+
+.bigtext {
+    margin-bottom: 20px;
+    font-size: 64px;
 }
