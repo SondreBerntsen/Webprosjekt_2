@@ -70,3 +70,6 @@ body {
 .carousel-item {
     margin-bottom: 30px;
 }
+.hide{
+    display: none;
+}
