@@ -121,3 +121,10 @@ body {
     margin-bottom: 20px;
     font-size: 64px;
 }
+
+.index-form {
+    width:100%;
+    background-color: #f3f3f3;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
