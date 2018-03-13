@@ -11,7 +11,8 @@ body {
 }
 
 .bg-dark {
-  background-color: #BB4C4A!important;
+  /*background-color: #BB4C4A!important;*/
+  background-color: #004B76!important;s
 }
 
 /* Navbar styling, change as you see fit Mr. Designer */
@@ -43,7 +44,7 @@ body {
   height: 50px;
   text-align: center;
   padding-top: 7px;
-  background-color: rgba(187,76,74,1);
+  background-color: #004B76;
   border-bottom: 1px solid #f8f9fa;
   border-right: 1px solid #f8f9fa;
   border-radius: 3px;
@@ -62,7 +63,7 @@ body {
 
 .redbar {
   color: #FFFFFF;
-  background-color: #BB4C4A;
+  background-color: #004B76;
   padding-top: 23px; /* fixed space between Text and top of container :  ^) */
   height: 30%;
 }
@@ -96,7 +97,7 @@ body {
 
 /* Red bar with white text on top of the Områder page */
 .redbar2 {
-    background-color: #BB4C4A;
+    background-color: #004B76;
     padding: 2%;
     color: #FFFFFF;
     margin-top: -30px;
@@ -104,7 +105,7 @@ body {
 
 /* Red header */
 .redheader {
-  color: #BB4C4A;
+  color: #004B76;
   text-align: center;
   margin: 20px;
 }
