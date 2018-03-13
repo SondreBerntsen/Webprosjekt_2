@@ -15,7 +15,10 @@
     <script src="js/main.js"></script>
 
 <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   
+    <!-- NAV BAR -->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a id="logo_link" href="index.html">
           <img alt="The Logo" src="images/logo_1.png" class="navbar-brand" />
       </a>
@@ -45,8 +48,13 @@
       </ul>
     </div>
   </nav>
+   
+  <!-- NAV BAR -->
 
-<div class="container">
+
+<!-- FORM -->
+
+<!-- <div class="container">
     <form>
         <div class="form-group row">
           <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Navn</label>
@@ -66,17 +74,102 @@
             <input type="number" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Ditt telefonnummer">
           </div>
         </div>
-        <div class="form-group row">
+         <div class="form-group row">
           <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Din melding</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Ditt telefonnummer">
+            <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Melding">
           </div>
         </div>
+          <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+              <label class="mr-sm-2" for="inlineFormCustomSelect">Kontaktmål</label>
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Option 1</option>
+                <option value="1">Option 2</option>
+                <option value="2">Option 3</option>
+                <option value="3">Option 4</option>
+              </select>
+            </div>
+          </div>
+            <div class="col-auto my-1">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
     </form>
 </div>
-      
-  	
-  	
+
+-->
+
+<!-- END FORM -->   
+
+<div class="container-fluid">
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom01">Navn</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Navn" value="" required>
+      <div class="invalid-feedback">
+        Ugyldig navn
+      </div>
+      <div class="valid-feedback">
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom03">Telefonnummer</label>
+      <input type="number" class="form-control" id="validationCustom03" placeholder="Telefonummer" required>
+      <div class="invalid-feedback">
+        Ugyldig telefonnummer
+      </div>
+      <div class="valid-feedback">
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">E-post</label>
+      <input type="email" class="form-control" id="validationCustom04" placeholder="E-post" required>
+      <div class="invalid-feedback">
+        Ugyldig e-post
+      </div>
+      <div class="valid-feedback">
+      </div>
+    </div>
+  </div>
+  <select class="custom-select col-md-3" id="inlineFormCustomSelectPref">
+    <option selected>Kontakt</option>
+    <option value="1">One</option>
+    <option value="2">Hyttegrend</option>
+    <option value="3">Annet</option>
+  </select>
+  <button class="btn btn-primary" type="submit">Send</button>
+  
+</form>
+</div>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>  
+
+
+  <!-- FOOTER -->     
   <footer class="redbar">
     <div class="container">
       <div class="redbartext">
@@ -96,6 +189,8 @@
       <span>Copyright © Tinde Utvikling AS</span>
     </div>
   </footer>
+   
+  <!-- END FOOTER --> 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
