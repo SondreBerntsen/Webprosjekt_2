@@ -8,25 +8,94 @@
     <title>Webprosjekt 2</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> </head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#">Tinde Utvikling</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> <a class="nav-link" href="#p">Side 1</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#">Side 2</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#l">Side 3</a> </li>
-            </ul>
-          </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a id="logo_link" href="index.html">
+          <img alt="The Logo" src="images/logo_1.png" class="navbar-brand" />
+      </a>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Hjem</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="omraader.html">Områder</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="hyttegrend_eksempel.html">Hyttegrend 1</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="kontakt">Kontakt</a> </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+          </button>
+      </nav>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Hjem</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="omraader.html">Områder</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="hyttegrend_eksempel.html">Hyttegrend 1</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="kontakt">Kontakt</a> </li>
+      </ul>
+    </div>
+  </nav>
 
-    <form method="POST">
-  		<input type="text" name="field1" />
-  		<input type="text" name="field1" />
-  		<input type="text" name="field1" />
-  		<input type="submit" value="submit" name="submit"/>
-  	</form>
+<div class="container">
+    <form>
+        <div class="form-group row">
+          <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Navn</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Ditt navn">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">E-post</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="deg@eksempel.no">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Telefon</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Ditt telefonnummer">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Din melding</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Ditt telefonnummer">
+          </div>
+        </div>
+    </form>
+</div>
+      
+  	
+  	
+  <footer class="redbar">
+    <div class="container">
+      <div class="redbartext">
+        <span>Tinde Utvikling tilbyr et stort utvalg av kvalitetstomter i attraktive hytteområder. Videre skal Tinde Utvikling være en attraktiv samarbeidspart for kunde og grunneier ved utvikling av tomter og tomteområder i Østlandsområdet.</span>
+      </div>
+      <div class="contact-right-info">
+        <h3>Kontakt</h3>
+        <span><i class="fas fa-phone"></i>  950 30 500 </span>
+        <br>
+        <span><i class="far fa-envelope"></i> post@tindeutvikling.no</span>
+      </div>
+    </div>
+  </footer>
+    
+  <footer class="footer1">
+    <div class="container">
+      <span>Copyright © Tinde Utvikling AS</span>
+    </div>
+  </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
