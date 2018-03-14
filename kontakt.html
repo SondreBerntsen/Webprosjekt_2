@@ -49,6 +49,20 @@
     </div>
   </nav>
 <!-- END NAV BAR -->
+  
+<!-- CUTE PICTURE -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="20000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/omraader/omraade_ringsaker.png" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- CUTE PICTURE END -->
 
 
 <!-- FORM -->
@@ -58,10 +72,11 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
             <!-- INPUT FIELDS -->   
-            <h5>Kontakt oss</h5>
+            <h2 class="redheader">Kontakt oss</h2>
+            <br>
              <form class="needs-validation" novalidate>
                   <div class="form-row">
-                      <label for="validationCustom01">Navn</label>
+                      <label for="validationCustom01" class="sr-only">Navn</label>
                       <input type="text" class="form-control" id="validationCustom01" placeholder="Navn" value="" required>
                           <div class="invalid-feedback">
                             Ugyldig navn
@@ -69,8 +84,9 @@
                           <div class="valid-feedback">
                           </div>
                   </div>
+                  <br>
                   <div class="form-row">
-                      <label for="validationCustom03">Telefonnummer</label>
+                      <label for="validationCustom03" class="sr-only">Telefonnummer</label>
                       <input type="number" class="form-control" id="validationCustom03" placeholder="Telefonummer" required>
                           <div class="invalid-feedback">
                             Ugyldig telefonnummer
@@ -78,8 +94,9 @@
                           <div class="valid-feedback">
                           </div>
                   </div>
+                  <br>
                   <div class="form-row">
-                      <label for="validationCustom04">E-post</label>
+                      <label for="validationCustom04" class="sr-only">E-post</label>
                       <input type="email" class="form-control" id="validationCustom04" placeholder="E-post" required>
                           <div class="invalid-feedback">
                             Ugyldig e-post
@@ -87,41 +104,37 @@
                           <div class="valid-feedback">
                           </div>
                   </div>
-                  <!-- CHECKBOXES -->   
-                  <h5>Hva gjelder din henvendelse?</h5>
-                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Idno
-                      </label>
-                     </div>
-                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Idno
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Idno
-                      </label>
-                    </div>
-                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Idno
-                      </label>
-                    </div>
-                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Idno
-                      </label>
-                    </div>
+                  <br>
+                  <!-- BIG INPUT -->   
+            <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Ditt spørsmål</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
+            </div>
+                  <!-- CHECKBOXES 
+                  <h6>Hva gjelder din henvendelse?</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                        Ting 3
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Ting 2
+                    </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Ting 1
+                    </label>
+            </div>
+                 <br>
                  
+                  -->  
                   <!-- SUBMIT -->  
-                  <button class="btn btn-primary" type="submit">Send</button>
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">Send</button>
              </form>
              </div>
              <div class="col-sm-4"></div>

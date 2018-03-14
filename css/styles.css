@@ -127,7 +127,16 @@ body {
 /* tja */
 .index-form {
     width:100%;
-    background-color: #f3f3f3;
+    background-color: #f8f9fa;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+/* Remove up and down arrows on input type number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }
