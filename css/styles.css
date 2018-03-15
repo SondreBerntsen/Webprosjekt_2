@@ -3,86 +3,94 @@
 /* Body and HTML rules, change this and i will be under your bed at night */
 
 html {
-  position: relative;
+    position: relative;
 }
+
 body {
-  margin-bottom: 0px; /* Margin bottom by footer height */
-  background-color: #f8f9fa!important;
+    margin-bottom: 0px;
+    /* Margin bottom by footer height */
+    background-color: #f8f9fa!important;
 }
 
 .bg-dark {
-  /*background-color: #BB4C4A!important;*/
-  background-color: #004B76!important;s
+    /*background-color: #BB4C4A!important;*/
+    background-color: #004B76!important;
 }
 
 /* Navbar styling, change as you see fit Mr. Designer */
 
 .navbar-brand {
-  width: 100%;
+    width: 100%;
 }
 
 #logo_link {
     width: 123px;
     margin-right: 29px;
 }
+
 /* Making sure the filter checkboxes are. Looking. Good. */
 
 #filtertags {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 /*Syling the areas that are displayed for filterfunction*/
-.filterAreaCard{
-  position: relative;
-  margin-bottom: 2%;
+
+.filterAreaCard {
+    position: relative;
+    margin-bottom: 2%;
 }
-.cardAreaInfo{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 50px;
-  text-align: center;
-  padding-top: 7px;
-  background-color: #004B76;
-  border-bottom: 1px solid #f8f9fa;
-  border-right: 1px solid #f8f9fa;
-  border-radius: 3px;
-  color: #f8f9fa;
+
+.cardAreaInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 7px;
+    background-color: #004B76;
+    border-bottom: 1px solid #f8f9fa;
+    border-right: 1px solid #f8f9fa;
+    border-radius: 3px;
+    color: #f8f9fa;
 
 
 }
 
 /* Footer and red bar with white text styling */
+
 .footer1 {
-  width: 100%;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #5F6060;
-  color: #FFFFFF;
+    width: 100%;
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: #5F6060;
+    color: #FFFFFF;
 }
 
 .redbar {
-  color: #FFFFFF;
-  background-color: #004B76;
-  padding-top: 23px; /* fixed space between Text and top of container :  ^) */
-  height: 30%;
+    color: #FFFFFF;
+    background-color: #004B76;
+    padding-top: 23px;
+    /* fixed space between Text and top of container :  ^) */
+    height: 30%;
 }
 
 .redbartext {
-  width: 90%;
+    width: 90%;
 }
 
 .contact-right-info {
-  margin-top: 10px;
-  padding-bottom: 30px;
+    margin-top: 10px;
+    padding-bottom: 30px;
 }
 
 /* Styling the footer for mobile and pad sizes. If you change this, the footer will look ugly. */
 
 @media only screen and (max-width: 767px) {
-  .redbar {
-      height: 40%;
-  }
+    .redbar {
+        height: 40%;
+    }
 }
 
 
@@ -91,11 +99,13 @@ body {
 .carousel-item {
     margin-bottom: 30px;
 }
+
 .hide {
     display: none;
 }
 
 /* Red bar with white text on top of the Områder page */
+
 .redbar2 {
     background-color: #004B76;
     padding: 2%;
@@ -104,17 +114,18 @@ body {
 }
 
 /* Red header */
+
 .redheader {
-  color: #004B76;
-  text-align: center;
-  margin: 20px;
+    color: #004B76;
+    text-align: center;
+    margin: 20px;
 }
 
 /* Paragraph styling for områder page */
 
 .omraade_text {
-  text-align: center;
-  margin: 30px;
+    text-align: center;
+    margin: 30px;
 }
 
 .bigtext {
@@ -125,18 +136,68 @@ body {
 
 
 /* tja */
+
 .index-form {
-    width:100%;
+    width: 100%;
     background-color: #f8f9fa;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 /* Remove up and down arrows on input type number */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0; 
+    margin: 0;
+}
+
+/* hyttegrend styling */
+
+.hyttegrend_tekst_container {
+    background-color: #004B76;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px;
+    margin-top: -30px;
+}
+
+.hyttegrend_tekst_container_middle {
+    background-color: #004B76;
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+.hyttegrend_tekst_container_middle_white {
+    background-color: #FFFFFF;
+    color: #004B76;
+    padding: 30px;
+}
+
+.hyttegrend_oneliner {
+    font-weight: 700;
+    font-size: 125%;
+}
+
+.hyttegrend_aktiviteter {
+    text-align: center;
+    color: #004B76;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 70px;
+    margin: 18px;
+}
+
+#buttoncontainer {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #004B76;
 }
