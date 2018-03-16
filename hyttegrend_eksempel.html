@@ -88,6 +88,10 @@
     <div class="container">
         <h2 class="redheader">Galleri</h2>
     </div>
+    <input type="button" onclick="winterImages()" value="Vinter"/>
+    <input type ="button" onclick="springImages()" value="Vår"/>
+    <input type="button" onclick="summerImages()" value="Sommer"/>
+    <input type="button" onclick="fallImages()" value="Høst"/>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" style="max-height:450px;"><!--fix-->
         <div class="carousel-item active">
@@ -356,6 +360,48 @@
       slide2.src = "images/seasonal_slider_images/seasonal_fall2.jpg";
       slide3.src = "images/seasonal_slider_images/seasonal_fall3.jpg";
     }
+
+
+    function winterImages() {
+      var slide1 = document.getElementById("slide1");
+      var slide2 = document.getElementById("slide2");
+      var slide3 = document.getElementById("slide3");
+
+      slide1.src = "images/seasonal_slider_images/seasonal_vinter1.png";
+      slide2.src = "images/seasonal_slider_images/seasonal_vinter2.png";
+      slide3.src = "images/seasonal_slider_images/seasonal_vinter3.png";
+    }
+
+    function springImages() {
+      var slide1 = document.getElementById("slide1");
+      var slide2 = document.getElementById("slide2");
+      var slide3 = document.getElementById("slide3");
+
+      slide1.src = "images/seasonal_slider_images/seasonal_spring1.jpg";
+      slide2.src = "images/seasonal_slider_images/seasonal_spring2.jpg";
+      slide3.src = "images/seasonal_slider_images/seasonal_spring3.jpg";
+    }
+
+    function summerImages() {
+      var slide1 = document.getElementById("slide1");
+      var slide2 = document.getElementById("slide2");
+      var slide3 = document.getElementById("slide3");
+
+      slide1.src = "images/seasonal_slider_images/seasonal_summer1.jpeg";
+      slide2.src = "images/seasonal_slider_images/seasonal_summer2.jpeg";
+      slide3.src = "images/seasonal_slider_images/seasonal_summer3.jpeg";
+    }
+
+    function fallImages() {
+      var slide1 = document.getElementById("slide1");
+      var slide2 = document.getElementById("slide2");
+      var slide3 = document.getElementById("slide3");
+
+      slide1.src = "images/seasonal_slider_images/seasonal_fall1.jpg";
+      slide2.src = "images/seasonal_slider_images/seasonal_fall2.jpg";
+      slide3.src = "images/seasonal_slider_images/seasonal_fall3.jpg";
+    }
+
     </script>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
