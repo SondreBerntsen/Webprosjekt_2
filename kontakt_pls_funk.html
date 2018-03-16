@@ -1,0 +1,197 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Webprosjekt 2</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> </head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+<body>
+
+<!-- NAV BAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a id="logo_link" href="index.html">
+          <img alt="The Logo" src="images/logo_1.png" class="navbar-brand" />
+      </a>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Hjem</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="omraader.html">Områder</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="hyttegrend_eksempel.html">Hyttegrend 1</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="kontakt.html">Kontakt</a> </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+          </button>
+      </nav>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Hjem</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="omraader.html">Områder</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="hyttegrend_eksempel.html">Hyttegrend 1</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="kontakt.html">Kontakt</a> </li>
+      </ul>
+    </div>
+  </nav>
+<!-- END NAV BAR -->
+
+<!-- CUTE PICTURE -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="20000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/omraader/omraade_ringsaker.png" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- CUTE PICTURE END -->
+
+
+<!-- FORM -->
+<article class="index-form">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+            <!-- INPUT FIELDS -->
+            <h2 class="redheader">Kontakt oss</h2>
+            <br>
+             <form class="needs-validation" novalidate>
+                  <div class="form-row">
+                      <label for="validationCustom01" class="sr-only">Navn</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Navn" value="" required>
+                          <div class="invalid-feedback">
+                            Ugyldig navn
+                          </div>
+                          <div class="valid-feedback">
+                          </div>
+                  </div>
+                  <br>
+                  <div class="form-row">
+                      <label for="validationCustom03" class="sr-only">Telefonnummer</label>
+                      <input type="number" class="form-control" id="validationCustom03" placeholder="Telefonummer" required>
+                          <div class="invalid-feedback">
+                            Ugyldig telefonnummer
+                          </div>
+                          <div class="valid-feedback">
+                          </div>
+                  </div>
+                  <br>
+                  <div class="form-row">
+                      <label for="validationCustom04" class="sr-only">E-post</label>
+                      <input type="email" class="form-control" id="validationCustom04" placeholder="E-post" required>
+                          <div class="invalid-feedback">
+                            Ugyldig e-post
+                          </div>
+                          <div class="valid-feedback">
+                          </div>
+                  </div>
+                  <br>
+                  <!-- BIG INPUT -->
+            <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Ditt spørsmål</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
+            </div>
+                  <!-- CHECKBOXES
+                  <h6>Hva gjelder din henvendelse?</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                        Ting 3
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Ting 2
+                    </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Ting 1
+                    </label>
+            </div>
+                 <br>
+
+                  -->
+                  <!-- SUBMIT -->
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">Send</button>
+             </form>
+             </div>
+             <div class="col-sm-4"></div>
+         </div>
+    </div>
+</article>
+<!-- END FORM -->
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+  <!-- FOOTER -->
+  <footer class="redbar">
+    <div class="container">
+      <div class="redbartext">
+        <span>Tinde Utvikling tilbyr et stort utvalg av kvalitetstomter i attraktive hytteområder. Videre skal Tinde Utvikling være en attraktiv samarbeidspart for kunde og grunneier ved utvikling av tomter og tomteområder i Østlandsområdet.</span>
+      </div>
+      <div class="contact-right-info">
+        <h3>Kontakt</h3>
+        <span><i class="fas fa-phone"></i>  950 30 500 </span>
+        <br>
+        <span><i class="far fa-envelope"></i> post@tindeutvikling.no</span>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer1">
+    <div class="container">
+      <span>Copyright © Tinde Utvikling AS</span>
+    </div>
+  </footer>
+
+  <!-- END FOOTER -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+</body>
+
+</html>
