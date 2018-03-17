@@ -87,11 +87,14 @@
     <!-- seasonal slider. buttons -> default: depends on season. but can also choose to see images from all the seasons-->
     <div class="container">
         <h2 class="redheader">Galleri</h2>
+        <div class="text-center">
+          <input class="btn btn-primary btn-sm"type="button" onclick="winterImages()" value="Vinter"/>
+          <input class="btn btn-primary btn-sm "type ="button" onclick="springImages()" value="Vår"/>
+          <input class="btn btn-primary btn-sm "type="button" onclick="summerImages()" value="Sommer"/>
+          <input class="btn btn-primary btn-sm"type="button" onclick="fallImages()" value="Høst"/>
+        </div>
     </div>
-    <input type="button" onclick="winterImages()" value="Vinter"/>
-    <input type ="button" onclick="springImages()" value="Vår"/>
-    <input type="button" onclick="summerImages()" value="Sommer"/>
-    <input type="button" onclick="fallImages()" value="Høst"/>
+
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" style="max-height:450px;"><!--fix-->
         <div class="carousel-item active">
