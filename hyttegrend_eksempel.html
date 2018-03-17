@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -88,10 +88,10 @@
     <div class="container">
         <h2 class="redheader">Galleri</h2>
         <div class="text-center">
-          <input class="btn btn-primary btn-sm"type="button" onclick="winterImages()" value="Vinter"/>
-          <input class="btn btn-primary btn-sm "type ="button" onclick="springImages()" value="Vår"/>
-          <input class="btn btn-primary btn-sm "type="button" onclick="summerImages()" value="Sommer"/>
-          <input class="btn btn-primary btn-sm"type="button" onclick="fallImages()" value="Høst"/>
+          <input class="btn btn-primary btn-sm" id="winterBtn"type="button" value="Vinter"/>
+          <input class="btn btn-primary btn-sm " id="springBtn"type ="button" value="Vår"/>
+          <input class="btn btn-primary btn-sm " id="summerBtn" type="button" value="Sommer"/>
+          <input class="btn btn-primary btn-sm" id="fallBtn" type="button"  value="Høst"/>
         </div>
     </div>
 
@@ -277,12 +277,10 @@
 
     <div class="container">
         <hr>
-        <h2 class="redheader"> Veibeskrivelse</h2>
+        <h2 class="redheader">Omårde</h2>
     </div>
 
-    <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=8&center=61.0323%2C10.8351&key=AIzaSyA3eEXXjtqP3PSgS2Um7vNbAinpwiJ7CCQ" allowfullscreen></iframe>
-
-
+    <div id="mapFinsanvika" class="mapStyle"></div>
     <footer class="redbar">
         <div class="container">
             <div class="redbartext">
@@ -302,114 +300,13 @@
         </div>
     </footer>
 
-    <script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 3000); // Change image every 3 seconds
-    }
-
-    var season = new Array();
-    season[0] = "Winter";
-    season[1] = "Winter";
-    season[2] = "Winter";
-    season[3] = "Spring";
-    season[4] = "Spring";
-    season[5] = "Summer";
-    season[6] = "Summer";
-    season[7] = "Summer";
-    season[8] = "Fall";
-    season[9] = "Fall";
-    season[10] = "Fall";
-    season[11] = "Winter";
-
-    var d = new Date();
-    var currentSeason = season[d.getMonth()];
-
-    var slide1 = document.getElementById("slide1");
-    var slide2 = document.getElementById("slide2");
-    var slide3 = document.getElementById("slide3");
-
-    if ( currentSeason == "Winter" )
-    {
-      slide1.src = "images/seasonal_slider_images/seasonal_vinter1.png";
-      slide2.src = "images/seasonal_slider_images/seasonal_vinter2.png";
-      slide3.src = "images/seasonal_slider_images/seasonal_vinter3.png";
-    }
-    else if ( currentSeason == "Spring" )
-    {
-      slide1.src = "images/seasonal_slider_images/seasonal_spring1.jpg";
-      slide2.src = "images/seasonal_slider_images/seasonal_spring2.jpg";
-      slide3.src = "images/seasonal_slider_images/seasonal_spring3.jpg";
-    }
-    else if ( currentSeason == "Summer" )
-    {
-      slide1.src = "images/seasonal_slider_images/seasonal_summer1.jpeg";
-      slide2.src = "images/seasonal_slider_images/seasonal_summer2.jpeg";
-      slide3.src = "images/seasonal_slider_images/seasonal_summer3.jpeg";
-    }
-    else
-    {
-      slide1.src = "images/seasonal_slider_images/seasonal_fall1.jpg";
-      slide2.src = "images/seasonal_slider_images/seasonal_fall2.jpg";
-      slide3.src = "images/seasonal_slider_images/seasonal_fall3.jpg";
-    }
-
-
-    function winterImages() {
-      var slide1 = document.getElementById("slide1");
-      var slide2 = document.getElementById("slide2");
-      var slide3 = document.getElementById("slide3");
-
-      slide1.src = "images/seasonal_slider_images/seasonal_vinter1.png";
-      slide2.src = "images/seasonal_slider_images/seasonal_vinter2.png";
-      slide3.src = "images/seasonal_slider_images/seasonal_vinter3.png";
-    }
-
-    function springImages() {
-      var slide1 = document.getElementById("slide1");
-      var slide2 = document.getElementById("slide2");
-      var slide3 = document.getElementById("slide3");
-
-      slide1.src = "images/seasonal_slider_images/seasonal_spring1.jpg";
-      slide2.src = "images/seasonal_slider_images/seasonal_spring2.jpg";
-      slide3.src = "images/seasonal_slider_images/seasonal_spring3.jpg";
-    }
-
-    function summerImages() {
-      var slide1 = document.getElementById("slide1");
-      var slide2 = document.getElementById("slide2");
-      var slide3 = document.getElementById("slide3");
-
-      slide1.src = "images/seasonal_slider_images/seasonal_summer1.jpeg";
-      slide2.src = "images/seasonal_slider_images/seasonal_summer2.jpeg";
-      slide3.src = "images/seasonal_slider_images/seasonal_summer3.jpeg";
-    }
-
-    function fallImages() {
-      var slide1 = document.getElementById("slide1");
-      var slide2 = document.getElementById("slide2");
-      var slide3 = document.getElementById("slide3");
-
-      slide1.src = "images/seasonal_slider_images/seasonal_fall1.jpg";
-      slide2.src = "images/seasonal_slider_images/seasonal_fall2.jpg";
-      slide3.src = "images/seasonal_slider_images/seasonal_fall3.jpg";
-    }
-
-    </script>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <!--Google map -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3u0GAthz9ZNxSKfWsE_aOtTAWf3otOnk&callback="></script>
 </body>
 
 </html>

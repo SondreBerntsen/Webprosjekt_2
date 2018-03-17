@@ -201,3 +201,7 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-primary {
     background-color: #004B76;
 }
+.mapStyle{
+  width: 100%;
+  height: 300px;
+}
