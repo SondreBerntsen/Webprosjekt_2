@@ -133,7 +133,19 @@ body {
     font-size: 64px;
 }
 
+.image_header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* tja */
 
