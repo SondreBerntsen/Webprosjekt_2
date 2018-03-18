@@ -1,23 +1,46 @@
 $(document).ready(function(){
-    var selected = [];
     var filterItems = $('.filter_item');
     $('.category_item').click(function(){
         var checkboxes = $('[name=filterData]');
-        var selected = [];
+        var selectedMisc = [];
+        var selectedAreas = [];
         filterItems.addClass('hide');
 
         for (var i=0; i<checkboxes.length; i++) {
-            if (checkboxes[i].checked) {
-                selected.push(checkboxes[i].value);
+            if(checkboxes[i].checked){
+                switch(checkboxes[i].value){
+                        case 'ringsaker':
+                            selectedAreas.push(checkboxes[i].value);
+                            break;
+                        case 'gudbrandsdalen':
+                            selectedAreas.push(checkboxes[i].value);
+                            break;
+                        case 'valdres':
+                            selectedAreas.push(checkboxes[i].value);
+                            break;
+                        case 'sør-trøndelag':
+                            selectedAreas.push(checkboxes[i].value);
+                            break;
+                        default:
+                            selectedMisc.push(checkboxes[i].value);
+                    }
+            }
+        }//Nå skal verdien for områder ligge i egen array, mens misc ligger i en annen.
+        if(selectedAreas.length > 0){
+            filterItems.addClass('hideArea');
+            for (var x=0; x<selectedAreas.length; x++){
+                $('.'+selectedAreas[x]).removeClass('hideArea');
             }
         }
-        for (var j=0; j<selected.length; j++) {
-            $('.' + selected[j]).removeClass('hide');
-            }
-        if(selected.length == 0){
-                filterItems.removeClass('hide');
+        for (var j=0; j<selectedMisc.length; j++) {
+            $('.'+selectedMisc[j]).removeClass('hide');
         }
-
+        if(selectedMisc.length == 0){
+            filterItems.removeClass('hide');
+        }
+        if(selectedAreas.length == 0){
+            filterItems.removeClass('hideArea');
+        }
     });
 
     var myIndex = 0;

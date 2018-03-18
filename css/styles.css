@@ -259,3 +259,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .dropdown:hover .dropbtn {
 }
+
+.hideArea{
+    display: none;
+}
