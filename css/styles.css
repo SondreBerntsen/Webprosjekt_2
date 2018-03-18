@@ -221,10 +221,10 @@ input[type=number]::-webkit-outer-spin-button {
 /*dropdown hover menu in navbar*/
 .dropbtn {
     background-color: #004b76;
-    color: white;
     padding: 8px;
     font-size: 16px;
     border: none;
+    color: rgba(255,255,255,.5);
 }
 
 .dropdown {
@@ -242,13 +242,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .dropdown-content a {
-    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    color: rgba(255,255,255,.5);
+
 }
 
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {
+  color: #ddd
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
