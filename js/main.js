@@ -76,7 +76,7 @@ $(document).ready(function(){
       $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_fall2.jpg");
       $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_fall3.jpg");
       $('#fallBtn').attr("class","btn-info");
-      $("#summerBtn, #winterBtn, #summerBtn").attr("class","btn-primary");
+      $("#springBtn, #winterBtn, #summerBtn").attr("class","btn-primary");
     }
     $("#winterBtn").click(function(){
         winterImages();
