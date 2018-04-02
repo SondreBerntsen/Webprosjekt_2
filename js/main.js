@@ -130,3 +130,45 @@ $(document).ready(function(){
     }
 
 });
+
+
+//Blabla skikkelig bra kommentering
+
+function buttonClick(x){
+    localStorage.setItem("hyttegrend", x);
+}
+
+function loadContent(x){
+    console.log(x);
+    var ourData = hyttegrender;
+    //console.log(hyttegrender);
+    $('#imgHeader').attr("src", ourData[x].imgHeader)
+    $('#hgtitle').html(ourData[x].title);
+    $('#hgoneliner').html(ourData[x].oneliner);
+    $('#hgdescription').html("<article id='dArticle'></article>");
+        
+    for(i = 0; i < ourData[x].description.length; i++){
+        $('#dArticle').append("<p>"+ourData[x].description[i]+"</p>");
+    }
+    
+    for(i = 0; i < ourData[x].icons.length; i++){
+        $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon'>");
+    }
+    
+    for(i = 0; i < ourData[x].information.arrival.length; i++){
+        $('#arrival').append("<p>"+ourData[x].information.arrival[i]+"</p>");
+    }
+    
+    for(i = 0; i < ourData[x].information.facts.length; i++){
+        $('#facts').append("<p>"+ourData[x].information.facts[i]+"</p>");
+    }
+    
+    for(i = 0; i < ourData[x].information.priceInfo.length; i++){
+        $('#priceInfo').append("<p>"+ourData[x].information.priceInfo[i]+"</p>");
+    }
+    $('#contactPerson').html(ourData[x].information.contactInfo.name);
+    
+    $('#tlf').append(ourData[x].information.contactInfo.tlf);
+    
+    $('#email').append(ourData[x].information.contactInfo.email);
+}

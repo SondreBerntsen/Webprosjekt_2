@@ -1,5 +1,6 @@
 var hyttegrender = {
     "finsandvika": {
+        "imgHeader": "images/hyttegrender/finsandvika.png",
         "title": "Finsandvika hyttegrend",
         "oneliner": "Store hyttetomter ved Mjøsa. Solrikt beliggende med gode aktivitetsmuligheter året rundt!",
         "description": [
@@ -8,6 +9,44 @@ var hyttegrender = {
             "BRØTTUM KAN OGSÅ BY PÅ FLOTTE LANGRENNSLØYPER OG LYSLØYPE, KULTURSTI OM SOMMEREN OG DAGLIGVAREFORRETNING.",
 
             "Finsandvika er i tillegg et godt utgangspunkt for andre aktiviteter som nærområdet byr på. Kort biltur til Lillehammer med koselig gågate, Maihaugen og andre severdigheter. Brøttum kan også by på flotte langrennsløyper og lysløype, kultursti om sommeren, dagligvareforretning m.m. Ca 30 minutters kjøring til Sjusjøen og Hafjell og en snau time til Kvitfjell."
-        ]
+        ],
+        "icons": [
+            // alternatively: "<img src='images/icons/whatever' class='icon'>"
+            "fisking",
+            "jakt",
+        ],
+        "mapData": [
+            
+        ],
+        "information": {
+            "arrival": [
+                "<strong>Fra sør:</strong> Ta av E6 ved Moelv og kjør nordover mot Lillehammer/Brøttum. Ta av ved skilt merket med Finsandvika Hyttefelt og følg grusveien nedover til feltet.",
+                
+                "<strong>Fra nord:</strong> Ta av E6 ved Lillehammer og følg lokalvei sørover mot Brøttum/Moelv. Ta av til høyre ved skilt merket med Finsandvika HyttefelT og følg grusveien nedover til feltet."
+            ],
+            "facts": [
+                "Tomtestørrelser: fra 1 140 – 2 048 kvm",
+                "Pris tomter: fra k 545 000,–",
+                "Fra Hamar: ca 50 km",
+                "Fra Lillehammer: ca 15 km",
+                "Fra Gjøvik: ca 45 km",
+                "Fra Sjusjøen: ca 12 km",
+                "Fasiliteter: Store hyttetomter ved Mjøsa. Solrikt beliggende med gode aktivitetsmuligheter året rundt!"
+            ],
+            "priceInfo": [
+                "Selger forbeholder seg retten til å justere prisen på usolgte tom  ter. Det tas forbehold om mindre arealendringer etter endelig oppmåling.",
+                "I tillegg til tomtekostnaden kommer følgende omkostninger:",
+                "-Dokumentavgift: 2,5 % av kjøpesummen",
+                "-Anleggsbidrag vann/avløp: kr 50 000,–",
+                "-Anleggsbidrag strøm: kr 60 000,–",
+                "-Oppmålingskostnad: kr 10 000,–"
+            ],
+            "contactInfo": {
+                "name": "Tore Rugsveen",
+                "tlf": " 950 30 500",
+                "email": " tore.rugsveen@tindeutvikling.no"
+            }
+            
+        }
     },
 };
