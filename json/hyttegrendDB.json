@@ -1,0 +1,13 @@
+var hyttegrender = {
+    "finsandvika": {
+        "title": "Finsandvika hyttegrend",
+        "oneliner": "Store hyttetomter ved Mjøsa. Solrikt beliggende med gode aktivitetsmuligheter året rundt!",
+        "description": [
+            "Finsandvika Hyttegrend finner du ved Mjøsa, på Brøttum, ca 15 km sør for Lillehammer. Området er under utvikling og hittil står fem hytter ferdig bygget og to hytter er under oppføring. Finsandvika er en svært populær badeplass sommerstid og har fin sandstrand og brygge. På de gode sommerdagene er det liv og røre med yrende bade-og båtilv. Hyttefeltet ligger ca 100 m fra sandstrand. Ellers er det fine turmuligheter i område med skogsstier som er velegnet for både gå-og løpeturer og sykkel. Jernbanen går på nedsiden av feltet og det etableres støyskjerming mellom feltet og jernbanen.",
+
+            "BRØTTUM KAN OGSÅ BY PÅ FLOTTE LANGRENNSLØYPER OG LYSLØYPE, KULTURSTI OM SOMMEREN OG DAGLIGVAREFORRETNING.",
+
+            "Finsandvika er i tillegg et godt utgangspunkt for andre aktiviteter som nærområdet byr på. Kort biltur til Lillehammer med koselig gågate, Maihaugen og andre severdigheter. Brøttum kan også by på flotte langrennsløyper og lysløype, kultursti om sommeren, dagligvareforretning m.m. Ca 30 minutters kjøring til Sjusjøen og Hafjell og en snau time til Kvitfjell."
+        ]
+    },
+};
