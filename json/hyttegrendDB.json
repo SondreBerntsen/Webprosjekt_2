@@ -18,6 +18,12 @@ var hyttegrender = {
         "mapData": [
             
         ],
+        "propertyInfo": [
+            "Solrike utsiktstomter i vestvendt, svakt skrånende terreng. Tomtene er ikke endelig oppmålt. 122 daa fordelt på 25 tomter. Tomtestørrelser fra 1,2 mål til 1,9 mål. Tomtene blir utskilt som eiertomter. Tomten er opparbeidet med gruset adkomst og plantert for grøntarealer. Gode parkeringsmuligheter utenfor hver hytte.",
+            "Av andre fasiliteter kan det opplyses at det skal anlegges en småbåthavn til de 25 fritidseiendommene. I tillegg blir det 10 stk. gjesteplasser. En båtplass kan leies eller kjøpes. Prisene er ikke fastsatt ennå med kjøpsprisen vil ligge i størrelsesorden kr 27.000,–.",
+            "På tomt 8 har Tinde prosjektert en flott hytte med gode løsninger til kun kr 2 190 000,–. Ta gjerne kontakt for mer informasjon.",
+            "Finn.no kode 79177617"
+        ],
         "information": {
             "arrival": [
                 "<strong>Fra sør:</strong> Ta av E6 ved Moelv og kjør nordover mot Lillehammer/Brøttum. Ta av ved skilt merket med Finsandvika Hyttefelt og følg grusveien nedover til feltet.",
