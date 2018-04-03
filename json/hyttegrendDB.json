@@ -140,6 +140,9 @@ var hyttegrender = {
             
         ],
         "information": {
+            "propertyInfo": [
+                
+            ],
             "arrival": [
                 
             ],
