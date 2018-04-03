@@ -20,7 +20,8 @@ body {
 /* Navbar styling, change as you see fit Mr. Designer */
 
 .navbar-brand {
-    width: 100%;
+    width: 110%;
+    padding:0;
 }
 
 #logo_link {
@@ -54,9 +55,8 @@ body {
     border-right: 1px solid #f8f9fa;
     border-radius: 3px;
     color: #f8f9fa;
-
-
 }
+
 
 /* Footer and red bar with white text styling */
 
@@ -173,7 +173,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #FFFFFF;
     text-align: center;
     padding: 30px;
-    margin-top: -30px;
 }
 
 .hyttegrend_tekst_container_middle {
@@ -262,4 +261,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .hideArea{
     display: none;
+}
+#facts p{
+  margin-bottom:0;
 }

@@ -56,7 +56,7 @@ $(document).ready(function(){
         x[myIndex-1].style.display = "block";
         setTimeout(carousel, 3000); // Change image every 3 seconds
     }
-    var season = ["Winter", "Winter", "Winter", "Spring", "Spring", "Spring", "Summer", "Summer", "Summer", "Fall", "Fall", "Fall", "Winter"];
+    var season = ["Winter", "Winter", "Spring", "Spring", "Spring", "Summer", "Summer", "Summer", "Fall", "Fall", "Fall", "Winter"];
 
     var d = new Date();
     var currentSeason = season[d.getMonth()];
@@ -74,30 +74,30 @@ $(document).ready(function(){
       fallImages();
     }
     function winterImages() {
-      $("#slide1").attr("src","../images/seasonal_slider_images/edited/seasonal_winter1.png");
-      $("#slide2").attr("src","../images/seasonal_slider_images/edited/seasonal_winter2.png");
-      $("#slide3").attr("src","../images/seasonal_slider_images/edited/seasonal_winter3.png");
+      $("#slide1").attr("src","images/seasonal_slider_images/seasonal_vinter1.png");
+      $("#slide2").attr("src","images/seasonal_slider_images/seasonal_vinter2.png");
+      $("#slide3").attr("src","images/seasonal_slider_images/seasonal_vinter3.png");
       $('#winterBtn').attr("class","btn-info");
 	    $("#springBtn, #summerBtn, #fallBtn").attr("class","btn-primary");
     }
     function springImages() {
-      $("#slide1").attr("src","../images/seasonal_slider_images/edited/seasonal_spring1.png");
-      $("#slide2").attr("src","../images/seasonal_slider_images/edited/seasonal_spring2.png");
-      $("#slide3").attr("src","../images/seasonal_slider_images/edited/seasonal_spring3.png");
+      $("#slide1").attr("src","images/seasonal_slider_images/seasonal_spring1.jpg");
+      $("#slide2").attr("src","images/seasonal_slider_images/seasonal_spring2.jpg");
+      $("#slide3").attr("src","images/seasonal_slider_images/seasonal_spring3.jpg");
       $('#springBtn').attr("class","btn-info");
 	    $("#summerBtn, #winterBtn, #fallBtn").attr("class","btn-primary");
     }
     function summerImages() {
-      $("#slide1").attr("src","../images/seasonal_slider_images/edited/seasonal_summer1.png");
-      $("#slide2").attr("src","../images/seasonal_slider_images/edited/seasonal_summer2.png");
-      $("#slide3").attr("src","../images/seasonal_slider_images/edited/seasonal_summer3.png");
+      $("#slide1").attr("src","images/seasonal_slider_images/seasonal_summer1.jpeg");
+      $("#slide2").attr("src","images/seasonal_slider_images/seasonal_summer2.jpeg");
+      $("#slide3").attr("src","images/seasonal_slider_images/seasonal_summer3.jpeg");
       $('#summerBtn').attr("class","btn-info");
       $("#springBtn, #winterBtn, #fallBtn").attr("class","btn-primary");
     }
     function fallImages() {
-      $("#slide1").attr("src","../images/seasonal_slider_images/edited/seasonal_fall1.png");
-      $("#slide2").attr("src","../images/seasonal_slider_images/edited/seasonal_fall2.png");
-      $("#slide3").attr("src","../images/seasonal_slider_images/edited/seasonal_fall3.png");
+      $("#slide1").attr("src","images/seasonal_slider_images/seasonal_fall1.jpg");
+      $("#slide2").attr("src","images/seasonal_slider_images/seasonal_fall2.jpg");
+      $("#slide3").attr("src","images/seasonal_slider_images/seasonal_fall3.jpg");
       $('#fallBtn').attr("class","btn-info");
       $("#springBtn, #winterBtn, #summerBtn").attr("class","btn-primary");
     }
@@ -130,3 +130,45 @@ $(document).ready(function(){
     }
 
 });
+
+
+//Blabla skikkelig bra kommentering
+
+function buttonClick(x){
+    localStorage.setItem("hyttegrend", x);
+}
+
+function loadContent(x){
+    console.log(x);
+    var ourData = hyttegrender;
+    //console.log(hyttegrender);
+    $('#imgHeader').attr("src", ourData[x].imgHeader)
+    $('#hgtitle').html(ourData[x].title);
+    $('#hgoneliner').html(ourData[x].oneliner);
+    $('#hgdescription').html("<article id='dArticle'></article>");
+
+    for(i = 0; i < ourData[x].description.length; i++){
+        $('#dArticle').append("<p>"+ourData[x].description[i]+"</p>");
+    }
+
+    for(i = 0; i < ourData[x].icons.length; i++){
+        $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon'>");
+    }
+
+    for(i = 0; i < ourData[x].information.arrival.length; i++){
+        $('#arrival').append("<p>"+ourData[x].information.arrival[i]+"</p>");
+    }
+
+    for(i = 0; i < ourData[x].information.facts.length; i++){
+        $('#facts').append("<p>"+ourData[x].information.facts[i]+"</p>");
+    }
+
+    for(i = 0; i < ourData[x].information.priceInfo.length; i++){
+        $('#priceInfo').append("<p>"+ourData[x].information.priceInfo[i]+"</p>");
+    }
+    $('#contactPerson').html(ourData[x].information.contactInfo.name);
+
+    $('#tlf').append(ourData[x].information.contactInfo.tlf);
+
+    $('#email').append(ourData[x].information.contactInfo.email);
+}

@@ -1,7 +1,5 @@
 <html lang="en">
-
 <head>
-
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,19 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </head>
-
-<body>
-
+<body onload="loadContent(localStorage.getItem('hyttegrend'))">
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a id="logo_link" href="../index.html">
-          <img alt="The Logo" src="../images/logo_1.png" class="navbar-brand" />
+        <a id="logo_link" href="index.html">
+          <img alt="The Logo" src="images/logo_1.png" class="navbar-brand" />
         </a>
         <div class="pos-f-t">
             <div class="collapse" id="navbarToggleExternalContent">
@@ -70,7 +66,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"> <a class="nav-link" href="../index.html">Hjem</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="index.html">Hjem</a> </li>
                 <div class="dropdown">
                   <button class="dropbtn">Områder</button>
                   <div class="dropdown-content">
@@ -99,45 +95,31 @@
                     <a href="aaremsanden.html">Aaremsanden</a>
                   </div>
                 </div>
-                <li class="nav-item"> <a class="nav-link" href="../kontakt.html">Kontakt</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="kontakt.html">Kontakt</a> </li>
             </ul>
         </div>
     </nav>
 
     <!-- Header image -->
     <div class="image_header">
-      <img src="../images/hyttegrender/finsandvika.png" alt="Finsandvika" style="width:100%;">
+      <img id ="imgHeader"src="" alt="Finsandvika" style="width:100%;">
       <div class="centered">
-        <h1 class="bigtext">FINSANDVIKA HYTTEGREND</h1>
+        <h1 class="bigtext" id="hgtitle"></h1>
       </div>
     </div>
 
     <!-- Hyttegrend description -->
     <div class="hyttegrend_tekst_container">
         <div class="container">
-            <div>
-                <p class="hyttegrend_oneliner">Store hyttetomter ved Mjøsa. Solrikt beliggende med gode aktivitetsmuligheter året rundt!</p>
-
-                <p>Finsandvika Hyttegrend finner du ved Mjøsa, på Brøttum, ca 15 km sør for Lillehammer. Området er under utvikling og hittil står fem hytter ferdig bygget og to hytter er under oppføring. Finsandvika er en svært populær badeplass sommerstid og har fin sandstrand og brygge. På de gode sommerdagene er det liv og røre med yrende bade-og båtilv. Hyttefeltet ligger ca 100 m fra sandstrand. Ellers er det fine turmuligheter i område med skogsstier som er velegnet for både gå-og løpeturer og sykkel. Jernbanen går på nedsiden av feltet og det etableres støyskjerming mellom feltet og jernbanen.</p>
-
-
-                <p>BRØTTUM KAN OGSÅ BY PÅ FLOTTE LANGRENNSLØYPER OG LYSLØYPE, KULTURSTI OM SOMMEREN OG DAGLIGVAREFORRETNING.</p>
-
-                <p>Finsandvika er i tillegg et godt utgangspunkt for andre aktiviteter som nærområdet byr på. Kort biltur til Lillehammer med koselig gågate, Maihaugen og andre severdigheter. Brøttum kan også by på flotte langrennsløyper og lysløype, kultursti om sommeren, dagligvareforretning m.m. Ca 30 minutters kjøring til Sjusjøen og Hafjell og en snau time til Kvitfjell.</p>
-            </div>
+          <p id="hgoneliner"></p>
+          <div id="hgdescription"></div>
         </div>
+
     </div>
 
     <!-- Hyttegrend activities -->
     <div class="container hyttegrend_aktiviteter">
-        <div>
-            <img alt="fisking" class="icon" src="../images/aktiviteter_ikoner/fisking.png">
-            <img alt="jakt" class="icon" src="../images/aktiviteter_ikoner/jakt.png">
-            <img alt="småbåthavn" class="icon" src="../images/aktiviteter_ikoner/smaabaathavn.png">
-            <img alt="svømming " class="icon" src="../images/aktiviteter_ikoner/svoemming.png">
-            <img alt="sykling" class="icon" src="../images/aktiviteter_ikoner/sykkel.png">
-            <img alt="turterreng" class="icon" src="../images/aktiviteter_ikoner/tur.png">
-        </div>
+        <div id="icons"></div>
     </div>
     <hr>
 
@@ -185,22 +167,11 @@
     <div class="hyttegrend_tekst_container_middle">
         <div class="container">
             <div class="row">
-                <div class="col-sm">
-                    <h2>Adkomst</h2>
-                    <p><strong>Fra sør:</strong> Ta av E6 ved Moelv og kjør nordover mot Lillehammer/Brøttum. Ta av ved skilt merket med Finsandvika Hyttefelt og følg grusveien nedover til feltet.</p>
-                    <p><strong>Fra nord:</strong> Ta av E6 ved Lillehammer og følg lokalvei sørover mot Brøttum/Moelv. Ta av til høyre ved skilt merket med Finsandvika HyttefelT og følg grusveien nedover til feltet.
-                    </p>
+                <div id="arrival" class="col-sm">
+                    <h2>Ankomst</h2>
                 </div>
-                <div class="col-sm">
+                <div id="facts" class="col-sm">
                     <h2>Fakta</h2>
-                    <p>Tomtestørrelser: fra 1 140 – 2 048 kvm
-                        <br>Pris tomter: fra k 545 000,–
-                        <br>Fra Hamar: ca 50 km
-                        <br>Fra Lillehammer: ca 15 km
-                        <br>Fra Gjøvik: ca 45 km
-                        <br>Fra Sjusjøen: ca 12 km
-                        <br>Fasiliteter: Store hyttetomter ved Mjøsa. Solrikt beliggende med gode aktivitetsmuligheter året rundt!
-                    </p>
                 </div>
             </div>
         </div>
@@ -210,23 +181,13 @@
     <div class="hyttegrend_tekst_container_middle_white">
         <div class="container">
             <div class="row">
-                <div class="col-sm">
+                <div id ="priceInfo" class="col-sm">
                     <h2>Prisopplysninger</h2>
-                    <p>
-                        Selger forbeholder seg retten til å justere prisen på usolgte tomter. Det tas forbehold om mindre arealendringer etter endelig oppmåling.
-                    </p>
-                    <p>I tillegg til tomtekostnaden kommer følgende omkostninger:
-                      <br>Dokumentavgift: 2,5 % av kjøpesummen
-                      <br>Anleggsbidrag vann/avløp: kr 50 000,–
-                      <br>Anleggsbidrag strøm: kr 60 000,–
-                      <br>Oppmålingskostnad: kr 10 000,–
-                    </p>
                 </div>
-                <div class="col-sm">
-                    <h2>Kontaktpersoner</h2>
-                    <p><strong>Tore Rugsveen</strong></p>
-                    <p><i class="fas fa-phone"></i> 950 30 500</p>
-                    <p><i class="fas fa-envelope"></i> tore.rugsveen@tindeutvikling.no</p>
+                <div id="contactInfo" class="col-sm">
+                    <h2>Kontaktperson</h2>
+                    <p><span id="tlf"><i class="fas fa-phone"></i></span></p>
+                    <p><span id="email"><i class="fas fa-envelope"></i></span></p>
                 </div>
             </div>
         </div>
@@ -369,8 +330,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--Google map -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3u0GAthz9ZNxSKfWsE_aOtTAWf3otOnk&callback="></script>
-    <script src="../js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3u0GAthz9ZNxSKfWsE_aOtTAWf3otOnk"></script>
+    <script src="js/main.js"></script>
+    <script src="json/hyttegrendDB.json"></script>
 
 
 </body>
