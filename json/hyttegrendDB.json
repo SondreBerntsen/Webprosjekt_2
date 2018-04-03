@@ -57,7 +57,7 @@ var hyttegrender = {
         }
     },
     "låvåshaugen": {
-        "imgHeader": "",
+        "imgHeader": "images/hyttegrender/laavaashaugen.jpeg",
         "title": "Låvåshaugen panorama",
         "oneliner": "Hyttefeltet ligger på over 1000 moh med panoramautsikt over hele Rondane og Jotunheimen!",
         "description": [
