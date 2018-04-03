@@ -262,6 +262,6 @@ input[type=number]::-webkit-outer-spin-button {
 .hideArea{
     display: none;
 }
-#facts p{
+#facts p, #contactInfo p{
   margin-bottom:0;
 }

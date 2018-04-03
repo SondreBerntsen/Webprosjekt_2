@@ -142,7 +142,7 @@ function loadContent(x){
     console.log(x);
     var ourData = hyttegrender;
     //console.log(hyttegrender);
-    $('#imgHeader').attr("src", ourData[x].imgHeader)
+    //$('#imgHeader').attr("src", ourData[x].imgHeader)
     $('#hgtitle').html(ourData[x].title);
     $('#hgoneliner').html(ourData[x].oneliner);
     $('#hgdescription').html("<article id='dArticle'></article>");
@@ -166,9 +166,12 @@ function loadContent(x){
     for(i = 0; i < ourData[x].information.priceInfo.length; i++){
         $('#priceInfo').append("<p>"+ourData[x].information.priceInfo[i]+"</p>");
     }
-    $('#contactPerson').html(ourData[x].information.contactInfo.name);
-
-    $('#tlf').append(ourData[x].information.contactInfo.tlf);
-
-    $('#email').append(ourData[x].information.contactInfo.email);
+    
+    for(i = 0; i < ourData[x].information.contactInfo.length; i++){
+        console.log(ourData[x].information.contactInfo[i]);
+        $('#contactInfo').append("<p>"+ ourData[x].information.contactInfo[i].name+"</p>");
+        $('#contactInfo').append("<p><span id='tlf'><i class='fas fa-phone'></i>"+ourData[x].information.contactInfo[i].tlf+"</span></p>");
+        $('#contactInfo').append ("<p><span id='email'><i class='fas fa-envelope'></i>"+ourData[x].information.contactInfo[i].email+"</span></p>");
+        
+    }
 }

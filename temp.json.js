@@ -1,5 +1,5 @@
 var blabla = {
-    "grendnavn": {
+    "Låvåshaugen": {
         "imgHeader": "",
         "title": "Låvåshaugen panorama",
         "oneliner": "Hyttefeltet ligger på over 1000 moh med panoramautsikt over hele Rondane og Jotunheimen!",
@@ -25,10 +25,7 @@ var blabla = {
 
         ],
         "propertyInfo": [
-            "Solrike utsiktstomter i vestvendt, svakt skrånende terreng. Tomtene er ikke endelig oppmålt. 122 daa fordelt på 25 tomter. Tomtestørrelser fra 1,2 mål til 1,9 mål. Tomtene blir utskilt som eiertomter. Tomten er opparbeidet med gruset adkomst og plantert for grøntarealer. Gode parkeringsmuligheter utenfor hver hytte.",
-            "Av andre fasiliteter kan det opplyses at det skal anlegges en småbåthavn til de 25 fritidseiendommene. I tillegg blir det 10 stk. gjesteplasser. En båtplass kan leies eller kjøpes. Prisene er ikke fastsatt ennå med kjøpsprisen vil ligge i størrelsesorden kr 27.000,–.",
-            "På tomt 8 har Tinde prosjektert en flott hytte med gode løsninger til kun kr 2 190 000,–. Ta gjerne kontakt for mer informasjon.",
-            "Finn.no kode 79177617"
+            "Hyttefeltet består av 44 store tomter med fantastisk utsikt over Rondane og Jotunheimen! Store selveiertomter med gode friarealer rundt. Usjenert og rolig beliggende område med full infrastruktur. Tomtestørrelse fra 1 800–4 300 m². Ingen byggeklausul!"
         ],
         "information": {
             "arrival": [
@@ -47,13 +44,26 @@ var blabla = {
                 "Strøm: Jordkabel til tomtegrense"
             ],
             "priceInfo": [
-
+                "Det vises til egen prisliste for ledige tomter og tomtepriser.",
+                "Tomteareal er ikke endelig oppmålt, avvik i tomtestørrelse kan forekomme. Det tilkommer tilkoblingsavgift på vann, avløp samt anleggsbidrag på strøm. Det er ikke byggeklausul på tomtene. Det tas forbehold om prisendring."
             ],
-            "contactInfo": {
-                "name": "",
-                "tlf": "",
-                "email": ""
-            }
+            "contactInfo": [
+                {
+                    "name": "Torbjørn Randen",
+                    "tlf": "95030500",
+                    "email": "tr@tindeutvikling.no"
+                },
+                {
+                    "name": "TORE RUGSVEEN",
+                    "tlf": "457 77 188",
+                    "email": "tore.rugsveen@tindeutvikling.no"
+                },
+                {
+                    "name": "ROAR MAURING",
+                    "tlf": "918 93 790",
+                    "email": "roarm@norwaybooking.com"
+                }
+            ]
         }
 
     },
