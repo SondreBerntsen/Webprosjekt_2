@@ -154,7 +154,17 @@ function loadContent(x){
     for(i = 0; i < ourData[x].icons.length; i++){
         $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon'>");
     }
-
+    
+    //Mapdata goes here
+    
+    /*Create propertyInfo div below map, as seen on tindeutvikling.no
+    
+    for(i = 0; i < ourData[x].information.propertyInfo.length; i++){
+        $('#propertyInfo').append("<p>"+ourData[x].information.propertyInfo[i]+"</p>");
+    }
+    */
+    
+    
     for(i = 0; i < ourData[x].information.arrival.length; i++){
         $('#arrival').append("<p>"+ourData[x].information.arrival[i]+"</p>");
     }
