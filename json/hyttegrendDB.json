@@ -49,4 +49,39 @@ var hyttegrender = {
             
         }
     },
+    "grendnavn": {
+        "imgHeader": "",
+        "title": "",
+        "oneliner": "",
+        "description": [
+            "",
+            "",
+        ],
+        "icons": [
+            "",
+            "" 
+        ],
+        "mapdata": [
+            
+        ],
+        "information": {
+            "arrival": [
+                
+            ],
+            "facts": [
+                "",
+                ""
+            ],
+            "priceInfo": [
+                
+            ],
+            "contactInfo": {
+                "name": "",
+                "tlf": "",
+                "email": ""
+            }
+        }
+        
+    }
+    
 };
