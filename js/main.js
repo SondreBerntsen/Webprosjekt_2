@@ -5,6 +5,7 @@ $(document).ready(function(){
         var selectedMisc = [];
         var selectedAreas = [];
         filterItems.addClass('hide');
+        $('.tagFilter').remove();
 
         for (var i=0; i<checkboxes.length; i++) {
             if(checkboxes[i].checked){
@@ -41,7 +42,15 @@ $(document).ready(function(){
         if(selectedAreas.length == 0){
             filterItems.removeClass('hideArea');
         }
+        var checkedBoxes = selectedAreas.concat(selectedMisc);
+        for(var i=0; i<checkedBoxes.length; i++){
+          $('#filterTags').append('<div class="tagFilter">'+checkedBoxes[i]+'</div>');
+        }
     });
+      $(".showCheckbox").on("click", function() {
+           $(this).nextAll(".hideCheckbox").toggle("fast");
+           //$(this).text( $(this).text() == "Les mer" ? "Les mindre" : "Les mer");
+	     });
 
     var myIndex = 0;
     carousel();
@@ -154,17 +163,17 @@ function loadContent(x){
     for(i = 0; i < ourData[x].icons.length; i++){
         $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon'>");
     }
-    
+
     //Mapdata goes here
-    
+
     /*Create propertyInfo div below map, as seen on tindeutvikling.no
-    
+
     for(i = 0; i < ourData[x].information.propertyInfo.length; i++){
         $('#propertyInfo').append("<p>"+ourData[x].information.propertyInfo[i]+"</p>");
     }
     */
-    
-    
+
+
     for(i = 0; i < ourData[x].information.arrival.length; i++){
         $('#arrival').append("<p>"+ourData[x].information.arrival[i]+"</p>");
     }
@@ -176,12 +185,12 @@ function loadContent(x){
     for(i = 0; i < ourData[x].information.priceInfo.length; i++){
         $('#priceInfo').append("<p>"+ourData[x].information.priceInfo[i]+"</p>");
     }
-    
+
     for(i = 0; i < ourData[x].information.contactInfo.length; i++){
         console.log(ourData[x].information.contactInfo[i]);
         $('#contactInfo').append("<p>"+ ourData[x].information.contactInfo[i].name+"</p>");
         $('#contactInfo').append("<p><span id='tlf'><i class='fas fa-phone'></i>"+ourData[x].information.contactInfo[i].tlf+"</span></p>");
         $('#contactInfo').append ("<p><span id='email'><i class='fas fa-envelope'></i>"+ourData[x].information.contactInfo[i].email+"</span></p>");
-        
+
     }
 }
