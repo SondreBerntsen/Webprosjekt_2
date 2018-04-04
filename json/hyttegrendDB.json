@@ -129,7 +129,6 @@ var hyttegrender = {
         "title": "Ringebu panorama",
         "oneliner": "Ringebu Panorama er et tomteområde med store tomter i naturskjønne omgivelser på Venabygdsfjellet.",
         "description": [
-            "Ringebu Panorama er et tomteområde med store tomter i naturskjønne omgivelser på Venabygdsfjellet.",
             "Nærmeste nabo til lysløype med preparerte løyper hele vinteren!",
             "Kort avstand til hoteller, fiskemuligheter og alpint. Ligger ved inngangen til Venabygsfjellet og et nydelig turterreng. Tomteområdet ligger ca 850 m.o.h. Det er kort vei til søndagsåpen matbutikk på Lundes Turisthandel. Her er det også sportsbutikk. Ett mindre skianlegg finnes på Spidsbergseter.",
             "For mer info om Venabygdsfjellet: <a href='http://venabygdsfjellet.com/'>http://venabygdsfjellet.com/</a>"
@@ -191,8 +190,8 @@ var hyttegrender = {
         }
 
     },
-    "grendnavn": {
-        "imgHeader": "",
+    "tindegrenda": {
+        "imgHeader": "images/hyttegrender/tindegrenda.jpeg",
         "title": "",
         "oneliner": "",
         "description": [
