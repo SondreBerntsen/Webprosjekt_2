@@ -19,7 +19,7 @@ var blabla = {
             "jakt",
             "løypenett",
             "sykkel",
-            "turterreng"
+            "tur"
         ],
         "mapdata": [
 

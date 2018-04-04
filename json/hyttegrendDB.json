@@ -76,7 +76,7 @@ var hyttegrender = {
             "jakt",
             "løypenett",
             "sykkel",
-            "turterreng"
+            "tur"
         ],
         "mapdata": [
 
@@ -130,7 +130,7 @@ var hyttegrender = {
         "oneliner": "Ringebu Panorama er et tomteområde med store tomter i naturskjønne omgivelser på Venabygdsfjellet.",
         "description": [
             "Nærmeste nabo til lysløype med preparerte løyper hele vinteren!",
-            "Kort avstand til hoteller, fiskemuligheter og alpint. Ligger ved inngangen til Venabygsfjellet og et nydelig turterreng. Tomteområdet ligger ca 850 m.o.h. Det er kort vei til søndagsåpen matbutikk på Lundes Turisthandel. Her er det også sportsbutikk. Ett mindre skianlegg finnes på Spidsbergseter.",
+            "Kort avstand til hoteller, fiskemuligheter og alpint. Ligger ved inngangen til Venabygsfjellet og et nydelig tur. Tomteområdet ligger ca 850 m.o.h. Det er kort vei til søndagsåpen matbutikk på Lundes Turisthandel. Her er det også sportsbutikk. Ett mindre skianlegg finnes på Spidsbergseter.",
             "For mer info om Venabygdsfjellet: <a href='http://venabygdsfjellet.com/'>http://venabygdsfjellet.com/</a>"
         ],
         "icons": [
@@ -144,7 +144,7 @@ var hyttegrender = {
           "jakt",
           "løypenett",
           "sykkel",
-          "turterreng"
+          "tur"
         ],
         "mapdata": [
 
@@ -211,7 +211,7 @@ var hyttegrender = {
           "jakt",
           "løypenett",
           "sykkel",
-          "turterreng",
+          "tur",
       ],
       "mapdata": [
 
@@ -237,7 +237,7 @@ var hyttegrender = {
               "Vann: Offentlig vann",
               "Avløp: Offentlig avløp",
               "Strøm: Jordkabel til tomtegrense",
-              "Fasiliteter: Bilvei frem (helårs), kabel-tv, utsikt, fiskemuligheter, turterreng, langrennsløyper.",
+              "Fasiliteter: Bilvei frem (helårs), kabel-tv, utsikt, fiskemuligheter, tur, langrennsløyper.",
           ],
           "priceInfo": [
               "Det vises til egen prisliste for ledige tomter og tomtepriser.",
@@ -276,7 +276,7 @@ var hyttegrender = {
           "jakt",
           "løypenett",
           "sykkel",
-          "turterreng",
+          "tur",
       ],
       "mapdata": [
 
@@ -339,7 +339,7 @@ var hyttegrender = {
         "småbåthavn",
         "løypenett",
         "sykkel",
-        "turterreng",
+        "tur",
     ],
     "mapdata": [
 
@@ -397,7 +397,7 @@ var hyttegrender = {
             "småbåthavn",
             "løypenett",
             "sykkel",
-            "turterreng",
+            "tur",
         ],
         "mapdata": [
 
@@ -459,7 +459,7 @@ var hyttegrender = {
             "jakt",
             "løypenett",
             "sykkel",
-            "turterreng",
+            "tur",
         ],
         "mapdata": [
 
