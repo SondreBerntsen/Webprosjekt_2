@@ -182,14 +182,139 @@ var hyttegrender = {
               "Det vises til egen prisliste for ledige tomter og tomtepriser.",
               "Pris er fra kr 545.000,–. Det tas forbehold om tomtestørrelse da endelig oppmåling ikke er foretatt. I tillegg til tomtepris kommer kommunale avgifter og et tillegg på kr 42.600,– som anleggsbidrag til kommunen for oppgradering av vanntilførsel. Oppmålingskostnader er inkludert."
             ],
-            "contactInfo": {
-                "name": "TORE RUGSVEEN",
-                "tlf": "457 77 188",
-                "email": "tore.rugsveen@tindeutvikling.no"
-            }
+            "contactInfo":  [
+                  {
+                    "name": "TORE RUGSVEEN",
+                    "tlf": "457 77 188",
+                    "email": " tore.rugsveen@tindeutvikling.no"
+                  }
+              ]
         }
 
     },
+    "galatoppen": {
+      "imgHeader": "images/hyttegrender/peerGynt.jpeg",
+      "title": "Galatoppen (Peer Gynt Hyttegrend)",
+      "oneliner": "Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten.",
+      "description": [
+          "Gålåtoppen ligger praktfullt til. Høyt og usjenert i det vakre naturlandskapet Gudbrandsdalen og Gålå har å tilby. Veldig solrik beliggenhet og fantastisk utsikt over Gålåvatnet, Jotunheimen og Rondane. Stort løypenett og alpinbakker rett ved hyttefeltet, samt Peer Gynt-vegen med mange sykkel- og turmuligheter. I tillegg er det gode muligheter for bading, jakt og friluftsliv. Hotell med restaurant, butikk, kafeer og teaterscene.",
+          "Usjenert og høytliggende hyttefelt hvor det kun er igjen tre fantastiske fine hyttetomter!",
+      ],
+      "icons": [
+          "avløp",
+          "strøm",
+          "vann",
+          "vei",
+          "butikk",
+          "fisking",
+          "hotell",
+          "jakt",
+          "løypenett",
+          "sykkel",
+          "turterreng",
+      ],
+      "mapdata": [
+
+      ],
+      "information": {
+          "propertyInfo": [
+              "Naturskjønt beliggende på Gålåtoppen, ett av de mest veletablerte og populære hyttefeltene på Gålå. Gålåtoppen er et hyttefelt avstengt med elktronisk styr bom og holdes vedlike hele året. Tomtene gir rett og plikt til medlemskap i Gålåtoppen Hytteeierforening. Eiendommene har umiddelbar nærhet til preparerte langrennsløyper som går gjennom området og knyttes sammen med det flotte løypenettet Gålå har å by på.",
+              "TOMTENE ER FERDIG OPP ARBEIDET MED VEI, VANN/ AVLØP OG STRØM INN TIL TOMTEGRENSEN.",
+              "Området er regulert til fritidsbebyggelse jfr. «Reguleringsplan for Peer Gynt Hyttegrend, øvre del. Reguleringsføresegner rev. 13.10.2009».",
+          ],
+          "arrival": [
+              "Gålå ligger ca 280 km fra Oslo (ca 3,5 timer) – det samme fra Trondheim. Ca 80 km fra Lillehammer. Ta av E6 ved Harpefoss retning Gålå.",
+          ],
+          "facts": [
+              "MOH: 900–1000",
+              "Tomtestørrelser: 1160–1700 m2",
+              "Pris fra: kr 900 000–980.000,–",
+              "Til Vinstra: 17 km",
+              "Til Oslo: 266 km",
+              "Til Trondheim: 289 km",
+              "Nærmeste butikk: 1 km",
+              "Togstasjon: 17 km (Vinstra)",
+              "Vann: Offentlig vann",
+              "Avløp: Offentlig avløp",
+              "Strøm: Jordkabel til tomtegrense",
+              "Fasiliteter: Bilvei frem (helårs), kabel-tv, utsikt, fiskemuligheter, turterreng, langrennsløyper.",
+          ],
+          "priceInfo": [
+              "Det vises til egen prisliste for ledige tomter og tomtepriser.",
+              "Felles kostnader til vedlikehold av veier, snøbrøyting mm bestemmes av og fordeles gjennom hytteeierforeningen. Dokumentavgift og gebyr for tinglysning kommer i tillegg.",
+          ],
+          "contactInfo": [
+              {
+                "name": "TORBJØRN RANDEN",
+                "tlf": "tr@tindeutvikling.no",
+                "email": "95030500"
+              }
+          ]
+      }
+
+  },
+  "hafjell": {
+      "imgHeader": "images/hyttegrender/hafjell.jpeg",
+      "title": "Hafjell Tindegrenda",
+      "oneliner": "KONTAKT TORE RUGSVEEN FOR VISNING! En hytte i dette området gir et godt utgangspunkt til fritidsopplevelser både sommer og vinter!",
+      "description": [
+          "Tindegrenda ligger fint til på Hafjelltoppen/Lisetra. For den som er godt kjent ligger Tindegrenda mellom Mosetertoppen og Lisetra. Dette er et meget pent område med god utsikt og gode solforhold.",
+          "En hytte i dette området gir et godt utgangspunkt til fritidsopplevelser både sommer og vinter",
+          "Vinterstid kan man spenne på seg skiene nærmest ved hytteveggen og gå ut i milevis med oppkjørte langrennsløyper i Øyerfjellet og rundt Hafjell. For den som heller ønsker seg en tur i alpinbakkene i Hafjell er dette også i nærhet til Tindegrenda. Sommerstid byr området på fine opplevelser både for stor og liten. Fjellet byr på fine fotturer, sykkelmuligheter. Hafjell byr på sykkelmuligheter for den som vil ha større utfordringer. Nevnes skal også Hunderfossen Familiepark, Lilleputthammer, Norsk Vegmuseum, Jorekstad fritidsbad og ellers kort avstand til Lillehammer by. Gode fiskemuligheter i Gudbrandsdalslågen, og et titalls fiskevann i Øyerfjellet.",
+      ],
+
+      "icons": [
+          "avløp",
+          "strøm",
+          "vann",
+          "vei",
+          "bading",
+          "butikk",
+          "fisking",
+          "golf",
+          "hotell",
+          "jakt",
+          "løypenett",
+          "sykkel",
+          "turterreng",
+      ],
+      "mapdata": [
+
+      ],
+      "information": {
+          "propertyInfo": [
+              "Hafjell har fra starten i 1988 utviklet seg til en av Norges beste vinterdestinasjoner. Her kan man boltre seg i alpinbakkene eller man kan spenne på seg langrennsskiene og gå ut i milevis med preparerte løyper.",
+              "Hafjell er også godt kjent for downhill-sykling. Øyerfjellet byr på fine opplevelser både sommer og vinter.",
+              "Feltet ligger solvendt til med utsikt utover mot Øyerbygda og fjellområdene rundt.",
+              "Hyttene er tilknyttet offentlig vann og avløp. Bredbåndstilknytning."
+          ],
+          "arrival": [
+              "Ta av fra E6 ved Hafjell og følg skilting mot Hornsjø. Følg vegen forbi Hafjell Golf og ta til venstre, for så raskt igjen å ta til høyre opp Hornsjøvegen. Følg denne vegen helt opp til fjellet, gjennom bommen. (Pris kr 50,–.) Etter 200 m forbi bommen tar man inn til høyre og følger skilt mot Tindegrenda. ",
+              "Hytteområdet/tomteområdet ligger på venstre side. Det er merket med skilt for hvert område.",
+          ],
+          "facts": [
+              "MOH: 790 moh",
+              "Langrennsløyper: 300 km",
+              "Antall heiser: 18 stk",
+              "Kjøreavstand Oslo: 2,5 timer",
+              "Fasiliteter: Langrennsløyper i umiddelbar nærhet.Alpint fra Mosetertoppen – kort avstand.",
+              "Hunderfossen Familiepark.Lilleputthammer, JorekstadFritidsbad, Lillehammer by,turmuligheter sommer og vinter, sykkel, jakt og fiske.",
+          ],
+          "priceInfo": [
+              "Det er tre forskjellige type hytter som selges på hyttefeltet:",
+              "Hornsjø, Skihytta og Haugan74+. Komplett leveranse tilbys fra kr 3.250.000,- inkl.mva. Off.omkostninger kommer i tillegg."
+          ],
+          "contactInfo":   [
+                {
+                  "name": "TORE RUGSVEEN",
+                  "tlf": "457 77 188",
+                  "email": " tore.rugsveen@tindeutvikling.no"
+                }
+            ]
+
+      }
+
+  },
     "tindegrenda": {
         "imgHeader": "images/hyttegrender/tindegrenda.jpeg",
         "title": "",
