@@ -300,7 +300,7 @@ hr{
     background-color: darkorange;
     border-color: darkorange;
     color:black;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 15px 0 rgba(0,0,0,0.19); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 15px 0 rgba(0,0,0,0.19);
 }
 
 .btn-calltoaction:hover{
@@ -309,5 +309,3 @@ hr{
     color:black;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 22px 50px 0 rgba(0,0,0,0.19);
 }
-
-
