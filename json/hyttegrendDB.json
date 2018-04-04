@@ -16,7 +16,7 @@ var hyttegrender = {
             "jakt",
         ],
         "mapData": [
-            
+
         ],
         "information": {
             "propertyInfo": [
@@ -27,7 +27,7 @@ var hyttegrender = {
             ],
             "arrival": [
                 "<strong>Fra sør:</strong> Ta av E6 ved Moelv og kjør nordover mot Lillehammer/Brøttum. Ta av ved skilt merket med Finsandvika Hyttefelt og følg grusveien nedover til feltet.",
-                
+
                 "<strong>Fra nord:</strong> Ta av E6 ved Lillehammer og følg lokalvei sørover mot Brøttum/Moelv. Ta av til høyre ved skilt merket med Finsandvika HyttefelT og følg grusveien nedover til feltet."
             ],
             "facts": [
@@ -47,7 +47,7 @@ var hyttegrender = {
                 "-Anleggsbidrag strøm: kr 60 000,–",
                 "-Oppmålingskostnad: kr 10 000,–"
             ],
-            "contactInfo": [ 
+            "contactInfo": [
                 {
                     "name": "Tore Rugsveen",
                     "tlf": " 950 30 500",
@@ -134,24 +134,24 @@ var hyttegrender = {
         ],
         "icons": [
             "",
-            "" 
+            ""
         ],
         "mapdata": [
-            
+
         ],
         "information": {
             "propertyInfo": [
-                
+
             ],
             "arrival": [
-                
+
             ],
             "facts": [
                 "",
                 ""
             ],
             "priceInfo": [
-                
+
             ],
             "contactInfo": {
                 "name": "",
@@ -159,7 +159,7 @@ var hyttegrender = {
                 "email": ""
             }
         }
-        
+
     }
-    
+
 };
