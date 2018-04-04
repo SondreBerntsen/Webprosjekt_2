@@ -315,6 +315,68 @@ var hyttegrender = {
       }
 
   },
+  "gala": {
+    "imgHeader": "images/hyttegrender/gala.jpeg",
+    "title": "Gålå fjellandsby",
+    "oneliner": "Gålå Fjellandsby ligger nær aktivitetene, midt i hjertet av Gålå sin fantastiske natur! Pris er med hytte.",
+    "description": [
+        "Ski in/out Gålå Alpin med 15 nedfarter, 6 heiser og langrenns- sporet som «nærmeste nabo». Milevis av tur-,  sykkel- og skiløyper. Kort vei til sentrum på Gålå. Gålå tilbyr ca. 630 km langrennsløyper og de prepareres for både skøyting og klassisk lang- renn. Alpinbakkene på Gålå stiller med 6 heiser og 15 nedfarter som dekker de fleste ferdighetsgrader, eget parkanlegg for de som liker større hopp og rails samt skiklubb med instruktør for barna. I sentrum av alpinanlegget, mellom Valsfjell med stolheis og Blåbærfjell, finner du varmestuen hvor du kan nyte med en god kopp kakao eller annen servering.",
+        "Gålå er et hyggelig og meget familievennlig tettsted beliggende 800–1000 m.o.h. Midt på Gålå finner du Gålå Handel, bestående av en kombinasjon mellom Joker Dagligvare og Sport 1. Her har de det meste du trenger på hytta. Wadahl Høyfjellshotell tilbyr basseng, hyggelig peisestue med bibliotek og spill, samt flott restaurant for spesielle anledninger.",
+        "Ski in/out i Gålås alpinbakker og langrennssporet som nærmeste «nabo» innbyr til aktive feriedager på hytta!",
+        "I sommerhalvåret har du umiddelbar adkomst til kilometer på kilometer med flotte og familievennlige tur- og sykkelstier, som tilbyr fantastiske naturopplevelser for både store og små. I tillegg til fot- og sykkelturer kan du ta med familien på kanotur i fjellvannene, fisketur med robåt på Gålåvatn, ridetur eller kanskje elgsafari. Kanskje frister det med et forfriskende bad i Gålåvatn? Om du liker jakt og fiske, finner du flere gode jakt- terreng og fiskevann i nærområdet. Noe som må oppleves, er det årlige Peer Gynt-spelet. I vakre naturkulisser bestående av Jotunheimen, Rondane og Gålåvatnet ser du Ibsens Peer Gynt fremført med levende Griegmusikk mens solen går ned og kveldens mørke setter stemningen.",
+        "På Gålå finner du også aktiviteter som bl.a.: Kjelkeaking i alpinbakken Gålågynten med spesial- bygde kjelker, hundekjøring med spann på 6-8 Alaskan Huskys eller f.eks. isfiske på Gålåvatnet.",
+    ],
+    "icons": [
+        "avløp",
+        "strøm",
+        "vann",
+        "vei",
+        "bading",
+        "butikk",
+        "fisking",
+        "hotell",
+        "jakt",
+        "småbåthavn",
+        "løypenett",
+        "sykkel",
+        "turterreng",
+    ],
+    "mapdata": [
+
+    ],
+    "information": {
+        "propertyInfo": [
+            "Hyttene er plassert i terrenget på en slik måte at alle på feltet skal ha best mulig utsikt mot Gålåvatnet og fjellformasjonene. Adkomstveier og parkeringsplasser er lagt i randsonen av byggeområdene, noe som  gir et flott uberørt kjerne- område.",
+            //Fix, there is more information underneath this
+        ],
+        "arrival": [
+            "E6 tar deg til Gudbrandsdalen, og det er skiltet fra E6 helt inn til Gålå. Kjør Gålåvegen frem til Gålå, ta til høyre inn Børkdalsvegen (skiltet Peer Gynt-spelet), kjør forbi friluftscenen og Gålå alpinanlegg, så får du Gålå Fjellandsby på  venstre hånd."
+        ],
+        "facts": [
+            "Høydemeter: 800 moh",
+            "Kjøreavstand:",
+            "Oslo: 265 km",
+            "Lillehammer: 85 km",
+            "Trondheim: 285 km",
+            "Ålesund: 295 km",
+            "Langrennsløyper: Ca. 630 km",
+            "Alpinløyper: 15 nedfarter antall heiser:",
+            "6 stk andre fasiliteter: ",
+            "Dagligvarehandel, parkanlegg, tur- og  sykkelstier, jakt, fiske, ridning,  hundekjøring, kjelkeaking ++",
+        ],
+        "priceInfo": [
+            "Det vises til egen prisliste for ledige tomter for ledige tomter og tomtepriser",
+        ],
+        "contactInfo": [
+            {
+            "name": "TORBJØRN RANDEN",
+            "tlf": "95030500",
+            "email": "tr@tindeutvikling.no"
+            }
+        ]
+    }
+
+},
     "tindegrenda": {
         "imgHeader": "images/hyttegrender/tindegrenda.jpeg",
         "title": "",
