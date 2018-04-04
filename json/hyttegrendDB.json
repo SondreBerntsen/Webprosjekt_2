@@ -377,6 +377,133 @@ var hyttegrender = {
     }
 
 },
+"haugsetra": {
+        "imgHeader": "images/hyttegrender/haugsetra.jpeg",
+        "title": "Haugsetra Hyttegrend",
+        "oneliner": "Ligger flott til ved Haugsetra like ved Rondablikk. Solrike tomter med Flott utsikt mot Jotunheimen og Rondane.",
+        "description": [
+            "Solrike tomter med Flott utsikt mot Jotunheimen og Rondane. Ligger på Skreddarstugu kvea, med mange flotte gamle seterbygg. Adresse er Haugseterveien.",
+            "Populært hytteområde i hjertet av Rondane.",
+        ],
+        "icons": [
+            "avløp",
+            "strøm",
+            "vann",
+            "vei",
+            "bading",
+            "fisking",
+            "hotell",
+            "jakt",
+            "småbåthavn",
+            "løypenett",
+            "sykkel",
+            "turterreng",
+        ],
+        "mapdata": [
+
+        ],
+        "information": {
+            "propertyInfo": [
+                "Det er 3 tomter klare for salg og er alle på ca 1000 m2. Tomtene ligger på en gammel Kvee i skrått hellende terreng. Nå 1 ledig tomt."
+            ],
+            "arrival": [
+                "Avkjøring fra E 6 i kvam ca 10 km nord for Vinstra, følg fylkeisvei 419 til Kvamsfjellet ca 11 km, ta av til Haugsetra ved Rondaplassen / Måsåplassen.",
+                "Følg Haugseterveien ca 1 km, og området ligger ved den den siste setra på høyre hånd.",
+            ],
+            "facts": [
+                "Moh: ca. 900 m",
+                "Tomtestørrelse: ca 1.000 kvm",
+                "Pris: kr 590.000 + omk.",
+                "Fra Oslo: 275 km",
+                "Fra Lillehammer: 95 km",
+                "Fra Trondheim: 270 km",
+                "Nærmeste butikk: 7 km",
+                "Vann: Privat vann",
+                "Avløp: Offentlig avløp",
+                "Strøm: Jordkabel til tomtegrense",
+                "Fasiliteter: Bilvei frem (helårs), utsikt, jakt- og fiskemuligheter, turterreng, langrennsløyper",
+            ],
+            "priceInfo": [
+                "Pris kr 590.000 + omk.",
+            ],
+            "contactInfo": [
+                {
+                    "name": "TORBJØRN RANDEN",
+                    "tlf": "95030500",
+                    "email": "tr@tindeutvikling.no",
+                },
+                {
+                    "name": "ROAR MAURING",
+                    "tlf": "918 93 790",
+                    "email": "roarm@norwaybooking.com"
+                }
+            ]
+        }
+    },
+    "hjerkinnho": {
+        "imgHeader": "images/hyttegrender/hjerkinnho.jpeg",
+        "title": "Herkinnø hyttegrend",
+        "oneliner": "Hyttetomter i spektakulært naturlandskap på nasjonalromantiske Dovrefjell!",
+        "description": [
+            "Hjerkinnhø ligger i et område med historiske røtter. Pilgrimsleden og den gamle kongeveien til Trondheim går like forbi hytteområdene og videre innover i Dovrefjell. Her har du inngangen til Snøhetta, villreinen og moskusens rike. Hjerkinn og Dovrefjell er hundesportens «Mekka» med treningsfelt og jaktprøver for fuglehunder. Viewpoint Snøhetta er et attraktivt besøkspunkt og i nærområdet finner du mange natur- og aktivitetsmuligheter.",
+            "Et fantastisk naturlandskap rett utenfor hyttedøra, med giganten snøhetta ruvende i ensom majestet.",
+            "På Hjerkinn og Dovrefjell finner du et fantastisk naturlandskap med en rik flora og fauna, og med urdyrene moskus og villrein som faste beboere. Det er korte avstander til nasjonalparkene og nærliggende landskapsvernområder. Du kan på sommerstid bli med på rideturer (Hjerkinn fjellstue), moskussafari, sykkelturer, vandringer i pilegrimens spor og på vinterstid prøve hundekjøring i vinterlandskapet.",
+        ],
+        "icons": [
+            "avløp",
+            "strøm",
+            "vann",
+            "vei",
+            "fisking",
+            "hotell",
+            "jakt",
+            "løypenett",
+            "sykkel",
+            "turterreng",
+        ],
+        "mapdata": [
+
+        ],
+        "information": {
+            "propertyInfo": [
+                "Tomtene er selveiende. Det er opprettet en sameieforening med formål å ta seg av en del felles gjøremål og interesser. Beliggenheten er ovenfor Hjerkinn Fjellstue og Kvitdalsvegen.",
+                "Tomtene selges med opparbeidet vei. Det føres fram vann- og avløpsledninger, samt strøm til hver tomt.",
+                "Det er etablert egen renovasjonsordning i området. Bruksarealet er inntil 140 m2 pr tomt. Alle hytter skal ha tak tekket med torv. Hyttene skal videre ha saltak. Utvendig panel skal være behandlet med varme jordfarger. Kjøper velger selv hytte blant det utvalg Tinde Hytter kan tilby. Kjøper er velkommen til å selv tilpasse eksisterende hyttemodeller, eller utarbeide egne hytteideer etter eget ønske. Det vises forøvrig til planbestemmelser i reguleringsplan vedtatt 05.07.01.",
+                "Tomtene på området har byggeklausul med Tinde Hytter. Tinde er en ledende hytteleverandør i Sør-Norge med kontor og produksjon i Ringebu (7 mil nord for Lillehammer). ",
+                "Tinde hytter tilbyr et stort antall hytter og de tilpasser gjerne sine løsninger til den aktuelle tomten eller dine behov",
+                "Tinde Hytter har to visningshytter på Hellerudsletta Hytteutstilling (ved Exporama) i Skedsmo kommune utenfor Oslo. ",
+            ],
+            "arrival": [
+                "Ta av E6 ved Hjerkinn til Folldal, riksvei 29. Hjerkinnhø Hyttegrend ligger ovenfor Hjerkinn Fjellstue.",
+            ],
+            "facts": [
+                "MOH: 950–975",
+                "Tomtestørrelser: 1400–1800 m2",
+                "Pris fra: 625 000,–",
+                "Til Dombås: 30 km",
+                "Nærmeste butikk: 30 km",
+                "Togstasjon: 1–2 km (Hjerkinn)",
+                "Vann: Offentlig vann",
+                "Avløp: Offentlig avløp",
+                "Strøm: Jordkabel til tomtegrense",
+                "Fasiliteter: Bilvei frem (helårs), utsikt, jakt- og fiskemuligheter, turterreng, langrennsløyper",
+            ],
+            "priceInfo": [
+                "Det vises til egen prisliste for ledige tomter og tomtepriser.",
+                "Felles kostnader til vedlikehold av veier, snøbrøyting mm bestemmes av og fordeles gjennom hytteeierforeningen.",
+                "Dokumentavgift og gebyr for tinglysning kommer i tillegg.,"
+            ],
+            "contactInfo": [
+                {
+                    "name": "TORBJØRN RANDEN",
+                    "tlf": " 95030500",
+                    "email": "tr@tindeutvikling.no"
+                }
+            ]
+        }
+
+    },
+
     "tindegrenda": {
         "imgHeader": "images/hyttegrender/tindegrenda.jpeg",
         "title": "",
