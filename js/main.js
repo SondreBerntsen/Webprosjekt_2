@@ -48,7 +48,7 @@ $(document).ready(function(){
         }
     });
       $(".showCheckbox").on("click", function() {
-           $(this).nextAll(".hideCheckbox").toggle("fast");
+           $(this).nextAll(".hideCheckbox").toggle('fast');
            //$(this).text( $(this).text() == "Les mer" ? "Les mindre" : "Les mer");
 	     });
 
