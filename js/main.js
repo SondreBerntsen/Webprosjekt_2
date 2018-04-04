@@ -126,9 +126,25 @@ $(document).ready(function(){
     initMap();
     //initializing maps
     function initMap() {
-      var finsandvika = {lat: 61.015699, lng: 10.518729};
+      var finsandvika = {lat: 61.215699, lng: 10.518729};
+      var lillehammer = {lat: 61.1734420545982, lng: 10.604606905279};
+      var gala = {lat: 61.4953383074326, lng: 9.76728911774898};
+      var galatoppen = {lat: 61.4894488500888, lng: 9.77770110446772};
+      var hafjell = {lat: 61.257729, lng: 10.5032857999999};
+      var haugsetra = {lat: 61.750702, lng: 9.58495978181156};
+      var hjerkinnho = {lat: 62.2243612859522, lng: 10.518729};
+      var hjerkinnlia = {lat: 62.2146969402496, lng: 9.56385840753171};
+      var hundyrju = {lat: 62.0917610768937, lng: 9.19969217135008};
+      var lavashaugne = {lat: 61.7183709623906, lng: 9.72657208808595};
+      var ringebu = {lat: 61.6095576569589, lng: 10.0754232406616};
+      var varden = {lat: 61.440287, lng: 10.087837};
+      var skeikampen = {lat: 61.3505957, lng: 10.0887576999998};
+      var tiurlia = {lat: 61.015699, lng: 9.74306563056643};
+      var raudalen = {lat: 61.229504, lng: 8.82236799999998};
+      var aaremsanden = {lat: 63.563, lng: 9.75400000000001};
+
       var map = new google.maps.Map(document.getElementById('mapFinsanvika'), {
-        zoom: 12,
+        zoom: 9,
         center: finsandvika,
         //mapTypeId: google.maps.MapTypeId.TERRAIN
       });
