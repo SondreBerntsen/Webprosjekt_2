@@ -731,5 +731,133 @@ var hyttegrender = {
         }
 
     },
+    "hjerkinnlia": {
+        "imgHeader": "images/hyttegrender/hjerkinnlia.jpeg",
+        "title": "Hjerkinnlia fjellgrend",
+        "oneliner": "Hyttefelt grenser mot Rondane i sydøst og mot Dovrefjell i nord, med Snøhetta (2286 moh) som majestestisk nabo i vest.",
+        "description": [
+            "Dovrefjell er unikt og sårbart. I dette området finnes det siste tilnærmet inntakte høyfjellsøkosystem i Europa med villrein, jerv, fjellrev og moskus i naturlig sameksistens. Midt inne i dette fjellriket med sitt nydelige fjellklima finner du Hjerkinn Fjellgrend. Få din bit av denne fantastiske naturen og bli en del av den.",
+            "Hyttefeltet grenser mote Rondande i sydvest og mote Dovrefjell i Nord, med snøhetta (2286 moh) som majestetisk nabo i vest",
+            "Aktivitetstilbudene i området er mange, sommer som vinter. Moskussafari, elgsafari med kano, ornitologiske turer, fjellklatring, ridning, sykling, rafting, fisking, jakt, fotturer, langrenn, snowboard, isfiske, slalom m.m.",
+        ],
+        "icons": [
+            "avløp",
+            "strøm",
+            "vann",
+            "vei",
+            "fisking",
+            "hotell",
+            "jakt",
+            "løypenett",
+            "sykkel",
+            "turterreng",
+        ],
+        "mapdata": [
+
+        ],
+        "information": {
+            "propertyInfo": [
+                "Tomtene er selveiende. Det er opprettet en sameieforening med formål å ta seg av en del felles gjøremål og interesser.",
+                "Tomtene selges med opparbeidet vei. Det føres fram vann- og avløpsledninger, samt strøm til hver tomt",
+                "Det er etablert egen renovasjonsordning i området. Bruksarealet er inntil 140 m2 pr tomt. Alle hytter skal ha tak tekket med torv. Hyttene skal videre ha saltak. Utvendig panel skal være behandlet med varme jordfarger. Det vises forøvrig til planbestemmelser i reguleringsplan vedtatt 05.07.01.",
+            ],
+            "arrival": [
+                "Ta av E6 ved Hjerkinn til Folldal, fylkesvei 29. Hjerkinnlia fjellgrend ligger nedenfor Hjerkinn Fjellstue, ned mot Hjerkinndammen."
+            ],
+            "facts": [
+                "MOH: 915–950",
+                "Tomtestørrelser: 1400–1800 m2",
+                "Pris fra: 350 000,–",
+                "Til Dombås: 30 km",
+                "Nærmeste butikk: 30 km",
+                "Togstasjon: 1–2 km (Hjerkinn)",
+                "Vann: Offentlig vann",
+                "Avløp: Offentlig avløp",
+                "Strøm: Jordkabel til tomtegrense ",
+                "Fasiliteter: Bilvei frem (helårs), utsikt, jakt- og fiskemuligheter, turterreng, langrennsløyper",
+            ],
+            "priceInfo": [
+                "Det vises til egen prisliste for ledige tomter og tomtepriser.",
+                "Felles kostnader til vedlikehold av veier, snøbrøyting mm bestemmes av og fordeles gjennom hytteeierforeningen.",
+                "Dokumentavgift og gebyr for tinglysning kommer i tillegg.",
+
+            ],
+            "contactInfo":[
+              {
+                  "name": "TORBJØRN RANDEN",
+                  "tlf": "tr@tindeutvikling.no",
+                  "email": "95030500"
+              }
+            ]
+        }
+
+    },
+    "hundyrju": {
+       "imgHeader": "images/hyttegrender/hundyrju.jpeg",
+       "title": "Hundyrju hyttegrend",
+       "oneliner": "Hyttetomter på Dovrefjell i naturskjønne omgivelser. Hyttegrenda ligger på ca. 900 moh ca. 6,5 km fra Dombås sentrum.",
+       "description": [
+           "Hyttetomter på Dovrefjell i naturskjønne omgivelser. Hyttegrenda ligger på ca. 900 mohca. 6,5 km fra Dombås sentrum.",
+           "Her har du oppkjørte skiløyper rett utenfor hyttedøra og tur- og sykkelveien går nært inntil til hyttefeltet og fører deg raskt videre inn i fjellheimen. Du kan dyrke friluftslivet med gode muligheter for jakt og fiske m.v. hele året. På Dovrefjell finnes det flere islagte vann hele vinteren. Mer informasjon om jakt og fiske finner du på Dovre Fjellstyres nettsider.",
+           "Hundyrjuområdet på dovrefjell er velegnet for alle typer frilutsaktivteter!",
+           "Utsikten er vidt nordover Dovrefjellplatået med Foksstugumyrene med Svånåtind og Snøhetta i horisonten. Mot sør ligger Hjellhø hvor Den Gamle Kongevegen og Pilgrimsleden passerer.",
+           "Turmulighetene er mange, om du vil velge ditt eget spor eller følge merkede og oppkjørte langrennsløyper som passerer rett forbi hyttegrenden. Det går også fine langrennsløyper og turstier ned til Dombås skiheiser, skisstadion med skiskytterareana og Dombås Sentrum. Hundyrju hyttegrend er nærmeste nabo til Hjelle Seter, som er en tradisjonell setergrend med helårs turistvirksomhet.",
+
+       ],
+       "icons": [
+           "avløp",
+           "strøm",
+           "vann",
+           "vei",
+           "butikk",
+           "jakt",
+           "løypenett",
+           "sykkel",
+           "turterreng",
+       ],
+       "mapdata": [
+
+       ],
+       "information": {
+           "propertyInfo": [
+               "Tomtene er plassert slik i terrenget at det blir friarealer mellom grupper av tomter.",
+               "Området ligger i skrående terreng med god solgang og utsikt. Området er regulert til fritidsbebyggelse.",
+               "Alle tomter leveres med vei, strøm, vann og avløp fram til tomtegrense eller nær denne. Parkering på den enkelte eiendom.",
+               "Hver tomt kan bebygges med inntil 120 m2 BYA. Alle tomtekjøpere har rett og plikt til å delta i felles hytteeierforening. Tomtene selges som selveiertomter. Det forutsettes at bygging på tomt igangsettes innen tre – 3 – år fra tomtekjøp. Felles kostnader til vedlikehold av veier, snøbrøyting mm bestemmes av og fordeles gjennom hytteeierforeningen.",
+           ],
+           "arrival": [
+               "Følg E6 fra Dombås mot Dovrefjell, og kjør ca. 6,5 km. Ta av ved skilt mot Hundyrju hyttegrend på høyre side og følg veien opp ca. 300m. Ta så av til høyre og følg Hundyrjuveien. Du befinner deg nå på hyttefeltet."
+           ],
+           "facts": [
+               "Moh: 900–950",
+               "Tomtestørrelser: ca 1000 m2",
+               "Pris fra: kr 500 000,–",
+               "til Lillehammer: 160 km",
+               "til Oslo: 340 km",
+               "til Trondheim: 192 km",
+               "til Ålesund: 215 km",
+               "Nærmeste butikk: 6,5 km",
+               "Togstasjon: 6,5 km (Dombås)",
+               "Vann: Offentlig vann",
+               "Avløp: Offentlig avløp",
+               "Strøm: Jordkabel til tomtegrense ",
+               "Fasiliteter: Bilvei frem (helårs), utsikt, fiskemuligheter, turterreng, langrennsløyper",
+           ],
+           "priceInfo": [
+               "Det vises til egen prisliste for ledige tomter og tomptepriser",
+               "Priser fra: Kr 500 009,-",
+               "Dokumentavgift og gebyr for tinglysning kommer i tillegg."
+           ],
+           "contactInfo":[
+             {
+                 "name": "TORBJØRN RANDEN",
+                 "tlf": "tr@tindeutvikling.no",
+                 "email": "95030500"
+             }
+           ]
+       }
+
+   },
+
 
 };
