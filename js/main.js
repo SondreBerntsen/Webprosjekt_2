@@ -182,14 +182,17 @@ function loadContent(x){
     initMapProperties();
     function initMapProperties(){
       var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
-        zoom: 17,
-        center: ourData[x].mapData.position
+        zoom: 16,
+        center: ourData[x].mapData.position,
+        mapTypeId: 'hybrid'
       });
       console.log(ourData[x].mapData.markers.length);
       for (i = 0; i < ourData[x].mapData.markers.length; i++){
         var markerPosition = ourData[x].mapData.markers[i].position;
+        var labelNumber = ourData[x].mapData.markers[i].propertyNumber;
         var marker = new google.maps.Marker({
           position: markerPosition,
+          label: labelNumber,
           map: map
         });
       }
