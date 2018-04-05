@@ -165,7 +165,8 @@ function buttonClick(x){
 
 function loadContent(x){
     console.log(x);
-    var ourData = hyttegrender;
+    var ourData = hyttegrender.finsandvika.mapData;
+    ourData[i].
     //console.log(hyttegrender);
     $('#imgHeader').attr("src", ourData[x].imgHeader)
     $('#hgtitle').html(ourData[x].title);

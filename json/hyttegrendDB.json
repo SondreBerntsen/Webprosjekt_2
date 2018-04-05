@@ -15,13 +15,26 @@ var hyttegrender = {
             "fisking",
             "jakt",
         ],
-        "mapData": [
-          {
-            "propertyNumber": "",
-            "long": "",
-            "lat": ""
-          }
-        ],
+        "mapData": {
+          "position": {lat: 61.215699, lng: 10.518729},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "long": "",
+              "lat": ""
+            },
+            {
+              "propertyNumber": "",
+              "long": "",
+              "lat": ""
+            },
+            {
+              "propertyNumber": "",
+              "long": "",
+              "lat": ""
+            }
+          ]
+        },
         "information": {
             "propertyInfo": [
                 "Solrike utsiktstomter i vestvendt, svakt skrånende terreng. Tomtene er ikke endelig oppmålt. 122 daa fordelt på 25 tomter. Tomtestørrelser fra 1,2 mål til 1,9 mål. Tomtene blir utskilt som eiertomter. Tomten er opparbeidet med gruset adkomst og plantert for grøntarealer. Gode parkeringsmuligheter utenfor hver hytte.",
@@ -423,13 +436,26 @@ var hyttegrender = {
             "sykkel",
             "tur",
         ],
-        "mapdata": [
-          {
-            "propertyNumber": "",
-            "long": "",
-            "lat": ""
-          }
-        ],
+        "mapdata": {
+          "position": {lat: 61.750702, lng: 9.58495978181156},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "long": "",
+              "lat": ""
+            },
+            {
+              "propertyNumber": "",
+              "long": "",
+              "lat": ""
+            },
+            {
+              "propertyNumber": "",
+              "long": "",
+              "lat": ""
+            }
+          ]
+        },
         "information": {
             "propertyInfo": [
                 "Det er 3 tomter klare for salg og er alle på ca 1000 m2. Tomtene ligger på en gammel Kvee i skrått hellende terreng. Nå 1 ledig tomt."
