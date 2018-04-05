@@ -95,7 +95,7 @@ var hyttegrender = {
             "sykkel",
             "tur"
         ],
-        "mapdata": [
+        "mapData": [
           {
             "propertyNumber": "",
             "long": "",
@@ -167,7 +167,7 @@ var hyttegrender = {
           "sykkel",
           "tur"
         ],
-        "mapdata": [
+        "mapData": [
           {
             "propertyNumber": "",
             "long": "",
@@ -238,7 +238,7 @@ var hyttegrender = {
           "sykkel",
           "tur",
       ],
-      "mapdata": [
+      "mapData": [
         {
           "propertyNumber": "",
           "long": "",
@@ -307,7 +307,7 @@ var hyttegrender = {
           "sykkel",
           "tur",
       ],
-      "mapdata": [
+      "mapData": [
         {
           "propertyNumber": "",
           "long": "",
@@ -374,7 +374,7 @@ var hyttegrender = {
         "sykkel",
         "tur",
     ],
-    "mapdata": [
+    "mapData": [
       {
         "propertyNumber": "",
         "long": "",
@@ -434,25 +434,33 @@ var hyttegrender = {
             "småbåthavn",
             "løypenett",
             "sykkel",
-            "tur",
+            "tur"
         ],
-        "mapdata": {
-          "position": {lat: 61.750702, lng: 9.58495978181156},
+        "mapData": {
+          "position": {
+            "lat": 61.751137,
+            "lng": 9.714394},
           "markers": [
             {
-              "propertyNumber": "",
-              "long": "",
-              "lat": ""
+              "propertyNumber": "1",
+              "position": {
+                "lat": 61.750792,
+                "lng": 9.714567
+              }
             },
             {
-              "propertyNumber": "",
-              "long": "",
-              "lat": ""
+              "propertyNumber": "2",
+              "position": {
+                "lat": 61.751277,
+                "lng": 9.713742
+              }
             },
             {
-              "propertyNumber": "",
-              "long": "",
-              "lat": ""
+              "propertyNumber": "3",
+              "position": {
+                "lat": 61.751318,
+                "lng": 9.714860
+              }
             }
           ]
         },
@@ -462,7 +470,7 @@ var hyttegrender = {
             ],
             "arrival": [
                 "Avkjøring fra E 6 i kvam ca 10 km nord for Vinstra, følg fylkeisvei 419 til Kvamsfjellet ca 11 km, ta av til Haugsetra ved Rondaplassen / Måsåplassen.",
-                "Følg Haugseterveien ca 1 km, og området ligger ved den den siste setra på høyre hånd.",
+                "Følg Haugseterveien ca 1 km, og området ligger ved den den siste setra på høyre hånd."
             ],
             "facts": [
                 "Moh: ca. 900 m",
@@ -475,7 +483,7 @@ var hyttegrender = {
                 "Vann: Privat vann",
                 "Avløp: Offentlig avløp",
                 "Strøm: Jordkabel til tomtegrense",
-                "Fasiliteter: Bilvei frem (helårs), utsikt, jakt- og fiskemuligheter, turterreng, langrennsløyper",
+                "Fasiliteter: Bilvei frem (helårs), utsikt, jakt- og fiskemuligheter, turterreng, langrennsløyper"
             ],
             "priceInfo": [
                 "Pris kr 590.000 + omk.",
@@ -484,7 +492,7 @@ var hyttegrender = {
                 {
                     "name": "TORBJØRN RANDEN",
                     "tlf": "95030500",
-                    "email": "tr@tindeutvikling.no",
+                    "email": "tr@tindeutvikling.no"
                 },
                 {
                     "name": "ROAR MAURING",
@@ -515,7 +523,7 @@ var hyttegrender = {
             "sykkel",
             "tur",
         ],
-        "mapdata": [
+        "mapData": [
           {
             "propertyNumber": "",
             "long": "",
@@ -585,7 +593,7 @@ var hyttegrender = {
             "sykkel",
             "turterreng"
         ],
-        "mapdata": [
+        "mapData": [
           {
             "propertyNumber": "",
             "long": "",
@@ -676,7 +684,7 @@ var hyttegrender = {
             "sykkel",
             "turterreng"
         ],
-        "mapdata": [
+        "mapData": [
           {
             "propertyNumber": "",
             "long": "",

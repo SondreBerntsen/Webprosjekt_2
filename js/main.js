@@ -123,9 +123,9 @@ $(document).ready(function(){
       fallImages();
     });
     //Calling function to initialize map
-    initMap();
+    //initMap();
     //initializing maps
-    function initMap() {
+    /*function initMap() {
       var finsandvika = {lat: 61.215699, lng: 10.518729};
       var lillehammer = {lat: 61.1734420545982, lng: 10.604606905279};
       var gala = {lat: 61.4953383074326, lng: 9.76728911774898};
@@ -152,8 +152,7 @@ $(document).ready(function(){
         position: finsandvika,
         map: map
       });
-    }
-
+    }*/
 });
 
 
@@ -165,8 +164,8 @@ function buttonClick(x){
 
 function loadContent(x){
     console.log(x);
-    var ourData = hyttegrender.finsandvika.mapData;
-    ourData[i].
+    var ourData = hyttegrender;
+
     //console.log(hyttegrender);
     $('#imgHeader').attr("src", ourData[x].imgHeader)
     $('#hgtitle').html(ourData[x].title);
@@ -180,8 +179,21 @@ function loadContent(x){
     for(i = 0; i < ourData[x].icons.length; i++){
         $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon'>");
     }
-
-    //Mapdata goes here
+    initMapProperties();
+    function initMapProperties(){
+      var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
+        zoom: 17,
+        center: ourData[x].mapData.position
+      });
+      console.log(ourData[x].mapData.markers.length);
+      for (i = 0; i < ourData[x].mapData.markers.length; i++){
+        var markerPosition = ourData[x].mapData.markers[i].position;
+        var marker = new google.maps.Marker({
+          position: markerPosition,
+          map: map
+        });
+      }
+    }
 
     /*Create propertyInfo div below map, as seen on tindeutvikling.no
 
@@ -204,7 +216,6 @@ function loadContent(x){
     }
 
     for(i = 0; i < ourData[x].information.contactInfo.length; i++){
-        console.log(ourData[x].information.contactInfo[i]);
         $('#contactInfo').append("<p>"+ ourData[x].information.contactInfo[i].name+"</p>");
         $('#contactInfo').append("<p><span id='tlf'><i class='fas fa-phone'></i>"+ourData[x].information.contactInfo[i].tlf+"</span></p>");
         $('#contactInfo').append ("<p><span id='email'><i class='fas fa-envelope'></i>"+ourData[x].information.contactInfo[i].email+"</span></p>");
