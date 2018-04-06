@@ -86,29 +86,29 @@ $(document).ready(function(){
       $("#slide1").attr("src","images/seasonal_slider_images/seasonal_winter1.png");
       $("#slide2").attr("src","images/seasonal_slider_images/seasonal_winter2.png");
       $("#slide3").attr("src","images/seasonal_slider_images/seasonal_winter3.png");
-      $('#winterBtn').attr("class","btn-info");
-	    $("#springBtn, #summerBtn, #fallBtn").attr("class","btn-primary");
+      $('#winterBtn').attr("class"," btn btn-info");
+	    $("#springBtn, #summerBtn, #fallBtn").attr("class"," btn btn-primary");
     }
     function springImages() {
       $("#slide1").attr("src","images/seasonal_slider_images/seasonal_spring1.png");
       $("#slide2").attr("src","images/seasonal_slider_images/seasonal_spring2.png");
       $("#slide3").attr("src","images/seasonal_slider_images/seasonal_spring3.png");
-      $('#springBtn').attr("class","btn-info");
-	    $("#summerBtn, #winterBtn, #fallBtn").attr("class","btn-primary");
+      $('#springBtn').attr("class"," btn btn-info");
+	    $("#summerBtn, #winterBtn, #fallBtn").attr("class"," btn btn-primary");
     }
     function summerImages() {
       $("#slide1").attr("src","images/seasonal_slider_images/seasonal_summer1.png");
       $("#slide2").attr("src","images/seasonal_slider_images/seasonal_summer2.png");
       $("#slide3").attr("src","images/seasonal_slider_images/seasonal_summer3.png");
-      $('#summerBtn').attr("class","btn-info");
-      $("#springBtn, #winterBtn, #fallBtn").attr("class","btn-primary");
+      $('#summerBtn').attr("class","btn btn-info");
+      $("#springBtn, #winterBtn, #fallBtn").attr("class","btn btn-primary");
     }
     function fallImages() {
       $("#slide1").attr("src","images/seasonal_slider_images/seasonal_fall1.png");
       $("#slide2").attr("src","images/seasonal_slider_images/seasonal_fall2.png");
       $("#slide3").attr("src","images/seasonal_slider_images/seasonal_fall3.png");
-      $('#fallBtn').attr("class","btn-info");
-      $("#springBtn, #winterBtn, #summerBtn").attr("class","btn-primary");
+      $('#fallBtn').attr("class","btn btn-info");
+      $("#springBtn, #winterBtn, #summerBtn").attr("class","btn btn-primary");
     }
     $("#winterBtn").click(function(){
         winterImages();
