@@ -210,7 +210,7 @@ var hyttegrender = {
             "contactInfo":  [
                   {
                     "name": "TORE RUGSVEEN",
-                    "tlf": "457 77 188",
+                    "tlf": " 457 77 188",
                     "email": " tore.rugsveen@tindeutvikling.no"
                   }
               ]
@@ -275,8 +275,8 @@ var hyttegrender = {
           "contactInfo": [
               {
                 "name": "TORBJØRN RANDEN",
-                "tlf": "tr@tindeutvikling.no",
-                "email": "95030500"
+                "tlf": " tr@tindeutvikling.no",
+                "email": " 95030500"
               }
           ]
       }
@@ -340,7 +340,7 @@ var hyttegrender = {
           "contactInfo":   [
                 {
                   "name": "TORE RUGSVEEN",
-                  "tlf": "457 77 188",
+                  "tlf": " 457 77 188",
                   "email": " tore.rugsveen@tindeutvikling.no"
                 }
             ]
@@ -407,8 +407,8 @@ var hyttegrender = {
         "contactInfo": [
             {
             "name": "TORBJØRN RANDEN",
-            "tlf": "95030500",
-            "email": "tr@tindeutvikling.no"
+            "tlf": " 95030500",
+            "email": " tr@tindeutvikling.no"
             }
         ]
     }
@@ -491,13 +491,13 @@ var hyttegrender = {
             "contactInfo": [
                 {
                     "name": "TORBJØRN RANDEN",
-                    "tlf": "95030500",
-                    "email": "tr@tindeutvikling.no"
+                    "tlf": " 95030500",
+                    "email": " tr@tindeutvikling.no"
                 },
                 {
                     "name": "ROAR MAURING",
-                    "tlf": "918 93 790",
-                    "email": "roarm@norwaybooking.com"
+                    "tlf": " 918 93 790",
+                    "email": " roarm@norwaybooking.com"
                 }
             ]
         }
@@ -563,7 +563,7 @@ var hyttegrender = {
                 {
                     "name": "TORBJØRN RANDEN",
                     "tlf": " 95030500",
-                    "email": "tr@tindeutvikling.no"
+                    "email": " tr@tindeutvikling.no"
                 }
             ]
         }
@@ -649,13 +649,13 @@ var hyttegrender = {
             "contactInfo":[
               {
                   "name": "TORBJØRN RANDEN",
-                  "tlf": "950 30 500",
-                  "email": "tr@tindeutvikling.no"
+                  "tlf": " 950 30 500",
+                  "email": " tr@tindeutvikling.no"
               },
               {
                   "name": "ARNE OLAV",
-                  "tlf": "900 74 713",
-                  "email": "arolbe@gmail.com"
+                  "tlf": " 900 74 713",
+                  "email": " arolbe@gmail.com"
               }
             ]
         }
@@ -723,8 +723,8 @@ var hyttegrender = {
             "contactInfo": [
               {
                 "name": "TORE RUGSVEEN",
-                "tlf": "tore.rugsveen@tindeutvikling.no",
-                "email": "457 77 188"
+                "tlf": " tore.rugsveen@tindeutvikling.no",
+                "email": " 457 77 188"
               }
             ]
             //Fix, add prospect things
@@ -785,8 +785,8 @@ var hyttegrender = {
             "contactInfo":[
               {
                   "name": "TORBJØRN RANDEN",
-                  "tlf": "tr@tindeutvikling.no",
-                  "email": "95030500"
+                  "tlf": " tr@tindeutvikling.no",
+                  "email": " 95030500"
               }
             ]
         }
@@ -851,8 +851,8 @@ var hyttegrender = {
            "contactInfo":[
              {
                  "name": "TORBJØRN RANDEN",
-                 "tlf": "tr@tindeutvikling.no",
-                 "email": "95030500"
+                 "tlf": " tr@tindeutvikling.no",
+                 "email": " 95030500"
              }
            ]
        }
