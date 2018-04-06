@@ -14,7 +14,7 @@ body {
 
 .bg-dark {
     /*background-color: #BB4C4A!important;*/
-    background-color: #004B76!important;
+    background-color: white!important;
 }
 
 /* Navbar styling, change as you see fit Mr. Designer */
@@ -41,6 +41,22 @@ body {
     margin-bottom: 2%;
 }
 
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.nav-link{
+  color:black !important;
+}
+.dropdown-submenu {
+    position: relative;
+}
 .cardAreaInfo {
     position: absolute;
     top: 0;
@@ -231,42 +247,55 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*dropdown hover menu in navbar*/
-.dropbtn {
-    background-color: #004b76;
-    padding: 8px;
-    font-size: 16px;
-    border: none;
-    color: rgba(255,255,255,.5);
-}
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #004b76;
+    background-color: white;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-
-.dropdown-menu a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: rgba(255,255,255,.5);
 
 }
 
-.dropdown-menu a:hover {
-  color: #ddd
+.dropdown-menu a{
+  color: black;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+
+
+.dropdown-submenu.pull-left {
+    float: none;
+ }
+
+ #dLabel{
+   color: black;
+   border: none;
+   background-color: white;
+}
+
+
+
+
+.dropdown:hover .dropbtn {
 }
 
 .hideArea{
@@ -331,47 +360,8 @@ hr{
 
 
 
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
 
 
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
-}
-
-.dropdown-submenu {
-    position: relative;
-}
-
-
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
 
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
