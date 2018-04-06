@@ -1,0 +1,138 @@
+var omrader = {
+  "gudbrandsdalen": {
+    "title": "",
+    "information": [],
+    "mapData": {
+      "position": {lat: lng: },
+      "markers": [
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        },
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        },
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        }
+      ]
+    },
+    "propertyAreas": [
+      { //these are the "cards". Same shit as the filter elements on index page.
+        "title": "",
+        "oneliner": "",
+        "image": ""
+
+      },
+      {},
+      {}
+    ]
+  },
+  "ringsaker": {
+    "title": "",
+    "information": [],
+    "mapData": {
+      "position": {lat: lng: },
+      "markers": [
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        },
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        },
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        }
+      ]
+    },
+    "propertyAreas": [
+      { //these are the "cards". Same shit as the filter elements on index page.
+        "title": "",
+        "oneliner": "",
+        "image": ""
+
+      },
+      {},
+      {}
+    ]
+  },
+  "valdres": {
+    "title": "",
+    "information": [],
+    "mapData": {
+      "position": {lat: lng: },
+      "markers": [
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        },
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        },
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        }
+      ]
+    },
+    "propertyAreas": [
+      { //these are the "cards". Same shit as the filter elements on index page.
+        "title": "",
+        "oneliner": "",
+        "image": ""
+
+      },
+      {},
+      {}
+    ]
+  },
+  "sor-trondelag": {
+    "title": "",
+    "information": [],
+    "mapData": {
+      "position": {lat: lng: },
+      "markers": [
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        },
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        },
+        {
+          "propertyAreaName": "", //Name the individual pins here?
+          "lat": "",
+          "lng": ""
+        }
+      ]
+    },
+    "propertyAreas": [
+      { //these are the "cards". Same shit as the filter elements on index page.
+        "title": "",
+        "oneliner": "",
+        "image": ""
+
+      },
+      {},
+      {}
+    ]
+  }
+}
