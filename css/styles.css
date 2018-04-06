@@ -245,15 +245,18 @@ input[type=number]::-webkit-outer-spin-button {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
 }
+
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #414042;
   min-width: 200px;
   border-top: 0px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(10, 9, 9, 0.47);
   z-index: 1;
   padding: 0px;
+  top: 88%;
+  border: 0px ;
 }
 
 .dropdown-submenu {
@@ -276,15 +279,23 @@ input[type=number]::-webkit-outer-spin-button {
   padding-right: 15px;
 }
 
+.dropdown-menu li a {
+  font-size: 14px;
+}
+
+.dropdown-submenu .dropdown-menu li a {
+  font-size: 12px;
+}
+
 .dropdown-menu a {
-  color: black;
+  color: #cccccc;
   text-decoration: none;
 }
 
 .dropdown-submenu>.dropdown-menu {
   top: 0;
   left: 100%;
-  margin-top: -5px;
+  margin-top: 0px;
   margin-left: -1px;
   -webkit-border-radius: 0 6px 6px 6px;
   -moz-border-radius: 0 6px 6px;
@@ -292,15 +303,25 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .dropdown:hover {
-  background-color: red;
-
+  background-color: #414042;
 }
+
+.dropdown #dropOmraade:hover {
+  color: white;
+}
+
 .dropdown-submenu:hover {
-  background-color: red;
+  background-color: #f1edea;
 }
 
 .dropdown-menu li:hover {
-  background-color: red;
+  background-color: #f1edea;
+  box-shadow: 0px -8px 6px -6px #00000069, 0px 8px 6px -6px #00000069;
+}
+
+.dropdown-menu li a:hover {
+  font-size: 16px;
+  color: black;
 }
 
 .dropdown:hover>.dropdown-menu {
