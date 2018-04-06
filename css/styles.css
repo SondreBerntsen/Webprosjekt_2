@@ -14,7 +14,7 @@ body {
 
 .bg-dark {
     /*background-color: #BB4C4A!important;*/
-    background-color: #004B76!important;
+    background-color: white!important;
 }
 
 /* Navbar styling, change as you see fit Mr. Designer */
@@ -26,6 +26,9 @@ body {
 #logo_link {
     width: 260px;
     margin-right: 29px;
+}
+.nav-link{
+  color:black !important;
 }
 
 /* Making sure the filter checkboxes are. Looking. Good. */
@@ -250,10 +253,10 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
 }
 .dropdown-menu {
-  background-color: #004b76;
+  background-color: white;
 }
 .dropdown-menu a{
-  color: rgba(255,255,255,.5);
+  color: black;
 }
 .dropdown-submenu>a:after {
     display: block;
@@ -286,9 +289,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #dLabel{
-  color: rgba(255,255,255,.5);
+  color: black;
   border: none;
-  background-color: #004B76; 
+  background-color: white;
 }
 
 
