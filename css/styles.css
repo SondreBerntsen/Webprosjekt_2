@@ -14,7 +14,7 @@ body {
 
 .bg-dark {
     /*background-color: #BB4C4A!important;*/
-    background-color: white!important;
+    background-color: #004B76!important;
 }
 
 /* Navbar styling, change as you see fit Mr. Designer */
@@ -26,9 +26,6 @@ body {
 #logo_link {
     width: 260px;
     margin-right: 29px;
-}
-.nav-link{
-  color:black !important;
 }
 
 /* Making sure the filter checkboxes are. Looking. Good. */
@@ -233,68 +230,44 @@ input[type=number]::-webkit-outer-spin-button {
   height: 500px;
 }
 
-/*multiple dropdown menu in navbar*/
+/*dropdown hover menu in navbar*/
+.dropbtn {
+    background-color: #004b76;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    color: rgba(255,255,255,.5);
+}
 
-.dropdown-submenu {
+.dropdown {
     position: relative;
+    display: inline-block;
 }
 
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
 .dropdown-menu {
-  background-color: white;
+    display: none;
+    position: absolute;
+    background-color: #004b76;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-.dropdown-menu a{
-  color: black;
-}
-.dropdown-submenu>a:after {
+
+.dropdown-menu a {
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
+    color: rgba(255,255,255,.5);
+
 }
 
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
+.dropdown-menu a:hover {
+  color: #ddd
 }
 
-.dropdown-submenu.pull-left {
-    float: none;
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
-
-#dLabel{
-  color: black;
-  border: none;
-  background-color: white;
-}
-
-
 
 .hideArea{
     display: none;
@@ -354,4 +327,52 @@ hr{
 }
 .jumbotron {
   margin: 0;
+}
+
+
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
 }
