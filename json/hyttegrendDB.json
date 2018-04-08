@@ -95,13 +95,34 @@ var hyttegrender = {
             "sykkel",
             "tur"
         ],
-        "mapData": [
-          {
-            "propertyNumber": "",
-            "long": "",
-            "lat": ""
-          }
-        ],
+        "mapData": {
+          "position": {
+            "lat": "",
+            "lng": ""},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "2",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "3",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            }
+          ]
+        },
         "information": {
             "propertyInfo": [
                 "Hyttefeltet består av 44 store tomter med fantastisk utsikt over Rondane og Jotunheimen! Store selveiertomter med gode friarealer rundt. Usjenert og rolig beliggende område med full infrastruktur. Tomtestørrelse fra 1 800–4 300 m². Ingen byggeklausul!"
@@ -238,13 +259,34 @@ var hyttegrender = {
           "sykkel",
           "tur",
       ],
-      "mapData": [
-        {
-          "propertyNumber": "",
-          "long": "",
-          "lat": ""
-        }
-      ],
+      "mapData": {
+          "position": {
+            "lat": "",
+            "lng": ""},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "2",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "3",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            }
+          ]
+        },
       "information": {
           "propertyInfo": [
               "Naturskjønt beliggende på Gålåtoppen, ett av de mest veletablerte og populære hyttefeltene på Gålå. Gålåtoppen er et hyttefelt avstengt med elktronisk styr bom og holdes vedlike hele året. Tomtene gir rett og plikt til medlemskap i Gålåtoppen Hytteeierforening. Eiendommene har umiddelbar nærhet til preparerte langrennsløyper som går gjennom området og knyttes sammen med det flotte løypenettet Gålå har å by på.",
@@ -307,13 +349,34 @@ var hyttegrender = {
           "sykkel",
           "tur",
       ],
-      "mapData": [
-        {
-          "propertyNumber": "",
-          "long": "",
-          "lat": ""
-        }
-      ],
+      "mapData": {
+          "position": {
+            "lat": "",
+            "lng": ""},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "2",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "3",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            }
+          ]
+        },
       "information": {
           "propertyInfo": [
               "Hafjell har fra starten i 1988 utviklet seg til en av Norges beste vinterdestinasjoner. Her kan man boltre seg i alpinbakkene eller man kan spenne på seg langrennsskiene og gå ut i milevis med preparerte løyper.",
@@ -523,13 +586,34 @@ var hyttegrender = {
             "sykkel",
             "tur",
         ],
-        "mapData": [
-          {
-            "propertyNumber": "",
-            "long": "",
-            "lat": ""
-          }
-        ],
+        "mapData": {
+          "position": {
+            "lat": "",
+            "lng": ""},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "2",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "3",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            }
+          ]
+        },
         "information": {
             "propertyInfo": [
                 "Tomtene er selveiende. Det er opprettet en sameieforening med formål å ta seg av en del felles gjøremål og interesser. Beliggenheten er ovenfor Hjerkinn Fjellstue og Kvitdalsvegen.",
@@ -593,13 +677,34 @@ var hyttegrender = {
             "sykkel",
             "turterreng"
         ],
-        "mapData": [
-          {
-            "propertyNumber": "",
-            "long": "",
-            "lat": ""
-          }
-        ],
+        "mapData": {
+          "position": {
+            "lat": "",
+            "lng": ""},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "2",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "3",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            }
+          ]
+        },
         "information": {
             "propertyInfo": [
               "<b>TOMTENE</b>",
@@ -684,13 +789,34 @@ var hyttegrender = {
             "sykkel",
             "turterreng"
         ],
-        "mapData": [
-          {
-            "propertyNumber": "",
-            "long": "",
-            "lat": ""
-          }
-        ],
+        "mapData": {
+          "position": {
+            "lat": "",
+            "lng": ""},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "2",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "3",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            }
+          ]
+        },
         "information": {
             "propertyInfo": [
               "Tindegrenda ligger høyt og flott til i Varden i Kvitfjell ca 850 moh. Varden ligger i Kvitfjell Vest og er den tredje fjellsiden som bygges ut i Kvitfjell. Dette er et eksklusivt hytteområde og er et supert utgangspunkt for fritidsopplevelser både sommer og vinter.",
@@ -752,9 +878,34 @@ var hyttegrender = {
             "sykkel",
             "turterreng",
         ],
-        "mapdata": [
-
-        ],
+        "mapData": {
+          "position": {
+            "lat": "",
+            "lng": ""},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "2",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "3",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            }
+          ]
+        },
         "information": {
             "propertyInfo": [
                 "Tomtene er selveiende. Det er opprettet en sameieforening med formål å ta seg av en del felles gjøremål og interesser.",
@@ -815,9 +966,34 @@ var hyttegrender = {
            "sykkel",
            "turterreng",
        ],
-       "mapdata": [
-
-       ],
+       "mapData": {
+          "position": {
+            "lat": "",
+            "lng": ""},
+          "markers": [
+            {
+              "propertyNumber": "",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "2",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            },
+            {
+              "propertyNumber": "3",
+              "position": {
+                "lat": "",
+                "lng": ""
+              }
+            }
+          ]
+        },
        "information": {
            "propertyInfo": [
                "Tomtene er plassert slik i terrenget at det blir friarealer mellom grupper av tomter.",
