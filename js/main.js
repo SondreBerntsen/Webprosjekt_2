@@ -47,9 +47,11 @@ $(document).ready(function(){
           $('#filterTags').append('<div class="tagFilter">'+checkedBoxes[i]+'</div>');
         }
     });
-      $(".showCheckbox").on("click", function() {
+      $(".showCheckbox").on("click", function(e) {
            $(this).nextAll(".hideCheckbox").toggle('fast');
-           //$(this).text( $(this).text() == "Les mer" ? "Les mindre" : "Les mer");
+           var spanElement=e.target.firstElementChild;
+            $(spanElement).toggleClass("fas fa-chevron-up",true);
+            $(spanElement).toggleClass('fas fa-chevron-down',true);
 	     });
 
     var myIndex = 0;
