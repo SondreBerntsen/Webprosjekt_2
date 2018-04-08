@@ -411,8 +411,26 @@ hr{
 .arrow{
   font-size: 15px;
   float: right;
-  margin-right: 5%;
+  margin:1%;
+  margin-right:5%;
 }
 .jumbotron {
   margin: 0;
+}
+input[type='checkbox'] {
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:3px;
+    border:1px solid gray;
+    -webkit-appearance:none;
+}
+input[type='checkbox']:checked {
+    border:1px solid black;
+    background: #e65c00;
+}
+label span{
+  margin:10px;
+  font-weight: bold;
+  font-size: 16px;
 }
