@@ -181,9 +181,9 @@ function loadContent(x){
     for(i = 0; i < ourData[x].icons.length; i++){
         $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon'>");
     }
-    if (ourData[x].mapData[0].propertyNumber != ""){
-        initMapProperties();
-    }
+ 
+    initMapProperties();
+    
     function initMapProperties(){
       var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
         zoom: 16,
