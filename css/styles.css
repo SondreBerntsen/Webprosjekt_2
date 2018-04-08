@@ -381,8 +381,9 @@ input[type=number]::-webkit-outer-spin-button {
   border: 0.5px solid lightgray;
   font-weight:normal;
   font-size: 18px;
-  background-color: white;
+  background-color: #e0dfde;
   text-align: center;
+  padding: 11px;
 }
 .showCheckbox:hover{
   background-color: lightgray;
