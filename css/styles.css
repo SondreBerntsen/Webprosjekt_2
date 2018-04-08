@@ -12,16 +12,16 @@ body {
     background-color: #f8f9fa!important;
 }
 
-.bg-dark {
+.bg-light {
     /*background-color: #BB4C4A!important;*/
     background-color: white!important;
 }
 
 /* Navbar styling, change as you see fit Mr. Designer */
 
-.bg-light {
+/*.bg-light {
     background-color: #004b76!important;
-}
+}*/
 
 #logo_link {
     width: 260px;
@@ -43,6 +43,11 @@ body {
 
 .nav-link{
   color:black !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,0);
 }
 
 .cardAreaInfo {
