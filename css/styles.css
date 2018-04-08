@@ -19,6 +19,10 @@ body {
 
 /* Navbar styling, change as you see fit Mr. Designer */
 
+.navbar-nav {
+  flex-direction: row;
+}
+
 /*.bg-light {
     background-color: #004b76!important;
 }*/
@@ -173,12 +177,17 @@ body {
     position: relative;
     text-align: center;
     color: white;
+    width: 100%;
+}
+
+#imgHeader {
+  width: 1920px;
 }
 
 /* Centered text */
 .centered {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
