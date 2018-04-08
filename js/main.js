@@ -228,4 +228,11 @@ function loadContent(x){
         $('#contactInfo').append ("<p><span id='email'><i class='fas fa-envelope'></i>"+ourData[x].information.contactInfo[i].email+"</span></p>");
 
     }
+    
 }
+$("#scrollToTable").click(function() {
+    console.log("plswerk");
+    $('html, body').animate({
+        scrollTop: $("#propertyTable").offset().top
+    }, 2000);
+});
