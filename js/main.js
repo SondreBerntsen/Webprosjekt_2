@@ -181,9 +181,9 @@ function loadContent(x){
     for(i = 0; i < ourData[x].icons.length; i++){
         $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon'>");
     }
- 
+
     initMapProperties();
-    
+
     function initMapProperties(){
       var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
         zoom: 16,
@@ -228,10 +228,9 @@ function loadContent(x){
         $('#contactInfo').append ("<p><span id='email'><i class='fas fa-envelope'></i>"+ourData[x].information.contactInfo[i].email+"</span></p>");
 
     }
-    
+
 }
 $("#scrollToTable").click(function() {
-    console.log("plswerk");
     $('html, body').animate({
         scrollTop: $("#propertyTable").offset().top
     }, 2000);
