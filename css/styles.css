@@ -33,6 +33,10 @@ body {
     border-bottom: 0.5px solid lightgrey;
     border-radius: 0px;
   }
+
+  .dropdown-menu li a:hover {
+    background-color: #d3d3d363;
+  }
 }
 
 /*.bg-light {
@@ -162,6 +166,9 @@ body {
         padding-left: 1rem;
   }
 
+  .dropdown-menu li:hover {
+    background-color: #d3d3d363;
+  }
 
 }
 @media only screen and (max-width: 950px) {
@@ -346,13 +353,6 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-border-radius: 0 6px 6px 6px;
   -moz-border-radius: 0 6px 6px;
   border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-menu li:hover {
-}
-
-.dropdown-menu li a:hover {
-  background-color: #d3d3d363;
 }
 
 .dropdown:hover>.dropdown-menu {
