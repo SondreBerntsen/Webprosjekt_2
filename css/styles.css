@@ -101,7 +101,7 @@ body {
     background-color: #004B76;
     padding-top: 23px;
     /* fixed space between Text and top of container :  ^) */
-    height: 20%;
+    height: 200px;
 }
 
 .redbartext {
@@ -117,7 +117,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .redbar {
-        height: 35%;
+        height: 300px;
     }
 }
 
