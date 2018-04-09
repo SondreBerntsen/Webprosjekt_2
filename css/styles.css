@@ -485,3 +485,13 @@ label span{
   font-weight: bold;
   font-size: 16px;
 }
+
+@media only screen and (max-width: 850px) {
+  #scrollTableDiv {
+    display: none;
+  }
+  #hgtitle{
+    margin-top: 50px;
+  }
+}
+
