@@ -144,6 +144,7 @@ body {
     margin-bottom: 20px;
     font-size: 64px;
 }
+
 @media only screen and (min-width: 992px) {
   .dropdown {
         padding-left: 1rem;
@@ -181,7 +182,7 @@ body {
 }
 
 #imgHeader {
-  width: 1920px;
+  width: inherit;
 }
 
 /* Centered text */
