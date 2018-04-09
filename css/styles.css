@@ -18,11 +18,19 @@ body {
 }
 
 /* Navbar styling, change as you see fit Mr. Designer */
-
-.navbar-nav {
-  flex-direction: row;
+@media only screen and (max-width: 992px) {
+  #navbarNav .navbar-nav {
+    /*flex-direction: row;*/
+    padding-left: 15px;
+  }
 }
 
+@media only screen and (max-width: 992px) {
+  #navbarNav .dropdown-menu {
+    /*flex-direction: row;*/
+    box-shadow: none;
+  }
+}
 /*.bg-light {
     background-color: #004b76!important;
 }*/
@@ -336,11 +344,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .dropdown-menu li:hover {
-  box-shadow: 0px -8px 6px -6px #00000069, 0px 8px 6px -6px #00000069;
+
 }
 
 .dropdown-menu li a:hover {
-  font-size: 16px;
+  background-color: lightgray;
 }
 
 .dropdown:hover>.dropdown-menu {
