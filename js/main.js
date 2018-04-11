@@ -179,8 +179,12 @@ function loadContent(x){
     }
 
     for(i = 0; i < ourData[x].icons.length; i++){
-        $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon'>");
+        $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon' title='"+ourData[x].icons[i]+"'>");
     }
+
+
+
+
 
     initMapProperties();
 

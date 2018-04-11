@@ -121,6 +121,14 @@ body {
 .dropdown-submenu:hover>a:after {
   border-left-color: #fff;
 }
+/* arrows */
+.svg-inline--fa.fa-w-14 {
+    width: .575em;
+}
+
+.active {
+  background-color: #e0dfde;
+}
 
 /*---- other navbar elements -------*/
 
@@ -174,6 +182,28 @@ hr{
 
 
 /* ---------------------------- index --------------------------------*/
+
+/* header image */
+.hero-image {
+background-image: url("../images/imgindex.png");
+height: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* header image text */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 35px;
+}
+
 
 /* Making sure the filter checkboxes are. Looking. Good. */
 .tagFilter{
@@ -308,6 +338,12 @@ label span{
     margin: 30px;
 }
 
+#atitle {
+  font-size:80px;
+  color:white;
+  margin-top: 375px;
+}
+
 
 /* ---------------------hyttegrend -----------------------------*/
 #buttoncontainer {
@@ -316,6 +352,10 @@ label span{
     margin-bottom: 20px;
 }
 
+/* Styling the Carousel (aka the seasonal slider on property areas) */
+.carousel-item {
+    margin-bottom: 30px;
+}
 
 /* Centered text */
 .centered {
@@ -332,7 +372,7 @@ label span{
   margin-bottom: 10px;
 }
 
-#hgtitle{
+#hgtitle {
   font-size:30px;
   color:white;
   margin-top: 100px;
@@ -396,12 +436,6 @@ label span{
 
 /*------------------------------------------------------------*/
 
-
-/* Styling the Carousel (aka the slider on top of the index page) */
-
-.carousel-item {
-    margin-bottom: 30px;
-}
 
 .btn-primary {
     background-color: #004B76;
