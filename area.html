@@ -31,41 +31,41 @@
              <a id="dropOmraade" data-toggle="dropdown" data-target="#" href="#">
                Områder <span class="fas fa-chevron-down"></span>
              </a>
-              <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="area.html">Ringsaker</a>
-                  <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">Finsandvika Hyttegrend</a></li>
-                    <li><a href="#">Lillehammer Sæter 3</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Gudbrandsdalen</a>
-                  <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">Gålåtoppen</a></li>
-                    <li><a href="#">Hafjell Tindegrenda</a></li>
-                    <li><a href="#">Haugsetra Hyttegrend</a></li>
-                    <li><a href="#">Hjerkinnhø Hyttegrend</a></li>
-                    <li><a href="#">Hjerkinnlia Fjellgrend</a></li>
-                    <li><a href="#">Hundyrju Hyttegrend</a></li>
-                    <li><a href="#">Låvåshaugen Panorama</a></li>
-                    <li><a href="#">Ringebu Panorama</a></li>
-                    <li><a href="#">Tindegrenda Varden</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Valdres</a>
-                  <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">Raudalen</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a tabindex="-1" href="#">Sør-Trøndelag</a>
-                  <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">Aaremsanden</a></li>
-                  </ul>
-                </li>
-              </ul>
+             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+               <li class="dropdown-submenu">
+                 <a tabindex="-1" href="area.html">Ringsaker</a>
+                 <ul class="dropdown-menu">
+                   <li><a tabindex="-1" href="hyttegrend.html" onclick='buttonClick("finsandvika");'>Finsandvika Hyttegrend</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("lillehammer");'>Lillehammer Sæter 3</a></li>
+                 </ul>
+               </li>
+               <li class="dropdown-submenu">
+                 <a tabindex="-1" href="area.html">Gudbrandsdalen</a>
+                 <ul class="dropdown-menu">
+                   <li><a tabindex="-1" href="hyttegrend.html" onclick='buttonClick("galatoppen");'>Gålåtoppen</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("hafjell");'>Hafjell Tindegrenda</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("haugsetra");'>Haugsetra Hyttegrend</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("hjerkinnho");'>Hjerkinnhø Hyttegrend</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("hjerkinnlia");'>Hjerkinnlia Fjellgrend</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("hundyrju");'>Hundyrju Hyttegrend</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("lavashaugen");'>Låvåshaugen Panorama</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("ringebu");'>Ringebu Panorama</a></li>
+                   <li><a href="hyttegrend.html" onclick='buttonClick("tindegrenda");'>Tindegrenda Varden</a></li>
+                 </ul>
+               </li>
+               <li class="dropdown-submenu">
+                 <a tabindex="-1" href="area.html">Valdres</a>
+                 <ul class="dropdown-menu">
+                   <li><a tabindex="-1" href="hyttegrend.html" onclick='buttonClick("raudalen");'>Raudalen</a></li>
+                 </ul>
+               </li>
+               <li class="dropdown-submenu">
+                 <a tabindex="-1" href="area.html">Sør-Trøndelag</a>
+                 <ul class="dropdown-menu">
+                   <li><a tabindex="-1" href="hyttegrend.html" onclick='buttonClick("aaremsanden");'>Aaremsanden</a></li>
+                 </ul>
+               </li>
+             </ul>
               </div>
               <li class="nav-item"> <a class="nav-link" href="kontakt.html">Kontakt</a> </li>
             </ul>
@@ -73,22 +73,11 @@
        </nav>
 <!-- END NAV BAR -->
 
-  <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="20000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="images/omraader/omraade_ringsaker.png" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="bigtext">RINGSAKER</h1>
-        </div>
-      </div>
-    </div>
-  </div>-->
-
-  <!-- Header image -->
+<!-- Header image -->
       <div class="image_header">
         <img id ="imgHeader" src="images/omraader/omraade_ringsaker.png">
         <div class="centered">
-          <h1 id="atitle"> RINGSAKER</h1>
+          <h1 id="atitle">RINGSAKER</h1>
 
         </div>
       </div>
@@ -225,6 +214,7 @@ Hotell med restaurant, butikk, kafeer og teaterscene.</p>
       <span>Copyright © Tinde Utvikling AS</span>
     </div>
   </footer>
+
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

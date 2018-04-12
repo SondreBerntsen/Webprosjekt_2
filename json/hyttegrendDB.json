@@ -654,7 +654,7 @@ var hyttegrender = {
 
     },
     "lillehammer": {
-        "imgHeader": "images/hyttegrender/lillehammer.jpeg",
+        "imgHeader": "images/hyttegrender/lillehammerSaeter.jpeg",
         "title": "Lillehammer Sæter III",
         "oneliner": "Lillehammerfjellets flotteste hyttetomter selges nå på snøsikre Nordseter!",
         "description": [
@@ -766,7 +766,7 @@ var hyttegrender = {
         }
     },
     "tindegrenda": {
-        "imgHeader": "images/hyttegrender/tindegrenda.jpeg",
+        "imgHeader": "images/hyttegrender/varden.jpeg",
         "title": "Tindegrenda Varden",
         "oneliner": "Arkitekttegnede hytter i Varden!",
         "description": [
@@ -1034,6 +1034,152 @@ var hyttegrender = {
        }
 
    },
+   "raudalen": {
+      "imgHeader": "images/hyttegrender/raudalen.jpeg",
+      "title": "Raudalen",
+      "oneliner": "",
+      "description": [
+          "",
+
+
+      ],
+      "icons": [
+          "avløp",
+          "strøm",
+          "vann",
+          "vei",
+          "butikk",
+          "fisking",
+          "hotell",
+          "jakt",
+          "fisking",
+          "løypenett",
+          "sykkel",
+          "tur",
+      ],
+      "mapData": {
+         "position": {
+           "lat": "",
+           "lng": ""},
+         "markers": [
+           {
+             "propertyNumber": "",
+             "position": {
+               "lat": "",
+               "lng": ""
+             }
+           },
+           {
+             "propertyNumber": "2",
+             "position": {
+               "lat": "",
+               "lng": ""
+             }
+           },
+           {
+             "propertyNumber": "3",
+             "position": {
+               "lat": "",
+               "lng": ""
+             }
+           }
+         ]
+       },
+      "information": {
+          "propertyInfo": [
+              "",
+          ],
+          "facts": [
+              "",
+          ],
+          "priceInfo": [
+              "",
+              "",
+              ""
+          ],
+          "contactInfo":[
+            {
+                "name": "WENCHE STENHAUG",
+                "tlf": "  wenche@tindehytter.no",
+                "email": " 45908159"
+            }
+          ]
+      }
+
+  },
+  "aaremsanden": {
+     "imgHeader": "images/hyttegrender/aaremsanden.jpeg",
+     "title": "Aaremsanden",
+     "oneliner": "",
+     "description": [
+         "",
+
+     ],
+     "icons": [
+         "avløp",
+         "strøm",
+         "vann",
+         "vei",
+         "butikk",
+         "jakt",
+         "sykkel",
+         "tur",
+         "Småbåthavn",
+         "bading",
+         "strand",
+         "fisking",
+     ],
+     "mapData": {
+        "position": {
+          "lat": "",
+          "lng": ""},
+        "markers": [
+          {
+            "propertyNumber": "",
+            "position": {
+              "lat": "",
+              "lng": ""
+            }
+          },
+          {
+            "propertyNumber": "2",
+            "position": {
+              "lat": "",
+              "lng": ""
+            }
+          },
+          {
+            "propertyNumber": "3",
+            "position": {
+              "lat": "",
+              "lng": ""
+            }
+          }
+        ]
+      },
+     "information": {
+         "propertyInfo": [
+             "",
+         ],
+         "arrival": [
+             ""
+         ],
+         "facts": [
+             "",
+         ],
+         "priceInfo": [
+             ""
+         ],
+         "contactInfo":[
+           {
+               "name": "TORBJØRN RANDEN",
+               "tlf": " tr@tindeutvikling.no",
+               "email": " 95030500"
+           }
+         ]
+     }
+
+ },
 
 
 };
