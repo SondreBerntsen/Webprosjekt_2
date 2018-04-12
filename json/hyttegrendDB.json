@@ -11,9 +11,19 @@ var hyttegrender = {
             "Finsandvika er i tillegg et godt utgangspunkt for andre aktiviteter som nærområdet byr på. Kort biltur til Lillehammer med koselig gågate, Maihaugen og andre severdigheter. Brøttum kan også by på flotte langrennsløyper og lysløype, kultursti om sommeren, dagligvareforretning m.m. Ca 30 minutters kjøring til Sjusjøen og Hafjell og en snau time til Kvitfjell."
         ],
         "icons": [
-            // alternatively: "<img src='images/icons/whatever' class='icon'>"
+            "avløp",
+            "strøm",
+            "vann",
+            "vei",
+            "bading",
+            "butikk",
+            "hotell",
             "fisking",
             "jakt",
+            "småbåthavn",
+            "strand",
+            "sykkel",
+            "tur",
         ],
         "mapData": {
           "position": {lat: 61.215699, lng: 10.518729},
