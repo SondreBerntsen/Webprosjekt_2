@@ -207,6 +207,8 @@ hr{
 /* ---------------------------- index --------------------------------*/
 
 /* header image */
+
+/* This isn't needed anymore unless we want to use it again for some reason */
 .hero-image {
 background-image: url("../images/imgindex.png");
 height: 50%;
