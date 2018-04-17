@@ -329,7 +329,7 @@ label span{
     position: relative;
     margin-bottom: 2%;
 }
-.cardAreaInfo {
+.cardAvailability {
     position: absolute;
     top: 20px;
     left: 0;

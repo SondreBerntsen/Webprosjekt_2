@@ -167,7 +167,6 @@ function buttonClick(x){
 function loadContent(x){
     console.log(x);
     var ourData = hyttegrender;
-
     //console.log(hyttegrender);
     $('#imgHeader').attr("src", ourData[x].imgHeader)
     $('#hgtitle').html(ourData[x].title);
@@ -240,21 +239,28 @@ $("#scrollToTable").click(function() {
     }, 2000);
 });
 
-/*function pullCardData(){
-    for(i = 0; i < ourData.length; i++){
-        $('#cardContainer').append('<div class="col-md-6 col-sm-12 filterAreaCard filter_item">');
-        
+function pullCardData(){
+    var ourData = hyttegrender;
+    var grendName = "";
+    for(i = 0; i < Object.keys(ourData).length; i++){
+      temp = Object.keys(ourData)[i];
+      console.log(ourData[grendName].title);
+        //console.log(Object.keys(ourData)[i].name);
+        $('#cardContainer').append('<div class="col-md-6 col-sm-12 filterAreaCard filter_item"></div>');
+
         //repetitive code kind of. Can I even put variable names into addClass()?
-        $('#cardContainer div:last-child').addClass(ourData[i].name); 
-        $('#cardContainer div:last-child').addClass$(ourData[i].icons.join(" "));
-        
-        $('#cardContainer div:last-child').append('<img class="card-img-top thumbnailArea" src="">');
-        
-        $('#cardContainer div:last-child').append();
-        
-        $('#cardContainer div:last-child').append();
-        
-        $('#cardContainer div:last-child').append();
-        
+        $('#cardContainer div:last-child').addClass(Object.keys(ourData)[temp].name);
+        $('#cardContainer div:last-child').addClass$(Object.keys(ourData)[i].icons.join(" "));
+        $('#cardContainer div:last-child').append('<div class="card"></div>');
+
+
+
+        $('#cardContainer div:last-child card').append('<img class="card-img-top thumbnailArea" src="">');
+
+        $('#cardContainer div:last-child card').append('<p class="text-white bg-dark"></p>');
+
+        $('#cardContainer div:last-child card').append('<div class="card-body"></div>');
+
+
     }
-}*/
+}
