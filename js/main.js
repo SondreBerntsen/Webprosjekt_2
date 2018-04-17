@@ -241,7 +241,20 @@ $("#scrollToTable").click(function() {
 });
 
 function pullCardData(){
-    for(i = 0; i < ourData.length; i++;){
-        $('#cardContainer').append('<div class="col-md-6 col-sm-12 filterAreaCard filter_item '+ourData[i].iconsourData[i].icons.join(" ")+">');   
+    for(i = 0; i < ourData.length; i++){
+        $('#cardContainer').append('<div class="col-md-6 col-sm-12 filterAreaCard filter_item">');
+        
+        //repetitive code kind of. Can I even put variable names into addClass()?
+        $('#cardContainer div:last-child').addClass(ourData[i].name); 
+        $('#cardContainer div:last-child').addClass$(ourData[i].icons.join(" "));
+        
+        $('#cardContainer div:last-child').append('<img class="card-img-top thumbnailArea" src="">');
+        
+        $('#cardContainer div:last-child').append();
+        
+        $('#cardContainer div:last-child').append();
+        
+        $('#cardContainer div:last-child').append();
+        
     }
 }
