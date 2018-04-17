@@ -72,6 +72,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .dropdown-submenu>.dropdown-menu {
   top: 0;
   left: 100%;
