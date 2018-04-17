@@ -67,7 +67,7 @@ body {
   font-size: 12px;
 }
 
-.dropdown-menu a {
+a {
   color: black;
   text-decoration: none;
 }
@@ -146,6 +146,29 @@ body {
     border-color: rgba(0,0,0,0);
 }
 
+/* Style the search box inside the navigation bar */
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.searchBar {
+  border-bottom: 1px solid grey;
+}
+
+.navbar button[name=search] {
+  background-color: #FFF;
+  border: 0;
+  color: #565353;
+}
+
+.navbar input:focus {
+    outline-offset: 0px;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
 
 /* --- the sectioin before the footer ----*/
 .tindesection {
@@ -214,6 +237,10 @@ position: relative;
   background-color: #e65c00;
   padding:3px;
   margin: 2px;
+}
+
+.card {
+  margin-bottom: 2%;
 }
 
 
@@ -296,10 +323,6 @@ label span{
 
 /*Syling the areas that are displayed for filterfunction*/
 
-.filterAreaCard {
-    position: relative;
-    margin-bottom: 2%;
-}
 
 .cardAreaInfo {
     position: absolute;
@@ -495,6 +518,24 @@ form .btn-calltoaction{
   .dropdown-menu li a:hover {
     background-color: #d3d3d363;
   }
+
+  .bigtext {
+      margin-bottom: 40px;
+      font-size: 40px;
+  }
+
+  .navbar input[type=text] {
+      float: none;
+      display: inline-block;
+      text-align: left;
+      width: 88%;
+      margin: 0;
+      padding: 14px;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -514,14 +555,9 @@ form .btn-calltoaction{
   .dropdown-menu li:hover {
     background-color: #d3d3d363;
   }
+}
 
-}
-@media only screen and (max-width: 950px) {
-    .bigtext {
-        margin-bottom: 40px;
-        font-size: 40px;
-    }
-}
+
 
 @media only screen and (max-width: 470px) {
     .bigtext {
@@ -537,4 +573,8 @@ form .btn-calltoaction{
         height: 300px;
     }
 }
+
+
+
+
 /* -----------------------------------------------------------------------------------------------------*/
