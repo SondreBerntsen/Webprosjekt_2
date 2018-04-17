@@ -1,138 +1,98 @@
 var omrader = {
-  "gudbrandsdalen": {
-    "title": "",
-    "information": [],
-    "mapData": {
-      "position": {lat: lng: },
-      "markers": [
-        {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
-        },
-        {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
-        },
-        {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
-        }
-      ]
-    },
-    "propertyAreas": [
-      { //these are the "cards". Same shit as the filter elements on index page.
-        "title": "",
-        "oneliner": "",
-        "image": ""
-
-      },
-      {},
-      {}
-    ]
-  },
   "ringsaker": {
-    "title": "",
-    "information": [],
+    "title": "Ringsaker",
+    "information": ["Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten. Gålåtoppen ligger praktfullt til. Høyt og usjenert i det vakre naturlandskapet Gudbrandsdalen og Gålå har å tilby. Veldig solrik beliggenhet og fantastisk utsikt over Gålåvatnet, Jotunheimen og Rondane. Stort løypenett og alpinbakker rett ved hyttefeltet, samt Peer Gynt-vegen med mange sykkel- og turmuligheter. I tillegg er det gode muligheter for bading, jakt og friluftsliv. Hotell med restaurant, butikk, kafeer og teaterscene."],
     "mapData": {
-      "position": {lat: lng: },
+      "position": {lat:61.032268, lng:10.835139 },
       "markers": [
         {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
+          "propertyAreaName": "Finsandvika", //Name the individual pins here?
+          "lat": "61.028574",
+          "lng": "10.553083"
         },
         {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
+          "propertyAreaName": "Lillehammer Sæter III", //Name the individual pins here?
+          "lat": "61.103979",
+          "lng": "10.514317"
         },
-        {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
-        }
       ]
     },
-    "propertyAreas": [
-      { //these are the "cards". Same shit as the filter elements on index page.
-        "title": "",
-        "oneliner": "",
-        "image": ""
-
-      },
-      {},
-      {}
-    ]
+  },
+  "gudbrandsdalen": {
+    "title": "Gudbrandsdalen",
+    "information": ["informasjon om Gudbrandsdalen"],
+    "mapData": {
+      "position": {lat:61.771431, lng:9.540320},
+      "markers": [
+        {
+          "propertyAreaName": "Gålåtoppen", //Name the individual pins here?
+          "lat": "61.483736",
+          "lng": "9.776013"
+        },
+        {
+          "propertyAreaName": "Hafjell", //Name the individual pins here?
+          "lat": "61.234113",
+          "lng": "10.446245"
+        },
+        {
+          "propertyAreaName": "Haugsetra", //Name the individual pins here?
+          "lat": "61.751333",
+          "lng": "9.716454"
+        },
+        {
+          "propertyAreaName": "Herkjinnhø", //Name the individual pins here?
+          "lat": "62.228478",
+          "lng": "9.582755"
+        },
+        {
+          "propertyAreaName": "Hjerkinnlia", //Name the individual pins here?
+          "lat": "62.215196",
+          "lng": "9.567098"
+        },
+        {
+          "propertyAreaName": "Hundyrju", //Name the individual pins here?
+          "lat": "62.089777",
+          "lng": "9.193661"
+        },
+        {
+          "propertyAreaName": "Låvåshaugen", //Name the individual pins here?
+          "lat": "61.713814",
+          "lng": "9.715080"
+        },
+        {
+          "propertyAreaName": "Tindegrenda Varden", //Name the individual pins here?
+          "lat": "61.247141",
+          "lng": "10.474173"
+        },
+      ]
+    },
   },
   "valdres": {
-    "title": "",
-    "information": [],
+    "title": "Valdres",
+    "information": ["informasjon om valdres"],
     "mapData": {
-      "position": {lat: lng: },
+      "position": {lat:52.664113 ,lng:-8.652247 },
       "markers": [
         {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
+          "propertyAreaName": "Raudalen", //Name the individual pins here?
+          "lat": "61.219054",
+          "lng": "8.811872"
         },
-        {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
-        },
-        {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
-        }
       ]
     },
-    "propertyAreas": [
-      { //these are the "cards". Same shit as the filter elements on index page.
-        "title": "",
-        "oneliner": "",
-        "image": ""
-
-      },
-      {},
-      {}
-    ]
   },
   "sor-trondelag": {
-    "title": "",
-    "information": [],
+    "title": "Sør-Trøndelag",
+    "information": ["Infor om Sør Trøndelag"],
     "mapData": {
-      "position": {lat: lng: },
+      "position": {lat:63.572226,  lng:9.784701 },
       "markers": [
         {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
+          "propertyAreaName": "Aaremsanden", //Name the individual pins here?
+          "lat": "63.572226",
+          "lng": "9.784701"
         },
-        {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
-        },
-        {
-          "propertyAreaName": "", //Name the individual pins here?
-          "lat": "",
-          "lng": ""
-        }
       ]
     },
-    "propertyAreas": [
-      { //these are the "cards". Same shit as the filter elements on index page.
-        "title": "",
-        "oneliner": "",
-        "image": ""
-
-      },
-      {},
-      {}
-    ]
   }
 }

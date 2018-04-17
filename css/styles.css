@@ -238,7 +238,7 @@ position: relative;
   padding:3px;
   margin: 2px;
 }
-#cardContainer 
+#cardContainer
 .card {
   margin-bottom: 2%;
   padding: 0;
@@ -366,13 +366,20 @@ label span{
     margin: 30px;
 }
 
-#atitle {
-  font-size:80px;
-  color:white;
-  margin-top: 375px;
+#areaHeaderImg {
+background-image: url("../images/omraader/omraade_ringsaker.png");
+height: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
 
-
+.headerColorOverlay{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
 /* ---------------------hyttegrend -----------------------------*/
 #buttoncontainer {
     margin: 0 auto;
