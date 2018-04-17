@@ -240,7 +240,7 @@ $("#scrollToTable").click(function() {
     }, 2000);
 });
 
-function pullCardData(){
+/*function pullCardData(){
     for(i = 0; i < ourData.length; i++){
         $('#cardContainer').append('<div class="col-md-6 col-sm-12 filterAreaCard filter_item">');
         
@@ -257,4 +257,4 @@ function pullCardData(){
         $('#cardContainer div:last-child').append();
         
     }
-}
+}*/

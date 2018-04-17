@@ -323,14 +323,10 @@ label span{
 
 /*Syling the areas that are displayed for filterfunction*/
 
-<<<<<<< HEAD
 .filterAreaCard {
     position: relative;
     margin-bottom: 2%;
 }
-=======
-
->>>>>>> 255a21bac685e9b0be84563ee86a61355ba4e573
 .cardAreaInfo {
     position: absolute;
     top: 20px;
