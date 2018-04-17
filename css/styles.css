@@ -67,14 +67,9 @@ body {
   font-size: 12px;
 }
 
-a {
+a, a:hover {
   color: black;
   text-decoration: none;
-}
-
-a:hover {
-    color: black;
-    text-decoration: none;
 }
 
 .dropdown-submenu>.dropdown-menu {
