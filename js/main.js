@@ -169,7 +169,7 @@ function loadContent(x){
     var ourData = hyttegrender;
     //console.log(hyttegrender);
     $('#imgHeader').attr("src", ourData[x].imgHeader)
-    $('#hgtitle').html(ourData[x].title);
+    $('#headerTitle').html(ourData[x].title);
     $('#hgoneliner').html(ourData[x].oneliner);
     $('#hgdescription').html("<article id='dArticle'></article>");
 

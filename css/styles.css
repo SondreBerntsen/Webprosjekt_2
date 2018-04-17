@@ -417,8 +417,8 @@ position: relative;
   margin-bottom: 10px;
 }
 
-#hgtitle {
-  font-size: 1em;
+#headerTitle {
+  font-size: 3.5vw;
   color:white;
   margin-top: 100px;
 }
@@ -558,15 +558,18 @@ form .btn-calltoaction{
 }
 
 @media only screen and (max-width: 1200px) {
-   #hgtitle{
-    font-size: 30px;
+   #headerTitle{
     margin-top: 50px;
-  } 
+   } 
 }
 @media only screen and (max-width: 850px) {
-  #scrollTableDiv {
+  .lead {
     display: none;
   }
+    #scrollToTable{
+        width: 25vw;
+        font-size: 2vw;
+    }
 }
 
 
