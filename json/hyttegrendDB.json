@@ -1,5 +1,10 @@
 var hyttegrender = {
     "finsandvika": {
+        "cardInfo": {
+            "image": "",
+            "oneliner": "",
+            "availability": ""
+        },
         "imgHeader": "images/hyttegrender/finsandvika.png",
         "title": "Finsandvika hyttegrend",
         "oneliner": "Store hyttetomter ved Mjøsa. Solrikt beliggende med gode aktivitetsmuligheter året rundt!",
@@ -417,6 +422,7 @@ var hyttegrender = {
                   "email": " tore.rugsveen@tindeutvikling.no"
                 }
             ]
+          
 
       }
 

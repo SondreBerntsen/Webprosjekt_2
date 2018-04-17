@@ -239,3 +239,9 @@ $("#scrollToTable").click(function() {
         scrollTop: $("#propertyTable").offset().top
     }, 2000);
 });
+
+function pullCardData(){
+    for(i = 0; i < ourData.length; i++;){
+        $('#cardContainer').append('<div class="col-md-6 col-sm-12 filterAreaCard filter_item '+ourData[i].iconsourData[i].icons.join(" ")+">');   
+    }
+}
