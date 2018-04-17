@@ -317,7 +317,8 @@ label span{
   border: 0.5px solid lightgray;
   font-weight:normal;
   font-size: 18px;
-  background-color: #e0dfde;
+  background-color: #1d2124;
+  color:white;
   text-align: center;
   padding: 11px;
 }
@@ -341,8 +342,8 @@ label span{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     padding-top: 11px;
-    background: linear-gradient(to right, #e0dfde , #9a9896);
-    color: #000;
+    background: #f1653b;
+    color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
