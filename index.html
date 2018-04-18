@@ -71,9 +71,8 @@
         </div>
        </nav>
   <!-- END NAV BAR -->
-    
-    <div class="image_header">
-        <img id="imgHeader" src="images/imgindex.png">
+
+    <div class="hero-image">
         <div id="overlay" class="opacity20"></div>
         <div class="hero-text">
             <h1 id="headerTitle"class="textShadow">Tinde Utvikling tilbyr et stort utvalg av kvalitetstomter i attraktive hytteområder.</h1>
@@ -186,12 +185,14 @@
                 <p class="text-white bg-dark" style="text-align: center; margin-bottom: -10px;" >Priser: fra 550 000,- til 1 320 000,-</p>
                 <div class="card-body">
                     <h5 class="card-title">GÅLÅTOPPEN (PEER GYNT HYTTEGREND)</h5>
-                <h6 style="color:#6c757d">Gudbrandsdalen</h6>
-                <p class="card-text">Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten.</p>
+                    <h6 style="color:#6c757d">Gudbrandsdalen</h6>
+                    <p class="card-text">Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten.</p>
                 </div>
           </a>
         </div>
+
       </div>
+      <!--
       <div class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei bading fisking golf jakt alpin butikk hotell løypenett sykkel turterreng">
         <div class="card">
           <a href="hyttegrend.html" style="text-decoration:none; color:black;" onclick='buttonClick("hafjell");'>
@@ -327,6 +328,22 @@
               </div></a>
         </div>
       </div>
+    -->
+      <div id="cardTemplate" class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei fisking jakt alpin butikk hotell løypenett sykkel  turterreng">
+        <div class="card">
+          <a href="hyttegrend.html" onclick="">
+            <img class="card-img-top thumbnailArea" src="" >
+            <div class="cardAvailability"><h4 class="availabilityText"></h4></div>
+            <p class="price text-white bg-dark" style="text-align: center; margin-bottom: -10px;" ><!--price info here--></p>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6 class="areaName" style="color:#6c757d"><!--Area name goes here*/--></h6>
+              <p class="card-text"></p>
+            </div>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
   <footer class="tindesection">

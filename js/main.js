@@ -169,7 +169,7 @@ function loadContent(x){
     var ourData = hyttegrender;
     //console.log(hyttegrender);
     $('#imgHeader').attr("src", ourData[x].imgHeader)
-    $('#headerTitle').html(ourData[x].title);
+    $('#hgtitle').html(ourData[x].title);
     $('#hgoneliner').html(ourData[x].oneliner);
     $('#hgdescription').html("<article id='dArticle'></article>");
 
@@ -241,26 +241,44 @@ $("#scrollToTable").click(function() {
 
 function pullCardData(){
     var ourData = hyttegrender;
-    var grendName = "";
+    var container = $('#cardContainer');
+
+
     for(i = 0; i < Object.keys(ourData).length; i++){
       temp = Object.keys(ourData)[i];
-      console.log(ourData[grendName].title);
-        //console.log(Object.keys(ourData)[i].name);
-        $('#cardContainer').append('<div class="col-md-6 col-sm-12 filterAreaCard filter_item"></div>');
-
-        //repetitive code kind of. Can I even put variable names into addClass()?
-        $('#cardContainer div:last-child').addClass(Object.keys(ourData)[temp].name);
-        $('#cardContainer div:last-child').addClass$(Object.keys(ourData)[i].icons.join(" "));
-        $('#cardContainer div:last-child').append('<div class="card"></div>');
+      console.log(ourData[temp].title);
+      var divs = container.children();
+      var lastDiv = divs[divs.length-1];
+      console.log(lastDiv);
 
 
 
-        $('#cardContainer div:last-child card').append('<img class="card-img-top thumbnailArea" src="">');
+      var templateElement = $('#cardTemplate');
+      templateElement.removeAttr("id");
+      templateElement.addClass(ourData[temp].name);
+      templateElement.addClass(ourData[temp].icons.join(" "));
+      templateElement.find("a").attr('onclick', 'buttonClick("qweqwe");');
+      templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+temp+'.jpeg');
+      templateElement.find(".availabilityText").html(ourData[temp].cardInfo.availability);
+      templateElement.find(".price").html(ourData[temp].cardInfo.price);
+      templateElement.find(".card-title").html(ourData[temp].title);
+      templateElement.find(".areaName").html(ourData[temp].area.charAt(0).toUpperCase()+ourData[temp].area.slice(1));
+      templateElement.find(".card-text").html(ourData[temp].oneliner);
 
+      $('#cardContainer').after(templateElement.html());
+
+        /*
+        var child = current.children('section');
+        var lastChild = child[child.length-1];
+        //console.log(lastChild);
+
+        lastChild.append('<img class="card-img-top thumbnailArea" src="">');
+
+        /*
         $('#cardContainer div:last-child card').append('<p class="text-white bg-dark"></p>');
 
         $('#cardContainer div:last-child card').append('<div class="card-body"></div>');
-
+        */
 
     }
 }

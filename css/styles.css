@@ -208,7 +208,7 @@ hr{
 
 /* header image */
 
-/* This isn't needed anymore unless we want to use it again for some reason */
+
 .hero-image {
 background-image: url("../images/imgindex.png");
 height: 50%;
@@ -231,7 +231,7 @@ position: relative;
 .textShadow {
     text-shadow: 2px 2px black;
 }
-#scrolLToTable {
+#scrollToTable {
   text-shadow: 0px;
 }
 
@@ -252,6 +252,9 @@ position: relative;
   padding: 0;
 }
 
+#cardTemplate {
+  display: none;
+}
 
 .hide {
     display: none;
@@ -562,7 +565,7 @@ form .btn-calltoaction{
 @media only screen and (max-width: 1200px) {
    #headerTitle{
     margin-top: 50px;
-   } 
+   }
 }
 @media only screen and (max-width: 850px) {
   .lead {

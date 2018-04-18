@@ -1,10 +1,11 @@
 var hyttegrender = {
     "finsandvika": {
         "name": "finsandvika",
+        "area": "gudbrandsdalen",
         "cardInfo": {
-            "image": "",
-            "oneliner": "",
-            "availability": ""
+            "image": "images/thumbnailsFilter/finsandvikaImg.jpeg",
+            "availability": "3 av 4 tomter ledige", //feil så klart, men let's go
+            "price": "Priser fra: 935000-1735000.-"
         },
         "imgHeader": "images/hyttegrender/finsandvika.png",
         "title": "Finsandvika hyttegrend",
@@ -90,6 +91,13 @@ var hyttegrender = {
         }
     },
     "lavashaugen": {
+      "name": "lavashaugen",
+      "area": "gudbrandsdalen",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/lavashaugen.jpeg",
+          "availability": "", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
         "imgHeader": "images/hyttegrender/laavaashaugen.jpeg",
         "title": "Låvåshaugen panorama",
         "oneliner": "Hyttefeltet ligger på over 1000 moh med panoramautsikt over hele Rondane og Jotunheimen!",
@@ -183,6 +191,13 @@ var hyttegrender = {
 
     },
     "ringebu": {
+      "name": "ringebu",
+      "area": "gudbrandsdalen",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/ringebu.jpeg",
+          "availability": "", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
         "imgHeader": "images/hyttegrender/ringebu.jpeg",
         "title": "Ringebu panorama",
         "oneliner": "Ringebu Panorama er et tomteområde med store tomter i naturskjønne omgivelser på Venabygdsfjellet.",
@@ -255,6 +270,13 @@ var hyttegrender = {
 
     },
     "galatoppen": {
+      "name": "galatoppen",
+      "area": "gudbrandsdalen",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/galatoppen.jpeg",
+          "availability": "x av y ledige", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
       "imgHeader": "images/hyttegrender/peerGynt.jpeg",
       "title": "Galatoppen (Peer Gynt Hyttegrend)",
       "oneliner": "Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten.",
@@ -338,9 +360,15 @@ var hyttegrender = {
               }
           ]
       }
-
-  },
-  "hafjell": {
+    },
+    "hafjell": {
+      "name": "hafjell",
+      "area": "gudbrandsdalen",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/hafjell.jpeg",
+          "availability": "x av y ledige", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
       "imgHeader": "images/hyttegrender/hafjell.jpeg",
       "title": "Hafjell Tindegrenda",
       "oneliner": "KONTAKT TORE RUGSVEEN FOR VISNING! En hytte i dette området gir et godt utgangspunkt til fritidsopplevelser både sommer og vinter!",
@@ -423,12 +451,18 @@ var hyttegrender = {
                   "email": " tore.rugsveen@tindeutvikling.no"
                 }
             ]
-          
+
 
       }
-
-  },
+    },
   "gala": {
+    "name": "gala",
+    "area": "gudbrandsdalen",
+    "cardInfo": {
+        "image": "images/thumbnailsFilter/gala.jpeg",
+        "availability": "x av y ledige", //feil så klart, men let's go
+        "price": "Priser fra: x-y.-"
+    },
     "imgHeader": "images/hyttegrender/gala.jpeg",
     "title": "Gålå fjellandsby",
     "oneliner": "Gålå Fjellandsby ligger nær aktivitetene, midt i hjertet av Gålå sin fantastiske natur! Pris er med hytte.",
@@ -493,8 +527,15 @@ var hyttegrender = {
         ]
     }
 
-},
+  },
 "haugsetra": {
+  "name": "haugsetra",
+  "area": "gudbrandsdalen",
+  "cardInfo": {
+      "image": "images/thumbnailsFilter/haugsetra.jpeg",
+      "availability": "x av y ledige", //feil så klart, men let's go
+      "price": "Priser fra: x-y.-"
+  },
         "imgHeader": "images/hyttegrender/haugsetra.jpeg",
         "title": "Haugsetra Hyttegrend",
         "oneliner": "Ligger flott til ved Haugsetra like ved Rondablikk. Solrike tomter med Flott utsikt mot Jotunheimen og Rondane.",
@@ -581,8 +622,15 @@ var hyttegrender = {
                 }
             ]
         }
-    },
+},
     "hjerkinnho": {
+      "name": "hjerkinnho",
+      "area": "gudbrandsdalen",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/hjerkinnho.jpeg",
+          "availability": "x av y ledige", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
         "imgHeader": "images/hyttegrender/hjerkinnho.jpeg",
         "title": "Herkinnø hyttegrend",
         "oneliner": "Hyttetomter i spektakulært naturlandskap på nasjonalromantiske Dovrefjell!",
@@ -671,6 +719,13 @@ var hyttegrender = {
 
     },
     "lillehammer": {
+      "name": "lillehammer",
+      "area": "ringsaker",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/lillehammer.jpeg",
+          "availability": "x av y ledige", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
         "imgHeader": "images/hyttegrender/lillehammerSaeter.jpeg",
         "title": "Lillehammer Sæter III",
         "oneliner": "Lillehammerfjellets flotteste hyttetomter selges nå på snøsikre Nordseter!",
@@ -783,6 +838,13 @@ var hyttegrender = {
         }
     },
     "tindegrenda": {
+      "name": "tindegrenda",
+      "area": "gudbrandsdalen",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/tindegrenda.jpeg",
+          "availability": "x av y ledige", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
         "imgHeader": "images/hyttegrender/varden.jpeg",
         "title": "Tindegrenda Varden",
         "oneliner": "Arkitekttegnede hytter i Varden!",
@@ -875,6 +937,13 @@ var hyttegrender = {
 
     },
     "hjerkinnlia": {
+      "name": "hjerkinnlia",
+      "area": "gudbrandsdalen",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/hjerkinnlia.jpeg",
+          "availability": "x av y ledige", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
         "imgHeader": "images/hyttegrender/hjerkinnlia.jpeg",
         "title": "Hjerkinnlia fjellgrend",
         "oneliner": "Hyttefelt grenser mot Rondane i sydøst og mot Dovrefjell i nord, med Snøhetta (2286 moh) som majestestisk nabo i vest.",
@@ -961,6 +1030,13 @@ var hyttegrender = {
 
     },
     "hundyrju": {
+      "name": "hundyrju",
+      "area": "gudbrandsdalen",
+      "cardInfo": {
+          "image": "images/thumbnailsFilter/hundyrju.jpeg",
+          "availability": "x av y ledige", //feil så klart, men let's go
+          "price": "Priser fra: x-y.-"
+      },
        "imgHeader": "images/hyttegrender/hundyrju.jpeg",
        "title": "Hundyrju hyttegrend",
        "oneliner": "Hyttetomter på Dovrefjell i naturskjønne omgivelser. Hyttegrenda ligger på ca. 900 moh ca. 6,5 km fra Dombås sentrum.",
@@ -1050,8 +1126,15 @@ var hyttegrender = {
            ]
        }
 
-   },
+     },
    "raudalen": {
+     "name": "raudalen",
+     "area": "valdres",
+     "cardInfo": {
+         "image": "images/thumbnailsFilter/raudalen.jpeg",
+         "availability": "x av y ledige", //feil så klart, men let's go
+         "price": "Priser fra: x-y.-"
+     },
       "imgHeader": "images/hyttegrender/raudalen.jpeg",
       "title": "Raudalen",
       "oneliner": "",
@@ -1123,8 +1206,15 @@ var hyttegrender = {
           ]
       }
 
-  },
+    },
   "aaremsanden": {
+    "name": "aaremsanden",
+    "area": "Sør-Trøndelag",
+    "cardInfo": {
+        "image": "images/thumbnailsFilter/aaremsanden.jpeg",
+        "availability": "x av y ledige", //feil så klart, men let's go
+        "price": "Priser fra: x-y.-"
+    },
      "imgHeader": "images/hyttegrender/aaremsanden.jpeg",
      "title": "Aaremsanden",
      "oneliner": "",
@@ -1196,7 +1286,7 @@ var hyttegrender = {
          ]
      }
 
- },
+   },
 
 
 };
