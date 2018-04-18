@@ -95,7 +95,7 @@ var hyttegrender = {
       "area": "gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/lavashaugen.jpeg",
-          "availability": "", //feil så klart, men let's go
+          "availability": "x av y ledige", //feil så klart, men let's go
           "price": "Priser fra: x-y.-"
       },
         "imgHeader": "images/hyttegrender/laavaashaugen.jpeg",
@@ -195,7 +195,7 @@ var hyttegrender = {
       "area": "gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/ringebu.jpeg",
-          "availability": "", //feil så klart, men let's go
+          "availability": "x av y ledige", //feil så klart, men let's go
           "price": "Priser fra: x-y.-"
       },
         "imgHeader": "images/hyttegrender/ringebu.jpeg",
@@ -455,7 +455,7 @@ var hyttegrender = {
 
       }
     },
-  "gala": {
+  /*"gala": {
     "name": "gala",
     "area": "gudbrandsdalen",
     "cardInfo": {
@@ -527,7 +527,7 @@ var hyttegrender = {
         ]
     }
 
-  },
+  }, */
 "haugsetra": {
   "name": "haugsetra",
   "area": "gudbrandsdalen",

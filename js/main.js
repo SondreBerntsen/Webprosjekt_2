@@ -241,19 +241,17 @@ $("#scrollToTable").click(function() {
 
 function pullCardData(){
     var ourData = hyttegrender;
-    var container = $('#cardContainer');
-
 
     for(i = 0; i < Object.keys(ourData).length; i++){
       temp = Object.keys(ourData)[i];
       console.log(ourData[temp].title);
+      var container = $('#cardContainer');
       var divs = container.children();
       var lastDiv = divs[divs.length-1];
       console.log(lastDiv);
 
+      var templateElement = $('#cardTemplate').clone();
 
-
-      var templateElement = $('#cardTemplate');
       templateElement.removeAttr("id");
       templateElement.addClass(ourData[temp].name);
       templateElement.addClass(ourData[temp].icons.join(" "));
@@ -262,23 +260,9 @@ function pullCardData(){
       templateElement.find(".availabilityText").html(ourData[temp].cardInfo.availability);
       templateElement.find(".price").html(ourData[temp].cardInfo.price);
       templateElement.find(".card-title").html(ourData[temp].title);
-      templateElement.find(".areaName").html(ourData[temp].area.charAt(0).toUpperCase()+ourData[temp].area.slice(1));
+      templateElement.find(".areaName").html(ourData[temp].area);
       templateElement.find(".card-text").html(ourData[temp].oneliner);
 
-      $('#cardContainer').after(templateElement.html());
-
-        /*
-        var child = current.children('section');
-        var lastChild = child[child.length-1];
-        //console.log(lastChild);
-
-        lastChild.append('<img class="card-img-top thumbnailArea" src="">');
-
-        /*
-        $('#cardContainer div:last-child card').append('<p class="text-white bg-dark"></p>');
-
-        $('#cardContainer div:last-child card').append('<div class="card-body"></div>');
-        */
-
+      $(lastDiv).after(templateElement);
     }
 }
