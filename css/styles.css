@@ -284,12 +284,8 @@ input[type='checkbox']:checked {
     background: #e65c00;
 }
 
-#filtertags {
-    margin: 0 auto;
-}
-
 #filterTags{
-  padding: 1%;
+  padding-top: 20px;
   width: 100%;
   min-height: 40px;
 }

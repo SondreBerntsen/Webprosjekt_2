@@ -1,7 +1,7 @@
 var hyttegrender = {
     "finsandvika": {
         "name": "finsandvika",
-        "area": "Gudbrandsdalen",
+        "area": "Ringsaker",
         "cardInfo": {
             "image": "images/thumbnailsFilter/finsandvikaImg.jpeg",
             "availability": "3 av 4 tomter ledige", //feil så klart, men let's go

@@ -181,10 +181,6 @@ function loadContent(x){
         $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon' title='"+ourData[x].icons[i]+"'>");
     }
 
-
-
-
-
     initMapProperties();
 
     function initMapProperties(){
@@ -214,6 +210,7 @@ function loadContent(x){
 
 
     for(i = 0; i < ourData[x].information.arrival.length; i++){
+        var templateParagraph = $('#pTemplate').clone();
         $('#arrival').append("<p>"+ourData[x].information.arrival[i]+"</p>");
     }
 
