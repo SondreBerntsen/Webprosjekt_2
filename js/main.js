@@ -1,5 +1,5 @@
+var filterItems = "";
 $(document).ready(function(){
-    var filterItems = $('.filter_item');
     $('.category_item').click(function(){
         var checkboxes = $('[name=filterData]');
         var selectedMisc = [];
@@ -29,12 +29,12 @@ $(document).ready(function(){
         }//Nå skal verdien for områder ligge i egen array, mens misc ligger i en annen.
         if(selectedAreas.length > 0){
             filterItems.addClass('hideArea');
-            for (var x=0; x<selectedAreas.length; x++){
-                $('.'+selectedAreas[x]).removeClass('hideArea');
+            for (var i=0; i<selectedAreas.length; i++){
+                $('.'+selectedAreas[i]).removeClass('hideArea');
             }
         }
-        for (var j=0; j<selectedMisc.length; j++) {
-            $('.'+selectedMisc[j]).removeClass('hide');
+        for (var i=0; i<selectedMisc.length; i++) {
+            $('.'+selectedMisc[i]).removeClass('hide');
         }
         if(selectedMisc.length == 0){
             filterItems.removeClass('hide');
@@ -248,12 +248,11 @@ function pullCardData(){
       var container = $('#cardContainer');
       var divs = container.children();
       var lastDiv = divs[divs.length-1];
-      console.log(lastDiv);
 
       var templateElement = $('#cardTemplate').clone();
 
       templateElement.removeAttr("id");
-      templateElement.addClass(ourData[temp].name);
+      templateElement.addClass(ourData[temp].area);
       templateElement.addClass(ourData[temp].icons.join(" "));
       templateElement.find("a").attr('onclick', 'buttonClick("qweqwe");');
       templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+temp+'.jpeg');
@@ -264,5 +263,6 @@ function pullCardData(){
       templateElement.find(".card-text").html(ourData[temp].oneliner);
 
       $(lastDiv).after(templateElement);
+      filterItems = $('.filter_item');
     }
 }

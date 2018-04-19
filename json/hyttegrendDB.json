@@ -1,7 +1,7 @@
 var hyttegrender = {
     "finsandvika": {
         "name": "finsandvika",
-        "area": "gudbrandsdalen",
+        "area": "Gudbrandsdalen",
         "cardInfo": {
             "image": "images/thumbnailsFilter/finsandvikaImg.jpeg",
             "availability": "3 av 4 tomter ledige", //feil så klart, men let's go
@@ -92,7 +92,7 @@ var hyttegrender = {
     },
     "lavashaugen": {
       "name": "lavashaugen",
-      "area": "gudbrandsdalen",
+      "area": "Gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/lavashaugen.jpeg",
           "availability": "x av y ledige", //feil så klart, men let's go
@@ -192,7 +192,7 @@ var hyttegrender = {
     },
     "ringebu": {
       "name": "ringebu",
-      "area": "gudbrandsdalen",
+      "area": "Gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/ringebu.jpeg",
           "availability": "x av y ledige", //feil så klart, men let's go
@@ -363,7 +363,7 @@ var hyttegrender = {
     },
     "hafjell": {
       "name": "hafjell",
-      "area": "gudbrandsdalen",
+      "area": "Gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/hafjell.jpeg",
           "availability": "x av y ledige", //feil så klart, men let's go
@@ -457,7 +457,7 @@ var hyttegrender = {
     },
   /*"gala": {
     "name": "gala",
-    "area": "gudbrandsdalen",
+    "area": "Gudbrandsdalen",
     "cardInfo": {
         "image": "images/thumbnailsFilter/gala.jpeg",
         "availability": "x av y ledige", //feil så klart, men let's go
@@ -530,7 +530,7 @@ var hyttegrender = {
   }, */
 "haugsetra": {
   "name": "haugsetra",
-  "area": "gudbrandsdalen",
+  "area": "Gudbrandsdalen",
   "cardInfo": {
       "image": "images/thumbnailsFilter/haugsetra.jpeg",
       "availability": "x av y ledige", //feil så klart, men let's go
@@ -720,7 +720,7 @@ var hyttegrender = {
     },
     "lillehammer": {
       "name": "lillehammer",
-      "area": "ringsaker",
+      "area": "Ringsaker",
       "cardInfo": {
           "image": "images/thumbnailsFilter/lillehammer.jpeg",
           "availability": "x av y ledige", //feil så klart, men let's go
@@ -839,7 +839,7 @@ var hyttegrender = {
     },
     "tindegrenda": {
       "name": "tindegrenda",
-      "area": "gudbrandsdalen",
+      "area": "Gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/tindegrenda.jpeg",
           "availability": "x av y ledige", //feil så klart, men let's go
@@ -1031,7 +1031,7 @@ var hyttegrender = {
     },
     "hundyrju": {
       "name": "hundyrju",
-      "area": "gudbrandsdalen",
+      "area": "Gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/hundyrju.jpeg",
           "availability": "x av y ledige", //feil så klart, men let's go
@@ -1129,7 +1129,7 @@ var hyttegrender = {
      },
    "raudalen": {
      "name": "raudalen",
-     "area": "valdres",
+     "area": "Valdres",
      "cardInfo": {
          "image": "images/thumbnailsFilter/raudalen.jpeg",
          "availability": "x av y ledige", //feil så klart, men let's go
