@@ -169,7 +169,7 @@ function loadContent(x){
     var ourData = hyttegrender;
     //console.log(hyttegrender);
     $('#imgHeader').attr("src", ourData[x].imgHeader)
-    $('#hgtitle').html(ourData[x].title);
+    $('#headerTitle').html(ourData[x].title);
     $('#hgoneliner').html(ourData[x].oneliner);
     $('#hgdescription').html("<article id='dArticle'></article>");
 
@@ -210,7 +210,7 @@ function loadContent(x){
 
 
     for(i = 0; i < ourData[x].information.arrival.length; i++){
-        var templateParagraph = $('#pTemplate').clone();
+        //var templateParagraph = $('#pTemplate').clone(); in the WORKS ;;;;;;;;;;; ))))))))))) ;);););););) ;                                 )
         $('#arrival').append("<p>"+ourData[x].information.arrival[i]+"</p>");
     }
 
@@ -251,7 +251,7 @@ function pullCardData(){
       templateElement.removeAttr("id");
       templateElement.addClass(ourData[temp].area);
       templateElement.addClass(ourData[temp].icons.join(" "));
-      templateElement.find("a").attr('onclick', 'buttonClick("qweqwe");');
+      templateElement.find("a").attr('onclick', 'buttonClick("'+ourData[temp].name+'");');
       templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+temp+'.jpeg');
       templateElement.find(".availabilityText").html(ourData[temp].cardInfo.availability);
       templateElement.find(".price").html(ourData[temp].cardInfo.price);
