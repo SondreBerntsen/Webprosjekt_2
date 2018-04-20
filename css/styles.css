@@ -394,6 +394,10 @@ position: relative;
     margin-bottom: 20px;
 }
 
+.contactEmail {
+  margin-bottom: 10px;
+}
+
 /* Styling the Carousel (aka the seasonal slider on property areas) */
 .carousel-item {
     margin-bottom: 30px;

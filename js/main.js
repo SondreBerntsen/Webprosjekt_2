@@ -238,18 +238,13 @@ function loadContent(x){
     }
 
     for(i = 0; i < ourData[x].information.contactInfo.length; i++){
-        //$('#contactInfo').append("<p>"+ ourData[x].information.contactInfo[i].name+"</p>");
-        //$('#contactInfo').append("<p><i class='fas fa-phone'></i>"+ourData[x].information.contactInfo[i].tlf+"</p>");
-        //$('#contactInfo').append ("<p><span id='email'><i class='fas fa-envelope'></i>"+ourData[x].information.contactInfo[i].email+"</span></p>");
-
         var templateElement = $('#contactTemplate').clone();
         templateElement.removeAttr('id');
         templateElement.find('.contactName').html(ourData[x].information.contactInfo[i].name);
         templateElement.find('.fa-phone').after(ourData[x].information.contactInfo[i].tlf);
         templateElement.find('.fa-envelope').after(ourData[x].information.contactInfo[i].email);
-        $('#contactInfo').append(templateElement.html);
+        $('#contactInfo').append(templateElement.html());
     }
-
 }
 $("#scrollToTable").click(function() {
     $('html, body').animate({
