@@ -171,14 +171,21 @@ function loadContent(x){
     $('#imgHeader').attr("src", ourData[x].imgHeader)
     $('#headerTitle').html(ourData[x].title);
     $('#hgoneliner').html(ourData[x].oneliner);
-    $('#hgdescription').html("<article id='dArticle'></article>");
 
     for(i = 0; i < ourData[x].description.length; i++){
-        $('#dArticle').append("<p>"+ourData[x].description[i]+"</p>");
+        var templateElement = $('#pTemplate').clone();
+        templateElement.removeAttr("id");
+        templateElement.html(ourData[x].description[i]);
+        $('#hgdescription').append(templateElement);
     }
 
     for(i = 0; i < ourData[x].icons.length; i++){
-        $('#icons').append("<img src='images/icons/"+ourData[x].icons[i]+".png' class='icon' title='"+ourData[x].icons[i]+"'>");
+        console.log(ourData[x].icons[i]);
+        var templateElement = $('#iconTemplate').clone();
+        templateElement.removeAttr("id");
+        templateElement.attr('src', 'images/icons/'+ourData[x].icons[i]+'.png');
+        templateElement.attr('title', ourData[x].icons[i]);
+        $('#icons').append(templateElement);
     }
 
     initMapProperties();
@@ -201,32 +208,46 @@ function loadContent(x){
       }
     }
 
-    /*Create propertyInfo div below map, as seen on tindeutvikling.no
-
     for(i = 0; i < ourData[x].information.propertyInfo.length; i++){
-        $('#propertyInfo').append("<p>"+ourData[x].information.propertyInfo[i]+"</p>");
+      var templateElement = $('#pTemplate').clone();
+      templateElement.removeAttr('id');
+      templateElement.html(ourData[x].information.propertyInfo[i]);
+      $('#propertyInfo').append(templateElement);
     }
-    */
 
 
     for(i = 0; i < ourData[x].information.arrival.length; i++){
-        //var templateParagraph = $('#pTemplate').clone(); in the WORKS ;;;;;;;;;;; ))))))))))) ;);););););) ;                                 )
-        $('#arrival').append("<p>"+ourData[x].information.arrival[i]+"</p>");
+      var templateElement = $('#pTemplate').clone();
+      templateElement.removeAttr('id');
+      templateElement.html(ourData[x].information.arrival[i]);
+      $('#arrival').append(templateElement);
     }
 
     for(i = 0; i < ourData[x].information.facts.length; i++){
-        $('#facts').append("<p>"+ourData[x].information.facts[i]+"</p>");
+      var templateElement = $('#pTemplate').clone();
+      templateElement.removeAttr('id');
+      templateElement.html(ourData[x].information.facts[i]);
+      $('#facts').append(templateElement);
     }
 
     for(i = 0; i < ourData[x].information.priceInfo.length; i++){
-        $('#priceInfo').append("<p>"+ourData[x].information.priceInfo[i]+"</p>");
+      var templateElement = $('#pTemplate').clone();
+      templateElement.removeAttr('id');
+      templateElement.html(ourData[x].information.priceInfo[i]);
+      $('#priceInfo').append(templateElement);
     }
 
     for(i = 0; i < ourData[x].information.contactInfo.length; i++){
-        $('#contactInfo').append("<p>"+ ourData[x].information.contactInfo[i].name+"</p>");
-        $('#contactInfo').append("<p><span id='tlf'><i class='fas fa-phone'></i>"+ourData[x].information.contactInfo[i].tlf+"</span></p>");
-        $('#contactInfo').append ("<p><span id='email'><i class='fas fa-envelope'></i>"+ourData[x].information.contactInfo[i].email+"</span></p>");
+        //$('#contactInfo').append("<p>"+ ourData[x].information.contactInfo[i].name+"</p>");
+        //$('#contactInfo').append("<p><i class='fas fa-phone'></i>"+ourData[x].information.contactInfo[i].tlf+"</p>");
+        //$('#contactInfo').append ("<p><span id='email'><i class='fas fa-envelope'></i>"+ourData[x].information.contactInfo[i].email+"</span></p>");
 
+        var templateElement = $('#contactTemplate').clone();
+        templateElement.removeAttr('id');
+        templateElement.find('.contactName').html(ourData[x].information.contactInfo[i].name);
+        templateElement.find('.fa-phone').after(ourData[x].information.contactInfo[i].tlf);
+        templateElement.find('.fa-envelope').after(ourData[x].information.contactInfo[i].email);
+        $('#contactInfo').append(templateElement.html);
     }
 
 }
