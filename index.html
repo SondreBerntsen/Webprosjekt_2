@@ -13,8 +13,27 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
-
 <body onload="pullCardData()">
+ <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
   <!-- I CAN SHOW YOU THE NAAAAAAAV, SHINING SHIMMERING SPLEEEENDIIID  -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">
@@ -66,11 +85,79 @@
                 </li>
               </ul>
               </div>
-              <li class="nav-item"> <a class="nav-link" href="kontakt.html">Kontakt</a> </li>
+              <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Kontakt</a> </li>
             </ul>
         </div>
        </nav>
   <!-- END NAV BAR -->
+    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kontakt oss</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+            <!-- INPUT FIELDS -->
+            <br>
+             <form class="needs-validation" novalidate>
+                  <div class="form-row">
+                      <label for="validationCustom01" class="sr-only">Navn</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Navn" value="" required>
+                          <div class="invalid-feedback">
+                            Ugyldig navn
+                          </div>
+                          <div class="valid-feedback">
+                          </div>
+                  </div>
+                  <br>
+                  <div class="form-row">
+                      <label for="validationCustom03" class="sr-only">Telefonnummer</label>
+                      <input type="number" class="form-control" id="validationCustom03" placeholder="Telefonummer" required>
+                          <div class="invalid-feedback">
+                            Ugyldig telefonnummer
+                          </div>
+                          <div class="valid-feedback">
+                          </div>
+                  </div>
+                  <br>
+                  <div class="form-row">
+                      <label for="validationCustom04" class="sr-only">E-post</label>
+                      <input type="email" class="form-control" id="validationCustom04" placeholder="E-post" required>
+                          <div class="invalid-feedback">
+                            Ugyldig e-post
+                          </div>
+                          <div class="valid-feedback">
+                          </div>
+                  </div>
+                  <br>
+                  <!-- BIG INPUT -->
+            <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Ditt spørsmål</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
+            </div>
+
+                  <!-- SUBMIT -->
+                  <button class="btn btn-primary btn-lg btn-block btn-calltoaction" type="submit">Send</button>
+             </form>
+             </div>
+             <div class="col-sm-4"></div>
+         </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+    
 
     <div class="hero-image">
         <div id="overlay" class="opacity20"></div>
@@ -213,6 +300,8 @@
       <span>Copyright © Tinde Utvikling AS</span>
     </div>
   </footer>
+  
+  
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
