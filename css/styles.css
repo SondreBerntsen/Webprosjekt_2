@@ -149,6 +149,7 @@ a, a:hover {
 .nav-link{
   color:black !important;
   font-family: 'Roboto', sans-serif;
+  cursor:pointer;
 }
 
 .navbar-light .navbar-toggler {
@@ -508,9 +509,9 @@ position: relative;
 }
 
 .btn-calltoaction{
-    background-color: darkorange;
-    border-color: darkorange;
-    color:black;
+    background-color: #f1653b;
+    border-color: #ef5223    ;
+    color:white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 15px 0 rgba(0,0,0,0.19);
     margin-bottom: 20px;
     width: 300px;
@@ -521,9 +522,9 @@ form .btn-calltoaction{
 }
 
 .btn-calltoaction:hover{
-    background-color: orange;
+    background-color: #ef5223;
     border-color: darkorange;
-    color:black;
+    color:white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 22px 50px 0 rgba(0,0,0,0.19);
 }
 
