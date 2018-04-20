@@ -264,7 +264,14 @@ $("#scrollToTable").click(function() {
     }, 2000);
 });
 
-function pullCardData(){
+function pullCardData(){ //needs parameter to be used for both index and area pages
+    /*
+    if(page == index){
+
+    }else if(page == area){
+
+    }
+    */
     var ourData = hyttegrender;
 
     for(i = 0; i < Object.keys(ourData).length; i++){
