@@ -167,24 +167,26 @@ function buttonClick(x){
 function loadContent(x){
     console.log(x);
     var ourData = hyttegrender;
-    //console.log(hyttegrender);
     $('#imgHeader').attr("src", ourData[x].imgHeader)
     $('#headerTitle').html(ourData[x].title);
     $('#hgoneliner').html(ourData[x].oneliner);
 
     for(i = 0; i < ourData[x].description.length; i++){
         var templateElement = $('#pTemplate').clone();
+
         templateElement.removeAttr("id");
         templateElement.html(ourData[x].description[i]);
+
         $('#hgdescription').append(templateElement);
     }
 
     for(i = 0; i < ourData[x].icons.length; i++){
-        console.log(ourData[x].icons[i]);
         var templateElement = $('#iconTemplate').clone();
+
         templateElement.removeAttr("id");
         templateElement.attr('src', 'images/icons/'+ourData[x].icons[i]+'.png');
         templateElement.attr('title', ourData[x].icons[i]);
+
         $('#icons').append(templateElement);
     }
 
@@ -210,39 +212,49 @@ function loadContent(x){
 
     for(i = 0; i < ourData[x].information.propertyInfo.length; i++){
       var templateElement = $('#pTemplate').clone();
+
       templateElement.removeAttr('id');
       templateElement.html(ourData[x].information.propertyInfo[i]);
+
       $('#propertyInfo').append(templateElement);
     }
 
 
     for(i = 0; i < ourData[x].information.arrival.length; i++){
       var templateElement = $('#pTemplate').clone();
+
       templateElement.removeAttr('id');
       templateElement.html(ourData[x].information.arrival[i]);
+
       $('#arrival').append(templateElement);
     }
 
     for(i = 0; i < ourData[x].information.facts.length; i++){
       var templateElement = $('#pTemplate').clone();
+
       templateElement.removeAttr('id');
       templateElement.html(ourData[x].information.facts[i]);
+
       $('#facts').append(templateElement);
     }
 
     for(i = 0; i < ourData[x].information.priceInfo.length; i++){
       var templateElement = $('#pTemplate').clone();
+
       templateElement.removeAttr('id');
       templateElement.html(ourData[x].information.priceInfo[i]);
+
       $('#priceInfo').append(templateElement);
     }
 
     for(i = 0; i < ourData[x].information.contactInfo.length; i++){
         var templateElement = $('#contactTemplate').clone();
+
         templateElement.removeAttr('id');
         templateElement.find('.contactName').html(ourData[x].information.contactInfo[i].name);
         templateElement.find('.fa-phone').after(ourData[x].information.contactInfo[i].tlf);
         templateElement.find('.fa-envelope').after(ourData[x].information.contactInfo[i].email);
+
         $('#contactInfo').append(templateElement.html());
     }
 }
@@ -257,13 +269,8 @@ function pullCardData(){
 
     for(i = 0; i < Object.keys(ourData).length; i++){
       temp = Object.keys(ourData)[i];
-      console.log(ourData[temp].title);
-      var container = $('#cardContainer');
-      var divs = container.children();
-      var lastDiv = divs[divs.length-1];
 
       var templateElement = $('#cardTemplate').clone();
-
       templateElement.removeAttr("id");
       templateElement.addClass(ourData[temp].area);
       templateElement.addClass(ourData[temp].icons.join(" "));
@@ -275,7 +282,7 @@ function pullCardData(){
       templateElement.find(".areaName").html(ourData[temp].area);
       templateElement.find(".card-text").html(ourData[temp].oneliner);
 
-      $(lastDiv).after(templateElement);
+      $('#cardContainer').append(templateElement);
       filterItems = $('.filter_item');
     }
 }

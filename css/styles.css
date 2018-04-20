@@ -393,7 +393,9 @@ position: relative;
     text-align: center;
     margin-bottom: 20px;
 }
-
+#propertyInfo {
+  text-align: center;
+}
 .contactEmail {
   margin-bottom: 10px;
 }
