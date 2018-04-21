@@ -608,6 +608,9 @@ form .btn-calltoaction{
         margin-bottom: 50px;
         font-size: 30px;
     }
+    .hero-image {
+        display:none;
+    }
 }
 
 /* Styling the footer for mobile and pad sizes. If you change this, the footer will look ugly. */
