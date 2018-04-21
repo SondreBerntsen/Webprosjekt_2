@@ -610,17 +610,6 @@ form .btn-calltoaction{
     }
 }
 
-@media only screen and (max-width: 470px) {
-    .hero-image {
-        display:none;
-    }
-}
-
-
-.hero-image {
-    
-}
-
 /* Styling the footer for mobile and pad sizes. If you change this, the footer will look ugly. */
 
 @media only screen and (max-width: 767px) {
