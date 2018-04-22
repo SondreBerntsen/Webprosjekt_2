@@ -337,7 +337,7 @@ label span{
   padding: 11px;
 }
 .showCheckbox:hover{
-  background-color: lightgray;
+  background-color: #1d2124e8;
   cursor: pointer;
 }
 
