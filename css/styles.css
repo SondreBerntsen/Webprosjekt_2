@@ -239,13 +239,23 @@ position: relative;
   color: #FFF;
   font-size: 4em;
 }
+
 .textShadow {
     text-shadow: 2px 2px black;
 }
+
 #scrollToTable {
   text-shadow: 0px;
 }
 
+#cardTemplate .card a .price {
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+#cardTemplate .card-body h6 { 
+  color: #6c757d;
+}
 
 /* Making sure the filter checkboxes are. Looking. Good. */
 .tagFilter{
@@ -377,6 +387,11 @@ label span{
     margin-top: -30px;
 }
 
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
 .bigtext {
     margin-bottom: 20px;
     font-size: 64px;
@@ -419,6 +434,10 @@ position: relative;
 /* Styling the Carousel (aka the seasonal slider on property areas) */
 .carousel-item {
     margin-bottom: 30px;
+}
+
+#controls .carousel-inner {
+  max-height: 450px;
 }
 
 /* Centered text */
