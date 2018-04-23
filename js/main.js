@@ -190,7 +190,7 @@ function loadContent(x){
         $('#icons').append(templateElement);
     }
 
-    initMapProperties();
+    /* initMapProperties(); */
 
     function initMapProperties(){
       var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
