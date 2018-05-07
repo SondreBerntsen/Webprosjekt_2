@@ -282,6 +282,7 @@ function pullCardData(){ //needs parameter to be used for both index and area pa
       templateElement.addClass(ourData[temp].area);
       templateElement.addClass(ourData[temp].icons.join(" "));
       templateElement.find("a").attr('onclick', 'buttonClick("'+ourData[temp].name+'");');
+      templateElement.find("a").attr('href', 'area/'+ourData[temp].name);
       templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+temp+'.jpeg');
       templateElement.find(".availabilityText").html(ourData[temp].cardInfo.availability);
       templateElement.find(".price").html(ourData[temp].cardInfo.price);
