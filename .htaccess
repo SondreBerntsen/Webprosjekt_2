@@ -2,5 +2,5 @@ RewriteEngine On    # Turn on the rewriting engine
 
 #Rewriterule ^(index.html)$ index.html [NC,L]
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^[a-zA-Z]+/[a-zA-Z]+$ areas/propertyArea.html [NC,L]
+RewriteRule ^[a-zA-Z]+/[a-zA-Z]+$ home.html [NC,L]
 #RewriteRule ^[a-zA-Z]+$ areas/area.html    [NC,L]
