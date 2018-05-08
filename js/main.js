@@ -159,13 +159,16 @@ $(document).ready(function(){
 
 
 //Blabla skikkelig bra kommentering
-
+/*
 function buttonClick(x){
     localStorage.setItem("hyttegrend", x);
 }
+*/
 
 function loadContent(x){
+    //var x = path[4];
     console.log(x);
+
     var ourData = hyttegrender;
     $('#imgHeader').attr("src", "../"+ourData[x].imgHeader)
     $('#headerTitle').html(ourData[x].title);
