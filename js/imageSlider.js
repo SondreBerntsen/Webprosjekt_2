@@ -17,54 +17,37 @@ var d = new Date();
 var currentSeason = season[d.getMonth()];
 
 if ( currentSeason == "Winter" ){
-  winterImages();
+
+  sliderImages("winter", "summerBtn", "springBtn", "fallBtn");
 }
 else if ( currentSeason == "Spring" ){
-  springImages();
+  sliderImages("spring", "summerBtn", "winterBtn", "fallBtn");
 }
 else if ( currentSeason == "Summer" ){
-  summerImages();
+  sliderImages("summer", "springBtn", "winterBtn", "fallBtn");
 }
 else{
-  fallImages();
+  sliderImages("fall", "summerBtn", "winterBtn", "springBtn");
 }
-function winterImages() {
-  $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_winter1.png");
-  $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_winter2.png");
-  $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_winter3.png");
-  $('#winterBtn').attr("class"," btn btn-info");
-  $("#springBtn, #summerBtn, #fallBtn").attr("class"," btn btn-primary");
+function sliderImages(season, seasonBtn1, seasonBtn2, seasonBtn3 ) {
+
+  $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_"+season+"1.png");
+  $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_"+season+"2.png");
+  $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_"+season+"3.png");
+
+  $('#'+season+"Btn").attr("class"," btn btn-info");
+  $('#'+seasonBtn1+', #'+seasonBtn2+', #'+seasonBtn3).attr("class", "btn btn-primary");
 }
-function springImages() {
-  $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_spring1.png");
-  $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_spring2.png");
-  $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_spring3.png");
-  $('#springBtn').attr("class"," btn btn-info");
-  $("#summerBtn, #winterBtn, #fallBtn").attr("class"," btn btn-primary");
-}
-function summerImages() {
-  $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_summer1.png");
-  $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_summer2.png");
-  $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_summer3.png");
-  $('#summerBtn').attr("class","btn btn-info");
-  $("#springBtn, #winterBtn, #fallBtn").attr("class","btn btn-primary");
-}
-function fallImages() {
-  $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_fall1.png");
-  $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_fall2.png");
-  $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_fall3.png");
-  $('#fallBtn').attr("class","btn btn-info");
-  $("#springBtn, #winterBtn, #summerBtn").attr("class","btn btn-primary");
-}
+
 $("#winterBtn").click(function(){
-    winterImages();
+    sliderImages("winter", "summerBtn", "springBtn", "fallBtn");
 });
 $("#springBtn").click(function(){
-  springImages();
+  sliderImages("spring", "summerBtn", "winterBtn", "fallBtn");
 });
 $("#summerBtn").click(function(){
-  summerImages();
+  sliderImages("summer", "springBtn", "winterBtn", "fallBtn");
 });
 $("#fallBtn").click(function(){
-  fallImages();
+  sliderImages("fall", "summerBtn", "winterBtn", "springBtn");
 });
