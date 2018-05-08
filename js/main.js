@@ -109,7 +109,7 @@ function loadContent(x){
     var ourData = hyttegrender;
     $('#imgHeader').attr("src", "../"+ourData[x].imgHeader)
     $('#headerTitle').html(ourData[x].title);
-    $('#hgoneliner').html(ourData[x].oneliner); 
+    $('#hgoneliner').html(ourData[x].oneliner);
 
     for(i = 0; i < ourData[x].description.length; i++){
         var templateElement = $('#pTemplate').clone();
@@ -221,7 +221,7 @@ function pullCardData(){ //needs parameter to be used for both index and area pa
       templateElement.removeAttr("id");
       templateElement.addClass(ourData[temp].area);
       templateElement.addClass(ourData[temp].icons.join(" "));
-      templateElement.find("a").attr('href', 'area/'+ourData[temp].name);
+      templateElement.find("a").attr('href', ourData[temp].area.toLowerCase()+'/'+ourData[temp].name);
       templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+temp+'.jpeg');
       templateElement.find(".availabilityText").html(ourData[temp].cardInfo.availability);
       templateElement.find(".price").html(ourData[temp].cardInfo.price);
