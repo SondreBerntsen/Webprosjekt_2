@@ -103,14 +103,13 @@ $(document).ready(function(){
     }*/
 });
 
-
 function loadContent(x){
     console.log(x);
 
     var ourData = hyttegrender;
     $('#imgHeader').attr("src", "../"+ourData[x].imgHeader)
     $('#headerTitle').html(ourData[x].title);
-    $('#hgoneliner').html(ourData[x].oneliner);
+    $('#hgoneliner').html(ourData[x].oneliner); 
 
     for(i = 0; i < ourData[x].description.length; i++){
         var templateElement = $('#pTemplate').clone();
