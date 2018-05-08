@@ -1,5 +1,6 @@
 RewriteEngine On    # Turn on the rewriting engine
 
 #Rewriterule ^(index.html)$ index.html [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)/(.*)$ areas/propertyArea.html [NC,L]
 #RewriteRule ^(.*)$ areas/areas.html    [NC,L]

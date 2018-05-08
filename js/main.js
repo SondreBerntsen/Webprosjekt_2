@@ -104,15 +104,7 @@ $(document).ready(function(){
 });
 
 
-//Blabla skikkelig bra kommentering
-/*
-function buttonClick(x){
-    localStorage.setItem("hyttegrend", x);
-}
-*/
-
 function loadContent(x){
-    //var x = path[4];
     console.log(x);
 
     var ourData = hyttegrender;
@@ -230,7 +222,6 @@ function pullCardData(){ //needs parameter to be used for both index and area pa
       templateElement.removeAttr("id");
       templateElement.addClass(ourData[temp].area);
       templateElement.addClass(ourData[temp].icons.join(" "));
-      templateElement.find("a").attr('onclick', 'buttonClick("'+ourData[temp].name+'");');
       templateElement.find("a").attr('href', 'area/'+ourData[temp].name);
       templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+temp+'.jpeg');
       templateElement.find(".availabilityText").html(ourData[temp].cardInfo.availability);
