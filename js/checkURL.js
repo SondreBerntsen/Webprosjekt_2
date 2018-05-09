@@ -7,9 +7,12 @@ function checkURL(path){
   var areaRegex = /\/webprosjekt_2\/[A-Za-z]+$/;
 
   if(path.match(homeRegex)){
-    //load home.html
-  }
 
+    console.log("Pretty sure HOME loads now, right?");
+    $('#SPAContent').load('home.html', function() {
+      pullCardData();
+    });
+  }
 
   if(path.match(propertyAreaRegex)){
     var PAData = hyttegrender;
@@ -25,8 +28,10 @@ function checkURL(path){
       console.log("Cool beans, load the property area page.");
 
       //$.getScript('/webprosjekt_2/js/mapPlot.js'); like this or wat?
-      //$('#SPAContent').load('/webprosjekt_2/areas/propertyArea.html');
-      loadContent(PAIndex);
+
+      $('#SPAContent').load('/webprosjekt_2/areas/propertyArea.html', function() {
+        loadContent(PAIndex);
+      });
     }
     else{
       //load 404.html with some info maybe
@@ -34,7 +39,7 @@ function checkURL(path){
     }
 
   }
-  else if(path.match(areaRegex)){
+  /*else if(path.match(areaRegex)){
     //Check if data[path] or whatever exists
     var areaData = omrader;
     var areaIndex = path.split('webprosjekt_2/')[1];
@@ -47,7 +52,7 @@ function checkURL(path){
 
       $('#SPAContent').load('/webprosjekt_2/areas/area.html');
     }
-  }
+  }*/
   else{
     //load 404.html
   }

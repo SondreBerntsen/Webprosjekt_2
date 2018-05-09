@@ -1,5 +1,6 @@
 var filterItems = "";
 $(document).ready(function(){
+  console.log('hellooooo');
     $('.category_item').click(function(){
         var checkboxes = $('[name=filterData]');
         var selectedMisc = [];

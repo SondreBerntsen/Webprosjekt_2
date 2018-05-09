@@ -1,167 +1,150 @@
-<html lang="en">
 
-<head>
-  <!-- Required meta tags always come first -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Webprosjekt 2</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="/webprosjekt_2/css/styles.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-</head>
-<body onload="checkURL(window.location.pathname)">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">
-      <img src="/webprosjekt_2/images/logo.svg"  id="logo_link">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"> <a class="nav-link active" href="index.html">Hjem</a> </li>
-        <div class="dropdown">
-          <a id="dropOmraade" data-toggle="dropdown" data-target="#" href="#">
-                 Områder <span class="fas fa-chevron-down"></span>
-             </a>
-          <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-            <li class="dropdown-submenu">
-              <a tabindex="-1" href="areas/area.html">Ringsaker</a>
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="areas/propertyArea.html" onclick='buttonClick("finsandvika");'>Finsandvika areas/propertyArea</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("lillehammer");'>Lillehammer Sæter 3</a></li>
-              </ul>
-            </li>
-            <li class="dropdown-submenu">
-              <a tabindex="-1" href="areas/area.html">Gudbrandsdalen</a>
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="areas/propertyArea.html" onclick='buttonClick("galatoppen");'>Gålåtoppen</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("hafjell");'>Hafjell Tindegrenda</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("haugsetra");'>Haugsetra areas/propertyArea</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("hjerkinnho");'>Hjerkinnhø areas/propertyArea</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("hjerkinnlia");'>Hjerkinnlia Fjellgrend</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("hundyrju");'>Hundyrju areas/propertyArea</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("lavashaugen");'>Låvåshaugen Panorama</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("ringebu");'>Ringebu Panorama</a></li>
-                <li><a href="areas/propertyArea.html" onclick='buttonClick("tindegrenda");'>Tindegrenda Varden</a></li>
-              </ul>
-            </li>
-            <li class="dropdown-submenu">
-              <a tabindex="-1" href="areas/area.html">Valdres</a>
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="areas/propertyArea.html" onclick='buttonClick("raudalen");'>Raudalen</a></li>
-              </ul>
-            </li>
-            <li class="dropdown-submenu">
-              <a tabindex="-1" href="areas/area.html">Sør-Trøndelag</a>
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="areas/propertyArea.html" onclick='buttonClick("aaremsanden");'>Aaremsanden</a></li>
-              </ul>
-            </li>
-          </ul>
+<!--
+ <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+-->
+
+    <div class="hero-image">
+        <div id="overlay" class="opacity20"></div>
+        <div class="hero-text">
+            <h1 id="headerTitle"class="textShadow">Tinde Utvikling tilbyr et stort utvalg av kvalitetstomter i attraktive hytteområder.</h1>
         </div>
-        <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Kontakt</a> </li>
-      </ul>
     </div>
-    <div class="searchBar">
-      <input type="text" placeholder="Search..">
-      <button name="search" type="submit"><i class="fa fa-search"></i></button>
-    </div>
-  </nav>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Kontakt oss</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-               </button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-12">
-                <!-- INPUT FIELDS -->
-                <br>
-                <form class="needs-validation" novalidate>
-                  <div class="form-row">
-                    <label for="validationCustom01" class="sr-only">Navn</label>
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Navn" value="" required>
-                    <div class="invalid-feedback">
-                      Ugyldig navn
-                    </div>
-                    <div class="valid-feedback">
-                    </div>
-                  </div>
-                  <br>
-                  <div class="form-row">
-                    <label for="validationCustom03" class="sr-only">Telefonnummer</label>
-                    <input type="number" class="form-control" id="validationCustom03" placeholder="Telefonummer" required>
-                    <div class="invalid-feedback">
-                      Ugyldig telefonnummer
-                    </div>
-                    <div class="valid-feedback">
-                    </div>
-                  </div>
-                  <br>
-                  <div class="form-row">
-                    <label for="validationCustom04" class="sr-only">E-post</label>
-                    <input type="email" class="form-control" id="validationCustom04" placeholder="E-post" required>
-                    <div class="invalid-feedback">
-                      Ugyldig e-post
-                    </div>
-                    <div class="valid-feedback">
-                    </div>
-                  </div>
-                  <br>
-                  <!-- BIG INPUT -->
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Ditt spørsmål</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
-                  </div>
-
-                  <!-- SUBMIT -->
-                  <button class="btn btn-primary btn-lg btn-block btn-calltoaction" type="submit">Send</button>
-                </form>
-              </div>
-              <div class="col-sm-12"></div>
+<!-- filter -->
+  <div class="container">
+    <div id="filtertags">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <h4 class="showCheckbox">Område <span class="arrow fas fa-chevron-down"></span></h4>
+          <div class="hideCheckbox">
+            <hr />
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Gudbrandsdalen"><span>Gudbrandsdalen</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Ringsaker"><span>Ringsaker</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Valdres"><span>Valdres</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Sør-Trøndelag"><span>Sør-trøndelag</span></label>
             </div>
           </div>
         </div>
+
+        <div class="col-sm-12 col-md-3">
+          <h4 class="showCheckbox">Aktivteter<span class="arrow fas fa-chevron-down"></span></h4>
+          <div class="hideCheckbox">
+            <hr />
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Bading"><span>Bading</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Fisking"><span>Fisking</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Golf"><span>Golf</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Jakt"><span>Jakt</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Alpin"><span>Alpin</span></label>
+            </div>
+          </div>
+          </div>
+
+        <div class="col-sm-12 col-md-3">
+          <h4 class="showCheckbox">Fasiliteter<span class="arrow fas fa-chevron-down"></span></h4>
+          <div class="hideCheckbox">
+            <hr />
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Butikk"><span>Butikk</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Hotell"><span>Hotell</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Småbåthavn"><span>Småbåthavn</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Løypenett"><span>Løypenett</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Strand"><span>Strand</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Sykkel"><span>Sykkel</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Turterreng"><span>Turterreng</span></label>
+            </div>
+          </div>
+
+          </div>
+
+        <div class="col-sm-12 col-md-3">
+          <h4 class="showCheckbox">Infrastruktur<span class="arrow fas fa-chevron-down"></span></h4>
+          <div class="hideCheckbox">
+            <hr />
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Avløp"><span>Avløp</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Strøm"><span>Strøm</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Vann"><span>Vann</span></label>
+            </div>
+            <div class="form-check">
+              <label><input class="form-check-input category_item" type="checkbox" name ="filterData" value="Vei"><span>Vei</span></label>
+            </div>
+          </div>
+
+        </div>
       </div>
+    </div>
+    <div id="filterTags"></div>
+    <hr />
+
+    <div id="cardContainer" class="row">
+
+
+    <div></div>
+      <div id="cardTemplate" class="col-md-6 col-sm-12 filterAreaCard filter_item gudbrandsdalen avløp strøm vann vei fisking jakt alpin butikk hotell løypenett sykkel  turterreng">
+        <div class="card">
+          <a href="areas/propertyArea.html" onclick="">
+            <img class="card-img-top thumbnailArea" src="" >
+            <div class="cardAvailability"><h4 class="availabilityText"></h4></div>
+            <p class="price text-white bg-dark" style="text-align: center; margin-bottom: -10px;" ><!--price info here--></p>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6 class="areaName" style="color:#6c757d"><!--Area name goes here*/--></h6>
+              <p class="card-text"></p>
+            </div>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <div id="SPAContent"></div>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="/webprosjekt_2/json/hyttegrendDB.json"></script>
-  <script src="/webprosjekt_2/json/omradeDB.json"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="/webprosjekt_2/js/main.js"></script>
-  <script src="/webprosjekt_2/js/checkURL.js"></script>
-
-  <footer class="tindesection">
-    <div class="container">
-      <div class="contact-right-info">
-        <h3>Kontakt</h3>
-        <span><i class="fas fa-phone"></i>  950 30 500 </span>
-        <br>
-        <span><i class="far fa-envelope"></i> post@tindeutvikling.no</span>
-      </div>
-    </div>
-  </footer>
-  <footer class="footer">
-    <div class="container">
-      <span>Copyright © Tinde Utvikling AS</span>
-    </div>
-  </footer>
-</body>
-</html>
+    <script src="/webprosjekt_2/js/filter.js"></script>

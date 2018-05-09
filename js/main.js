@@ -104,7 +104,6 @@ $(document).ready(function(){
 });
 
 function loadContent(x){
-    console.log(x);
 
     var ourData = hyttegrender;
     $('#imgHeader').attr("src", "../"+ourData[x].imgHeader)
