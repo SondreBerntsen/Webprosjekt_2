@@ -1,6 +1,7 @@
 function checkURL(path){
   console.log(path);
-
+  path = path.toLowerCase();
+  console.log(path);
 
   var homeRegex = /\/webprosjekt_2\/home$/;
   var propertyAreaRegex = /\/webprosjekt_2\/[A-Za-z]+\/[A-Za-z]+$/;
@@ -15,6 +16,7 @@ function checkURL(path){
   }
 
   if(path.match(propertyAreaRegex)){
+
     var PAData = hyttegrender;
     var relevantPath = path.split('webprosjekt_2/')[1];
     var arrayURL = relevantPath.split('/');
