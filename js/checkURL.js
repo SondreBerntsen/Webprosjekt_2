@@ -1,7 +1,5 @@
 function checkURL(path){
-  console.log(path);
   path = path.toLowerCase();
-  console.log(path);
 
   var homeRegex = /\/webprosjekt_2\/home$/;
   var indexRegex = /\/webprosjekt_2\/index\.html$/;

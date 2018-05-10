@@ -22,27 +22,7 @@ function loadContent(x){
 
         $('#icons').append(templateElement);
     }
-
-    //initMapProperties();
-
-    function initMapProperties(){
-      var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
-        zoom: 16,
-        center: ourData[x].mapData.position,
-        mapTypeId: 'hybrid'
-      });
-      console.log(ourData[x].mapData.markers.length);
-
-      for (i = 0; i < ourData[x].mapData.markers.length; i++){
-        var markerPosition = ourData[x].mapData.markers[i].position;
-        var labelNumber = ourData[x].mapData.markers[i].propertyNumber;
-        var marker = new google.maps.Marker({
-          position: markerPosition,
-          label: labelNumber,
-          map: map
-        });
-      }
-    }
+    initMapProperties(ourData[x]);
 
     for(i = 0; i < ourData[x].information.propertyInfo.length; i++){
       var templateElement = $('#pTemplate').clone();
@@ -104,8 +84,6 @@ function loadNavItems(){
 
   for(i = 0; i < Object.keys(areaData).length; i++){
     var temp = Object.keys(areaData)[i];
-    console.log(temp);
-
     var area = areaData[temp].title.toLowerCase();
     var templateElement = $('#navAreaTemplate').clone();
 
@@ -116,13 +94,31 @@ function loadNavItems(){
     for(j = 0; j < areaData[temp].propertyAreas.length; j++){
       var propArea = areaData[temp].propertyAreas[j].toLowerCase();
       var templateSubElement = $('#navPATemplate').clone();
-      console.log(propArea);
+
       templateSubElement.removeAttr("id");
       templateSubElement.find('a').attr('href', '/webprosjekt_2/'+area+'/'+propArea);
       templateSubElement.find('a').html(areaData[temp].mapData.markers[j].propertyAreaName);
       templateElement.find('ul').append(templateSubElement);
     }
     $('#navElementContainer').append(templateElement);
+  }
+}
+
+function initMapProperties(PA){
+  var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
+    center: PA.mapData.position,
+    zoom: 16,
+    mapTypeId: 'hybrid'
+  });
+
+  for (i = 0; i < PA.mapData.markers.length; i++){
+    var markerPosition = PA.mapData.markers[i].position;
+    var labelNumber = PA.mapData.markers[i].propertyNumber;
+    var marker = new google.maps.Marker({
+      position: markerPosition,
+      label: labelNumber,
+      map: map
+    });
   }
 }
 
