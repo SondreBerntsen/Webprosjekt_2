@@ -107,25 +107,23 @@ function loadNavItems(){
     console.log(temp);
 
     var area = areaData[temp].title.toLowerCase();
-    var templateElement = $('#navItemAreaTemplate').clone();
+    var templateElement = $('#navAreaTemplate').clone();
 
     templateElement.removeAttr("id");
     templateElement.find('a').attr('href', area);
     templateElement.find('a').html(areaData[temp].title);
 
     for(j = 0; j < areaData[temp].propertyAreas.length; j++){
-      var templateSubElement = $('#navItemPATemplate').clone();
       var propArea = areaData[temp].propertyAreas[j].toLowerCase();
-
-      templateElement.find('.dropdown-menu').append(templateSubElement).html;
-      templateSubElement.removeAttr('id');
+      var templateSubElement = $('#navPATemplate').clone();
+      console.log(propArea);
+      templateSubElement.removeAttr("id");
       templateSubElement.find('a').attr('href', propArea);
-      templateSubElement.find('a').html(areaData[temp].mapData.markers[j]);
+      templateSubElement.find('a').html(areaData[temp].mapData.markers[j].propertyAreaName);
+      templateElement.find('ul').append(templateSubElement);
     }
-    $('#navElementContainer').append(templateElement).html;
-
+    $('#navElementContainer').append(templateElement);
   }
-
 }
 
 function pullCardData(){ //needs parameter to be used for both index and area pages

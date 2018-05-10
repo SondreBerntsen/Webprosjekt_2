@@ -58,10 +58,7 @@ body {
 
 /*GOTTA FIX THAT MARGIN TOP ON FIRST ELEMENTSr*/
 .dropdown-menu li {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: 15px;
   font-family: 'Roboto', sans-serif;
 
 }
@@ -253,7 +250,7 @@ position: relative;
   margin-bottom: -10px;
 }
 
-#cardTemplate .card-body h6 { 
+#cardTemplate .card-body h6 {
   color: #6c757d;
 }
 
@@ -278,7 +275,7 @@ position: relative;
 }
 
 
-#cardTemplate {
+#cardTemplate, #navPATemplate, #navAreaTemplate {
   display: none;
 }
 
