@@ -43,7 +43,10 @@ function checkURL(path){
     }
 
   }
-  /*else if(path.match(areaRegex)){
+  else if(
+    !path.match(homeRegex) &&
+    path.match(areaRegex)
+  ){
     //Check if data[path] or whatever exists
     var areaData = omrader;
     var areaIndex = path.split('webprosjekt_2/')[1];
@@ -56,7 +59,7 @@ function checkURL(path){
 
       $('#SPAContent').load('/webprosjekt_2/areas/area.html');
     }
-  }*/
+  }
   else{
     //load 404.html
   }
