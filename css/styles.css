@@ -133,7 +133,7 @@ a, a:hover {
 }
 
 .active {
-  background-color: #e0dfde;
+  border-bottom: 2px solid black;
 }
 
 /*---- other navbar elements -------*/
