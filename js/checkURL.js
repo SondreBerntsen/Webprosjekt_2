@@ -4,10 +4,12 @@ function checkURL(path){
   console.log(path);
 
   var homeRegex = /\/webprosjekt_2\/home$/;
+  var indexRegex = /\/webprosjekt_2\/index\.html$/;
+  var defaultRegex = /\/webprosjekt_2\/$/;
   var propertyAreaRegex = /\/webprosjekt_2\/[A-Za-z]+\/[A-Za-z]+$/;
   var areaRegex = /\/webprosjekt_2\/[A-Za-z]+$/;
 
-  if(path.match(homeRegex)){
+  if(path.match(homeRegex) || path.match(indexRegex) || path.match(defaultRegex)){
 
     console.log("Pretty sure HOME loads now, right?");
     $('#SPAContent').load('home.html', function() {

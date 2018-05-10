@@ -1,110 +1,4 @@
-
-$(document).ready(function(){
-    /*var myIndex = 0;
-    carousel();
-    function carousel() {
-        var i;
-        var x = $(".mySlides");
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 3000); // Change image every 3 seconds
-    }
-    var season = ["Winter", "Winter", "Spring", "Spring", "Spring", "Summer", "Summer", "Summer", "Fall", "Fall", "Fall", "Winter"];
-
-    var d = new Date();
-    var currentSeason = season[d.getMonth()];
-
-    if ( currentSeason == "Winter" ){
-      winterImages();
-    }
-    else if ( currentSeason == "Spring" ){
-      springImages();
-    }
-    else if ( currentSeason == "Summer" ){
-      summerImages();
-    }
-    else{
-      fallImages();
-    }
-    function winterImages() {
-      $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_winter1.png");
-      $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_winter2.png");
-      $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_winter3.png");
-      $('#winterBtn').attr("class"," btn btn-info");
-	    $("#springBtn, #summerBtn, #fallBtn").attr("class"," btn btn-primary");
-    }
-    function springImages() {
-      $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_spring1.png");
-      $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_spring2.png");
-      $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_spring3.png");
-      $('#springBtn').attr("class"," btn btn-info");
-	    $("#summerBtn, #winterBtn, #fallBtn").attr("class"," btn btn-primary");
-    }
-    function summerImages() {
-      $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_summer1.png");
-      $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_summer2.png");
-      $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_summer3.png");
-      $('#summerBtn').attr("class","btn btn-info");
-      $("#springBtn, #winterBtn, #fallBtn").attr("class","btn btn-primary");
-    }
-    function fallImages() {
-      $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_fall1.png");
-      $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_fall2.png");
-      $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_fall3.png");
-      $('#fallBtn').attr("class","btn btn-info");
-      $("#springBtn, #winterBtn, #summerBtn").attr("class","btn btn-primary");
-    }
-    $("#winterBtn").click(function(){
-        winterImages();
-    });
-    $("#springBtn").click(function(){
-      springImages();
-    });
-    $("#summerBtn").click(function(){
-      summerImages();
-    });
-    $("#fallBtn").click(function(){
-      fallImages();
-    });*/
-    //Calling function to initialize map
-    //initMap();
-    //initializing maps
-    /*function initMap() {
-      var finsandvika = {lat: 61.215699, lng: 10.518729};
-      var lillehammer = {lat: 61.1734420545982, lng: 10.604606905279};
-      var gala = {lat: 61.4953383074326, lng: 9.76728911774898};
-      var galatoppen = {lat: 61.4894488500888, lng: 9.77770110446772};
-      var hafjell = {lat: 61.257729, lng: 10.5032857999999};
-      var haugsetra = {lat: 61.750702, lng: 9.58495978181156};
-      var hjerkinnho = {lat: 62.2243612859522, lng: 10.518729};
-      var hjerkinnlia = {lat: 62.2146969402496, lng: 9.56385840753171};
-      var hundyrju = {lat: 62.0917610768937, lng: 9.19969217135008};
-      var lavashaugne = {lat: 61.7183709623906, lng: 9.72657208808595};
-      var ringebu = {lat: 61.6095576569589, lng: 10.0754232406616};
-      var varden = {lat: 61.440287, lng: 10.087837};
-      var skeikampen = {lat: 61.3505957, lng: 10.0887576999998};
-      var tiurlia = {lat: 61.015699, lng: 9.74306563056643};
-      var raudalen = {lat: 61.229504, lng: 8.82236799999998};
-      var aaremsanden = {lat: 63.563, lng: 9.75400000000001};
-
-      var map = new google.maps.Map(document.getElementById('mapFinsanvika'), {
-        zoom: 9,
-        center: finsandvika,
-        //mapTypeId: google.maps.MapTypeId.TERRAIN
-      });
-      var marker = new google.maps.Marker({
-        position: finsandvika,
-        map: map
-      });
-    }*/
-});
-
 function loadContent(x){
-
     var ourData = hyttegrender;
     $('#imgHeader').attr("src", "../"+ourData[x].imgHeader)
     $('#headerTitle').html(ourData[x].title);
@@ -129,7 +23,7 @@ function loadContent(x){
         $('#icons').append(templateElement);
     }
 
-    /* initMapProperties(); */
+    initMapProperties();
 
     function initMapProperties(){
       var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
@@ -138,6 +32,7 @@ function loadContent(x){
         mapTypeId: 'hybrid'
       });
       console.log(ourData[x].mapData.markers.length);
+
       for (i = 0; i < ourData[x].mapData.markers.length; i++){
         var markerPosition = ourData[x].mapData.markers[i].position;
         var labelNumber = ourData[x].mapData.markers[i].propertyNumber;
@@ -200,17 +95,26 @@ function loadContent(x){
 $("#scrollToTable").click(function() {
     $('html, body').animate({
         scrollTop: $("#propertyTable").offset().top
-    }, 2000);
+    }, 1000);
 });
+function loadNavItems(){
+  var ourData = hyttegrender;
+  var areaData = omrader;
+
+  for(i = 0; i < ourData[x].description.length; i++){
+    var templateElement = $('#navItemAreaTemplate').clone();
+
+    templateElement.removeAttr("id");
+    templateElement.find("a").attr('href', );
+
+
+    $('#navElements').append(templateElement);
+  }
+
+}
 
 function pullCardData(){ //needs parameter to be used for both index and area pages
-    /*
-    if(page == index){
 
-    }else if(page == area){
-
-    }
-    */
     var ourData = hyttegrender;
 
     for(i = 0; i < Object.keys(ourData).length; i++){
