@@ -1,8 +1,4 @@
-RewriteEngine On    # Turn on the rewriting engine
-
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#Rewriterule ^(index.html)$ index.html [L]
+RewriteEngine On
+RewriteBase webprosjekt_2/
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^[a-zA-Z]+/[a-zA-Z]+$ index.html [NC,L]
-RewriteRule ^[a-zA-Z]+$ index.html [NC,L]
+RewriteRule ^(.*)$ index.html [NC,L]
