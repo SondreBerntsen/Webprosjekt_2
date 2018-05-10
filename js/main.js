@@ -110,7 +110,7 @@ function loadNavItems(){
     var templateElement = $('#navAreaTemplate').clone();
 
     templateElement.removeAttr("id");
-    templateElement.find('a').attr('href', area);
+    templateElement.find('a').attr('href', '/webprosjekt_2/'+area);
     templateElement.find('a').html(areaData[temp].title);
 
     for(j = 0; j < areaData[temp].propertyAreas.length; j++){
@@ -118,7 +118,7 @@ function loadNavItems(){
       var templateSubElement = $('#navPATemplate').clone();
       console.log(propArea);
       templateSubElement.removeAttr("id");
-      templateSubElement.find('a').attr('href', propArea);
+      templateSubElement.find('a').attr('href', '/webprosjekt_2/'+area+'/'+propArea);
       templateSubElement.find('a').html(areaData[temp].mapData.markers[j].propertyAreaName);
       templateElement.find('ul').append(templateSubElement);
     }
