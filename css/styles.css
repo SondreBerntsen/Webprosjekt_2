@@ -132,7 +132,7 @@ a, a:hover {
     width: .575em;
 }
 
-.active {
+.nav-item:hover {
   border-bottom: 2px solid black;
 }
 
