@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteBase webprosjekt_2/
+#RewriteBase webprosjekt_2/ # this might be needed for web, idk
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.html [NC,L]
