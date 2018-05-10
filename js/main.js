@@ -23,7 +23,7 @@ function loadContent(x){
         $('#icons').append(templateElement);
     }
 
-    initMapProperties();
+    //initMapProperties();
 
     function initMapProperties(){
       var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
@@ -98,7 +98,7 @@ $("#scrollToTable").click(function() {
     }, 1000);
 });
 function loadNavItems(){
-  $('#templates').load('/webprosjekt_2/includeFiles/templates.html');
+  $('#templates').load('/webprosjekt_2/includeFiles/templates.html'); //This is pointless as they can't be cloned from there anyway. I think the templates must be file separated and loaded to their respective target containers once the page loads. Then again it works on propertyArea, what the fuck.
   var ourData = hyttegrender;
   var areaData = omrader;
 
