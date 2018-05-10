@@ -132,6 +132,9 @@ a, a:hover {
     width: .575em;
 }
 
+.nav-item{
+  border-bottom: 2px solid transparent;
+}
 .nav-item:hover {
   border-bottom: 2px solid black;
 }
