@@ -2,6 +2,10 @@ var omrader = {
   "ringsaker": {
     "title": "Ringsaker",
     "information": ["Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten. Gålåtoppen ligger praktfullt til. Høyt og usjenert i det vakre naturlandskapet Gudbrandsdalen og Gålå har å tilby. Veldig solrik beliggenhet og fantastisk utsikt over Gålåvatnet, Jotunheimen og Rondane. Stort løypenett og alpinbakker rett ved hyttefeltet, samt Peer Gynt-vegen med mange sykkel- og turmuligheter. I tillegg er det gode muligheter for bading, jakt og friluftsliv. Hotell med restaurant, butikk, kafeer og teaterscene."],
+    "propertyAreas": [
+      "finsandvika",
+      "lillehammer"
+    ],
     "mapData": {
       "position": {lat:61.032268, lng:10.835139 },
       "markers": [
@@ -21,6 +25,16 @@ var omrader = {
   "gudbrandsdalen": {
     "title": "Gudbrandsdalen",
     "information": ["informasjon om Gudbrandsdalen"],
+    "propertyAreas": [
+      "galatoppen",
+      "hafjell",
+      "haugsetra",
+      "herkinnho",
+      "hjerkinnlia",
+      "hundyrju",
+      "lavashaugen",
+      "tindegrenda"
+    ],
     "mapData": {
       "position": {lat:61.771431, lng:9.540320},
       "markers": [
@@ -40,7 +54,7 @@ var omrader = {
           "lng": "9.716454"
         },
         {
-          "propertyAreaName": "Herkjinnhø", //Name the individual pins here?
+          "propertyAreaName": "Herkinnhø", //Name the individual pins here?
           "lat": "62.228478",
           "lng": "9.582755"
         },
@@ -70,6 +84,9 @@ var omrader = {
   "valdres": {
     "title": "Valdres",
     "information": ["informasjon om valdres"],
+    "propertyAreas": [
+      "raudalen"
+    ],
     "mapData": {
       "position": {lat:52.664113 ,lng:-8.652247 },
       "markers": [
@@ -84,6 +101,9 @@ var omrader = {
   "sor-trondelag": {
     "title": "Sør-Trøndelag",
     "information": ["Infor om Sør Trøndelag"],
+    "propertyAreas": [
+      "aaremsanden"
+    ],
     "mapData": {
       "position": {lat:63.572226,  lng:9.784701 },
       "markers": [

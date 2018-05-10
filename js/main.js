@@ -98,17 +98,32 @@ $("#scrollToTable").click(function() {
     }, 1000);
 });
 function loadNavItems(){
+  $('#templates').load('/webprosjekt_2/includeFiles/templates.html');
   var ourData = hyttegrender;
   var areaData = omrader;
 
-  for(i = 0; i < ourData[x].description.length; i++){
+  for(i = 0; i < Object.keys(areaData).length; i++){
+    var temp = Object.keys(areaData)[i];
+    console.log(temp);
+
+    var area = areaData[temp].title.toLowerCase();
     var templateElement = $('#navItemAreaTemplate').clone();
 
     templateElement.removeAttr("id");
-    templateElement.find("a").attr('href', );
+    templateElement.find('a').attr('href', area);
+    templateElement.find('a').html(areaData[temp].title);
 
+    for(j = 0; j < areaData[temp].propertyAreas.length; j++){
+      var templateSubElement = $('#navItemPATemplate').clone();
+      var propArea = areaData[temp].propertyAreas[j].toLowerCase();
 
-    $('#navElements').append(templateElement);
+      templateElement.find('.dropdown-menu').append(templateSubElement).html;
+      templateSubElement.removeAttr('id');
+      templateSubElement.find('a').attr('href', propArea);
+      templateSubElement.find('a').html(areaData[temp].mapData.markers[j]);
+    }
+    $('#navElementContainer').append(templateElement).html;
+
   }
 
 }

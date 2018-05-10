@@ -15,7 +15,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </head>
-<body onload="checkURL(window.location.pathname)">
+<body onload="checkURL(window.location.pathname), loadNavItems()">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">
       <img src="/webprosjekt_2/images/logo.svg"  id="logo_link">
@@ -30,7 +30,8 @@
           <a id="dropOmraade" data-toggle="dropdown" data-target="#" href="#">
                  Områder <span class="fas fa-chevron-down"></span>
              </a>
-          <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+          <ul id="navElementContainer" class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+            <!--
             <li class="dropdown-submenu">
               <a tabindex="-1" href="areas/area.html">Ringsaker</a>
               <ul class="dropdown-menu">
@@ -38,6 +39,7 @@
                 <li><a href="areas/propertyArea.html" onclick='buttonClick("lillehammer");'>Lillehammer Sæter 3</a></li>
               </ul>
             </li>
+
             <li class="dropdown-submenu">
               <a tabindex="-1" href="areas/area.html">Gudbrandsdalen</a>
               <ul class="dropdown-menu">
@@ -64,6 +66,8 @@
                 <li><a tabindex="-1" href="areas/propertyArea.html" onclick='buttonClick("aaremsanden");'>Aaremsanden</a></li>
               </ul>
             </li>
+
+            -->
           </ul>
         </div>
         <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Kontakt</a> </li>
@@ -169,5 +173,6 @@
       <span>Copyright © Tinde Utvikling AS</span>
     </div>
   </footer>
+  <div id="templates" class="hide"></div>
 </body>
 </html>
