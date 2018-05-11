@@ -1,27 +1,24 @@
 function checkURL(path){
   path = path.toLowerCase();
 
-  var homeRegex = /\/webprosjekt_2\/home$/;
-  var indexRegex = /\/webprosjekt_2\/index\.html$/;
-  var defaultRegex = /\/webprosjekt_2\/$/;
-  var propertyAreaRegex = /\/webprosjekt_2\/[A-Za-z]+\/[A-Za-z]+$/;
-  var areaRegex = /\/webprosjekt_2\/[A-Za-z]+$/;
+  var homeRegex = path.match(/\/webprosjekt_2\/(home)\/?$/);
+  var indexRegex = path.match(/\/webprosjekt_2\/(index\.html)\/?$/);
+  var defaultRegex = path.match(/\/webprosjekt_2\/$/);
+  var propertyAreaRegex = path.match(/\/webprosjekt_2\/([A-Za-z]+)\/([A-Za-z]+)\/?$/);
+  var areaRegex = path.match(/\/webprosjekt_2\/([A-Za-z]+)\/?$/);
 
-  if(path.match(homeRegex) || path.match(indexRegex) || path.match(defaultRegex)){
-
+  if(homeRegex || indexRegex || defaultRegex){
     console.log("Pretty sure HOME loads now, right?");
     $('#SPAContent').load('home.html', function() {
       pullCardData();
     });
   }
 
-  if(path.match(propertyAreaRegex)){
+  if(propertyAreaRegex){
 
     var PAData = hyttegrender;
-    var relevantPath = path.split('webprosjekt_2/')[1];
-    var arrayURL = relevantPath.split('/');
-    var areaIndex = arrayURL[0];
-    var PAIndex = arrayURL[1];
+    var areaIndex = propertyAreaRegex[1];
+    var PAIndex = propertyAreaRegex[2];
 
     if(
       PAData[PAIndex] !== 'undefined' &&
@@ -29,7 +26,7 @@ function checkURL(path){
     ){
       console.log("Cool beans, load the property area page.");
 
-      //$.getScript('/webprosjekt_2/js/mapPlot.js'); like this or wat?
+      //$.getScript('/webprosjekt_2/js/mapPlot.js'); May have to do it like this unless we include everything in index, to avoid deprecation notice
 
       $('#SPAContent').load('/webprosjekt_2/areas/propertyArea.html', function() {
         loadContent(PAIndex);
@@ -39,28 +36,23 @@ function checkURL(path){
       //load 404.html with some info maybe
       console.log("Page not found");
     }
-
   }
   else if(
-    !path.match(homeRegex) &&
-    path.match(areaRegex)
+    !homeRegex &&
+    areaRegex
   ){
-    //Check if data[path] or whatever exists
     var areaData = omrader;
-    var areaIndex = path.split('webprosjekt_2/')[1];
+    var areaIndex = areaRegex[1];
 
     if(
       areaData[areaIndex] !== 'undefined' &&
       areaIndex.toUpperCase() == areaData[areaIndex].title.toUpperCase()
     ){
       console.log("Cool beans, load the area page");
-
       $('#SPAContent').load('/webprosjekt_2/areas/area.html');
     }
   }
   else{
     //load 404.html
   }
-
-
 }
