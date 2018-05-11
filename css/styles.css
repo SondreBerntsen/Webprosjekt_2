@@ -241,11 +241,16 @@ position: relative;
 }
 
 .textShadow {
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
 }
 
 #scrollToTable {
   text-shadow: 0px;
+  color: white;
+}
+#scrollTo{
+  border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 #cardTemplate .card a .price {
@@ -418,7 +423,7 @@ position: relative;
   width: 100%;
   height: 100%;
 }
-/* ---------------------hyttegrend -----------------------------*/
+/* ---------------------propertyArea -----------------------------*/
 #buttoncontainer {
     margin: 0 auto;
     text-align: center;
@@ -439,7 +444,10 @@ position: relative;
 #controls .carousel-inner {
   max-height: 450px;
 }
-
+.carousel-item{
+  padding: 0;
+  margin: 0;
+}
 /* Centered text */
 #overlay {
     position: absolute;
@@ -471,7 +479,11 @@ position: relative;
 #headerText {
     width: 50%;
 }
-
+.contactBtn{
+  background-color: #ff6600;
+  color:white;
+  font-size: 18px ;
+}
 .hyttegrend_tekst_container {
     background-color: #FFFFFF;
     color: #000000;
@@ -480,17 +492,22 @@ position: relative;
 }
 
 .hyttegrend_tekst_container_middle {
-    background-color: #e0dfde;
+    /*background-color: #e0dfde;*/
+    background-color: white;
     color: #000;
     padding: 30px;
 }
 
 .hyttegrend_tekst_container_middle_white {
-    background-color: #FFFFFF;
+    /*background-color: #FFFFFF;*/
     color: #000;
     padding: 30px;
 }
-
+#galleryDiv{
+  background-color: white;
+  width: 100%;
+  min-height: 100px;
+}
 .hyttegrend_oneliner {
     font-weight: 700;
     font-size: 125%;
@@ -512,6 +529,11 @@ position: relative;
 .mapStyle{
   width: 100%;
   height: 500px;
+}
+.propertyBtn{
+  background-color: #ff6600;
+  color:white;
+  width: 100%;
 }
 
 #facts p, #contactInfo p{

@@ -72,11 +72,13 @@ function loadContent(x){
         $('#contactInfo').append(templateElement.html());
     }
 }
-$("#scrollToTable").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#propertyTable").offset().top
-    }, 1000);
-});
+
+
+function scrollToTable(){
+  $('html, body').animate({
+       scrollTop: $("#tomtInformasjon").offset().top
+   }, '2000');
+}
 function loadNavItems(){
   $('#templates').load('/webprosjekt_2/includeFiles/templates.html'); //This is pointless as they can't be cloned from there anyway. I think the templates must be file separated and loaded to their respective target containers once the page loads. Then again it works on propertyArea, what the fuck.
   var ourData = hyttegrender;
