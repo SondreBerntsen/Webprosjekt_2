@@ -1,5 +1,6 @@
 var omrader = {
   "ringsaker": {
+    "href": "ringsaker",
     "title": "Ringsaker",
     "information": ["Flotte hyttetomter som ligger høyt og usjenert med fantastisk utsikt over Gålåvatnet. Rondane-massivene og Jotunheimen ruver i horisonten. Gålåtoppen ligger praktfullt til. Høyt og usjenert i det vakre naturlandskapet Gudbrandsdalen og Gålå har å tilby. Veldig solrik beliggenhet og fantastisk utsikt over Gålåvatnet, Jotunheimen og Rondane. Stort løypenett og alpinbakker rett ved hyttefeltet, samt Peer Gynt-vegen med mange sykkel- og turmuligheter. I tillegg er det gode muligheter for bading, jakt og friluftsliv. Hotell med restaurant, butikk, kafeer og teaterscene."],
     "propertyAreas": [
@@ -27,6 +28,7 @@ var omrader = {
     },
   },
   "gudbrandsdalen": {
+    "href": "gudbrandsdalen",
     "title": "Gudbrandsdalen",
     "information": ["Gudbrandsdalen Lorem ipsum dolor sit amet, wisi pharetra mi donec mauris rhoncus integer, ultricies mollis non eget et augue aliquet, in justo pellentesque. Leo molestie maecenas est ullamcorper justo hendrerit, nonummy vivamus quam nunc aliquam mauris. Rhoncus in amet, laoreet tincidunt faucibus, vestibulum nam aliquam at massa."],
     "propertyAreas": [
@@ -103,6 +105,7 @@ var omrader = {
     },
   },
   "valdres": {
+    "href": "valdres",
     "title": "Valdres",
     "information": ["Valdres Lorem ipsum dolor sit amet, wisi pharetra mi donec mauris rhoncus integer, ultricies mollis non eget et augue aliquet, in justo pellentesque. Leo molestie maecenas est ullamcorper justo hendrerit, nonummy vivamus quam nunc aliquam mauris. Rhoncus in amet, laoreet tincidunt faucibus, vestibulum nam aliquam at massa."],
     "propertyAreas": [
@@ -121,8 +124,9 @@ var omrader = {
       ]
     },
   },
-  "sortrondelag": {
-    "title": "sortrondelag",
+  "sor-trondelag": {
+    "href": "sor-trondelag",
+    "title": "Sør-Trøndelag",
     "information": ["Sør Trøndelag Lorem ipsum dolor sit amet, wisi pharetra mi donec mauris rhoncus integer, ultricies mollis non eget et augue aliquet, in justo pellentesque. Leo molestie maecenas est ullamcorper justo hendrerit, nonummy vivamus quam nunc aliquam mauris. Rhoncus in amet, laoreet tincidunt faucibus, vestibulum nam aliquam at massa."],
     "propertyAreas": [
       "aaremsanden"
@@ -141,4 +145,3 @@ var omrader = {
     },
   },
 }
-

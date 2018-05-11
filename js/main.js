@@ -119,7 +119,7 @@ function scrollToTable(){
    }, '2000');
 }
 function loadNavItems(){
-  $('#templates').load('/webprosjekt_2/includeFiles/templates.html'); //This is pointless as they can't be cloned from there anyway. I think the templates must be file separated and loaded to their respective target containers once the page loads. Then again it works on propertyArea, what the fuck.
+  //$('#templates').load('/webprosjekt_2/includeFiles/templates.html'); //This is pointless as they can't be cloned from there anyway. I think the templates must be file separated and loaded to their respective target containers once the page loads. Then again it works on propertyArea, what the fuck.
   var ourData = hyttegrender;
   var areaData = omrader;
 
@@ -129,7 +129,7 @@ function loadNavItems(){
     var templateElement = $('#navAreaTemplate').clone();
 
     templateElement.removeAttr("id");
-    templateElement.find('a').attr('href', '/webprosjekt_2/'+area);
+    templateElement.find('a').attr('href', '/webprosjekt_2/'+areaData[temp].href);
     templateElement.find('a').html(areaData[temp].title);
 
     for(j = 0; j < areaData[temp].propertyAreas.length; j++){
