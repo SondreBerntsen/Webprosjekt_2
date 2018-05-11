@@ -385,6 +385,9 @@ label span{
 /* ------------------------- AREA ---------------------------------- */
 /* The short pitch under the main image on areas */
 
+.idkLolle{
+  margin-top: 60px;
+}
 .areapitch {
     background-color: #e0dfde;
     padding: 2%;
