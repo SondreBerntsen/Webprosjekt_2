@@ -121,8 +121,8 @@ var omrader = {
       ]
     },
   },
-  "sor-trondelag": {
-    "title": "Sør-Trøndelag",
+  "sortrondelag": {
+    "title": "sortrondelag",
     "information": ["Sør Trøndelag Lorem ipsum dolor sit amet, wisi pharetra mi donec mauris rhoncus integer, ultricies mollis non eget et augue aliquet, in justo pellentesque. Leo molestie maecenas est ullamcorper justo hendrerit, nonummy vivamus quam nunc aliquam mauris. Rhoncus in amet, laoreet tincidunt faucibus, vestibulum nam aliquam at massa."],
     "propertyAreas": [
       "aaremsanden"
@@ -139,5 +139,6 @@ var omrader = {
         },
       ]
     },
-  }
+  },
 }
+
