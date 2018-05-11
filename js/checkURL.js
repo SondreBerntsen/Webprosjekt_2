@@ -4,7 +4,7 @@ function checkURL(path){
   var homeRegex = path.match(/\/webprosjekt_2\/(home)\/?$/);
   var indexRegex = path.match(/\/webprosjekt_2\/(index\.html)\/?$/);
   var defaultRegex = path.match(/\/webprosjekt_2\/$/);
-  var propertyAreaRegex = path.match(/\/webprosjekt_2\/([A-Za-z]+)\/([A-Za-z]+)\/?$/);
+  var propertyAreaRegex = path.match(/\/webprosjekt_2\/([A-Za-z]+|[A-Za-z]+\-[A-Za-z]+)\/([A-Za-z]+)\/?$/);
   var areaRegex = path.match(/\/webprosjekt_2\/([A-Za-z]+|[A-Za-z]+\-[A-Za-z]+)\/?$/);
 
   if(homeRegex || indexRegex || defaultRegex){

@@ -125,11 +125,11 @@ function loadNavItems(){
 
   for(i = 0; i < Object.keys(areaData).length; i++){
     var temp = Object.keys(areaData)[i];
-    var area = areaData[temp].title.toLowerCase();
+    var area = areaData[temp].href;
     var templateElement = $('#navAreaTemplate').clone();
 
     templateElement.removeAttr("id");
-    templateElement.find('a').attr('href', '/webprosjekt_2/'+areaData[temp].href);
+    templateElement.find('a').attr('href', '/webprosjekt_2/'+area);
     templateElement.find('a').html(areaData[temp].title);
 
     for(j = 0; j < areaData[temp].propertyAreas.length; j++){

@@ -1209,7 +1209,7 @@ var hyttegrender = {
     },
   "aaremsanden": {
     "name": "aaremsanden",
-    "area": "Sør-Trøndelag",
+    "area": "sor-trondelag",
     "cardInfo": {
         "image": "images/thumbnailsFilter/aaremsanden.jpeg",
         "availability": "x av y ledige", //feil så klart, men let's go
