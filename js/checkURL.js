@@ -1,5 +1,8 @@
 function checkURL(path){
   path = path.toLowerCase();
+  var PAData = hyttegrender;
+  var areaData = omrader;
+
 
   var homeRegex = path.match(/\/webprosjekt_2\/(home)\/?$/);
   var indexRegex = path.match(/\/webprosjekt_2\/(index\.html)\/?$/);
@@ -10,13 +13,14 @@ function checkURL(path){
   if(homeRegex || indexRegex || defaultRegex){
     console.log("Pretty sure HOME loads now, right?");
     $('#SPAContent').load('home.html', function() {
-      pullCardData();
+      for(i = 0; i < Object.keys(PAData).length; i++){
+        var pArea = Object.keys(PAData)[i];
+        pullCardData(pArea);
+      }
     });
   }
 
   if(propertyAreaRegex){
-
-    var PAData = hyttegrender;
     var areaIndex = propertyAreaRegex[1];
     var PAIndex = propertyAreaRegex[2];
 
@@ -41,7 +45,6 @@ function checkURL(path){
     !homeRegex &&
     areaRegex
   ){
-    var areaData = omrader;
     var areaIndex = areaRegex[1];
 
     //This prototype thing was taken from https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
@@ -63,6 +66,14 @@ function checkURL(path){
       console.log("Cool beans, load the area page");
       $('#SPAContent').load('/webprosjekt_2/areas/area.html', function(){
         loadContentArea(areaIndex);
+        for(i = 0; i < areaData[areaIndex].propertyAreas.length; i++){
+          var pArea = areaData[areaIndex].propertyAreas[i];
+          console.log(areaData[areaIndex].propertyAreas[i]);
+
+          pullCardData(pArea);
+          //CSS has to be changed hella for this page
+          //Also, adding classes is unneccessary without a filter function, and area name is redundant as it's on the area page.
+        }
       });
     }
   }

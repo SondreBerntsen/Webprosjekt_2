@@ -16,36 +16,23 @@
     <h2 class="header">Hyttegrender</h2>
   </div>
 
-
   <div id="mapArea" class="mapStyle"></div>
 
+  <div id="cardContainer" class="row">
 
-  <div class="container">
-    <hr />
-    <div class="row">
-      <!-- This has to be converted to template method-->
-      <div class="col-md-6 col-sm-12 filterAreaCard filter_item ringsaker avløp strøm vann vei bading fisking jakt butikk hotell småbåthavn strand sykkel turterreng">
-        <div class="card">
-          <a href="#" style="text-decoration:none; color:black;">
-                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\finsandvika.jpeg" >
-                <div class="cardAreaInfo"><h4>Ringsaker</h4></div>
-                <div class="card-body">
-                <h5 class="card-title">FINSANDVIKA HYTTEGREND</h5>
-                <p class="card-text">Store hyttetomter ved Mjøsa. Solrikt beliggende med gode aktivitetsmuligheter året rundt!</p>
-              </div></a>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-sm-12 filterAreaCard filter_item ringsaker avløp strøm vann vei bading fisking jakt butikk hotell løypenett sykkel turterreng">
-        <div class="card">
-          <a href="#" style="text-decoration:none; color:black;">
-                <img class="card-img-top thumbnailArea" src="images\thumbnailsFilter\lillehammer.jpeg" >
-                <div class="cardAreaInfo"><h4>Ringsaker</h4></div>
-                <div class="card-body">
-                <h5 class="card-title">LILLEHAMMER SÆTER III</h5>
-                <p class="card-text">Lillehammerfjellets flotteste hyttetomter selges nå på snøsikre Nordseter!</p>
-              </div></a>
-        </div>
+    <div id="cardTemplate" class="col-md-6 col-sm-12 filterAreaCard filter_item">
+      <div class="card">
+        <a href="areas/propertyArea.html" onclick="">
+          <img class="card-img-top thumbnailArea" src="" >
+          <div class="cardAvailability"><h4 class="availabilityText"></h4></div>
+          <p class="price text-white bg-dark" style="text-align: center; margin-bottom: -10px;" ><!--price info here--></p>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <h6 class="areaName" style="color:#6c757d"><!--Area name goes here*/--></h6>
+            <p class="card-text"></p>
+          </div>
+        </a>
       </div>
     </div>
+    
   </div>

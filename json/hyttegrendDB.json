@@ -625,14 +625,14 @@ var hyttegrender = {
 },
     "hjerkinnho": {
       "name": "hjerkinnho",
-      "area": "gudbrandsdalen",
+      "area": "Gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/hjerkinnho.jpeg",
           "availability": "x av y ledige", //feil så klart, men let's go
           "price": "Priser fra: x-y.-"
       },
         "imgHeader": "images/hyttegrender/hjerkinnho.jpeg",
-        "title": "Herkinnø hyttegrend",
+        "title": "Hjerkinnø hyttegrend",
         "oneliner": "Hyttetomter i spektakulært naturlandskap på nasjonalromantiske Dovrefjell!",
         "description": [
             "Hjerkinnhø ligger i et område med historiske røtter. Pilgrimsleden og den gamle kongeveien til Trondheim går like forbi hytteområdene og videre innover i Dovrefjell. Her har du inngangen til Snøhetta, villreinen og moskusens rike. Hjerkinn og Dovrefjell er hundesportens «Mekka» med treningsfelt og jaktprøver for fuglehunder. Viewpoint Snøhetta er et attraktivt besøkspunkt og i nærområdet finner du mange natur- og aktivitetsmuligheter.",
@@ -938,7 +938,7 @@ var hyttegrender = {
     },
     "hjerkinnlia": {
       "name": "hjerkinnlia",
-      "area": "gudbrandsdalen",
+      "area": "Gudbrandsdalen",
       "cardInfo": {
           "image": "images/thumbnailsFilter/hjerkinnlia.jpeg",
           "availability": "x av y ledige", //feil så klart, men let's go
