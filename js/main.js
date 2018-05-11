@@ -74,6 +74,9 @@ function loadContent(x){
 }
 function loadContentArea(areaName){
   var areaData = omrader;
+  console.log('hoho');
+  console.log(areaData[areaName].imgHeader);
+  $('#areaHeaderImg').attr("src", areaData[areaName].imgHeader)
   $('#headingArea').html(areaData[areaName].title);
   $('#areatext').html(areaData[areaName].information);
   initMapArea(areaData[areaName]);

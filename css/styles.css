@@ -413,12 +413,13 @@ label span{
 }
 
 #areaHeaderImg {
-background-image: url("../images/omraader/omraade_ringsaker.png");
+/*background-image: url("../images/omraader/omraade_ringsaker.png");
 height: 50%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-position: relative;
+position: relative;*/
+width: inherit;
 }
 
 .headerColorOverlay{
