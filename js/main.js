@@ -72,7 +72,10 @@ function loadContent(x){
         $('#contactInfo').append(templateElement.html());
     }
 }
-
+function loadContentArea(areaName){
+  var areaData = omrader;
+  $('#headingArea').html(areaData[areaName].title);
+}
 
 function scrollToTable(){
   $('html, body').animate({
