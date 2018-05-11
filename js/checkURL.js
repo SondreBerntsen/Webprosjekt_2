@@ -49,8 +49,9 @@ function checkURL(path){
       areaIndex.toUpperCase() == areaData[areaIndex].title.toUpperCase()
     ){
       console.log("Cool beans, load the area page");
-      $('#SPAContent').load('/webprosjekt_2/areas/area.html');
-      loadContentArea(areaIndex);
+      $('#SPAContent').load('/webprosjekt_2/areas/area.html', function(){
+        loadContentArea(areaIndex);
+      });
     }
   }
   else{
