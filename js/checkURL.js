@@ -50,6 +50,7 @@ function checkURL(path){
     ){
       console.log("Cool beans, load the area page");
       $('#SPAContent').load('/webprosjekt_2/areas/area.html');
+      loadContentArea(areaIndex);
     }
   }
   else{
