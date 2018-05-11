@@ -7,24 +7,28 @@ var omrader = {
       "lillehammer"
     ],
     "mapData": {
-      "position": {lat:61.032268, lng:10.835139 },
+      "position": {lat:61.073479, lng:10.512065 },
       "markers": [
         {
           "propertyAreaName": "Finsandvika", //Name the individual pins here?
-          "lat": "61.028574",
-          "lng": "10.553083"
+          "position": {
+            "lat": 61.028574,
+            "lng": 10.553083
+          }
         },
         {
           "propertyAreaName": "Lillehammer Sæter III", //Name the individual pins here?
-          "lat": "61.103979",
-          "lng": "10.514317"
+          "position": {
+            "lat": 61.103979,
+            "lng": 10.514317
+          }
         },
       ]
     },
   },
   "gudbrandsdalen": {
     "title": "Gudbrandsdalen",
-    "information": ["informasjon om Gudbrandsdalen"],
+    "information": ["Gudbrandsdalen Lorem ipsum dolor sit amet, wisi pharetra mi donec mauris rhoncus integer, ultricies mollis non eget et augue aliquet, in justo pellentesque. Leo molestie maecenas est ullamcorper justo hendrerit, nonummy vivamus quam nunc aliquam mauris. Rhoncus in amet, laoreet tincidunt faucibus, vestibulum nam aliquam at massa."],
     "propertyAreas": [
       "galatoppen",
       "hafjell",
@@ -40,67 +44,86 @@ var omrader = {
       "markers": [
         {
           "propertyAreaName": "Gålåtoppen", //Name the individual pins here?
-          "lat": "61.483736",
-          "lng": "9.776013"
+          "position": {
+            "lat": 61.483736,
+            "lng": 9.776013
+          }
         },
         {
           "propertyAreaName": "Hafjell", //Name the individual pins here?
-          "lat": "61.234113",
-          "lng": "10.446245"
+          "position": {
+            "lat": 61.234113,
+            "lng": 10.446245
+          }
         },
         {
-          "propertyAreaName": "Haugsetra", //Name the individual pins here?
-          "lat": "61.751333",
-          "lng": "9.716454"
+          "propertyAreaName": "Haugsetra", //Name the individual pins here
+          "position": {
+            "lat": 61.751333,
+            "lng": 9.716454
+          }
         },
         {
           "propertyAreaName": "Herkinnhø", //Name the individual pins here?
-          "lat": "62.228478",
-          "lng": "9.582755"
+          "position": {
+            "lat": 62.228478,
+            "lng": 9.582755
+          }
         },
         {
           "propertyAreaName": "Hjerkinnlia", //Name the individual pins here?
-          "lat": "62.215196",
-          "lng": "9.567098"
+          "position": {
+            "lat": 62.215196,
+            "lng": 9.567098
+          }
         },
         {
           "propertyAreaName": "Hundyrju", //Name the individual pins here?
-          "lat": "62.089777",
-          "lng": "9.193661"
+          "position": {
+            "lat": 62.089777,
+            "lng": 9.193661
+          }
         },
         {
           "propertyAreaName": "Låvåshaugen", //Name the individual pins here?
-          "lat": "61.713814",
-          "lng": "9.715080"
+          "position": {
+            "lat": 61.713814,
+            "lng": 9.715080
+          }
+
         },
         {
           "propertyAreaName": "Tindegrenda Varden", //Name the individual pins here?
-          "lat": "61.247141",
-          "lng": "10.474173"
+          "position": {
+            "lat": 61.247141,
+            "lng": 10.474173
+          }
         },
       ]
     },
   },
   "valdres": {
     "title": "Valdres",
-    "information": ["informasjon om valdres"],
+    "information": ["Valdres Lorem ipsum dolor sit amet, wisi pharetra mi donec mauris rhoncus integer, ultricies mollis non eget et augue aliquet, in justo pellentesque. Leo molestie maecenas est ullamcorper justo hendrerit, nonummy vivamus quam nunc aliquam mauris. Rhoncus in amet, laoreet tincidunt faucibus, vestibulum nam aliquam at massa."],
     "propertyAreas": [
       "raudalen"
     ],
     "mapData": {
-      "position": {lat:52.664113 ,lng:-8.652247 },
+      "position": {lat:61.189788 ,lng:8.931033 },
       "markers": [
         {
           "propertyAreaName": "Raudalen", //Name the individual pins here?
-          "lat": "61.219054",
-          "lng": "8.811872"
+          "position": {
+            "lat": 61.219054,
+            "lng": 8.811872
+          }
         },
       ]
     },
   },
   "sor-trondelag": {
     "title": "Sør-Trøndelag",
-    "information": ["Infor om Sør Trøndelag"],
+    "information": ["Sør Trøndelag Lorem ipsum dolor sit amet, wisi pharetra mi donec mauris rhoncus integer, ultricies mollis non eget et augue aliquet, in justo pellentesque. Leo molestie maecenas est ullamcorper justo hendrerit, nonummy vivamus quam nunc aliquam mauris. Rhoncus in amet, laoreet tincidunt faucibus, vestibulum nam aliquam at massa."],
     "propertyAreas": [
       "aaremsanden"
     ],
@@ -109,8 +132,10 @@ var omrader = {
       "markers": [
         {
           "propertyAreaName": "Aaremsanden", //Name the individual pins here?
-          "lat": "63.572226",
-          "lng": "9.784701"
+          "position": {
+            "lat": 63.572226,
+            "lng": 9.784701
+          }
         },
       ]
     },

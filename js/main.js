@@ -75,7 +75,43 @@ function loadContent(x){
 function loadContentArea(areaName){
   var areaData = omrader;
   $('#headingArea').html(areaData[areaName].title);
+  $('#areatext').html(areaData[areaName].information);
+  initMapArea(areaData[areaName]);
 }
+function initMapArea(areaData){
+
+  var map = new google.maps.Map(document.getElementById('mapArea'), {
+    center: areaData.mapData.position,
+    zoom: 8,
+    mapTypeId: 'hybrid'
+  });
+
+  for (i = 0; i < areaData.mapData.markers.length; i++){
+    var markerPosition = areaData.mapData.markers[i].position;
+    console.log(markerPosition);
+    var label= areaData.mapData.markers[i].propertyAreaName;
+    var marker = new google.maps.Marker({
+      position: markerPosition,
+      title: label,
+      map: map
+    });
+    /*The code for getting infowindows is inspired by:
+    *https://stackoverflow.com/questions/11106671/google-maps-api-multiple-markers-with-infowindows
+    */
+    var content = label;
+    var infowindow = new google.maps.InfoWindow()
+    google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){
+        return function() {
+            infowindow.setContent(content);
+            infowindow.open(map,marker);
+        };
+    })(marker,content,infowindow));
+
+  }
+
+
+}
+
 
 function scrollToTable(){
   $('html, body').animate({

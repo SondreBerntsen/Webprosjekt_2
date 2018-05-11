@@ -404,7 +404,7 @@ label span{
 
 /* Paragraph styling for area page */
 
-.areatext {
+#areatext {
     text-align: center;
     margin: 30px;
 }
@@ -467,7 +467,7 @@ position: relative;
   margin-bottom: 10px;
 }
 
-#headerTitle {
+#headerTitle, #headingArea {
   font-size: 3.5vw;
   color:white;
   margin-top: 100px;
