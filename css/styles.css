@@ -261,7 +261,9 @@ position: relative;
 #cardTemplate .card-body h6 {
   color: #6c757d;
 }
-
+#cardContainer{
+  margin: 0px auto;
+}
 /* Making sure the filter checkboxes are. Looking. Good. */
 .tagFilter{
   float: left;
@@ -272,7 +274,6 @@ position: relative;
   padding:10px;
   margin: 2px;
 }
-#cardContainer
 .card {
   margin-bottom: 2%;
   padding: 0;

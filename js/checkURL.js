@@ -11,11 +11,11 @@ function checkURL(path){
   var areaRegex = path.match(/\/webprosjekt_2\/([A-Za-z]+|[A-Za-z]+\-[A-Za-z]+)\/?$/);
 
   if(homeRegex || indexRegex || defaultRegex){
-    console.log("Pretty sure HOME loads now, right?");
+    console.log("Cool beans, load the home page.");
     $('#SPAContent').load('home.html', function() {
       for(i = 0; i < Object.keys(PAData).length; i++){
         var pArea = Object.keys(PAData)[i];
-        pullCardData(pArea);
+        pullCardData(pArea, true);
       }
     });
   }
@@ -55,10 +55,9 @@ function checkURL(path){
       }
       return retStr;
     };
-    console.log(areaIndex);
+
     var areaTitle = areaData[areaIndex].title.allReplace({'æ': 'e', 'ø': 'o', 'å': 'a'});
 
-    console.log(areaTitle);
     if(
       areaData[areaIndex] !== 'undefined' &&
       areaIndex.toUpperCase() == areaTitle.toUpperCase()
@@ -68,11 +67,7 @@ function checkURL(path){
         loadContentArea(areaIndex);
         for(i = 0; i < areaData[areaIndex].propertyAreas.length; i++){
           var pArea = areaData[areaIndex].propertyAreas[i];
-          console.log(areaData[areaIndex].propertyAreas[i]);
-
-          pullCardData(pArea);
-          //CSS has to be changed hella for this page
-          //Also, adding classes is unneccessary without a filter function, and area name is redundant as it's on the area page.
+          pullCardData(pArea, false);
         }
       });
     }

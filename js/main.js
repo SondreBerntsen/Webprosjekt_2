@@ -74,8 +74,6 @@ function loadContent(x){
 }
 function loadContentArea(areaName){
   var areaData = omrader;
-  console.log('hoho');
-  console.log(areaData[areaName].imgHeader);
   $('#areaHeaderImg').attr("src", areaData[areaName].imgHeader)
   $('#headingArea').html(areaData[areaName].title);
   $('#areatext').html(areaData[areaName].information);
@@ -166,22 +164,24 @@ function initMapProperties(PA){
   }
 }
 
-function pullCardData(pArea){ //needs parameter to be used for both index and area pages
+function pullCardData(pArea, home){ //needs parameter to be used for both index and area pages
 
   var PAData = hyttegrender;
 
   var templateElement = $('#cardTemplate').clone();
   templateElement.removeAttr("id");
-  templateElement.addClass(PAData[pArea].area);
-  templateElement.addClass(PAData[pArea].icons.join(" "));
   templateElement.find("a").attr('href', PAData[pArea].area.toLowerCase()+'/'+PAData[pArea].name);
   templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+pArea+'.jpeg');
   templateElement.find(".availabilityText").html(PAData[pArea].cardInfo.availability);
   templateElement.find(".price").html(PAData[pArea].cardInfo.price);
   templateElement.find(".card-title").html(PAData[pArea].title);
-  templateElement.find(".areaName").html(PAData[pArea].area);
   templateElement.find(".card-text").html(PAData[pArea].oneliner);
 
+  if(home == true){
+    templateElement.find(".areaName").html(PAData[pArea].area);
+    templateElement.addClass(PAData[pArea].area);
+    templateElement.addClass(PAData[pArea].icons.join(" "));
+  }
   $('#cardContainer').append(templateElement);
   filterItems = $('.filter_item');
 }
