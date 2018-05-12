@@ -33,22 +33,68 @@ var hyttegrender = {
             "turterreng",
         ],
         "mapData": {
-          "position": {lat: 61.215699, lng: 10.518729},
+          "position": {lat: 61.015996, lng: 10.524326},
           "markers": [
             {
-              "propertyNumber": "",
-              "long": "",
-              "lat": ""
+              "propertyNumber": "1",
+              "long": 10.519054152719,
+              "lat": 61.016047614752
+            },
+
+            {
+              "propertyNumber": "2",
+              "long": 10.51954231476,
+              "lat": 61.015805868956
             },
             {
-              "propertyNumber": "",
-              "long": "",
-              "lat": ""
+              "propertyNumber": "3",
+              "long": 10.519376017801,
+              "lat": 61.016276361767
             },
             {
-              "propertyNumber": "",
-              "long": "",
-              "lat": ""
+              "propertyNumber": "4",
+              "long": 10.523045279733,
+              "lat": 61.014360554593
+            },
+            {
+              "propertyNumber": "5",
+              "long": 10.522224523775,
+              "lat": 61.015020832255
+            },
+            {
+              "propertyNumber": "6",
+              "long": 10.520717122308,
+              "lat": 61.015844860338
+            },
+            {
+              "propertyNumber": "7",
+              "long": 10.520695664472,
+              "lat": 61.016161988466
+            },
+            {
+              "propertyNumber": "8",
+              "long": 10.523077466241,
+              "lat": 61.015304175529
+            },
+            {
+              "propertyNumber": "9",
+              "long": 10.523077466241,
+              "lat": 61.015306774997
+            },
+            {
+              "propertyNumber": "10",
+              "long": 10.523646094553,
+              "lat": 61.015233989851
+            },
+            {
+              "propertyNumber": "11",
+              "long": 10.519005872998,
+              "lat": 61.015356164869
+            },
+            {
+              "propertyNumber": "12",
+              "long": 10.520963885538,
+              "lat": 61.014643903781
             }
           ]
         },
@@ -120,28 +166,26 @@ var hyttegrender = {
             "turterreng"
         ],
         "mapData": {
-          "position": {
-            "lat": "",
-            "lng": ""},
+          "position": {lat: 61.215699, lng: 10.518729},
           "markers": [
             {
-              "propertyNumber": "",
+              "propertyNumber": "1",
               "position": {
                 "lat": "",
-                "lng": ""
+                "lng":""
               }
             },
             {
               "propertyNumber": "2",
               "position": {
                 "lat": "",
-                "lng": ""
+                "lng":""
               }
             },
             {
               "propertyNumber": "3",
               "position": {
-                "lat": "",
+                "lat":"" ,
                 "lng": ""
               }
             }
