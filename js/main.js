@@ -73,128 +73,28 @@ function loadContent(x){
     }
 }
 
-function initMapPA(PAData){
+function initMapPA(PArea){
 
   var map = new google.maps.Map(document.getElementById('mapPA'), {
-    center: PAData.mapData.position,
+    center: PArea.mapData.position,
     zoom: 16,
     mapTypeId: 'hybrid'
   });
-console.log(PAData.mapData.markers);
-console.log(PAData.mapData.markers[0].outline);
-var finsandvika1 = PAData.mapData.markers.outline;
-console.log(finsandvika1);
-console.log("hello");
-for(i = 0; i < PAData.mapdData.markers.length; i++){
-  console.log(PAData.mapData.markers);
-  console.log("hello");
-}
+  console.log(PArea.mapData.markers);
+  for(i = 0; i < PArea.mapData.markers.length; i++){
 
-  // Define the LatLng coordinates for the polygon's path.
-        /*/var finsandvika1 = [
-          tomt1 = [
-            {lat: 61.016047614752, lng: 10.519054152719},
-            {lat: 61.015803269529, lng: 10.519553043596},
-            {lat: 61.016273762378, lng: 10.519891001932},
-            {lat: 61.016273762378, lng: 10.519376017801}
-          ],
-
-          tomt2 = [
-            {lat:61.015805868956, lng:10.51954231476},
-            {lat:61.015574519104, lng:10.519998290292},
-            {lat:61.015891649933, lng:10.520282604448},
-            {lat:61.015974831265, lng:10.520186044923},
-            {lat:61.016052813566, lng:10.520218231431},
-            {lat:61.016063211192, lng:10.519880273096}
-          ],
-
-          tomt3 = [
-            {lat:61.016276361767,lng:10.519376017801},
-            {lat:61.016063211192,lng:10.519880273096},
-            {lat:61.016060611786,lng:10.520470359079},
-            {lat:61.016354343327, lng:10.52025041794},
-          ],
-
-          tomt4 = [
-            {lat:61.014360554593,lng:10.523045279733},
-            {lat:61.014573716603,lng:10.522267439119},
-            {lat:61.014230577056,lng:10.522063591234},
-            {lat:61.013986217844,lng:10.522954084627},
-            {lat:61.014160388964,lng:10.522956766836}
-           ],
-
-           tomt5 = [
-             {lat:61.015020832255,lng:10.522224523775},
-             {lat:61.014786877171,lng:10.523013093225},
-             {lat:61.014516526926,lng:10.522669770471},
-             {lat:61.014784277661,lng:10.521838285676}
-           ],
-
-           tomt6 = [
-             {lat:61.015844860338,lng:10.520717122308},
-             {lat:61.016159389068,lng:10.520701029054},
-             {lat:61.016159389068,lng:10.521430589906},
-             {lat:61.015857857455,lng:10.521462776414}
-           ],
-
-           tomt7 = [
-             {lat:61.016161988466,lng:10.520695664472},
-             {lat:61.016460917816,lng:10.520668842382},
-             {lat:61.016460917816,lng:10.521425225324},
-             {lat:61.016161988466,lng:10.521430589743}
-           ],
-
-           tomt8 = [
-             {lat:61.015304175529,lng:10.523077466241},
-             {lat:61.01508062048,lng:10.523780205003},
-             {lat:61.01482067077,lng:10.523404695741},
-             {lat:61.015026031218,lng:10.522637583963}
-           ],
-
-           tomt9 = [
-             {lat:61.015306774997,lng:10.523077466241},
-             {lat:61.015525129552,lng:10.522417642824},
-             {lat:61.01536396324,lng:10.522133328668},
-             {lat:61.015145607575,lng:10.522213794939},
-             {lat:61.015026031218,lng:10.522632219545}
-           ],
-
-           tomt10 = [
-             {lat:61.015233989851,lng:10.523646094553},
-             {lat:61.015454944363,lng:10.522959449045},
-             {lat:61.015769476956,lng:10.523281314127},
-             {lat:61.015517331241,lng:10.524053790323}
-           ],
-
-           tomt11 = [
-             {lat:61.015356164869,lng:10.519005872998},
-             {lat:61.015088418959,lng:10.519284822735},
-             {lat:61.014940247921,lng:10.518571355137},
-             {lat:61.015158604998,lng:10.51834604958}
-           ],
-
-           tomt12 = [
-             {lat:61.014643903781,lng:10.520963885538},
-             {lat:61.014394348666,lng:10.520996072046},
-             {lat:61.014370952773,lng:10.52180073475},
-             {lat:61.014610109974,lng:10.521929480783},
-             {lat:61.014815471784,lng:10.521478869668}
-           ]
-        ];
-*/
-
-
-        // Construct the polygon.
-        var tomt1 = new google.maps.Polygon({
-          paths: finsandvika1,
-          strokeColor: '#00FF00',
-          strokeOpacity: 0.8,
-          strokeWeight: 2,
-          fillColor: '#00FF00',
-          fillOpacity: 0.35
-        });
-        tomt1.setMap(map);
-
+    outlines = PArea.mapData.markers[i].outline;
+    // Construct the polygon.
+    plot = new google.maps.Polygon({
+    paths: outlines,
+    strokeColor: '#00FF00',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#00FF00',
+    fillOpacity: 0.35
+  });
+  plot.setMap(map);
+  }
 }
 
 
