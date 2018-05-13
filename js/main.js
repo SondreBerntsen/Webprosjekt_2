@@ -80,9 +80,18 @@ function initMapPA(PAData){
     zoom: 16,
     mapTypeId: 'hybrid'
   });
+console.log(PAData.mapData.markers);
+console.log(PAData.mapData.markers[0].outline);
+var finsandvika1 = PAData.mapData.markers.outline;
+console.log(finsandvika1);
+console.log("hello");
+for(i = 0; i < PAData.mapdData.markers.length; i++){
+  console.log(PAData.mapData.markers);
+  console.log("hello");
+}
 
   // Define the LatLng coordinates for the polygon's path.
-        var finsandvika1 = [
+        /*/var finsandvika1 = [
           tomt1 = [
             {lat: 61.016047614752, lng: 10.519054152719},
             {lat: 61.015803269529, lng: 10.519553043596},
@@ -172,7 +181,7 @@ function initMapPA(PAData){
              {lat:61.014815471784,lng:10.521478869668}
            ]
         ];
-
+*/
 
 
         // Construct the polygon.
