@@ -72,6 +72,22 @@ function loadContent(x){
         $('#contactInfo').append(templateElement.html());
     }
 }
+var hei1= function(polygon) {
+  google.maps.event.addListener(polygon,"mouseover",function(){
+    this.setOptions({fillColor: "#000"});
+  });
+}
+var hei2= function(polygon) {
+  google.maps.event.addListener(polygon,"mouseout",function(){
+    this.setOptions({fillColor: "#FFF"});
+  });
+}
+
+var addListenersOnPolygon = function(polygon) {
+  google.maps.event.addListener(polygon, 'click', function (event) {
+    alert("hei");
+  });
+}
 
 function initMapPA(PArea){
 
@@ -94,6 +110,10 @@ function initMapPA(PArea){
     fillOpacity: 0.35
   });
   plot.setMap(map);
+  addListenersOnPolygon(plot);
+  hei1(plot);
+  hei2(plot);
+
   }
 }
 
