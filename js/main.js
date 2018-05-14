@@ -72,49 +72,79 @@ function loadContent(x){
         $('#contactInfo').append(templateElement.html());
     }
 }
-var hei1= function(polygon) {
-  google.maps.event.addListener(polygon,"mouseover",function(){
+var mouseover= function(plot) {
+  google.maps.event.addListener(plot,"mouseover",function(){
     this.setOptions({fillColor: "#000"});
   });
 }
-var hei2= function(polygon) {
-  google.maps.event.addListener(polygon,"mouseout",function(){
-    this.setOptions({fillColor: "#FFF"});
+var mouseout= function(plot) {
+  google.maps.event.addListener(plot,"mouseout",function(){
+    this.setOptions({fillColor: "#00FF00"});
   });
 }
 
-var addListenersOnPolygon = function(polygon) {
-  google.maps.event.addListener(polygon, 'click', function (event) {
-    alert("hei");
+/*var clickPA = function(plot) {
+  google.maps.event.addListener(plot, 'click', function (event) {
+    var infowindow = new google.maps.InfoWindow()*/
+
+          /*  infowindow.setContent(content);*/
+            /*infowindow.open();
   });
-}
+}*/
 
 function initMapPA(PArea){
 
   var map = new google.maps.Map(document.getElementById('mapPA'), {
     center: PArea.mapData.position,
     zoom: 16,
-    mapTypeId: 'hybrid'
+    mapTypeId: 'satellite'
   });
-  console.log(PArea.mapData.markers);
-  for(i = 0; i < PArea.mapData.markers.length; i++){
+//  console.log(PArea.mapData.markers);
 
+  for(i = 0; i < PArea.mapData.markers.length; i++){
+    label= PArea.mapData.markers[i].propertyNumber;
     outlines = PArea.mapData.markers[i].outline;
     // Construct the polygon.
     plot = new google.maps.Polygon({
     paths: outlines,
-    strokeColor: '#00FF00',
+    strokeColor: '#000',
     strokeOpacity: 0.8,
     strokeWeight: 2,
     fillColor: '#00FF00',
-    fillOpacity: 0.35
+    fillOpacity: 0.35,
+    name : label
   });
-  plot.setMap(map);
-  addListenersOnPolygon(plot);
-  hei1(plot);
-  hei2(plot);
+    plot.setMap(map);
+    //clickPA(plot);
+    mouseover(plot);
+    mouseout(plot);
+    plot.addListener('click', infoWindowPA);
+    var  infoWindow = new google.maps.InfoWindow;
 
-  }
+}
+
+      function infoWindowPA(event) {
+
+
+        for(i = 0; i < PArea.mapData.markers.length; i++){
+          outlines =  this.getPath();
+          label= PArea.mapData.markers[i].propertyNumber;
+          //console.log(label);
+          //console.log(outlines);
+
+        var xy = outlines.getAt(i);
+          var contentString = 'Tomt nr.: '+ this.name;
+          //console.log('Coordinate ' + i + ':<br>' + xy + ',');
+
+        }
+
+        // Replace the info window's content and position.
+        infoWindow.setContent(contentString);
+        infoWindow.setPosition(event.latLng);
+
+        infoWindow.open(map);
+      }
+
 }
 
 
@@ -192,23 +222,6 @@ function loadNavItems(){
   }
 }
 
-function initMapProperties(PA){
-  var map = new google.maps.Map(document.getElementById('mapPropertyArea'), {
-    center: PA.mapData.position,
-    zoom: 16,
-    mapTypeId: 'hybrid'
-  });
-
-  for (i = 0; i < PA.mapData.markers.length; i++){
-    var markerPosition = PA.mapData.markers[i].position;
-    var labelNumber = PA.mapData.markers[i].propertyNumber;
-    var marker = new google.maps.Marker({
-      position: markerPosition,
-      label: labelNumber,
-      map: map
-    });
-  }
-}
 
 function pullCardData(pArea, home){ //needs parameter to be used for both index and area pages
 
