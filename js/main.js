@@ -107,7 +107,7 @@ function initMapPA(PArea){
     strokeOpacity: 0.8,
     strokeWeight: 2,
     fillColor: '#00FF00',
-    fillOpacity: 0.35
+    fillOpacity: 0.35,
   });
   plot.setMap(map);
   addListenersOnPolygon(plot);
