@@ -13,6 +13,8 @@ function checkURL(path){
   if(homeRegex || indexRegex || defaultRegex){
     console.log("Cool beans, load the home page.");
     $('#SPAContent').load('home.html', function() {
+        //Imbed the script here
+
       for(i = 0; i < Object.keys(PAData).length; i++){
         var pArea = Object.keys(PAData)[i];
         pullCardData(pArea, true);
@@ -30,7 +32,7 @@ function checkURL(path){
     ){
       console.log("Cool beans, load the property area page.");
 
-      //$.getScript('/webprosjekt_2/js/mapPlot.js'); May have to do it like this unless we include everything in index, to avoid deprecation notice
+      //$.getScript('/webprosjekt_2/js/mapPlot.js');
 
       $('#SPAContent').load('/webprosjekt_2/areas/propertyArea.html', function() {
         loadContent(PAIndex);
