@@ -99,8 +99,8 @@ function initMapPA(PArea){
     zoom: 16,
     mapTypeId: 'satellite'
   });
-//  console.log(PArea.mapData.markers);
 
+//  console.log(PArea.mapData.markers);
   for(i = 0; i < PArea.properties.length; i++){
     label= PArea.properties[i].propertyNumber;
     outlines = PArea.properties[i].outline;
@@ -122,32 +122,38 @@ function initMapPA(PArea){
       strokeWeight: 2,
       fillColor: color,
       fillOpacity: 0.85,
-      name : label
+      name: label,
+      map: map,
+      clickPath: outlines[1] //denne er bæsj
     });
-    plot.setMap(map);
-
     //clickPA(plot);
-    mouseover(plot); //there is no mouse
-    mouseout(plot);
 
-    plot.addListener('click', infoWindowPA);
-    var  infoWindow = new google.maps.InfoWindow;
+    //mouseover(plot);  fucks
+    //mouseout(plot);  also fucks
 
+    contentString = 'Tomt nr. '
+
+    plot.addListener('click', function(){
+      contentString = 'Tomt nr. '+this.name;
+      position = this.clickPath; //aner ikke hvordan du fikk posisjonen til der du trykka
+      map = this.map;
+
+      //Denne funker kun etter siste man trykka på
+      google.maps.event.addListener(map, "click", function(event) {
+        infoWindow.close();
+      });
+
+      initInfoWindow(map, contentString, position);
+    });
+  }
 }
-      function infoWindowPA(event) {
-        for(i = 0; i < PArea.properties.length; i++){
-          outlines = this.getPath();
-          var xy = outlines.getAt(i);
-          var contentString = 'Tomt nr.: '+ this.name;
-        }
-        // Replace the info window's content and position.
-        infoWindow.setContent(contentString);
-        infoWindow.setPosition(event.latLng);
-        infoWindow.open(map);
-      }
 
+function initInfoWindow(map, content, position){
+  infoWindow = new google.maps.InfoWindow;
+  infoWindow.setContent(content);
+  infoWindow.setPosition(position);
+  infoWindow.open(map);
 }
-
 
 function loadContentArea(areaName){
   var areaData = omrader;
