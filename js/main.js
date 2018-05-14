@@ -95,55 +95,54 @@ var mouseout= function(plot) {
 function initMapPA(PArea){
 
   var map = new google.maps.Map(document.getElementById('mapPA'), {
-    center: PArea.mapData.position,
+    center: PArea.mapPosition,
     zoom: 16,
     mapTypeId: 'satellite'
   });
 //  console.log(PArea.mapData.markers);
 
-  for(i = 0; i < PArea.mapData.markers.length; i++){
-    label= PArea.mapData.markers[i].propertyNumber;
-    outlines = PArea.mapData.markers[i].outline;
+  for(i = 0; i < PArea.properties.length; i++){
+    label= PArea.properties[i].propertyNumber;
+    outlines = PArea.properties[i].outline;
+    switch(PArea.properties[i].availability){
+      case "available":
+        color = "#00FF00";
+        break;
+      case "sold":
+        color = "#FF0000";
+        break;
+      case "": //Temporary until data is filled out
+        color = "#FFA500";
+    }
     // Construct the polygon.
     plot = new google.maps.Polygon({
-    paths: outlines,
-    strokeColor: '#000',
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
-    fillColor: '#00FF00',
-    fillOpacity: 0.35,
-
-    name : label
-
-  });
+      paths: outlines,
+      strokeColor: '#000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: color,
+      fillOpacity: 0.85,
+      name : label
+    });
     plot.setMap(map);
+
     //clickPA(plot);
-    mouseover(plot);
+    mouseover(plot); //there is no mouse
     mouseout(plot);
+
     plot.addListener('click', infoWindowPA);
     var  infoWindow = new google.maps.InfoWindow;
 
 }
-
       function infoWindowPA(event) {
-
-
-        for(i = 0; i < PArea.mapData.markers.length; i++){
-          outlines =  this.getPath();
-          label= PArea.mapData.markers[i].propertyNumber;
-          //console.log(label);
-          //console.log(outlines);
-
-        var xy = outlines.getAt(i);
+        for(i = 0; i < PArea.properties.length; i++){
+          outlines = this.getPath();
+          var xy = outlines.getAt(i);
           var contentString = 'Tomt nr.: '+ this.name;
-          //console.log('Coordinate ' + i + ':<br>' + xy + ',');
-
         }
-
         // Replace the info window's content and position.
         infoWindow.setContent(contentString);
         infoWindow.setPosition(event.latLng);
-
         infoWindow.open(map);
       }
 
