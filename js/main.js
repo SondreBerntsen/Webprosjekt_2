@@ -72,17 +72,7 @@ function loadContent(x){
         $('#contactInfo').append(templateElement.html());
     }
 }
-/*var mouseover= function(plot) {
-  google.maps.event.addListener(plot,"mouseover",function(){
-    this.setOptions({fillColor: "#000"});
-  });
-}*/
-/*var mouseout= function(plot) {
-  google.maps.event.addListener(plot,"mouseout",function(){
-    this.setOptions({fillColor: "#00FF00"});
-  });
-}*/
-
+// map for property areas
 function initMapPA(PArea){
 
   var map = new google.maps.Map(document.getElementById('mapPA'), {
@@ -90,22 +80,20 @@ function initMapPA(PArea){
     zoom: 16,
     mapTypeId: 'satellite'
   });
-//  console.log(PArea.mapData.markers);
 
-  for(i = 0; i < PArea.properties.length; i++){
-    label= PArea.properties[i].propertyNumber;
+  for(i = 0; i < PArea.properties.length; i++) {
+    label = PArea.properties[i].propertyNumber;
     outlines = PArea.properties[i].outline;
     availability = PArea.properties[i].availability;
-  //  console.log(availability);
+    // gives the property area color based on their availability
     switch(availability){
       case "available":
-        color = "#00FF00";
-        console.log(availability);
+        color = "#5B965B";
         break;
       case "sold":
-        color = "#FF0000";
+        color = "#C84646";
         break;
-      case "": //Temporary until data is filled out
+      case "reserved":
         color = "#FFA500";
     }
     // Construct the polygon.
@@ -119,53 +107,48 @@ function initMapPA(PArea){
       name: label,
       availability: availability
     });
+
     plot.setMap(map);
-
-
 
     plot.addListener('click', infoWindowPA);
     var  infoWindow = new google.maps.InfoWindow;
     plot.addListener('mouseover', mouseover);
     plot.addListener('mouseout', mouseout);
 
+  }
+    function infoWindowPA(event) {
+      for(i = 0; i < PArea.properties.length; i++){
+        outlines = this.getPath();
+        var xy = outlines.getAt(i);
+        var contentString = 'Tomt nr.: '+ this.name;
+      }
+
+      infoWindow.setContent(contentString);
+      infoWindow.setPosition(event.latLng);
+      infoWindow.open(map);
+    }
+    // color changes on mouseover
+    function mouseover(event){
+      for(i = 0; i < PArea.properties.length; i++){
+        this.setOptions({fillColor: "#FFF"});
+      }
+    }
+  // changes the color back to what it was before on mouseout
+  function mouseout(event) {
+    for(i = 0; i < PArea.properties.length; i++){
+      switch(this.availability){
+        case "available":
+          this.setOptions({fillColor: "#5B965B"});
+          break;
+        case "sold":
+          this.setOptions({fillColor: "#C84646"});
+          break;
+        case "reserved":
+          this.setOptions({fillColor: "#FFA500"});
+      }
+    }
+  }
 }
-      function infoWindowPA(event) {
-        for(i = 0; i < PArea.properties.length; i++){
-          outlines = this.getPath();
-          var xy = outlines.getAt(i);
-          var contentString = 'Tomt nr.: '+ this.name;
-        }
-        // Replace the info window's content and position.
-        infoWindow.setContent(contentString);
-        infoWindow.setPosition(event.latLng);
-        infoWindow.open(map);
-      }
-
-      function mouseover(event){
-        for(i = 0; i < PArea.properties.length; i++){
-            this.setOptions({fillColor: "#FFF"});
-        }
-
-      }
-
-      function mouseout(event) {
-        for(i = 0; i < PArea.properties.length; i++){
-          switch(this.availability){
-            case "available":
-              this.setOptions({fillColor: "#00FF00"});
-              break;
-            case "sold":
-              this.setOptions({fillColor: "#FF0000"});
-              break;
-            case "": //Temporary until data is filled out
-              this.setOptions({fillColor: "#FFA500"});
-          }
-
-        }
-      }
-}
-
-
 
 function loadContentArea(areaName){
   var areaData = omrader;

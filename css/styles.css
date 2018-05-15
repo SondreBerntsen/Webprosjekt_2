@@ -428,7 +428,7 @@ width: inherit;
   width: 100%;
   height: 100%;
 }
-/* ---------------------propertyArea -----------------------------*/
+/* ---------------------property Area -----------------------------*/
 #buttoncontainer {
     margin: 0 auto;
     text-align: center;
@@ -543,6 +543,33 @@ width: inherit;
 
 #facts p, #contactInfo p{
   margin-bottom:0;
+}
+
+ul.list-availability {
+  margin-bottom: 5px;
+}
+ul.list-availability li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 25px;
+
+}
+span.available {
+  background-color:#5B965B;
+}
+span.sold {
+  background-color: #C84646;
+}
+
+span.reserved {
+  background-color: #FFA500;
+}
+.list-availability span {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: top;
+  margin-right: 10px;
 }
 
 /*fix. denne brukes kun i hyggegrend. er den ikke i bruk lenger?*/
