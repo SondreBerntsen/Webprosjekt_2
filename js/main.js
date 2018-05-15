@@ -72,23 +72,14 @@ function loadContent(x){
         $('#contactInfo').append(templateElement.html());
     }
 }
-var mouseover= function(plot) {
+/*var mouseover= function(plot) {
   google.maps.event.addListener(plot,"mouseover",function(){
     this.setOptions({fillColor: "#000"});
   });
-}
-var mouseout= function(plot) {
+}*/
+/*var mouseout= function(plot) {
   google.maps.event.addListener(plot,"mouseout",function(){
     this.setOptions({fillColor: "#00FF00"});
-  });
-}
-
-/*var clickPA = function(plot) {
-  google.maps.event.addListener(plot, 'click', function (event) {
-    var infowindow = new google.maps.InfoWindow()*/
-
-          /*  infowindow.setContent(content);*/
-            /*infowindow.open();
   });
 }*/
 
@@ -99,14 +90,17 @@ function initMapPA(PArea){
     zoom: 16,
     mapTypeId: 'satellite'
   });
-
 //  console.log(PArea.mapData.markers);
+
   for(i = 0; i < PArea.properties.length; i++){
     label= PArea.properties[i].propertyNumber;
     outlines = PArea.properties[i].outline;
-    switch(PArea.properties[i].availability){
+    availability = PArea.properties[i].availability;
+  //  console.log(availability);
+    switch(availability){
       case "available":
         color = "#00FF00";
+        console.log(availability);
         break;
       case "sold":
         color = "#FF0000";
@@ -123,37 +117,55 @@ function initMapPA(PArea){
       fillColor: color,
       fillOpacity: 0.85,
       name: label,
-      map: map,
-      clickPath: outlines[1] //denne er bæsj
+      availability: availability
     });
-    //clickPA(plot);
+    plot.setMap(map);
 
-    //mouseover(plot);  fucks
-    //mouseout(plot);  also fucks
 
-    contentString = 'Tomt nr. '
 
-    plot.addListener('click', function(){
-      contentString = 'Tomt nr. '+this.name;
-      position = this.clickPath; //aner ikke hvordan du fikk posisjonen til der du trykka
-      map = this.map;
+    plot.addListener('click', infoWindowPA);
+    var  infoWindow = new google.maps.InfoWindow;
+    plot.addListener('mouseover', mouseover);
+    plot.addListener('mouseout', mouseout);
 
-      //Denne funker kun etter siste man trykka på
-      google.maps.event.addListener(map, "click", function(event) {
-        infoWindow.close();
-      });
+}
+      function infoWindowPA(event) {
+        for(i = 0; i < PArea.properties.length; i++){
+          outlines = this.getPath();
+          var xy = outlines.getAt(i);
+          var contentString = 'Tomt nr.: '+ this.name;
+        }
+        // Replace the info window's content and position.
+        infoWindow.setContent(contentString);
+        infoWindow.setPosition(event.latLng);
+        infoWindow.open(map);
+      }
 
-      initInfoWindow(map, contentString, position);
-    });
-  }
+      function mouseover(event){
+        for(i = 0; i < PArea.properties.length; i++){
+            this.setOptions({fillColor: "#FFF"});
+        }
+
+      }
+
+      function mouseout(event) {
+        for(i = 0; i < PArea.properties.length; i++){
+          switch(this.availability){
+            case "available":
+              this.setOptions({fillColor: "#00FF00"});
+              break;
+            case "sold":
+              this.setOptions({fillColor: "#FF0000"});
+              break;
+            case "": //Temporary until data is filled out
+              this.setOptions({fillColor: "#FFA500"});
+          }
+
+        }
+      }
 }
 
-function initInfoWindow(map, content, position){
-  infoWindow = new google.maps.InfoWindow;
-  infoWindow.setContent(content);
-  infoWindow.setPosition(position);
-  infoWindow.open(map);
-}
+
 
 function loadContentArea(areaName){
   var areaData = omrader;
@@ -192,8 +204,6 @@ function initMapArea(areaData){
     })(marker,content,infowindow));
 
   }
-
-
 }
 
 
