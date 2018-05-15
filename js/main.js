@@ -23,6 +23,7 @@ function loadContent(x){
         $('#icons').append(templateElement);
     }
     initMapPA(PAData[x]);
+    tableCreate(PAData[x]);
 
     for(i = 0; i < PAData[x].information.propertyInfo.length; i++){
       var templateElement = $('#pTemplate').clone();
@@ -244,3 +245,40 @@ function pullCardData(pArea, home){ //needs parameter to be used for both index 
   $('#cardContainer').append(templateElement);
   filterItems = $('.filter_item');
 }
+
+
+
+function tableCreate(PAarea){
+
+  console.log(PAarea.properties);
+    var body = document.body,
+        tbl= document.getElementById("propertyTable");
+        console.log(tbl);
+    //tbl.style.width  = '100px';
+    //tbl.style.border = '1px solid black';
+
+
+   var props = PAarea.properties;
+
+
+   for(i = 0; i < props.length; i++){
+     console.log(props[i].availability);
+     if (props[i].availability == "available"){
+            var nmbr = props[i].propertyNumber;
+            var perimiter = props[i].perimiter;
+            var price = props[i].price;
+            var row = tbl.insertRow(1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var cell4 = row.insertCell(3);
+                cell1.appendChild(document.createTextNode(nmbr));
+                cell2.appendChild(document.createTextNode(perimiter));
+                cell3.appendChild(document.createTextNode(price));
+                cell4.innerHTML = "interessert";
+            }
+        }
+
+      body.appendChild(tbl);
+
+    }
