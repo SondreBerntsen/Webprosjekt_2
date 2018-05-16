@@ -4615,7 +4615,7 @@ var hyttegrender = {
          "strand",
          "fisking",
      ],
-     "mapPosition":  {"lat": 63.563, "lng": 9.75400000000001},
+     "mapPosition":  {"lat": 63.5636, "lng": 9.7651},
      "properties": [
          {
            "propertyNumber": "1",
