@@ -89,6 +89,7 @@ function initMapPA(PArea){
     outlines = PArea.properties[i].outline;
     price = PArea.properties[i].price;
     availability = PArea.properties[i].availability;
+    perimiter = PArea.properties[i].perimiter;
     // gives the property area color based on their availability
     switch(availability){
       case "available":
@@ -110,7 +111,8 @@ function initMapPA(PArea){
       fillOpacity: 0.7,
       number: number,
       availability: availability,
-      price: price
+      price: price,
+      perimiter: perimiter
     });
 
     plot.setMap(map);
@@ -131,7 +133,15 @@ function initMapPA(PArea){
 
     function infoWindowPA(event) {
       for(i = 0; i < PArea.properties.length; i++){
-        var contentString = 'Tomt nr.: '+ this.number+ '<br>Pris: '+this.price+ ':-';
+          // if the property area is not available..
+          if (this.availability !== "available"){
+              // the infoWindow will show its property area number and say it is not available.
+              var contentString = '<strong>Tomt nr. '+this.number+' er utilgjengelig</strong>';
+          // if it is available..
+          } else {
+            // the infoWindow will show additional info about the property area.
+            var contentString = '<strong>Tomt nr.: '+ this.number+ '</strong><br>Pris: '+this.price+ ' kr <br>Areal: '+this.perimiter+' kvm';
+          }
 
         /*
          uncomment the three lines benath this to log
