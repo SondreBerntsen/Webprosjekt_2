@@ -582,8 +582,16 @@ span.reserved {
 
 
 .btn-primary {
-    background-color: #747372;
+    background-color: #616161;
     border-color: #495057;
+}
+
+.btn-primary:hover {
+  background-color: #747372;
+  border-color: #495057;
+  -moz-box-shadow:    0px 0px 2px 3px #ccc;
+-webkit-box-shadow: 0px 0px 2px 3px #ccc;
+box-shadow:         0px 0px 2px 2px #ccc;
 }
 
 .btn-calltoaction{
