@@ -22,7 +22,9 @@ function loadContent(x){
 
         $('#icons').append(templateElement);
     }
+    // calls the initMapPA function
     initMapPA(PAData[x]);
+    // calls the tableCreate function
     tableCreate(PAData[x]);
 
     for(i = 0; i < PAData[x].information.propertyInfo.length; i++){
@@ -83,8 +85,9 @@ function initMapPA(PArea){
   });
 
   for(i = 0; i < PArea.properties.length; i++) {
-    label = PArea.properties[i].propertyNumber;
+    number = PArea.properties[i].propertyNumber;
     outlines = PArea.properties[i].outline;
+    price = PArea.properties[i].price;
     availability = PArea.properties[i].availability;
     // gives the property area color based on their availability
     switch(availability){
@@ -105,8 +108,9 @@ function initMapPA(PArea){
       strokeWeight: 2,
       fillColor: color,
       fillOpacity: 0.7,
-      name: label,
-      availability: availability
+      number: number,
+      availability: availability,
+      price: price
     });
 
     plot.setMap(map);
@@ -117,39 +121,55 @@ function initMapPA(PArea){
     plot.addListener('mouseout', mouseout);
 
   }
+
+    /*
+      We are aware that having functions within functions is bad practise,
+      yet we did not find another way to transfer the right data from coordinates
+      outside of the map function. There are some restrictions to the Google API
+      when it comes to using polygons.
+    */
+
     function infoWindowPA(event) {
       for(i = 0; i < PArea.properties.length; i++){
-        //outlines = this.getPath();
-        //var xy = outlines.getAt(i);
-        //alert(xy);
-        var contentString = 'Tomt nr.: '+ this.name;
+        var contentString = 'Tomt nr.: '+ this.number+ '<br>Pris: '+this.price+ ':-';
+
+        /*
+         uncomment the three lines benath this to log
+         the polygon you have clicked
+        */
+           /*
+             outlines = this.getPath();
+             var xy = outlines.getAt(i);
+             console.log(xy.lat());
+           */
       }
 
       infoWindow.setContent(contentString);
       infoWindow.setPosition(event.latLng);
       infoWindow.open(map);
     }
-    // color changes on mouseover
-    function mouseover(event){
+    // opacity of color changes on the event of mouseover
+    function mouseover(event) {
       for(i = 0; i < PArea.properties.length; i++){
-        //this.setOptions({fillColor: "#FFF"});
         this.setOptions({fillOpacity: 1});
-
       }
     }
-  // changes the color back to what it was before on mouseout
+  // changes the color back to what it was before on the event of mouseout
   function mouseout(event) {
     for(i = 0; i < PArea.properties.length; i++){
       switch(this.availability){
         case "available":
+          // color and its opacity for the available property areas
           this.setOptions({fillColor: "#5B965B"});
           this.setOptions({fillOpacity: 0.7});
           break;
         case "sold":
+          // color and its opacity for the sold property areas
           this.setOptions({fillColor: "#C84646"});
           this.setOptions({fillOpacity: 0.7});
           break;
         case "reserved":
+          // color and its opacity for the reserved property areas
           this.setOptions({fillColor: "#FFA500"});
           this.setOptions({fillOpacity: 0.7});
       }
@@ -196,7 +216,34 @@ function initMapArea(areaData){
   }
 }
 
+// creates the table based on the property area information
+function tableCreate(PAarea){
+  tbl= document.getElementById("propertyTable");
+  props = PAarea.properties;
 
+  for(i = 0; i < props.length; i++){
+    // we only want the information about the available property areas
+    if (props[i].availability == "available"){
+      // creates a new row for each available property area
+      var row = tbl.insertRow(1);
+      // inserts four cells for each row
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      var cell4 = row.insertCell(3);
+      // first cell contains the property number
+      cell1.appendChild(document.createTextNode(props[i].propertyNumber));
+      // second cell contains the perimiter
+      cell2.appendChild(document.createTextNode(props[i].perimiter));
+      // third cell contains the price
+      cell3.appendChild(document.createTextNode(props[i].price));
+      // fourth cell contains a button
+      cell4.innerHTML = "<button class='btn propertyBtn'type'button'>interessert</button>";
+    }
+  }
+}
+
+// scrolls user to #tomteInformasjon when the link #scrollTo is clicked
 function scrollToTable(){
   $('html, body').animate({
        scrollTop: $("#tomtInformasjon").offset().top
@@ -250,32 +297,4 @@ function pullCardData(pArea, home){ //needs parameter to be used for both index 
   }
   $('#cardContainer').append(templateElement);
   filterItems = $('.filter_item');
-}
-
-
-// creates the table based on the property area information
-function tableCreate(PAarea){
-  tbl= document.getElementById("propertyTable");
-  props = PAarea.properties;
-
-  for(i = 0; i < props.length; i++){
-    // we only want the information about the available property areas
-    if (props[i].availability == "available"){
-      // creates a new row for each available property area
-      var row = tbl.insertRow(1);
-      // inserts four cells for each row
-      var cell1 = row.insertCell(0);
-      var cell2 = row.insertCell(1);
-      var cell3 = row.insertCell(2);
-      var cell4 = row.insertCell(3);
-      // first cell contains the property number
-      cell1.appendChild(document.createTextNode(props[i].propertyNumber));
-      // second cell contains the perimiter
-      cell2.appendChild(document.createTextNode(props[i].perimiter));
-      // third cell contains the price
-      cell3.appendChild(document.createTextNode(props[i].price));
-      // fourth cell contains a button
-      cell4.innerHTML = "<button class='btn propertyBtn'type'button'>interessert</button>";
-    }
-  }
 }
