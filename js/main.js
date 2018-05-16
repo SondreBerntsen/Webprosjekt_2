@@ -104,7 +104,7 @@ function initMapPA(PArea){
       strokeOpacity: 0.8,
       strokeWeight: 2,
       fillColor: color,
-      fillOpacity: 0.85,
+      fillOpacity: 0.75,
       name: label,
       availability: availability
     });
@@ -131,7 +131,9 @@ function initMapPA(PArea){
     // color changes on mouseover
     function mouseover(event){
       for(i = 0; i < PArea.properties.length; i++){
-        this.setOptions({fillColor: "#FFF"});
+        //this.setOptions({fillColor: "#FFF"});
+        this.setOptions({fillOpacity: 1});
+
       }
     }
   // changes the color back to what it was before on mouseout
@@ -140,12 +142,15 @@ function initMapPA(PArea){
       switch(this.availability){
         case "available":
           this.setOptions({fillColor: "#5B965B"});
+          this.setOptions({fillOpacity: 0.75});
           break;
         case "sold":
           this.setOptions({fillColor: "#C84646"});
+          this.setOptions({fillOpacity: 0.75});
           break;
         case "reserved":
           this.setOptions({fillColor: "#FFA500"});
+          this.setOptions({fillOpacity: 0.75});
       }
     }
   }
@@ -246,39 +251,21 @@ function pullCardData(pArea, home){ //needs parameter to be used for both index 
   filterItems = $('.filter_item');
 }
 
-
-
 function tableCreate(PAarea){
+  tbl= document.getElementById("propertyTable");
+  props = PAarea.properties;
 
-  console.log(PAarea.properties);
-    var body = document.body,
-        tbl= document.getElementById("propertyTable");
-        console.log(tbl);
-    //tbl.style.width  = '100px';
-    //tbl.style.border = '1px solid black';
-
-
-   var props = PAarea.properties;
-
-
-   for(i = 0; i < props.length; i++){
-     console.log(props[i].availability);
-     if (props[i].availability == "available"){
-            var nmbr = props[i].propertyNumber;
-            var perimiter = props[i].perimiter;
-            var price = props[i].price;
-            var row = tbl.insertRow(1);
-                var cell1 = row.insertCell(0);
-                var cell2 = row.insertCell(1);
-                var cell3 = row.insertCell(2);
-                var cell4 = row.insertCell(3);
-                cell1.appendChild(document.createTextNode(nmbr));
-                cell2.appendChild(document.createTextNode(perimiter));
-                cell3.appendChild(document.createTextNode(price));
-                cell4.innerHTML = "interessert";
-            }
-        }
-
-      body.appendChild(tbl);
-
+  for(i = 0; i < props.length; i++){
+    if (props[i].availability == "available"){
+      var row = tbl.insertRow(1);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      var cell4 = row.insertCell(3);
+      cell1.appendChild(document.createTextNode(props[i].propertyNumber));
+      cell2.appendChild(document.createTextNode(props[i].perimiter));
+      cell3.appendChild(document.createTextNode(props[i].price));
+      cell4.innerHTML = "interessert";
     }
+  }
+}
