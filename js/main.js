@@ -265,7 +265,13 @@ function tableCreate(PAarea){
       cell1.appendChild(document.createTextNode(props[i].propertyNumber));
       cell2.appendChild(document.createTextNode(props[i].perimiter));
       cell3.appendChild(document.createTextNode(props[i].price));
-      cell4.innerHTML = "interessert";
+      var btn  = document.createElement('button');
+      cell4.innerHTML = "<button class='btn propertyBtn'type'button'>interessert</button>";
+
+
+
+      //<td><button class ="btn propertyBtn" type"button">jeg er interessert </button></td>
+      //<button class ="btn propertyBtn" type"button">jeg er interessert </button>
     }
   }
 }
