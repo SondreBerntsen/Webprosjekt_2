@@ -35,6 +35,7 @@ var omrader = {
     "information": ["Gudbrandsdalen Lorem ipsum dolor sit amet, wisi pharetra mi donec mauris rhoncus integer, ultricies mollis non eget et augue aliquet, in justo pellentesque. Leo molestie maecenas est ullamcorper justo hendrerit, nonummy vivamus quam nunc aliquam mauris. Rhoncus in amet, laoreet tincidunt faucibus, vestibulum nam aliquam at massa."],
     "propertyAreas": [
       "galatoppen",
+      "ringebu",
       "hafjell",
       "haugsetra",
       "hjerkinnho",
@@ -51,6 +52,13 @@ var omrader = {
           "position": {
             "lat": 61.483736,
             "lng": 9.776013
+          }
+        },
+        {
+          "propertyAreaName": "Ringebu",
+          "position": {
+            "lat": 61.6095576569589,
+            "lng": 10.0754232406616
           }
         },
         {
