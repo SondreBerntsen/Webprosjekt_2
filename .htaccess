@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteBase /webprosjekt_2 # this might be needed for web, idk
+#RewriteBase /webprosjekt_2 # this might be needed for web, idk
 RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.jpeg|\.gif|\robots\.txt|\.tpl.html)$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.html [L,QSA, NE]
+RewriteRule ^(.*)$ index.html [NC,L]
