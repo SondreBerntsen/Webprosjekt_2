@@ -104,7 +104,7 @@ function initMapPA(PArea){
       strokeOpacity: 0.8,
       strokeWeight: 2,
       fillColor: color,
-      fillOpacity: 0.75,
+      fillOpacity: 0.7,
       name: label,
       availability: availability
     });
@@ -119,8 +119,9 @@ function initMapPA(PArea){
   }
     function infoWindowPA(event) {
       for(i = 0; i < PArea.properties.length; i++){
-        outlines = this.getPath();
-        var xy = outlines.getAt(i);
+        //outlines = this.getPath();
+        //var xy = outlines.getAt(i);
+        //alert(xy);
         var contentString = 'Tomt nr.: '+ this.name;
       }
 
@@ -142,15 +143,15 @@ function initMapPA(PArea){
       switch(this.availability){
         case "available":
           this.setOptions({fillColor: "#5B965B"});
-          this.setOptions({fillOpacity: 0.75});
+          this.setOptions({fillOpacity: 0.7});
           break;
         case "sold":
           this.setOptions({fillColor: "#C84646"});
-          this.setOptions({fillOpacity: 0.75});
+          this.setOptions({fillOpacity: 0.7});
           break;
         case "reserved":
           this.setOptions({fillColor: "#FFA500"});
-          this.setOptions({fillOpacity: 0.75});
+          this.setOptions({fillOpacity: 0.7});
       }
     }
   }
@@ -251,27 +252,30 @@ function pullCardData(pArea, home){ //needs parameter to be used for both index 
   filterItems = $('.filter_item');
 }
 
+
+// creates the table based on the property area information
 function tableCreate(PAarea){
   tbl= document.getElementById("propertyTable");
   props = PAarea.properties;
 
   for(i = 0; i < props.length; i++){
+    // we only want the information about the available property areas
     if (props[i].availability == "available"){
+      // creates a new row for each available property area
       var row = tbl.insertRow(1);
+      // inserts four cells for each row
       var cell1 = row.insertCell(0);
       var cell2 = row.insertCell(1);
       var cell3 = row.insertCell(2);
       var cell4 = row.insertCell(3);
+      // first cell contains the property number
       cell1.appendChild(document.createTextNode(props[i].propertyNumber));
+      // second cell contains the perimiter
       cell2.appendChild(document.createTextNode(props[i].perimiter));
+      // third cell contains the price
       cell3.appendChild(document.createTextNode(props[i].price));
-      var btn  = document.createElement('button');
+      // fourth cell contains a button
       cell4.innerHTML = "<button class='btn propertyBtn'type'button'>interessert</button>";
-
-
-
-      //<td><button class ="btn propertyBtn" type"button">jeg er interessert </button></td>
-      //<button class ="btn propertyBtn" type"button">jeg er interessert </button>
     }
   }
 }
