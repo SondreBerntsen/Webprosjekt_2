@@ -489,6 +489,13 @@ width: inherit;
   color:white;
   font-size: 18px ;
 }
+
+.contactBtn:hover, .propertyBtn:hover{
+
+background-color: #ff6600c9;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 22px 50px 0 rgba(0,0,0,0.19);
+
+}
 .hyttegrend_tekst_container {
     background-color: #FFFFFF;
     color: #000000;
@@ -535,6 +542,7 @@ width: inherit;
   width: 100%;
   height: 500px;
 }
+
 .propertyBtn{
   background-color: #ff6600;
   color:white;
