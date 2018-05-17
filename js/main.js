@@ -1,6 +1,8 @@
+//const base = '/mmoigaar/webprosjekt_2/'; //Deployed
+const base = '/webprosjekt_2/'; //Localhost
 function loadContent(x){
     var PAData = hyttegrender;
-    $('#imgHeader').attr("src", "../"+PAData[x].imgHeader)
+    $('#imgHeader').attr("src", base+PAData[x].imgHeader)
     $('#headerTitle').html(PAData[x].title);
     $('#hgoneliner').html(PAData[x].oneliner);
 
@@ -17,7 +19,7 @@ function loadContent(x){
         var templateElement = $('#iconTemplate').clone();
 
         templateElement.removeAttr("id");
-        templateElement.attr('src', '../images/icons/'+PAData[x].icons[i]+'.png');
+        templateElement.attr('src', base +'images/icons/'+PAData[x].icons[i]+'.png');
         templateElement.attr('title', PAData[x].icons[i]);
 
         $('#icons').append(templateElement);
@@ -260,7 +262,7 @@ function scrollToTable(){
    }, '2000');
 }
 function loadNavItems(){
-  //$('#templates').load('/webprosjekt_2/includeFiles/templates.html'); //This is pointless as they can't be cloned from there anyway. I think the templates must be file separated and loaded to their respective target containers once the page loads. Then again it works on propertyArea, what the fuck.
+  //$('#templates').load('/mmoigaar/webprosjekt_2/includeFiles/templates.html'); //This is pointless as they can't be cloned from there anyway. I think the templates must be file separated and loaded to their respective target containers once the page loads. Then again it works on propertyArea, what the fuck.
   var PAData = hyttegrender;
   var areaData = omrader;
 
@@ -270,7 +272,7 @@ function loadNavItems(){
     var templateElement = $('#navAreaTemplate').clone();
 
     templateElement.removeAttr("id");
-    templateElement.find('a').attr('href', '/webprosjekt_2/'+area);
+    templateElement.find('a').attr('href', base + area);
     templateElement.find('a').html(areaData[temp].title);
 
     for(j = 0; j < areaData[temp].propertyAreas.length; j++){
@@ -278,7 +280,7 @@ function loadNavItems(){
       var templateSubElement = $('#navPATemplate').clone();
 
       templateSubElement.removeAttr("id");
-      templateSubElement.find('a').attr('href', '/webprosjekt_2/'+area+'/'+propArea);
+      templateSubElement.find('a').attr('href', base + area + '/' +propArea);
       templateSubElement.find('a').html(areaData[temp].mapData.markers[j].propertyAreaName);
       templateElement.find('ul').append(templateSubElement);
     }

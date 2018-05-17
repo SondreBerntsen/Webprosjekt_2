@@ -1,4 +1,6 @@
 <html lang="en">
+<!-- <base href="/mmoigaar/webprosjekt_2/"> --> <!-- Deployed -->
+<base href="/webprosjekt_2/">  <!-- Localhost -->
 
 <head>
   <!-- Required meta tags always come first -->
@@ -8,8 +10,8 @@
   <title>Webprosjekt 2</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="/webprosjekt_2/css/normalize.css">
-  <link rel="stylesheet" href="/webprosjekt_2/css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -17,15 +19,15 @@
 </head>
 <body onload="checkURL(window.location.pathname), loadNavItems()">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/webprosjekt_2/home">
-      <img src="/webprosjekt_2/images/logo.svg"  id="logo_link">
+    <a class="navbar-brand" href="">
+      <img src="images/logo.svg"  id="logo_link">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"> <a class="nav-link active" href="/webprosjekt_2/home">Hjem</a> </li>
+        <li class="nav-item"> <a class="nav-link active" href="">Hjem</a> </li>
         <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Kontakt</a> </li>
         <div class="dropdown">
           <a id="dropOmraade" data-toggle="dropdown" data-target="#" href="#">
@@ -111,12 +113,12 @@
   <div id="SPAContent"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="/webprosjekt_2/json/hyttegrendDB.json"></script>
-  <script src="/webprosjekt_2/json/omradeDB.json"></script>
+  <script src="json/hyttegrendDB.json"></script>
+  <script src="json/omradeDB.json"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3u0GAthz9ZNxSKfWsE_aOtTAWf3otOnk"></script>
-  <script src="/webprosjekt_2/js/main.js"></script>
-  <script src="/webprosjekt_2/js/checkURL.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/checkURL.js"></script>
 
   <!--Google map-->
 

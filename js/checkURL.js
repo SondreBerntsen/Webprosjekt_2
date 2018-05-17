@@ -4,13 +4,10 @@ function checkURL(path){
   var PAData = hyttegrender;
   var areaData = omrader;
 
-  const base = '/webprosjekt_2';
-
-  var homeRegex =  base + '/(home)/?$';
-  //var indexRegex = base + '/(index\.html)/?$';
-  var defaultRegex = base +'/$';
-  var propertyAreaRegex = base + '/([A-Za-z]+|[A-Za-z]+-[A-Za-z]+)/([A-Za-z]+)/?$';
-  var areaRegex = base + '/([A-Za-z]+|[A-Za-z]+-[A-Za-z]+)/?$';
+  var homeRegex = base + 'home/?$';
+  var defaultRegex = base +'$';
+  var propertyAreaRegex = base + '([A-Za-z]+|[A-Za-z]+-[A-Za-z]+)/([A-Za-z]+)/?$';
+  var areaRegex = base + '([A-Za-z]+|[A-Za-z]+-[A-Za-z]+)/?$';
 
   homeControllerRegex = new RegExp(homeRegex);
   defaultControllerRegex = new RegExp(defaultRegex);
@@ -18,13 +15,16 @@ function checkURL(path){
   areaControllerRegex = new RegExp(areaRegex);
 
   if(homeControllerRegex.test(path) || defaultControllerRegex.test(path)){
+
     console.log("Cool beans, load the home page.");
+
     $('#SPAContent').load('home.html', function() {
 
+      //This is the only way to avoid deprecation notice
       $.ajax({
        async: true,
        type: "POST",
-       url: base+ '/js/filter.js',
+       url: 'js/filter.js',
       });
 
       for(i = 0; i < Object.keys(PAData).length; i++){
@@ -38,7 +38,9 @@ function checkURL(path){
     path.match(propertyAreaRegex);
 
     var areaIndex = path.match(propertyAreaRegex)[1];
+    console.log(areaIndex);
     var PAIndex = path.match(propertyAreaRegex)[2];
+    console.log(PAIndex);
 
     if(
       PAData[PAIndex] !== 'undefined' &&
@@ -46,7 +48,7 @@ function checkURL(path){
     ){
       console.log("Cool beans, load the property area page.");
 
-      $('#SPAContent').load(base + '/areas/propertyArea.html', function() {
+      $('#SPAContent').load(base + 'areas/propertyArea.html', function() {
         loadContent(PAIndex);
 
         $.ajax({

@@ -31,9 +31,9 @@ else{
 }
 function sliderImages(season, seasonBtn1, seasonBtn2, seasonBtn3 ) {
 
-  $("#slide1").attr("src","../images/seasonal_slider_images/seasonal_"+season+"1.png");
-  $("#slide2").attr("src","../images/seasonal_slider_images/seasonal_"+season+"2.png");
-  $("#slide3").attr("src","../images/seasonal_slider_images/seasonal_"+season+"3.png");
+  $("#slide1").attr("src", base + "images/seasonal_slider_images/seasonal_"+season+"1.png");
+  $("#slide2").attr("src", base + "images/seasonal_slider_images/seasonal_"+season+"2.png");
+  $("#slide3").attr("src", base + "images/seasonal_slider_images/seasonal_"+season+"3.png");
 
   $('#'+season+"Btn").attr("class"," btn btn-info");
   $('#'+seasonBtn1+', #'+seasonBtn2+', #'+seasonBtn3).attr("class", "btn btn-primary");
