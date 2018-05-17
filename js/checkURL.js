@@ -1,30 +1,37 @@
 function checkURL(path){
+
   path = path.toLowerCase();
   var PAData = hyttegrender;
   var areaData = omrader;
 
+  const base = '/webprosjekt_2';
 
-  var homeRegex = path.match(/\/webprosjekt_2\/(home)\/?$/);
-  var indexRegex = path.match(/\/webprosjekt_2\/(index\.html)\/?$/);
-  var defaultRegex = path.match(/\/webprosjekt_2\/$/);
-  var propertyAreaRegex = path.match(/\/webprosjekt_2\/([A-Za-z]+|[A-Za-z]+\-[A-Za-z]+)\/([A-Za-z]+)\/?$/);
-  var areaRegex = path.match(/\/webprosjekt_2\/([A-Za-z]+|[A-Za-z]+\-[A-Za-z]+)\/?$/);
+  var homeRegex =  base + '/(home)/?$';
+  //var indexRegex = base + '/(index\.html)/?$';
+  var defaultRegex = base +'/$';
+  var propertyAreaRegex = base + '/([A-Za-z]+|[A-Za-z]+-[A-Za-z]+)/([A-Za-z]+)/?$';
+  var areaRegex = base + '/([A-Za-z]+|[A-Za-z]+-[A-Za-z]+)/?$';
 
-  if(homeRegex || indexRegex || defaultRegex){
+  homeControllerRegex = new RegExp(homeRegex);
+  defaultControllerRegex = new RegExp(defaultRegex);
+  PAControllerRegex = new RegExp(propertyAreaRegex);
+  areaControllerRegex = new RegExp(areaRegex);
+
+  if(homeControllerRegex.test(path) || defaultControllerRegex.test(path)){
     console.log("Cool beans, load the home page.");
     $('#SPAContent').load('home.html', function() {
-        //Imbed the script here
-
       for(i = 0; i < Object.keys(PAData).length; i++){
         var pArea = Object.keys(PAData)[i];
         pullCardData(pArea, true);
       }
     });
   }
+  else if(PAControllerRegex.test(path)){
 
-  if(propertyAreaRegex){
-    var areaIndex = propertyAreaRegex[1];
-    var PAIndex = propertyAreaRegex[2];
+    path.match(propertyAreaRegex);
+
+    var areaIndex = path.match(propertyAreaRegex)[1];
+    var PAIndex = path.match(propertyAreaRegex)[2];
 
     if(
       PAData[PAIndex] !== 'undefined' &&
@@ -32,10 +39,14 @@ function checkURL(path){
     ){
       console.log("Cool beans, load the property area page.");
 
-      //$.getScript('/webprosjekt_2/js/mapPlot.js');
-
-      $('#SPAContent').load('/webprosjekt_2/areas/propertyArea.html', function() {
+      $('#SPAContent').load(base + '/areas/propertyArea.html', function() {
         loadContent(PAIndex);
+        //get scripts used only for this page
+        $.ajax({
+         async: true,
+         type: "POST",
+         url: base+ '/js/imageSlider.js',
+        });
       });
     }
     else{
@@ -43,11 +54,8 @@ function checkURL(path){
       console.log("Page not found");
     }
   }
-  else if(
-    !homeRegex &&
-    areaRegex
-  ){
-    var areaIndex = areaRegex[1];
+  else if(!homeControllerRegex.test(path) && areaControllerRegex.test(path)){
+    var areaIndex = path.match(areaRegex)[1];
 
     //This prototype thing was taken from https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
     String.prototype.allReplace = function(obj){
@@ -60,12 +68,10 @@ function checkURL(path){
 
     var areaTitle = areaData[areaIndex].title.allReplace({'æ': 'e', 'ø': 'o', 'å': 'a'});
 
-    if(
-      areaData[areaIndex] !== 'undefined' &&
-      areaIndex.toUpperCase() == areaTitle.toUpperCase()
-    ){
+    if(areaData[areaIndex] !== 'undefined' && areaIndex.toUpperCase() == areaTitle.toUpperCase()){
       console.log("Cool beans, load the area page");
-      $('#SPAContent').load('/webprosjekt_2/areas/area.html', function(){
+
+      $('#SPAContent').load(base+ '/areas/area.html', function(){
         loadContentArea(areaIndex);
         for(i = 0; i < areaData[areaIndex].propertyAreas.length; i++){
           var pArea = areaData[areaIndex].propertyAreas[i];
