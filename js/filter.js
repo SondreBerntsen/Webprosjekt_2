@@ -1,5 +1,4 @@
-var filterItems = "";
-$(document).ready(function(){
+var filterItems = $('.filter_item');
     $('.category_item').click(function(){
         var checkboxes = $('[name=filterData]');
         var selectedMisc = [];
@@ -53,5 +52,3 @@ $(document).ready(function(){
             $(spanElement).toggleClass("fas fa-chevron-up",true);
             $(spanElement).toggleClass('fas fa-chevron-down',true);
 	     });
-
-});

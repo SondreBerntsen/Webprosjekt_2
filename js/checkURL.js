@@ -20,6 +20,13 @@ function checkURL(path){
   if(homeControllerRegex.test(path) || defaultControllerRegex.test(path)){
     console.log("Cool beans, load the home page.");
     $('#SPAContent').load('home.html', function() {
+
+      $.ajax({
+       async: true,
+       type: "POST",
+       url: base+ '/js/filter.js',
+      });
+
       for(i = 0; i < Object.keys(PAData).length; i++){
         var pArea = Object.keys(PAData)[i];
         pullCardData(pArea, true);
@@ -41,12 +48,13 @@ function checkURL(path){
 
       $('#SPAContent').load(base + '/areas/propertyArea.html', function() {
         loadContent(PAIndex);
-        //get scripts used only for this page
+
         $.ajax({
          async: true,
          type: "POST",
          url: base+ '/js/imageSlider.js',
         });
+
       });
     }
     else{
