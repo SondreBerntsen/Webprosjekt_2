@@ -237,7 +237,7 @@ function tableCreate(PAarea){
     // we only want the information about the available property areas
     if (props[i].availability == "available"){
       // creates a new row for each available property area
-      var row = tbl.insertRow(1);
+      var row = tbl.insertRow(-1);
       // inserts four cells for each row
       var cell1 = row.insertCell(0);
       var cell2 = row.insertCell(1);
