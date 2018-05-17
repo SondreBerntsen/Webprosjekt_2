@@ -256,9 +256,9 @@ function tableCreate(PAarea){
 }
 
 // scrolls user to #tomteInformasjon when the link #scrollTo is clicked
-function scrollToTable(){
+function scrollToAnchor(){
   $('html, body').animate({
-       scrollTop: $("#tomtInformasjon").offset().top
+       scrollTop: $("#anchor").offset().top
    }, '2000');
 }
 function loadNavItems(){

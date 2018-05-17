@@ -4,12 +4,12 @@
       <div id="overlay" class="opacity40"></div>
       <div id="headerText" class="hero-text">
         <h1 id="headerTitle" class="textShadow"></h1>
+        <p class="lead textShadow">Interessert i tomt i denne hyttegrenden?</p>
+        <button class="contactBtn btn btn-lg">Kontakt oss!</button>
         <div id="scrollTableDiv">
-          <button class="contactBtn btn btn-lg">Kontakt oss!</button>
-          <p class="lead textShadow">Ikke nøl med å ta kontakt med oss, vi i Tindeutvikling gleder oss til å høre fra deg!
-            <span id="scrollTo" role="button" onclick="scrollToTable()">Se de ledige tomtene!</span>
-          </p>
+          <p class="lead textShadow">Eller <span id="scrollTo" role="button" onclick="scrollToAnchor()">se de ledige tomtene!</span></p>
         </div>
+        <p class="lead textShadow">Ikke nøl med å ta kontakt med oss, vi i Tindeutvikling gleder oss til å høre fra deg!</p>
       </div>
     </div>
 
@@ -26,13 +26,12 @@
         <div id="icons"></div>
     </div>
 
-
     <!-- Map of property areas -->
-    <div class="container">
+    <div id="anchor" class="container">
         <h2 class="header">Tomtene</h2>
     </div>
     <div>
-      <ul class = "list-availability">
+      <ul class ="list-availability">
         <li> <span class="available"></span> Ledig tomt </li>
         <li> <span class="sold"></span> Solgt tomt </li>
         <li> <span class="reserved"></span> Reservert tomt </li>
