@@ -627,7 +627,10 @@ form .btn-calltoaction{
     text-align: center;
     margin: 20px;
 }
-
+.div404{
+  padding: 50px;
+  height: 60vh;
+}
 /* ----------------------------------------- Media Queries ----------------------------- */
 /* Navbar styling, change as you see fit Mr. Designer */
 @media only screen and (max-width: 992px) {

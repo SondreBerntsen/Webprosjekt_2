@@ -35,8 +35,6 @@ function checkURL(path){
   }
   else if(PAControllerRegex.test(path)){
 
-    path.match(propertyAreaRegex);
-
     var areaIndex = path.match(propertyAreaRegex)[1];
     console.log(areaIndex);
     var PAIndex = path.match(propertyAreaRegex)[2];
@@ -60,12 +58,13 @@ function checkURL(path){
       });
     }
     else{
-      //load 404.html with some info maybe
+      $('#SPAContent').load(base + 'areas/404.html');
       console.log("Page not found");
     }
   }
   else if(!homeControllerRegex.test(path) && areaControllerRegex.test(path)){
     var areaIndex = path.match(areaRegex)[1];
+    console.log(areaIndex);
 
     //This prototype thing was taken from https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
     String.prototype.allReplace = function(obj){
@@ -76,12 +75,11 @@ function checkURL(path){
       return retStr;
     };
 
-    var areaTitle = areaData[areaIndex].title.allReplace({'æ': 'e', 'ø': 'o', 'å': 'a'});
-
-    if(areaData[areaIndex] !== 'undefined' && areaIndex.toUpperCase() == areaTitle.toUpperCase()){
+    if(typeof areaData[areaIndex] !== 'undefined'){
       console.log("Cool beans, load the area page");
 
-      $('#SPAContent').load(base+ '/areas/area.html', function(){
+      var areaTitle = areaData[areaIndex].title.allReplace({'æ': 'e', 'ø': 'o', 'å': 'a'});
+      $('#SPAContent').load(base + '/areas/area.html', function(){
         loadContentArea(areaIndex);
         for(i = 0; i < areaData[areaIndex].propertyAreas.length; i++){
           var pArea = areaData[areaIndex].propertyAreas[i];
@@ -89,8 +87,13 @@ function checkURL(path){
         }
       });
     }
+    else{
+      $('#SPAContent').load(base + 'areas/404.html');
+      console.log("Page not found");
+    }
   }
   else{
-    //load 404.html
+    $('#SPAContent').load(base + 'areas/404.html');
+    console.log("Page not found");
   }
 }
