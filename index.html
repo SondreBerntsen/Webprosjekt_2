@@ -1,5 +1,5 @@
 <html lang="en">
-<!-- <base href="/mmoigaar/webprosjekt_2/"> --> <!-- Deployed -->
+<!--<base href="/sondrber/webprosjekt_2/"> Deployed -->
 <base href="/webprosjekt_2/"> <!-- Localhost -->
 
 <head>
@@ -7,6 +7,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118058481-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118058481-1');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W4F2TTN');</script>
+  <!-- End Google Tag Manager -->
+
   <title>Webprosjekt 2</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,6 +39,10 @@
 
 </head>
 <body onload="checkURL(window.location.pathname), loadNavItems()">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4F2TTN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="">
       <img src="images/logo.svg"  id="logo_link">
@@ -30,7 +53,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"> <a class="nav-link active" href="">Hjem</a> </li>
-        <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Kontakt</a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#contactModal">Kontakt</a> </li>
         <div class="dropdown">
           <a id="dropOmraade" data-toggle="dropdown" data-target="#" href="#">
                  Områder <span class="fas fa-chevron-down"></span>
@@ -48,11 +71,11 @@
   </nav>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Kontakt oss</h5>
+          <h5 class="modal-title" id="contactModalLabel">Kontakt oss</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                  <span aria-hidden="true">&times;</span>
                </button>

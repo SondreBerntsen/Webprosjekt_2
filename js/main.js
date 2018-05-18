@@ -1,4 +1,4 @@
-//const base = '/mmoigaar/webprosjekt_2/'; //Deployed
+//const base = '/sondrber/webprosjekt_2/'; //Deployed
 const base = '/webprosjekt_2/'; //Localhost
 function loadContent(x){
     var PAData = hyttegrender;
