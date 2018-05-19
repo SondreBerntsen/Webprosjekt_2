@@ -251,7 +251,7 @@ function tableCreate(PAarea){
       cell3.appendChild(document.createTextNode(props[i].price));
       // fourth cell contains a button
       var templateElement = $('<button class="">Interessert</button>');
-      templateElement.attr('name', PAarea.name +" "+ props[i].propertyNumber);
+      templateElement.attr('name', PAarea.name +" property "+ props[i].propertyNumber);
       templateElement.addClass("btn propertyBtn");
       templateElement.appendTo(cell4);
     }
