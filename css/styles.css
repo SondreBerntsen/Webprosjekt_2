@@ -714,6 +714,13 @@ form .btn-calltoaction{
     .hero-image {
         display:none;
     }
+    .image_header{
+      height: 30vh;
+    }
+    #imgHeader{
+      height: inherit;
+      width: auto;
+    }
 }
 
 /* Styling the footer for mobile and pad sizes. If you change this, the footer will look ugly. */
