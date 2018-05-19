@@ -716,6 +716,7 @@ form .btn-calltoaction{
     }
     .image_header{
       height: 30vh;
+      overflow: hidden;
     }
     #imgHeader{
       height: inherit;
