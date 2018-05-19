@@ -472,9 +472,13 @@ width: inherit;
 }
 
 #headerTitle, #headingArea {
-  font-size: 3.5vw;
+  font-size: 6vw;
   color:white;
-  margin-top: 100px;
+  margin-top: 40px;
+}
+.pAreaTitle{
+  font-size: 3.5vw!important;
+  margin-top: 10px!important;
 }
 
 #imgHeader {
@@ -486,7 +490,7 @@ width: inherit;
 .contactBtn{
   background-color: #ff6600;
   color:white;
-  font-size: 18px ;
+  font-size: 18px;
 }
 
 .contactBtn:hover, .propertyBtn:hover{
@@ -672,9 +676,7 @@ form .btn-calltoaction{
 }
 
 @media only screen and (max-width: 1200px) {
-   #headerTitle{
-    margin-top: 50px;
-   }
+
 }
 @media only screen and (max-width: 850px) {
   .lead {
@@ -684,12 +686,17 @@ form .btn-calltoaction{
         width: 25vw;
         font-size: 2vw;
     }
+
 }
 
 
 @media only screen and (min-width: 992px) {
   .dropdown {
         padding-left: 1rem;
+  }
+  #headerTitle, #headingArea{
+   margin-top: 50px;
+   font-size: 3.5vw;
   }
 
   .dropdown-menu li:hover {

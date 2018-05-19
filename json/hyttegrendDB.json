@@ -37,7 +37,7 @@ var hyttegrender = {
             {
               "propertyNumber": "1",
               "perimiter": "1220",
-              "price": "595 000",
+              "price": "595,000",
               "availability": "available",
               "outline": [
                 {"lat": 61.016047614752, "lng": 10.519054152719},
@@ -50,7 +50,7 @@ var hyttegrender = {
             {
               "propertyNumber": "2",
               "perimiter": "1460",
-              "price": "575 000",
+              "price": "575,000",
               "availability": "available",
               "outline": [
                 {"lat":61.015805868956, "lng":10.51954231476},
@@ -65,7 +65,7 @@ var hyttegrender = {
             {
               "propertyNumber": "3",
               "perimiter": "1380",
-              "price": "595 000",
+              "price": "595,000",
               "availability": "available",
               "outline": [
                 {"lat":61.016276361767,"lng":10.519376017801},
@@ -77,7 +77,7 @@ var hyttegrender = {
             {
               "propertyNumber": "4",
               "perimiter": "1440",
-              "price": "545 000",
+              "price": "545,000",
               "availability": "available",
               "outline": [
                 {"lat":61.014360554593,"lng":10.523045279733},
@@ -90,7 +90,7 @@ var hyttegrender = {
             {
               "propertyNumber": "5",
               "perimiter": "1410",
-              "price": "545 000",
+              "price": "545,000",
               "availability":"available",
               "outline": [
                 {"lat":61.015020832255,"lng":10.522224523775},
@@ -102,7 +102,7 @@ var hyttegrender = {
             {
               "propertyNumber": "6",
               "perimiter": "1760",
-              "price": "545 000",
+              "price": "545,000",
               "availability": "available",
               "outline": [
 
@@ -115,7 +115,7 @@ var hyttegrender = {
             {
               "propertyNumber": "7",
               "perimiter": "1943",
-              "price": "560 000",
+              "price": "560,000",
               "availability":"available",
               "outline": [
                 {"lat":61.016161988466,"lng":10.520695664472},
@@ -127,7 +127,7 @@ var hyttegrender = {
             {
               "propertyNumber": "8",
               "perimiter": "2345",
-              "price": "545 000",
+              "price": "545,000",
               "availability": "available",
               "outline": [
                 {"lat":61.015304175529,"lng":10.523077466241},
@@ -139,7 +139,7 @@ var hyttegrender = {
             {
               "propertyNumber": "9",
               "perimiter": "3454",
-              "price": "545 000",
+              "price": "545,000",
               "availability": "available",
               "outline": [
                 {"lat":61.015306774997,"lng":10.523077466241},
@@ -152,7 +152,7 @@ var hyttegrender = {
             {
               "propertyNumber": "10",
               "perimiter": "3546",
-              "price": "525 000",
+              "price": "525,000",
               "availability": "available",
               "outline": [
                 {"lat":61.015233989851,"lng":10.523646094553},
@@ -164,7 +164,7 @@ var hyttegrender = {
             {
               "propertyNumber": "11",
               "perimiter": "1539",
-              "price": "575 000",
+              "price": "575,000",
               "availability": "available",
               "outline": [
                 {"lat":61.015356164869,"lng":10.519005872998},
@@ -176,7 +176,7 @@ var hyttegrender = {
             {
               "propertyNumber": "12",
               "perimiter": "1980",
-              "price": "545 000",
+              "price": "545,000",
               "availability": "available",
               "outline": [
                 {"lat":61.014643903781,"lng":10.520963885538},
@@ -189,7 +189,7 @@ var hyttegrender = {
             {
               "propertyNumber": "13",
               "perimiter": "7500",
-              "price": "910 000",
+              "price": "910,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.014477533912,"lng":10.519756891522},
@@ -203,7 +203,7 @@ var hyttegrender = {
             {
               "propertyNumber": "14",
               "perimiter": "2445",
-              "price": "600 000",
+              "price": "600,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.015766877526,"lng":10.519461848489},
@@ -217,7 +217,7 @@ var hyttegrender = {
             {
               "propertyNumber": "15",
               "perimiter": "9300",
-              "price": "500 000",
+              "price": "500,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.016045015325,"lng":10.519070246014},
@@ -235,7 +235,7 @@ var hyttegrender = {
             {
               "propertyNumber": "16",
               "perimiter": "7060",
-              "price": "600 000",
+              "price": "600,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.015018232764,"lng":10.522229888193},
@@ -250,7 +250,7 @@ var hyttegrender = {
             {
               "propertyNumber": "17",
               "perimiter": "7500",
-              "price": "700 000",
+              "price": "700,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.015324971267,"lng":10.5216666243},
@@ -264,7 +264,7 @@ var hyttegrender = {
             {
               "propertyNumber": "18",
               "perimiter": "4155",
-              "price": "1 500 000",
+              "price": "1,500,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.015509532808,"lng":10.520733215562},
@@ -278,7 +278,7 @@ var hyttegrender = {
             {
               "propertyNumber": "19",
               "perimiter": "9100",
-              "price": "800 000",
+              "price": "800,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.014742685462,"lng":10.519542314801},
@@ -292,7 +292,7 @@ var hyttegrender = {
             {
               "propertyNumber": "20",
               "perimiter": "9567",
-              "price": "890 000",
+              "price": "890,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.015457543779,"lng":10.522948720209},
@@ -308,7 +308,7 @@ var hyttegrender = {
             {
               "propertyNumber": "21",
               "perimiter": "4555",
-              "price": "990 000",
+              "price": "990,000",
               "availability": "sold",
               "outline": [
 
@@ -322,7 +322,7 @@ var hyttegrender = {
             {
               "propertyNumber": "22",
               "perimiter": "7500",
-              "price": "760 000",
+              "price": "760,000",
               "availability": "sold",
               "outline": [
 
@@ -336,7 +336,7 @@ var hyttegrender = {
             {
               "propertyNumber": "23",
               "perimiter": "4000",
-              "price": "760 000",
+              "price": "760,000",
               "availability": "sold",
               "outline": [
                 {"lat":61.014773879616,"lng":10.520524003341},
@@ -351,7 +351,7 @@ var hyttegrender = {
             {
               "propertyNumber": "24",
               "perimiter": "7645",
-              "price": "550 000",
+              "price": "550,000",
               "availability": "sold",
               "outline": [
 
@@ -365,7 +365,7 @@ var hyttegrender = {
             {
               "propertyNumber": "25",
               "perimiter": "7405",
-              "price": "700 000",
+              "price": "700,000",
               "availability": "sold",
               "outline": [
 
@@ -511,7 +511,7 @@ var hyttegrender = {
             {
               "propertyNumber": "4",
               "perimiter": "9100",
-              "price": "450 000",
+              "price": "450,000",
               "availability": "available",
               "outline": [
                 {"lat":61.719941303574,"lng":9.724245884172},
@@ -524,7 +524,7 @@ var hyttegrender = {
             {
               "propertyNumber": "5",
               "perimiter": "7100",
-              "price": "690 000",
+              "price": "690,000",
               "availability": "available",
               "outline": [
                 {"lat":61.719941303574,"lng":9.724245884172},
@@ -538,7 +538,7 @@ var hyttegrender = {
             {
               "propertyNumber": "6",
               "perimiter": "6300",
-              "price": "610 000",
+              "price": "610,000",
               "availability": "available",
               "outline": [
 
@@ -553,7 +553,7 @@ var hyttegrender = {
             {
               "propertyNumber": "7",
               "perimiter": "3405",
-              "price": "610 000",
+              "price": "610,000",
               "availability": "available",
               "outline": [
                 {"lat":61.719260157084,"lng":9.7227974913039},
@@ -569,7 +569,7 @@ var hyttegrender = {
             {
               "propertyNumber": "8",
               "perimiter": "1950",
-              "price": "760 000",
+              "price": "760,000",
               "availability": "available",
               "outline": [
 
@@ -582,7 +582,7 @@ var hyttegrender = {
             {
               "propertyNumber": "9",
               "perimiter": "7060",
-              "price": "850 000",
+              "price": "850,000",
               "availability": "available",
               "outline": [
                 {"lat":61.719749183888,"lng":9.7186593304832},
@@ -598,7 +598,7 @@ var hyttegrender = {
             {
               "propertyNumber": "10",
               "perimiter": "7400",
-              "price": "800 000",
+              "price": "800,000",
               "availability": "available",
               "outline": [
                 {"lat":61.718711162393,"lng":9.7245784780898},
@@ -612,7 +612,7 @@ var hyttegrender = {
             {
               "propertyNumber": "11",
               "perimiter": "6300",
-              "price": "400 000",
+              "price": "400,000",
               "availability": "available",
               "outline": [
                 {"lat":61.718515453588,"lng":9.7229101440826},
@@ -626,7 +626,7 @@ var hyttegrender = {
             {
               "propertyNumber": "12",
               "perimiter": "7100",
-              "price": "1 500 000",
+              "price": "1,500,000",
               "availability": "available",
               "outline": [
                 {"lat":61.717303047958,"lng":9.7224273464906},
