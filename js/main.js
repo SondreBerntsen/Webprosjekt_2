@@ -250,7 +250,10 @@ function tableCreate(PAarea){
       // third cell contains the price
       cell3.appendChild(document.createTextNode(props[i].price));
       // fourth cell contains a button
-      cell4.innerHTML = "<button class='btn propertyBtn'type'button'>interessert</button>";
+      var templateElement = $('<button class="">Interessert</button>');
+      templateElement.attr('name', PAarea.name +" "+ props[i].propertyNumber);
+      templateElement.addClass("btn propertyBtn");
+      templateElement.appendTo(cell4);
     }
   }
 }
