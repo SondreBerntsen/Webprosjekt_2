@@ -1,78 +1,82 @@
 //const base = '/sondrber/webprosjekt_2/'; //Deployed
 const base = '/webprosjekt_2/'; //Localhost
-function loadContent(x){
-    var PAData = hyttegrender;
-    $('#imgHeader').attr("src", base+PAData[x].imgHeader)
-    $('#headerTitle').html(PAData[x].title);
-    $('#hgoneliner').html(PAData[x].oneliner);
 
-    for(i = 0; i < PAData[x].description.length; i++){
+// Gets the relevant property area from checkURL.js and loads the correct data from the property area's JSON data.
+function loadContentPA(propertyArea){
+
+    var PAData = hyttegrender;
+
+    $('#imgHeader').attr("src", base+PAData[propertyArea].imgHeader)
+    $('#headerTitle').html(PAData[propertyArea].title);
+    $('#hgoneliner').html(PAData[propertyArea].oneliner);
+
+    for(i = 0; i < PAData[propertyArea].description.length; i++){
         var templateElement = $('#pTemplate').clone();
 
         templateElement.removeAttr("id");
-        templateElement.html(PAData[x].description[i]);
+        templateElement.html(PAData[propertyArea].description[i]);
 
         $('#hgdescription').append(templateElement);
     }
 
-    for(i = 0; i < PAData[x].icons.length; i++){
+    for(i = 0; i < PAData[propertyArea].icons.length; i++){
         var templateElement = $('#iconTemplate').clone();
 
         templateElement.removeAttr("id");
-        templateElement.attr('src', base +'images/icons/'+PAData[x].icons[i]+'.png');
-        templateElement.attr('title', PAData[x].icons[i]);
+        templateElement.attr('src', base +'images/icons/'+PAData[propertyArea].icons[i]+'.png');
+        templateElement.attr('title', PAData[propertyArea].icons[i]);
 
         $('#icons').append(templateElement);
     }
     // calls the initMapPA function
-    initMapPA(PAData[x]);
+    initMapPA(PAData[propertyArea]);
     // calls the tableCreate function
-    tableCreate(PAData[x]);
+    tableCreate(PAData[propertyArea]);
 
-    for(i = 0; i < PAData[x].information.propertyInfo.length; i++){
+    for(i = 0; i < PAData[propertyArea].information.propertyInfo.length; i++){
       var templateElement = $('#pTemplate').clone();
 
       templateElement.removeAttr('id');
-      templateElement.html(PAData[x].information.propertyInfo[i]);
+      templateElement.html(PAData[propertyArea].information.propertyInfo[i]);
 
       $('#propertyInfo').append(templateElement);
     }
 
 
-    for(i = 0; i < PAData[x].information.arrival.length; i++){
+    for(i = 0; i < PAData[propertyArea].information.arrival.length; i++){
       var templateElement = $('#pTemplate').clone();
 
       templateElement.removeAttr('id');
-      templateElement.html(PAData[x].information.arrival[i]);
+      templateElement.html(PAData[propertyArea].information.arrival[i]);
 
       $('#arrival').append(templateElement);
     }
 
-    for(i = 0; i < PAData[x].information.facts.length; i++){
+    for(i = 0; i < PAData[propertyArea].information.facts.length; i++){
       var templateElement = $('#pTemplate').clone();
 
       templateElement.removeAttr('id');
-      templateElement.html(PAData[x].information.facts[i]);
+      templateElement.html(PAData[propertyArea].information.facts[i]);
 
       $('#facts').append(templateElement);
     }
 
-    for(i = 0; i < PAData[x].information.priceInfo.length; i++){
+    for(i = 0; i < PAData[propertyArea].information.priceInfo.length; i++){
       var templateElement = $('#pTemplate').clone();
 
       templateElement.removeAttr('id');
-      templateElement.html(PAData[x].information.priceInfo[i]);
+      templateElement.html(PAData[propertyArea].information.priceInfo[i]);
 
       $('#priceInfo').append(templateElement);
     }
 
-    for(i = 0; i < PAData[x].information.contactInfo.length; i++){
+    for(i = 0; i < PAData[propertyArea].information.contactInfo.length; i++){
         var templateElement = $('#contactTemplate').clone();
 
         templateElement.removeAttr('id');
-        templateElement.find('.contactName').html(PAData[x].information.contactInfo[i].name);
-        templateElement.find('.fa-phone').after(PAData[x].information.contactInfo[i].tlf);
-        templateElement.find('.fa-envelope').after(PAData[x].information.contactInfo[i].email);
+        templateElement.find('.contactName').html(PAData[propertyArea].information.contactInfo[i].name);
+        templateElement.find('.fa-phone').after(PAData[propertyArea].information.contactInfo[i].tlf);
+        templateElement.find('.fa-envelope').after(PAData[propertyArea].information.contactInfo[i].email);
 
         $('#contactInfo').append(templateElement.html());
     }

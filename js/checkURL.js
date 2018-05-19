@@ -47,7 +47,7 @@ function checkURL(path){
       console.log("Cool beans, load the property area page.");
 
       $('#SPAContent').load(base + 'areas/propertyArea.html', function() {
-        loadContent(PAIndex);
+        loadContentPA(PAIndex);
 
         $.ajax({
          async: true,
