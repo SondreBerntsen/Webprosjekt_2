@@ -261,8 +261,10 @@ function scrollToAnchor(){
        scrollTop: $("#anchor").offset().top
    }, '2000');
 }
+
+// Loads dropdown elements
 function loadNavItems(){
-  //$('#templates').load('/mmoigaar/webprosjekt_2/includeFiles/templates.html'); //This is pointless as they can't be cloned from there anyway. I think the templates must be file separated and loaded to their respective target containers once the page loads. Then again it works on propertyArea, what the fuck.
+
   var PAData = hyttegrender;
   var areaData = omrader;
 
@@ -288,11 +290,12 @@ function loadNavItems(){
   }
 }
 
-
-function pullCardData(pArea, home){ //needs parameter to be used for both index and area pages
+// Gets the relevant area name and outputs the property areas within that area. Function is called as many times as needed, depending on how many property areas exist. Called from checkURL.js
+function pullCardData(pArea, home){
 
   var PAData = hyttegrender;
 
+  // Template elements for cards are cloned and appended.
   var templateElement = $('#cardTemplate').clone();
   templateElement.removeAttr("id");
   templateElement.find("a").attr('href', PAData[pArea].area.toLowerCase()+'/'+PAData[pArea].name);
@@ -302,6 +305,7 @@ function pullCardData(pArea, home){ //needs parameter to be used for both index 
   templateElement.find(".card-title").html(PAData[pArea].title);
   templateElement.find(".card-text").html(PAData[pArea].oneliner);
 
+  // If this is the home page, additional information is appended that would be reduntant on the area page.
   if(home == true){
     templateElement.find(".areaName").html(PAData[pArea].area);
     templateElement.addClass(PAData[pArea].area);
