@@ -55,20 +55,8 @@ body {
   text-decoration: none;
 }
 
-
-/*GOTTA FIX THAT MARGIN TOP ON FIRST ELEMENTSr*/
-.dropdown-menu li {
+.dropdown-menu li, .dropdown-submenu li {
   padding: 15px;
-  font-family: 'Roboto', sans-serif;
-
-}
-
-.dropdown-menu li a {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-}
-
-.dropdown-submenu .dropdown-menu li a {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
 }
