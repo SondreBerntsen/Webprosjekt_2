@@ -707,6 +707,7 @@ form .btn-calltoaction{
   }
   /
   #headerTitle, #headingArea{
+   word-wrap: break-word;
    margin-top: 50px;
    font-size: 3.5vw;
   }
