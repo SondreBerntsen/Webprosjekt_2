@@ -4,85 +4,94 @@ const base = '/webprosjekt_2/'; //Localhost
 // Gets the relevant property area from checkURL.js and loads the correct data from the property area's JSON data.
 function loadContentPA(propertyArea){
 
-    var PAData = hyttegrender;
+    //Stores the JSON data for the relevant property area as variable PAData
+    var PAData = hyttegrender[propertyArea];
 
-    $('#imgHeader').attr("src", base+PAData[propertyArea].imgHeader)
-    $('#headerTitle').html(PAData[propertyArea].title);
-    $('#hgoneliner').html(PAData[propertyArea].oneliner);
-    $('#contactTempID').attr("id", "interest " + PAData[propertyArea].name + " general");
+    // Changes header data
+    $('#imgHeader').attr("src", base + PAData.imgHeader);
+    $('#headerTitle').html(PAData.title);
+    $('#hgoneliner').html(PAData.oneliner);
+    $('#contactTempID').attr("id", "interest " + PAData.name + " general");
 
-    for(i = 0; i < PAData[propertyArea].description.length; i++){
+    // Populates and appends paragraph tags to the description section for every description element in the JSON file
+    for(i = 0; i < PAData.description.length; i++){
         var templateElement = $('#pTemplate').clone();
 
         templateElement.removeAttr("id");
-        templateElement.html(PAData[propertyArea].description[i]);
+        templateElement.html(PAData.description[i]);
 
         $('#hgdescription').append(templateElement);
     }
 
-    for(i = 0; i < PAData[propertyArea].icons.length; i++){
+    // Appends icons to the icons section for each icon name in the JSON file
+    for(i = 0; i < PAData.icons.length; i++){
         var templateElement = $('#iconTemplate').clone();
 
         templateElement.removeAttr("id");
-        templateElement.attr('src', base +'images/icons/'+PAData[propertyArea].icons[i]+'.png');
-        templateElement.attr('title', PAData[propertyArea].icons[i]);
+        templateElement.attr('src', base +'images/icons/'+PAData.icons[i]+'.png');
+        templateElement.attr('title', PAData.icons[i]);
 
         $('#icons').append(templateElement);
     }
-    // calls the initMapPA function
-    initMapPA(PAData[propertyArea]);
-    // calls the tableCreate function
-    tableCreate(PAData[propertyArea]);
 
-    for(i = 0; i < PAData[propertyArea].information.propertyInfo.length; i++){
+    // calls the initMapPA function
+    initMapPA(PAData);
+    // calls the tableCreate function
+    tableCreate(PAData);
+
+    // Populates and appends paragraph tags to the property information section for each propertyInfo element in the JSON file
+    for(i = 0; i < PAData.information.propertyInfo.length; i++){
       var templateElement = $('#pTemplate').clone();
 
       templateElement.removeAttr('id');
-      templateElement.html(PAData[propertyArea].information.propertyInfo[i]);
+      templateElement.html(PAData.information.propertyInfo[i]);
 
       $('#propertyInfo').append(templateElement);
     }
 
-
-    for(i = 0; i < PAData[propertyArea].information.arrival.length; i++){
+    // Populates and appends paragraph tags to the arrival information section for each arrival element in the JSON file
+    for(i = 0; i < PAData.information.arrival.length; i++){
       var templateElement = $('#pTemplate').clone();
 
       templateElement.removeAttr('id');
-      templateElement.html(PAData[propertyArea].information.arrival[i]);
+      templateElement.html(PAData.information.arrival[i]);
 
       $('#arrival').append(templateElement);
     }
-
-    for(i = 0; i < PAData[propertyArea].information.facts.length; i++){
+    // Populates and appends paragraph tags to the facts section for each facts element in the JSON file
+    for(i = 0; i < PAData.information.facts.length; i++){
       var templateElement = $('#pTemplate').clone();
 
       templateElement.removeAttr('id');
-      templateElement.html(PAData[propertyArea].information.facts[i]);
+      templateElement.html(PAData.information.facts[i]);
 
       $('#facts').append(templateElement);
     }
 
-    for(i = 0; i < PAData[propertyArea].information.priceInfo.length; i++){
+    // Populates and appends paragraph tags to the price information section for each priceInfo element in the JSON file
+    for(i = 0; i < PAData.information.priceInfo.length; i++){
       var templateElement = $('#pTemplate').clone();
 
       templateElement.removeAttr('id');
-      templateElement.html(PAData[propertyArea].information.priceInfo[i]);
+      templateElement.html(PAData.information.priceInfo[i]);
 
       $('#priceInfo').append(templateElement);
     }
 
-    for(i = 0; i < PAData[propertyArea].information.contactInfo.length; i++){
+    // Populates and appends contact templates to the contact information section for each contactInfo element in the JSON file
+    for(i = 0; i < PAData.information.contactInfo.length; i++){
         var templateElement = $('#contactTemplate').clone();
 
         templateElement.removeAttr('id');
-        templateElement.find('.contactName').html(PAData[propertyArea].information.contactInfo[i].name);
-        templateElement.find('.fa-phone').after(PAData[propertyArea].information.contactInfo[i].tlf);
-        templateElement.find('.fa-envelope').after(PAData[propertyArea].information.contactInfo[i].email);
+        templateElement.find('.contactName').html(PAData.information.contactInfo[i].name);
+        templateElement.find('.fa-phone').after(PAData.information.contactInfo[i].tlf);
+        templateElement.find('.fa-envelope').after(PAData.information.contactInfo[i].email);
 
         $('#contactInfo').append(templateElement.html());
     }
-}
-// map for property areas
+} // End function loadContentPA
+
+// Map for property areas
 function initMapPA(PArea){
 
   var map = new google.maps.Map(document.getElementById('mapPA'), {
@@ -192,8 +201,10 @@ function initMapPA(PArea){
       }
     }
   }
-}
+} // End function initMapPA
 
+
+// Gets the relevant area from checkURL.js and loads the correct data from the area's JSON data.
 function loadContentArea(areaName){
   var areaData = omrader;
   $('#areaHeaderImg').attr("src", areaData[areaName].imgHeader)
