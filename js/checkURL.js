@@ -40,6 +40,8 @@ function checkURL(path){
     var PAIndex = path.match(propertyAreaRegex)[2];
     console.log(PAIndex);
 
+
+
     if(
       PAData[PAIndex] !== 'undefined' &&
       areaIndex.toUpperCase() == PAData[PAIndex].area.toUpperCase()

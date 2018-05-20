@@ -274,9 +274,13 @@ function tableCreate(PAarea){
       // third cell contains the price
       cell3.appendChild(document.createTextNode(props[i].price));
       // fourth cell contains a button
-      var templateElement = $('<button class="">Interessert</button>');
+      var templateElement = $('#envelopeTempID').clone();
+      templateElement.removeAttr('id');
       templateElement.attr('id', PAarea.name +" property "+ props[i].propertyNumber);
-      templateElement.addClass("btn propertyBtn");
+      templateElement.attr('type', 'button');
+      templateElement.attr('data-toggle', 'modal');
+      templateElement.attr('data-target', '#contactModal');
+
       templateElement.appendTo(cell4);
     }
   }
