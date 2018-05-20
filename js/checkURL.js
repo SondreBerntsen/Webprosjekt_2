@@ -43,7 +43,7 @@ function checkURL(path){
 
 
     if(
-      PAData[PAIndex] !== 'undefined' &&
+      typeof PAData[PAIndex] !== 'undefined' &&
       areaIndex.toUpperCase() == PAData[PAIndex].area.toUpperCase()
     ){
       console.log("Cool beans, load the property area page.");

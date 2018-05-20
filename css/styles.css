@@ -629,7 +629,14 @@ form .btn-calltoaction{
 }
 .div404{
   padding: 50px;
+  width: 50vw;
   height: 60vh;
+  text-align: center;
+}
+.div404 p{
+  display: inline-block;
+  width: auto;
+  align: center;
 }
 /* ----------------------------------------- Media Queries ----------------------------- */
 /* Navbar styling, change as you see fit Mr. Designer */
