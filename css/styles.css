@@ -483,7 +483,7 @@ width: 50px !important;
 }
 
 #headerTitle, #headingArea {
-  font-size: 6vw;
+  font-size: 4.5vw;
   color:white;
   margin-top: 40px;
 }
@@ -705,6 +705,7 @@ form .btn-calltoaction{
   .dropdown {
         padding-left: 1rem;
   }
+  /
   #headerTitle, #headingArea{
    margin-top: 50px;
    font-size: 3.5vw;
