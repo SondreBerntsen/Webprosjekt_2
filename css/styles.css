@@ -238,7 +238,11 @@ position: relative;
   color: #FFF;
   font-size: 4em;
 }
-
+.envelopeIcon{
+  font-size: 25px;
+  color: #ff6600;
+  cursor: pointer;
+}
 .textShadow {
     text-shadow: 1px 1px black;
 }

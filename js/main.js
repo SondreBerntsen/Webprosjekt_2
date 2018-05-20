@@ -277,7 +277,7 @@ function tableCreate(PAarea){
       var templateElement = $('#envelopeTempID').clone();
       templateElement.removeAttr('id');
       templateElement.attr('id', PAarea.name +" property "+ props[i].propertyNumber);
-      templateElement.attr('type', 'button');
+      templateElement.attr('role', 'button');
       templateElement.attr('data-toggle', 'modal');
       templateElement.attr('data-target', '#contactModal');
 
