@@ -289,29 +289,30 @@ function scrollToAnchor(){
    }, '2000');
 }
 
-// Loads dropdown elements
+// Loads dropdown elements based on how many areas and property areas exist in the JSON files.
 function loadNavItems(){
 
-  var PAData = hyttegrender;
+  // Stores the JSON data for the areas as variable areaData
   var areaData = omrader;
 
-  //
+  // Populates and appends a navAreaTemplate for each area present in the area JSON file
   for(i = 0; i < Object.keys(areaData).length; i++){
-    var temp = Object.keys(areaData)[i];
-    var area = areaData[temp].href;
+    var area = Object.keys(areaData)[i];
+    var areahref = areaData[area].href;
     var templateElement = $('#navAreaTemplate').clone();
 
     templateElement.removeAttr("id");
-    templateElement.find('a').attr('href', base + area);
-    templateElement.find('a').html(areaData[temp].title);
+    templateElement.find('a').attr('href', base + areahref);
+    templateElement.find('a').html(areaData[area].title);
 
-    for(j = 0; j < areaData[temp].propertyAreas.length; j++){
-      var propArea = areaData[temp].propertyAreas[j].toLowerCase();
+    // Populates and appends a navPATemplate for each property area with
+    for(j = 0; j < areaData[area].propertyAreas.length; j++){
+      var propArea = areaData[area].propertyAreas[j].toLowerCase();
       var templateSubElement = $('#navPATemplate').clone();
 
       templateSubElement.removeAttr("id");
-      templateSubElement.find('a').attr('href', base + area + '/' +propArea);
-      templateSubElement.find('a').html(areaData[temp].mapData.markers[j].propertyAreaName);
+      templateSubElement.find('a').attr('href', base + areahref + '/' +propArea);
+      templateSubElement.find('a').html(areaData[area].mapData.markers[j].propertyAreaName);
       templateElement.find('ul').append(templateSubElement);
     }
     $('#navElementContainer').append(templateElement);
@@ -321,23 +322,24 @@ function loadNavItems(){
 // Gets the relevant area name and outputs the property areas within that area. Function is called as many times as needed, depending on how many property areas exist. Called from checkURL.js
 function pullCardData(pArea, home){
 
-  var PAData = hyttegrender;
+  //Stores the JSON data for the relevant property area as variable PAData
+  var PAData = hyttegrender[pArea];
 
   // Template elements for cards are cloned and appended.
   var templateElement = $('#cardTemplate').clone();
   templateElement.removeAttr("id");
-  templateElement.find("a").attr('href', PAData[pArea].area.toLowerCase()+'/'+PAData[pArea].name);
+  templateElement.find("a").attr('href', PAData.area.toLowerCase()+'/'+PAData.name);
   templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+pArea+'.jpeg');
-  templateElement.find(".availabilityText").html(PAData[pArea].cardInfo.availability);
-  templateElement.find(".price").html(PAData[pArea].cardInfo.price);
-  templateElement.find(".card-title").html(PAData[pArea].title);
-  templateElement.find(".card-text").html(PAData[pArea].oneliner);
+  templateElement.find(".availabilityText").html(PAData.cardInfo.availability);
+  templateElement.find(".price").html(PAData.cardInfo.price);
+  templateElement.find(".card-title").html(PAData.title);
+  templateElement.find(".card-text").html(PAData.oneliner);
 
   // If this is the home page, additional information is appended that would be reduntant on the area page.
   if(home == true){
-    templateElement.find(".areaName").html(PAData[pArea].area);
-    templateElement.addClass(PAData[pArea].area);
-    templateElement.addClass(PAData[pArea].icons.join(" "));
+    templateElement.find(".areaName").html(PAData.area);
+    templateElement.addClass(PAData.area);
+    templateElement.addClass(PAData.icons.join(" "));
   }
   $('#cardContainer').append(templateElement);
   filterItems = $('.filter_item');
