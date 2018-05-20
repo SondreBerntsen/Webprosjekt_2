@@ -142,7 +142,10 @@ a, a:hover {
 
 #logo_link {
     width: 260px;
-    margin-right: 29px;
+}
+#logo_link2{
+    width: 85px;
+    display: none;
 }
 
 .nav-link{
@@ -242,7 +245,7 @@ position: relative;
   font-size: 25px;
   color: #ff6600;
   cursor: pointer;
-  margin: 0px auto !important;
+  margin-left: 28%;
 }
 .textShadow {
     text-shadow: 1px 1px black;
@@ -483,7 +486,7 @@ width: 50px !important;
 }
 
 #headerTitle, #headingArea {
-  font-size: 6vw;
+  font-size: 4.5vw;
   color:white;
   margin-top: 40px;
 }
@@ -705,7 +708,9 @@ form .btn-calltoaction{
   .dropdown {
         padding-left: 1rem;
   }
+  /
   #headerTitle, #headingArea{
+   word-wrap: break-word;
    margin-top: 50px;
    font-size: 3.5vw;
   }
@@ -722,8 +727,11 @@ form .btn-calltoaction{
         margin-bottom: 50px;
         font-size: 30px;
     }
-    .hero-image {
+    .homeHeader, #logo_link {
         display:none;
+    }
+    #logo_link2{
+        display: inline-block;
     }
     .image_header{
       height: 30vh;
