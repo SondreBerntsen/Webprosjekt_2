@@ -9,6 +9,7 @@ function loadContentPA(propertyArea){
     $('#imgHeader').attr("src", base+PAData[propertyArea].imgHeader)
     $('#headerTitle').html(PAData[propertyArea].title);
     $('#hgoneliner').html(PAData[propertyArea].oneliner);
+    $('#contactTempID').attr("id", "interest " + PAData[propertyArea].name + " general");
 
     for(i = 0; i < PAData[propertyArea].description.length; i++){
         var templateElement = $('#pTemplate').clone();
@@ -275,6 +276,7 @@ function loadNavItems(){
   var PAData = hyttegrender;
   var areaData = omrader;
 
+  //
   for(i = 0; i < Object.keys(areaData).length; i++){
     var temp = Object.keys(areaData)[i];
     var area = areaData[temp].href;
