@@ -242,6 +242,7 @@ position: relative;
   font-size: 25px;
   color: #ff6600;
   cursor: pointer;
+  margin: 0px auto !important;
 }
 .textShadow {
     text-shadow: 1px 1px black;
@@ -440,6 +441,12 @@ width: inherit;
 #propertyInfo {
   text-align: center;
 }
+
+.th_interest{
+width: 50px !important;
+
+}
+
 .contactEmail {
   margin-bottom: 10px;
 }
