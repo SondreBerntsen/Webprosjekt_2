@@ -486,7 +486,7 @@ width: 50px !important;
   color:white;
   margin-top: 40px;
 }
-.pAreaTitle{
+.pAreaTitle, .homeHeaderText{
   font-size: 4vw!important;
   margin-top: 10px!important;
 }
