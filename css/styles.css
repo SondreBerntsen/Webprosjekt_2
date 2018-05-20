@@ -670,15 +670,14 @@ form .btn-calltoaction{
 @media only screen and (max-width: 1200px) {
 
 }
-@media only screen and (max-width: 850px) {
-  .lead {
+@media only screen and (max-width: 880px) {
+  .hideIfTiny {
     display: none;
   }
-
-    #scrollToTable{
-        width: 25vw;
-        font-size: 2vw;
-    }
+  #scrollToTable{
+    width: 25vw;
+    font-size: 2vw;
+  }
 
 }
 
@@ -687,7 +686,7 @@ form .btn-calltoaction{
   .dropdown {
         padding-left: 1rem;
   }
-  /
+
   #headerTitle, #headingArea{
    word-wrap: break-word;
    margin-top: 50px;
