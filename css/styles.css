@@ -12,7 +12,13 @@ body {
     /* Margin bottom by footer height */
     background-color: #f8f9fa!important;
 }
-
+.container p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+.card p{
+  text-align: left;
+}
 .bg-light {
     /*background-color: #BB4C4A!important;*/
     background-color: white!important;
@@ -408,17 +414,7 @@ label span{
   color: black;
 }
 
-.bigtext {
-    margin-bottom: 20px;
-    font-size: 64px;
-}
-
 /* Paragraph styling for area page */
-
-#areatext {
-    text-align: center;
-    margin: 30px;
-}
 
 #areaHeaderImg {
 /*background-image: url("../images/omraader/omraade_ringsaker.png");
@@ -517,27 +513,14 @@ background-color: #ff6600c9;
 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 22px 50px 0 rgba(0,0,0,0.19);
 
 }
-.hyttegrend_tekst_container {
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;
-    padding: 30px;
+.text_container{
+  padding: 30px;
 }
-
-.hyttegrend_tekst_container_middle {
-    /*background-color: #e0dfde;*/
-    background-color: white;
-    color: #000;
-    padding: 30px;
-}
-
-.hyttegrend_tekst_container_middle_white {
-    /*background-color: #FFFFFF;*/
-    color: #000;
-    padding: 30px;
-}
-#galleryDiv{
+.hgWhiteBG {
   background-color: white;
+}
+
+#galleryDiv{
   width: 100%;
   min-height: 100px;
 }
@@ -674,11 +657,6 @@ form .btn-calltoaction{
     background-color: #d3d3d363;
   }
 
-  .bigtext {
-      margin-bottom: 40px;
-      font-size: 40px;
-  }
-
   .navbar input[type=text] {
       float: none;
       display: inline-block;
@@ -700,6 +678,7 @@ form .btn-calltoaction{
   .lead {
     display: none;
   }
+
     #scrollToTable{
         width: 25vw;
         font-size: 2vw;
@@ -727,10 +706,6 @@ form .btn-calltoaction{
 
 
 @media only screen and (max-width: 470px) {
-    .bigtext {
-        margin-bottom: 50px;
-        font-size: 30px;
-    }
     .homeHeader, #logo_link {
         display:none;
     }
