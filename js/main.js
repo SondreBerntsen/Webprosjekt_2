@@ -11,7 +11,7 @@ function loadContentPA(propertyArea){
     $('#imgHeader').attr("src", base + PAData.imgHeader);
     $('#headerTitle').html(PAData.title);
     $('#hgoneliner').html(PAData.oneliner);
-    $('#contactTempID').attr("id", "interest " + PAData.name + " general");
+    $('#contactTempID').attr("id", PAData.name + " general");
 
     // Populates and appends paragraph tags to the description section for every description element in the JSON file
     for(i = 0; i < PAData.description.length; i++){
