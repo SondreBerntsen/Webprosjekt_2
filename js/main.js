@@ -1,4 +1,4 @@
-//const base = '/sondrber/webprosjekt_2/'; //Deployed
+//const base = '/mmoigaar/webprosjekt_2/'; //Deployed
 const base = '/webprosjekt_2/'; //Localhost
 
 // Gets the relevant property area from checkURL.js and loads the correct data from the property area's JSON data.
@@ -11,6 +11,8 @@ function loadContentPA(propertyArea){
     $('#imgHeader').attr("src", base + PAData.imgHeader);
     $('#headerTitle').html(PAData.title);
     $('#hgoneliner').html(PAData.oneliner);
+
+    // Each contact button gets a unique ID for Google Analytics purposes
     $('#contactTempID').attr("id", PAData.name + " general");
 
     // Populates and appends paragraph tags to the description section for every description element in the JSON file
@@ -276,6 +278,8 @@ function tableCreate(PAarea){
       // fourth cell contains a button
       var templateElement = $('#envelopeTempID').clone();
       templateElement.removeAttr('id');
+
+      // Each envelope icon gets a unique ID for Google Analytics purposes
       templateElement.attr('id', PAarea.name +" property "+ props[i].propertyNumber);
       templateElement.attr('role', 'button');
       templateElement.attr('data-toggle', 'modal');
