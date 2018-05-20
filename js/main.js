@@ -297,6 +297,7 @@ function loadNavItems(){
 
   // Populates and appends a navAreaTemplate for each area present in the area JSON file
   for(i = 0; i < Object.keys(areaData).length; i++){
+
     var area = Object.keys(areaData)[i];
     var areahref = areaData[area].href;
     var templateElement = $('#navAreaTemplate').clone();
