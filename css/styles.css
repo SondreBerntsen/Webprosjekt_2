@@ -13,10 +13,6 @@ body {
     background-color: #f8f9fa!important;
 }
 .container p{
-  text-align: justify;
-  text-justify: inter-word;
-}
-.card p{
   text-align: left;
 }
 .bg-light {
