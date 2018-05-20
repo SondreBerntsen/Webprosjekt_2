@@ -142,7 +142,10 @@ a, a:hover {
 
 #logo_link {
     width: 260px;
-    margin-right: 29px;
+}
+#logo_link2{
+    width: 85px;
+    display: none;
 }
 
 .nav-link{
@@ -724,8 +727,11 @@ form .btn-calltoaction{
         margin-bottom: 50px;
         font-size: 30px;
     }
-    .homeHeader {
+    .homeHeader, #logo_link {
         display:none;
+    }
+    #logo_link2{
+        display: inline-block;
     }
     .image_header{
       height: 30vh;
