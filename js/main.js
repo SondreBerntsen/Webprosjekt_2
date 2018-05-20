@@ -7,7 +7,7 @@ function loadContentPA(propertyArea){
     //Stores the JSON data for the relevant property area as variable PAData
     var PAData = hyttegrender[propertyArea];
 
-    // Changes header data
+    // Populates header data
     $('#imgHeader').attr("src", base + PAData.imgHeader);
     $('#headerTitle').html(PAData.title);
     $('#hgoneliner').html(PAData.oneliner);
@@ -206,12 +206,20 @@ function initMapPA(PArea){
 
 // Gets the relevant area from checkURL.js and loads the correct data from the area's JSON data.
 function loadContentArea(areaName){
-  var areaData = omrader;
-  $('#areaHeaderImg').attr("src", areaData[areaName].imgHeader)
-  $('#headingArea').html(areaData[areaName].title);
-  $('#areatext').html(areaData[areaName].information);
-  initMapArea(areaData[areaName]);
+
+  // Stores the area's JSON data as variable areaData
+  var areaData = omrader[areaName];
+
+  // Populates header data
+  $('#imgHeader').attr("src", areaData.imgHeader)
+  $('#headingArea').html(areaData.title);
+  $('#areatext').html(areaData.information);
+
+  // Calls the map function for the area page
+  initMapArea(areaData);
 }
+
+
 function initMapArea(areaData){
 
   var map = new google.maps.Map(document.getElementById('mapArea'), {
