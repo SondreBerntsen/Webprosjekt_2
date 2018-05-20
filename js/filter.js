@@ -24,7 +24,7 @@ var filterItems = $('.filter_item');
                         case 'valdres':
                             selectedAreas.push(checkboxes[i].value);
                             break;
-                        case 'sør-trøndelag':
+                        case 'sor-trondelag':
                             selectedAreas.push(checkboxes[i].value);
                             break;
                         default:
