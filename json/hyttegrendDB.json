@@ -5504,9 +5504,10 @@ var hyttegrender = {
     },
      "imgHeader": "images/hyttegrender/aaremsanden.jpeg",
      "title": "Aaremsanden",
-     "oneliner": "",
+     "oneliner": "Hyttefeltet ligger i noe skrånet terreng, som gir tomtene flott utsikt over Trondheimsfjorden og båtlivet.",
      "description": [
-         "",
+         "Hyttetomter med veldig flott beliggenhet ved Trondheims­fjorden. I nærområdet er det gode tur- og fiskemuligheter på sjøen og til fjells året rundt",
+         "Flott tur- og bærterreng der man kan velge om man vil legge dagsturen til fjellet eller skogen. Gode jaktmuligheter på skogs­fugl, rype og storvilt. For alle som kjøper tomt i hyttefeltet så er det mulighet til å kjøpe båtplass i den nybygde havna. "
 
      ],
      "icons": [
@@ -6198,13 +6199,15 @@ var hyttegrender = {
              "",
          ],
          "arrival": [
-             ""
+             "Kjør riksvei 710 utover fra Orkanger. Kjør forbi Lensvik, etter ca 10 km er det skiltet til feltet opp til venstre. Båthavna ligger ved fjorden til høyre der du tar opp til hyttefeltet."
          ],
          "facts": [
-             "",
+             "Tomtene på området har byggeklausul med Tinde Hytter. Tinde er en ledende hytteleverandør i Sør-Norge med kontor og produksjon i Ringebu (7 mil nord for Lillehammer). ",
+             "Tinde Hytter tilbyr  HYTTER TILBYR ET STORT ANTALL HYTTER OG DE TILPASSER GJERNE SINE LØSNINGER TIL DEN AKTUELLE TOMTEN ELLER DINE BEHOV.",
+             "Tinde Hytter har to visningshytter på Hellerudsletta Hytteutstilling (ved Exporama) i Skedsmo kommune utenfor Oslo. "
          ],
          "priceInfo": [
-             ""
+             "Tomtepris fra kr 250 000,–. Offentlige avgifter og tilknytningsavgifter kommer i tillegg."
          ],
          "contactInfo":[
            {
