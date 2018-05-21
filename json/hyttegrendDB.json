@@ -5134,9 +5134,13 @@ var hyttegrender = {
      },
       "imgHeader": "images/hyttegrender/raudalen.jpeg",
       "title": "Raudalen",
-      "oneliner": "",
+      "oneliner": "Fantastisk beliggenhet, sommer som vinter. Ved populære Beitostølen, på dørstokken til Jotunheimen.",
       "description": [
-          "",
+          "Fantastisk beliggenhet, sommer som vinter. Ved populære Beitostølen, på dørstokken til Jotunheimen. Alpinanlegg og langrennsløyper utenfor kjøkkenvinduet. Tomt, grunnarbeid, nøkkelferdige hytte fra 2.090.000,– Eiendomstomter på størrelse rundt 700 kvadratmeter. Beliggenheten er attraktiv, det kan man trygt fastslå, ved en av våre aller mest populære helårsdestinasjoner i fjellet; Beitostølen. Destinasjonen som har utviklet seg til landets mest komplette helårs rekreasjonsområde ved porten til storslåtte Jotunheimen nasjonalpark. Hit strømmer tusener på tusener av mennesker til alle årstider, alt fra våre beste ski- og langrennsstjerner til deg og meg, folk flest i alle aldre.",
+
+          "Idyllisk skogsområde. 6 km, 10 minutters biltur fra Beitostølen sentrum, har du noen av landets beste alpinbakker vegg i vegg med hytteområdet, som ligger i et idyllisk skogsområde med store furu- og bjørketrær som vi steller pent med og sparer på, omkranset av mektig natur, med ikoniske Bitihorn på 1.607 m i horisonten.",
+
+          "Derfor er Beitostølen så populært. Ingen annen fjelldestinasjon i Norge er så komplett som Beitostølen, alle forhold tatt i betraktning, både hva gjelder naturopplevelser til alle årstider, den høye kommersielle servicen, korte avstander til alt, hoteller, restauranter og store begivenheter hele året; fra sesongåpningen med Marit Bjørgen og Petter Northug jr, til Fjellmaraton, rockefestivalen Trollrock og spektakulære Bitihorn Classic, utendørs konsert med Oslo Filharmonien lørdag 8. august i år. Her er de store matvarebutikkene SPAR, Kiwi og Coop/Prix, samtlige åpne sju dager i uka. Joda, Vinmonopol, sportsbutikker, bokhandel, byggevarer, bakeri, skiskole, skiutleie; her finner du det meste av hva hjertet begjærer.",
 
 
       ],
@@ -5461,12 +5465,26 @@ var hyttegrender = {
               "",
           ],
           "facts": [
-              "",
+              "MOH: 800",
+              "Tomtestørrelser: ca. 700 kvm",
+              "Pris tomt/hytte fra: 2 090 000,–",
+              "Til Beitostølen: 6 km",
+              "Til Oslo: 230 km",
+              "Nærmeste butikk: 0,7 km",
+              "Raudalen ligger på vestsiden av dalen, 6 km fra Beitostølen sentrum. Hit kan du reise for bl.a å kjøre røde og sorte FIS-godkjente nedfarter, kuleløyper, off-piste og isklatring. Til Raudalen kommer du enkelt med skibussen fra Beitostølen, eller med bil.",
+          ],
+          "arrival": [
+              "Raudalen Resort ligger 10 minutter fra Beitostølen sentrum, innrammet av storslagen natur, med gedigne friluftsmuligheter til alle årstider, med alpinanlegg og langrennsløyper som er knyttet til Beitostølens berømte løypesystem, i hytteområdet. Det er under bygging flere hytter i området nå og i løpet av 2016 vil over 10 hytteeiere ha sitt hytte-eldorado i Raudalen.",
           ],
           "priceInfo": [
-              "",
-              "",
-              ""
+              "Mens tomteprisene normalt ligger nærmere to og også tre millioner kroner ved de kjente fjelldestinasjonene, tilbyr vi deg tre nøkkelferdige Tinde Hyttemodeller, til priser fra 2.090 millioner kroner, som inkluderer hele pakken med grunn- og fundamentarbeid, tomt og nøkkelferdig hytte, levert med Sigdal kjøkken- og Foss baderomsinnredning.",
+              "Hytte inkl tomt og grunnarbeid:",
+              "Slettefjell kr 2 090 000,– ",
+              "Beitostølen kr 2 190 000,– ",
+              "Bitihorn (eks hems) kr 2 590 000,–",
+              "Bitihorn (tilrettelagt for hems) kr 2 640 000,– ",
+              "Bitihorn (ferdig med hems) kr 2 790 000,–",
+              "Alle priser er eks. dokumentavgift, kommunale gebyrer, byggestrøm og renovasjon. Priser pr 30. september 2016 – det tas forbehold om prisendring."
           ],
           "contactInfo":[
             {
