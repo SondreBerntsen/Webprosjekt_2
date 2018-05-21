@@ -16,7 +16,7 @@ function checkURL(path) {
 
   if (homeControllerRegex.test(path) || defaultControllerRegex.test(path)) {
 
-    $('#SPAContent').load('home.html', function() {
+    $('#SPAContent').load(base + 'pages/home.html', function() {
 
       //This is the only way to avoid deprecation notice
       $.ajax({
@@ -40,7 +40,7 @@ function checkURL(path) {
       areaIndex.toUpperCase() == PAData[PAIndex].area.toUpperCase()
     ) {
 
-      $('#SPAContent').load(base + 'areas/propertyArea.html', function() {
+      $('#SPAContent').load(base + 'pages/propertyArea.html', function() {
         loadContentPA(PAIndex);
 
         $.ajax({
@@ -51,7 +51,7 @@ function checkURL(path) {
 
       });
     } else {
-      $('#SPAContent').load(base + 'areas/404.html');
+      $('#SPAContent').load(base + 'pages/404.html');
     }
   } else if (!homeControllerRegex.test(path) && areaControllerRegex.test(path)) {
     var areaIndex = path.match(areaRegex)[1];
@@ -72,7 +72,7 @@ function checkURL(path) {
         'ø': 'o',
         'å': 'a'
       });
-      $('#SPAContent').load(base + '/areas/area.html', function() {
+      $('#SPAContent').load(base + '/pages/area.html', function() {
         loadContentArea(areaIndex);
         for (i = 0; i < areaData[areaIndex].propertyAreas.length; i++) {
           var pArea = areaData[areaIndex].propertyAreas[i];
@@ -80,9 +80,9 @@ function checkURL(path) {
         }
       });
     } else {
-      $('#SPAContent').load(base + 'areas/404.html');
+      $('#SPAContent').load(base + 'pages/404.html');
     }
   } else {
-    $('#SPAContent').load(base + 'areas/404.html');
+    $('#SPAContent').load(base + 'pages/404.html');
   }
 }

@@ -1,5 +1,5 @@
-//const base = '/mmoigaar/webprosjekt_2/'; //Deployed
-const base = '/webprosjekt_2/'; //Localhost
+//const base = '/mmoigaar/tindeutvikling/'; //Deployed
+const base = '/tindeutvikling/'; //Localhost
 
 // Gets the relevant property area from checkURL.js and loads the correct data from the property area's JSON data.
 function loadContentPA(propertyArea) {
