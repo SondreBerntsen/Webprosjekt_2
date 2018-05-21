@@ -258,7 +258,6 @@ function initMapArea(areaData){
 function tableCreate(PAarea){
   tbl= document.getElementById("propertyTable");
   props = PAarea.properties;
-
   for(i = 0; i < props.length; i++){
     // we only want the information about the available property areas
     if (props[i].availability == "available"){
@@ -339,8 +338,21 @@ function pullCardData(pArea, home){
   templateElement.removeAttr("id");
   templateElement.find("a").attr('href', PAData.area.toLowerCase()+'/'+PAData.name);
   templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+pArea+'.jpeg');
-  templateElement.find(".availabilityText").html(PAData.cardInfo.availability);
-  templateElement.find(".price").html(PAData.cardInfo.price);
+
+  // Gets the total number of properties and the number of available properties, and makes an aray of prices
+  totalProperties = PAData.properties.length;
+  availableProperties = 0;
+  priceArray = [];
+  for(j = 0; j < PAData.properties.length; j++){
+    priceArray.push(PAData.properties[j].price);
+    if(PAData.properties[j].availability == 'available'){
+      availableProperties++;
+    }
+  }
+  // Sorts the array of prices from cheapest to most expensive
+  priceArray.sort(sortPrice);
+  templateElement.find(".price").html('Priser fra ' + priceArray[0] + '-' + priceArray[priceArray.length-1] + '.-');
+  templateElement.find(".availabilityText").html(availableProperties + ' av ' + totalProperties + ' ledige tomter');
   templateElement.find(".card-title").html(PAData.title);
   templateElement.find(".card-text").html(PAData.oneliner);
 
@@ -352,4 +364,7 @@ function pullCardData(pArea, home){
   }
   $('#cardContainer').append(templateElement);
   filterItems = $('.filter_item');
+}
+function sortPrice(a, b){
+  return a - b;
 }
