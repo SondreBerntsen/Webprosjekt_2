@@ -1,26 +1,30 @@
 /* CSS */
 
 /* ----------------------------- GENERAL --------------------------------------------------------------*/
+
 /* Body and HTML rules, change this and i will be under your bed at night */
 
 html {
-    position: relative;
+  position: relative;
 }
 
 body {
-    margin-bottom: 0px;
-    /* Margin bottom by footer height */
-    background-color: #f8f9fa!important;
+  margin-bottom: 0px;
+  /* Margin bottom by footer height */
+  background-color: #f8f9fa !important;
 }
-.container p{
+
+.container p {
   text-align: left;
 }
+
 .bg-light {
-    /*background-color: #BB4C4A!important;*/
-    background-color: white!important;
+  /*background-color: #BB4C4A!important;*/
+  background-color: white !important;
 }
 
 /*dropdown hover menu in navbar*/
+
 .dropdown {
   padding-top: 0.5rem;
   padding-right: 1rem;
@@ -39,7 +43,7 @@ body {
   z-index: 1;
   padding: 0px;
   top: 88%;
-  border: 0px ;
+  border: 0px;
 }
 
 .dropdown-submenu {
@@ -50,19 +54,18 @@ body {
 
 .dropdown-submenu.pull-left {
   float: none;
- }
+}
 
 #dropOmraade {
   color: black;
   text-decoration: none;
 }
 
-
 /*GOTTA FIX THAT MARGIN TOP ON FIRST ELEMENTSr*/
+
 .dropdown-menu li {
   padding: 15px;
   font-family: 'Roboto', sans-serif;
-
 }
 
 .dropdown-menu li a {
@@ -95,7 +98,7 @@ a, a:hover {
 
 .dropdown-submenu:hover>.dropdown-menu {
   display: block;
- }
+}
 
 .dropdown-menu>a:after {
   display: block;
@@ -128,14 +131,17 @@ a, a:hover {
 .dropdown-submenu:hover>a:after {
   border-left-color: #fff;
 }
+
 /* arrows */
+
 .svg-inline--fa.fa-w-14 {
-    width: .575em;
+  width: .575em;
 }
 
-.nav-item{
+.nav-item {
   border-bottom: 2px solid transparent;
 }
+
 .nav-item:hover {
   border-bottom: 2px solid black;
 }
@@ -143,30 +149,32 @@ a, a:hover {
 /*---- other navbar elements -------*/
 
 #logo_link {
-    width: 260px;
-}
-#logo_link2{
-    width: 85px;
-    display: none;
+  width: 260px;
 }
 
-.nav-link{
-  color:black !important;
+#logo_link2 {
+  width: 85px;
+  display: none;
+}
+
+.nav-link {
+  color: black !important;
   font-family: 'Roboto', sans-serif;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 /* Style the search box inside the navigation bar */
+
 .navbar input[type=text] {
-    padding: 6px;
-    border: none;
-    margin-right: 16px;
-    font-size: 17px;
+  padding: 6px;
+  border: none;
+  margin-right: 16px;
+  font-size: 17px;
 }
 
 .searchBar {
@@ -180,60 +188,60 @@ a, a:hover {
 }
 
 .navbar input:focus {
-    outline-offset: 0px;
-    outline: -webkit-focus-ring-color auto 0px;
+  outline-offset: 0px;
+  outline: -webkit-focus-ring-color auto 0px;
 }
 
-
 /* --- the sectioin before the footer ----*/
+
 .tindesection {
-    color: #000;
-    background-color: #e0dfde;
-    padding-top: 23px;
-    /* fixed space between Text and top of container :  ^) */
-    height: 200px;
+  color: #000;
+  background-color: #e0dfde;
+  padding-top: 23px;
+  /* fixed space between Text and top of container :  ^) */
+  height: 200px;
 }
 
 .tindesectiontext {
-    width: 90%;
+  width: 90%;
 }
 
 /* -------  footer -----*/
+
 .footer {
-    width: 100%;
-    line-height: 60px;
-    /* Vertically center the text there */
-    background-color:#f8f9fa;
-    color: #000;
+  width: 100%;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #f8f9fa;
+  color: #000;
 }
 
 /* -----other general stuff -------*/
-hr{
-  clear:both;
+
+hr {
+  clear: both;
 }
 
 .contact-right-info {
-    margin-top: 10px;
-    padding-bottom: 30px;
+  margin-top: 10px;
+  padding-bottom: 30px;
 }
-
-
 
 /* ---------------------------- index --------------------------------*/
 
 /* header image */
 
-
 .hero-image {
-background-image: url("../images/imgindex.png");
-height: 50%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
+  background-image: url("../images/imgindex.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* header image text */
+
 .hero-text {
   text-align: center;
   position: absolute;
@@ -243,21 +251,24 @@ position: relative;
   color: #FFF;
   font-size: 4em;
 }
-.envelopeIcon{
+
+.envelopeIcon {
   font-size: 25px;
   color: #ff6600;
   cursor: pointer;
   margin-left: 28%;
 }
+
 .textShadow {
-    text-shadow: 1px 1px black;
+  text-shadow: 1px 1px black;
 }
 
 #scrollToTable {
   text-shadow: 0px;
   color: white;
 }
-#scrollTo{
+
+#scrollTo {
   border-bottom: 1px solid white;
   cursor: pointer;
 }
@@ -270,103 +281,108 @@ position: relative;
 #cardTemplate .card-body h6 {
   color: #6c757d;
 }
-#cardContainer{
+
+#cardContainer {
   margin: 0px auto;
 }
+
 /* Making sure the filter checkboxes are. Looking. Good. */
-.tagFilter{
+
+.tagFilter {
   float: left;
-  border:1px solid black;
-  color:white;
+  border: 1px solid black;
+  color: white;
   font-weight: bold;
   background-color: #1d2124;
-  padding:10px;
+  padding: 10px;
   margin: 2px;
 }
+
 .card {
   margin-bottom: 2%;
   padding: 0;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 #cardTemplate, #navPATemplate, #navAreaTemplate {
   display: none;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 /* Remove up and down arrows on input type number */
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 input[type='checkbox'] {
-    width:20px;
-    height:20px;
-    background:white;
-    border-radius:3px;
-    border:1px solid gray;
-    -webkit-appearance:none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid gray;
+  -webkit-appearance: none;
 }
 
 input[type='checkbox']:checked {
-    border:1px solid black;
-    background: #e65c00;
+  border: 1px solid black;
+  background: #e65c00;
 }
 
-#filterTags{
+#filterTags {
   padding-top: 20px;
   width: 100%;
   min-height: 40px;
 }
 
-label span{
-  margin:10px;
+label span {
+  margin: 10px;
   font-weight: bold;
   font-size: 16px;
 }
 
 .index-form {
-    width: 100%;
-    background-color: #f8f9fa;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.arrow{
+.arrow {
   font-size: 15px;
   float: right;
-  margin:1%;
-  margin-right:5%;
+  margin: 1%;
+  margin-right: 5%;
 }
 
-.hideArea{
-    display: none;
+.hideArea {
+  display: none;
 }
-.hideCheckbox{
-    display: none;
+
+.hideCheckbox {
+  display: none;
 }
-.showCheckbox{
+
+.showCheckbox {
   border: 0.5px solid lightgray;
-  font-weight:normal;
+  font-weight: normal;
   font-size: 18px;
   background-color: #1d2124;
-  color:white;
+  color: white;
   text-align: center;
   padding: 11px;
 }
-.showCheckbox:hover{
+
+.showCheckbox:hover {
   background-color: #1d2124e8;
   cursor: pointer;
 }
@@ -374,35 +390,37 @@ label span{
 /*Syling the areas that are displayed for filterfunction*/
 
 .filterAreaCard {
-    position: relative;
-    margin-bottom: 2%;
-}
-.cardAvailability {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 250px;
-    height: 50px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 11px;
-    background: #f1653b;
-    color: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  position: relative;
+  margin-bottom: 2%;
 }
 
+.cardAvailability {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 11px;
+  background: #f1653b;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* ------------------------- AREA ---------------------------------- */
+
 /* The short pitch under the main image on areas */
 
-.idkLolle{
+.idkLolle {
   margin-top: 60px;
 }
+
 .areapitch {
-    background-color: #e0dfde;
-    padding: 2%;
-    color: #000;
-    margin-top: -30px;
+  background-color: #e0dfde;
+  padding: 2%;
+  color: #000;
+  margin-top: -30px;
 }
 
 .card a {
@@ -413,33 +431,35 @@ label span{
 /* Paragraph styling for area page */
 
 #areaHeaderImg {
-/*background-image: url("../images/omraader/omraade_ringsaker.png");
+  /*background-image: url("../images/omraader/omraade_ringsaker.png");
 height: 50%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;*/
-width: inherit;
+  width: inherit;
 }
 
-.headerColorOverlay{
+.headerColorOverlay {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
 }
+
 /* ---------------------property Area -----------------------------*/
+
 #buttoncontainer {
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
 #propertyInfo {
   text-align: center;
 }
 
-.th_interest{
-width: 50px !important;
-
+.th_interest {
+  width: 50px !important;
 }
 
 .contactEmail {
@@ -451,127 +471,139 @@ width: 50px !important;
 }
 
 /* Styling the Carousel (aka the seasonal slider on property areas) */
+
 .carousel-item {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #controls .carousel-inner {
   max-height: 450px;
 }
-.carousel-item{
+
+.carousel-item {
   padding: 0;
   margin: 0;
 }
+
 /* Centered text */
+
 #overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
+
 .opacity20 {
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
+
 .opacity40 {
-    background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
+
 .buttonmargin {
   margin-bottom: 10px;
 }
 
 #headerTitle, #headingArea {
   font-size: 4.5vw;
-  color:white;
+  color: white;
   margin-top: 40px;
 }
-.pAreaTitle, .homeHeaderText{
-  font-size: 3vw!important;
-  margin-top: 10px!important;
+
+.pAreaTitle, .homeHeaderText {
+  font-size: 3vw !important;
+  margin-top: 10px !important;
 }
 
 #imgHeader {
   width: inherit;
 }
+
 #headerText {
-    width: 50%;
+  width: 50%;
 }
-.contactBtn{
+
+.contactBtn {
   background-color: #ff6600;
-  color:white;
+  color: white;
   font-size: 18px;
 }
 
-.contactBtn:hover, .propertyBtn:hover{
-
-background-color: #ff6600c9;
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 22px 50px 0 rgba(0,0,0,0.19);
-
+.contactBtn:hover, .propertyBtn:hover {
+  background-color: #ff6600c9;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 22px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.text_container{
+
+.text_container {
   padding: 30px;
 }
+
 .hgWhiteBG {
   background-color: white;
 }
 
-#galleryDiv{
+#galleryDiv {
   width: 100%;
   min-height: 100px;
 }
 
 .jumbotron {
-    background-color: #f8f9fa;
-    border: solid 2px;
-    border-color: #bebebe;
+  background-color: #f8f9fa;
+  border: solid 2px;
+  border-color: #bebebe;
 }
 
 .hyttegrend_oneliner {
-    font-weight: 700;
-    font-size: 125%;
+  font-weight: 700;
+  font-size: 125%;
 }
 
 .hyttegrend_aktiviteter {
-    text-align: center;
-    color: #747372;
-    margin-top: 20px;
+  text-align: center;
+  color: #747372;
+  margin-top: 20px;
 }
 
 .image_header {
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
 }
 
-.mapStyle{
+.mapStyle {
   width: 100%;
   height: 500px;
 }
 
-.propertyBtn{
+.propertyBtn {
   background-color: #ff6600;
-  color:white;
+  color: white;
   width: 100%;
 }
 
-#facts p, #contactInfo p{
-  margin-bottom:0;
+#facts p, #contactInfo p {
+  margin-bottom: 0;
 }
 
 ul.list-availability {
   margin-bottom: 5px;
 }
+
 ul.list-availability li {
   display: inline;
   list-style-type: none;
   margin-right: 25px;
+}
 
-}
 span.available {
-  background-color:#5B965B;
+  background-color: #5B965B;
 }
+
 span.sold {
   background-color: #C84646;
 }
@@ -579,6 +611,7 @@ span.sold {
 span.reserved {
   background-color: #FFA500;
 }
+
 .list-availability span {
   display: inline-block;
   width: 36px;
@@ -588,167 +621,157 @@ span.reserved {
 }
 
 /*fix. denne brukes kun i hyggegrend. er den ikke i bruk lenger?*/
+
 .icon {
-    width: 50px;
-    margin: 18px;
+  width: 50px;
+  margin: 18px;
 }
 
 /*------------------------------------------------------------*/
 
-
 .btn-primary {
-    background-color: #616161;
-    border-color: #495057;
+  background-color: #616161;
+  border-color: #495057;
 }
 
 .btn-primary:hover {
   background-color: #747372;
   border-color: #495057;
-  -moz-box-shadow:    0px 0px 2px 3px #ccc;
--webkit-box-shadow: 0px 0px 2px 3px #ccc;
-box-shadow:         0px 0px 2px 2px #ccc;
+  -moz-box-shadow: 0px 0px 2px 3px #ccc;
+  -webkit-box-shadow: 0px 0px 2px 3px #ccc;
+  box-shadow: 0px 0px 2px 2px #ccc;
 }
 
-.btn-calltoaction{
-    background-color: #f1653b;
-    border-color: #ef5223    ;
-    color:white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 15px 0 rgba(0,0,0,0.19);
-    margin-bottom: 20px;
-    width: 300px;
+.btn-calltoaction {
+  background-color: #f1653b;
+  border-color: #ef5223;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  width: 300px;
 }
 
-form .btn-calltoaction{
+form .btn-calltoaction {
   width: 100%;
 }
 
-.btn-calltoaction:hover{
-    background-color: #ef5223;
-    border-color: darkorange;
-    color:white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 22px 50px 0 rgba(0,0,0,0.19);
+.btn-calltoaction:hover {
+  background-color: #ef5223;
+  border-color: darkorange;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 22px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header {
-    color: #747372;
-    text-align: center;
-    margin: 20px;
+  color: #747372;
+  text-align: center;
+  margin: 20px;
 }
-.div404{
+
+.div404 {
   padding: 50px;
   width: 50vw;
   height: 60vh;
   text-align: center;
 }
-.div404 p{
+
+.div404 p {
   display: inline-block;
   width: auto;
   align: center;
 }
+
 /* ----------------------------------------- Media Queries ----------------------------- */
+
 /* Navbar styling, change as you see fit Mr. Designer */
+
 @media only screen and (max-width: 992px) {
   #navbarNav .navbar-nav {
     /*flex-direction: row;*/
     padding-left: 15px;
   }
-
   #navbarNav .dropdown-menu {
     /*flex-direction: row;*/
     box-shadow: none;
   }
-
-  #navbarNav  .dropdown-submenu .dropdown-menu {
+  #navbarNav .dropdown-submenu .dropdown-menu {
     border-bottom: 0.5px solid lightgrey;
     border-radius: 0px;
   }
-
   .dropdown-menu li a:hover {
     background-color: #d3d3d363;
   }
-
   .navbar input[type=text] {
-      float: none;
-      display: inline-block;
-      text-align: left;
-      width: 88%;
-      margin: 0;
-      padding: 14px;
+    float: none;
+    display: inline-block;
+    text-align: left;
+    width: 88%;
+    margin: 0;
+    padding: 14px;
   }
-
   .searchBar {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {}
 
-}
 @media only screen and (max-width: 880px) {
-  .txtInteresse{
+  .txtInteresse {
     font-size: 14px;
   }
-  .pAreaTitle{
-    font-size: 4.2vw!important;
+  .pAreaTitle {
+    font-size: 4.2vw !important;
   }
-  .contactBtn{
+  .contactBtn {
     font-size: 14px;
   }
   .hideIfTiny {
     display: none;
   }
-  #scrollToTable{
+  #scrollToTable {
     width: 25vw;
     font-size: 2vw;
   }
-
 }
-
 
 @media only screen and (min-width: 992px) {
   .dropdown {
-        padding-left: 1rem;
+    padding-left: 1rem;
   }
-
-  #headerTitle, #headingArea{
-   word-wrap: break-word;
-   margin-top: 50px;
-   font-size: 3.5vw;
+  #headerTitle, #headingArea {
+    word-wrap: break-word;
+    margin-top: 50px;
+    font-size: 3.5vw;
   }
-
   .dropdown-menu li:hover {
     background-color: #d3d3d363;
   }
 }
 
-
-
 @media only screen and (max-width: 470px) {
-    .homeHeader, #logo_link {
-        display:none;
-    }
-    #logo_link2{
-        display: inline-block;
-    }
-    .image_header{
-      height: 30vh;
-      overflow: hidden;
-    }
-    #imgHeader{
-      height: inherit;
-      width: auto;
-    }
+  .homeHeader, #logo_link {
+    display: none;
+  }
+  #logo_link2 {
+    display: inline-block;
+  }
+  .image_header {
+    height: 30vh;
+    overflow: hidden;
+  }
+  #imgHeader {
+    height: inherit;
+    width: auto;
+  }
 }
 
 /* Styling the footer for mobile and pad sizes. If you change this, the footer will look ugly. */
 
 @media only screen and (max-width: 767px) {
-    .tindesection {
-        height: 300px;
-    }
+  .tindesection {
+    height: 300px;
+  }
 }
-
-
-
 
 /* -----------------------------------------------------------------------------------------------------*/

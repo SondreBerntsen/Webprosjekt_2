@@ -2,99 +2,99 @@
 const base = '/webprosjekt_2/'; //Localhost
 
 // Gets the relevant property area from checkURL.js and loads the correct data from the property area's JSON data.
-function loadContentPA(propertyArea){
+function loadContentPA(propertyArea) {
 
-    //Stores the JSON data for the relevant property area as variable PAData
-    var PAData = hyttegrender[propertyArea];
+  //Stores the JSON data for the relevant property area as variable PAData
+  var PAData = hyttegrender[propertyArea];
 
-    // Populates header data
-    $('#imgHeader').attr("src", base + PAData.imgHeader);
-    $('#headerTitle').html(PAData.title);
-    $('#hgoneliner').html(PAData.oneliner);
+  // Populates header data
+  $('#imgHeader').attr("src", base + PAData.imgHeader);
+  $('#headerTitle').html(PAData.title);
+  $('#hgoneliner').html(PAData.oneliner);
 
-    // Each contact button gets a unique ID for Google Analytics purposes
-    $('#contactTempID').attr("id", PAData.name + " general");
+  // Each contact button gets a unique ID for Google Analytics purposes
+  $('#contactTempID').attr("id", PAData.name + " general");
 
-    // Populates and appends paragraph tags to the description section for every description element in the JSON file
-    for(i = 0; i < PAData.description.length; i++){
-        var templateElement = $('#pTemplate').clone();
+  // Populates and appends paragraph tags to the description section for every description element in the JSON file
+  for (i = 0; i < PAData.description.length; i++) {
+    var templateElement = $('#pTemplate').clone();
 
-        templateElement.removeAttr("id");
-        templateElement.html(PAData.description[i]);
+    templateElement.removeAttr("id");
+    templateElement.html(PAData.description[i]);
 
-        $('#hgdescription').append(templateElement);
-    }
+    $('#hgdescription').append(templateElement);
+  }
 
-    // Appends icons to the icons section for each icon name in the JSON file
-    for(i = 0; i < PAData.icons.length; i++){
-        var templateElement = $('#iconTemplate').clone();
+  // Appends icons to the icons section for each icon name in the JSON file
+  for (i = 0; i < PAData.icons.length; i++) {
+    var templateElement = $('#iconTemplate').clone();
 
-        templateElement.removeAttr("id");
-        templateElement.attr('src', base +'images/icons/'+PAData.icons[i]+'.png');
-        templateElement.attr('title', PAData.icons[i]);
+    templateElement.removeAttr("id");
+    templateElement.attr('src', base + 'images/icons/' + PAData.icons[i] + '.png');
+    templateElement.attr('title', PAData.icons[i]);
 
-        $('#icons').append(templateElement);
-    }
+    $('#icons').append(templateElement);
+  }
 
-    // calls the initMapPA function
-    initMapPA(PAData);
-    // calls the tableCreate function
-    tableCreate(PAData);
+  // calls the initMapPA function
+  initMapPA(PAData);
+  // calls the tableCreate function
+  tableCreate(PAData);
 
-    // Populates and appends paragraph tags to the property information section for each propertyInfo element in the JSON file
-    for(i = 0; i < PAData.information.propertyInfo.length; i++){
-      var templateElement = $('#pTemplate').clone();
+  // Populates and appends paragraph tags to the property information section for each propertyInfo element in the JSON file
+  for (i = 0; i < PAData.information.propertyInfo.length; i++) {
+    var templateElement = $('#pTemplate').clone();
 
-      templateElement.removeAttr('id');
-      templateElement.html(PAData.information.propertyInfo[i]);
+    templateElement.removeAttr('id');
+    templateElement.html(PAData.information.propertyInfo[i]);
 
-      $('#propertyInfo').append(templateElement);
-    }
+    $('#propertyInfo').append(templateElement);
+  }
 
-    // Populates and appends paragraph tags to the arrival information section for each arrival element in the JSON file
-    for(i = 0; i < PAData.information.arrival.length; i++){
-      var templateElement = $('#pTemplate').clone();
+  // Populates and appends paragraph tags to the arrival information section for each arrival element in the JSON file
+  for (i = 0; i < PAData.information.arrival.length; i++) {
+    var templateElement = $('#pTemplate').clone();
 
-      templateElement.removeAttr('id');
-      templateElement.html(PAData.information.arrival[i]);
+    templateElement.removeAttr('id');
+    templateElement.html(PAData.information.arrival[i]);
 
-      $('#arrival').append(templateElement);
-    }
-    // Populates and appends paragraph tags to the facts section for each facts element in the JSON file
-    for(i = 0; i < PAData.information.facts.length; i++){
-      var templateElement = $('#pTemplate').clone();
+    $('#arrival').append(templateElement);
+  }
+  // Populates and appends paragraph tags to the facts section for each facts element in the JSON file
+  for (i = 0; i < PAData.information.facts.length; i++) {
+    var templateElement = $('#pTemplate').clone();
 
-      templateElement.removeAttr('id');
-      templateElement.html(PAData.information.facts[i]);
+    templateElement.removeAttr('id');
+    templateElement.html(PAData.information.facts[i]);
 
-      $('#facts').append(templateElement);
-    }
+    $('#facts').append(templateElement);
+  }
 
-    // Populates and appends paragraph tags to the price information section for each priceInfo element in the JSON file
-    for(i = 0; i < PAData.information.priceInfo.length; i++){
-      var templateElement = $('#pTemplate').clone();
+  // Populates and appends paragraph tags to the price information section for each priceInfo element in the JSON file
+  for (i = 0; i < PAData.information.priceInfo.length; i++) {
+    var templateElement = $('#pTemplate').clone();
 
-      templateElement.removeAttr('id');
-      templateElement.html(PAData.information.priceInfo[i]);
+    templateElement.removeAttr('id');
+    templateElement.html(PAData.information.priceInfo[i]);
 
-      $('#priceInfo').append(templateElement);
-    }
+    $('#priceInfo').append(templateElement);
+  }
 
-    // Populates and appends contact templates to the contact information section for each contactInfo element in the JSON file
-    for(i = 0; i < PAData.information.contactInfo.length; i++){
-        var templateElement = $('#contactTemplate').clone();
+  // Populates and appends contact templates to the contact information section for each contactInfo element in the JSON file
+  for (i = 0; i < PAData.information.contactInfo.length; i++) {
+    var templateElement = $('#contactTemplate').clone();
 
-        templateElement.removeAttr('id');
-        templateElement.find('.contactName').html(PAData.information.contactInfo[i].name);
-        templateElement.find('.fa-phone').after(PAData.information.contactInfo[i].tlf);
-        templateElement.find('.fa-envelope').after(PAData.information.contactInfo[i].email);
+    templateElement.removeAttr('id');
+    templateElement.find('.contactName').html(PAData.information.contactInfo[i].name);
+    templateElement.find('.fa-phone').after(PAData.information.contactInfo[i].tlf);
+    templateElement.find('.fa-envelope').after(PAData.information.contactInfo[i].email);
 
-        $('#contactInfo').append(templateElement.html());
-    }
+    $('#contactInfo').append(templateElement.html());
+  }
 } // End function loadContentPA
 
 // Map for property areas
-function initMapPA(PArea){
+function initMapPA(PArea) {
 
   var map = new google.maps.Map(document.getElementById('mapPA'), {
     center: PArea.mapPosition,
@@ -102,14 +102,14 @@ function initMapPA(PArea){
     mapTypeId: 'satellite'
   });
 
-  for(i = 0; i < PArea.properties.length; i++) {
+  for (i = 0; i < PArea.properties.length; i++) {
     number = PArea.properties[i].propertyNumber;
     outlines = PArea.properties[i].outline;
     price = PArea.properties[i].price;
     availability = PArea.properties[i].availability;
     perimiter = PArea.properties[i].perimiter;
     // gives the property area color based on their availability
-    switch(availability){
+    switch (availability) {
       case "available":
         color = "#5B965B";
         break;
@@ -136,70 +136,74 @@ function initMapPA(PArea){
     plot.setMap(map);
 
     plot.addListener('click', infoWindowPA);
-    var  infoWindow = new google.maps.InfoWindow;
+    var infoWindow = new google.maps.InfoWindow;
     plot.addListener('mouseover', mouseover);
     plot.addListener('mouseout', mouseout);
 
   }
 
-    /*
-      We are aware that having functions within functions is bad practise,
-      yet we did not find another way to transfer the right data from coordinates
-      outside of the map function. There are some restrictions to the Google API
-      when it comes to using polygons.
-    */
+  /*
+    We are aware that having functions within functions is bad practise,
+    yet we did not find another way to transfer the right data from coordinates
+    outside of the map function. There are some restrictions to the Google API
+    when it comes to using polygons.
+  */
 
-    function infoWindowPA(event) {
-      for(i = 0; i < PArea.properties.length; i++){
-          // if the property area is not available..
-          if (this.availability !== "available"){
-              // the infoWindow will show its property area number and say it is not available.
-              var contentString = '<strong>Tomt nr. '+this.number+' er utilgjengelig</strong>';
-          // if it is available..
-          } else {
-            // the infoWindow will show additional info about the property area.
-            var contentString = '<strong>Tomt nr.: '+ this.number+ '</strong><br>Pris: '+this.price+ ' kr <br>Areal: '+this.perimiter+' kvm';
-          }
-
-        /*
-         uncomment the three lines benath this to log
-         the polygon you have clicked
-        */
-           /*
-             outlines = this.getPath();
-             var xy = outlines.getAt(i);
-             console.log(xy.lat());
-           */
-      }
-
-      infoWindow.setContent(contentString);
-      infoWindow.setPosition(event.latLng);
-      infoWindow.open(map);
-    }
-    // opacity of color changes on the event of mouseover
-    function mouseover(event) {
-      for(i = 0; i < PArea.properties.length; i++){
-        this.setOptions({fillOpacity: 1});
+  function infoWindowPA(event) {
+    for (i = 0; i < PArea.properties.length; i++) {
+      // if the property area is not available..
+      if (this.availability !== "available") {
+        // the infoWindow will show its property area number and say it is not available.
+        var contentString = '<strong>Tomt nr. ' + this.number + ' er utilgjengelig</strong>';
+        // if it is available..
+      } else {
+        // the infoWindow will show additional info about the property area.
+        var contentString = '<strong>Tomt nr.: ' + this.number + '</strong><br>Pris: ' + this.price + ' kr <br>Areal: ' + this.perimiter + ' kvm';
       }
     }
+
+    infoWindow.setContent(contentString);
+    infoWindow.setPosition(event.latLng);
+    infoWindow.open(map);
+  }
+  // opacity of color changes on the event of mouseover
+  function mouseover(event) {
+    for (i = 0; i < PArea.properties.length; i++) {
+      this.setOptions({
+        fillOpacity: 1
+      });
+    }
+  }
   // changes the color back to what it was before on the event of mouseout
   function mouseout(event) {
-    for(i = 0; i < PArea.properties.length; i++){
-      switch(this.availability){
+    for (i = 0; i < PArea.properties.length; i++) {
+      switch (this.availability) {
         case "available":
           // color and its opacity for the available property areas
-          this.setOptions({fillColor: "#5B965B"});
-          this.setOptions({fillOpacity: 0.7});
+          this.setOptions({
+            fillColor: "#5B965B"
+          });
+          this.setOptions({
+            fillOpacity: 0.7
+          });
           break;
         case "sold":
           // color and its opacity for the sold property areas
-          this.setOptions({fillColor: "#C84646"});
-          this.setOptions({fillOpacity: 0.7});
+          this.setOptions({
+            fillColor: "#C84646"
+          });
+          this.setOptions({
+            fillOpacity: 0.7
+          });
           break;
         case "reserved":
           // color and its opacity for the reserved property areas
-          this.setOptions({fillColor: "#FFA500"});
-          this.setOptions({fillOpacity: 0.7});
+          this.setOptions({
+            fillColor: "#FFA500"
+          });
+          this.setOptions({
+            fillOpacity: 0.7
+          });
       }
     }
   }
@@ -207,7 +211,7 @@ function initMapPA(PArea){
 
 
 // Gets the relevant area from checkURL.js and loads the correct data from the area's JSON data.
-function loadContentArea(areaName){
+function loadContentArea(areaName) {
 
   // Stores the area's JSON data as variable areaData
   var areaData = omrader[areaName];
@@ -222,7 +226,7 @@ function loadContentArea(areaName){
 }
 
 
-function initMapArea(areaData){
+function initMapArea(areaData) {
 
   var map = new google.maps.Map(document.getElementById('mapArea'), {
     center: areaData.mapData.position,
@@ -230,37 +234,36 @@ function initMapArea(areaData){
     mapTypeId: 'hybrid'
   });
 
-  for (i = 0; i < areaData.mapData.markers.length; i++){
+  for (i = 0; i < areaData.mapData.markers.length; i++) {
     var markerPosition = areaData.mapData.markers[i].position;
-    //console.log(markerPosition);
-    var label= areaData.mapData.markers[i].propertyAreaName;
+    var label = areaData.mapData.markers[i].propertyAreaName;
     var marker = new google.maps.Marker({
       position: markerPosition,
       title: label,
       map: map
     });
     /*The code for getting infowindows is inspired by:
-    *https://stackoverflow.com/questions/11106671/google-maps-api-multiple-markers-with-infowindows
-    */
+     *https://stackoverflow.com/questions/11106671/google-maps-api-multiple-markers-with-infowindows
+     */
     var content = label;
     var infowindow = new google.maps.InfoWindow()
-    google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){
-        return function() {
-            infowindow.setContent(content);
-            infowindow.open(map,marker);
-        };
-    })(marker,content,infowindow));
+    google.maps.event.addListener(marker, 'click', (function(marker, content, infowindow) {
+      return function() {
+        infowindow.setContent(content);
+        infowindow.open(map, marker);
+      };
+    })(marker, content, infowindow));
 
   }
 }
 
 // creates the table based on the property area information
-function tableCreate(PAarea){
-  tbl= document.getElementById("propertyTable");
+function tableCreate(PAarea) {
+  tbl = document.getElementById("propertyTable");
   props = PAarea.properties;
-  for(i = 0; i < props.length; i++){
+  for (i = 0; i < props.length; i++) {
     // we only want the information about the available property areas
-    if (props[i].availability == "available"){
+    if (props[i].availability == "available") {
       // creates a new row for each available property area
       var row = tbl.insertRow(-1);
       // inserts four cells for each row
@@ -279,7 +282,7 @@ function tableCreate(PAarea){
       templateElement.removeAttr('id');
 
       // Each envelope icon gets a unique ID for Google Analytics purposes
-      templateElement.attr('id', PAarea.name +" property "+ props[i].propertyNumber);
+      templateElement.attr('id', PAarea.name + " property " + props[i].propertyNumber);
       templateElement.attr('role', 'button');
       templateElement.attr('data-toggle', 'modal');
       templateElement.attr('data-target', '#contactModal');
@@ -290,20 +293,20 @@ function tableCreate(PAarea){
 }
 
 // scrolls user to #tomteInformasjon when the link #scrollTo is clicked
-function scrollToAnchor(){
+function scrollToAnchor() {
   $('html, body').animate({
-       scrollTop: $("#anchor").offset().top
-   }, '2000');
+    scrollTop: $("#anchor").offset().top
+  }, '2000');
 }
 
 // Loads dropdown elements based on how many areas and property areas exist in the JSON files.
-function loadNavItems(){
+function loadNavItems() {
 
   // Stores the JSON data for the areas as variable areaData
   var areaData = omrader;
 
   // Populates and appends a navAreaTemplate for each area present in the area JSON file
-  for(i = 0; i < Object.keys(areaData).length; i++){
+  for (i = 0; i < Object.keys(areaData).length; i++) {
 
     var area = Object.keys(areaData)[i];
     var areahref = areaData[area].href;
@@ -314,12 +317,12 @@ function loadNavItems(){
     templateElement.find('a').html(areaData[area].title);
 
     // Populates and appends a navPATemplate for each property area with
-    for(j = 0; j < areaData[area].propertyAreas.length; j++){
+    for (j = 0; j < areaData[area].propertyAreas.length; j++) {
       var propArea = areaData[area].propertyAreas[j].toLowerCase();
       var templateSubElement = $('#navPATemplate').clone();
 
       templateSubElement.removeAttr("id");
-      templateSubElement.find('a').attr('href', base + areahref + '/' +propArea);
+      templateSubElement.find('a').attr('href', base + areahref + '/' + propArea);
       templateSubElement.find('a').html(areaData[area].mapData.markers[j].propertyAreaName);
       templateElement.find('ul').append(templateSubElement);
     }
@@ -328,7 +331,7 @@ function loadNavItems(){
 }
 
 // Gets the relevant area name and outputs the property areas within that area. Function is called as many times as needed, depending on how many property areas exist. Called from checkURL.js
-function pullCardData(pArea, home){
+function pullCardData(pArea, home) {
 
   //Stores the JSON data for the relevant property area as variable PAData
   var PAData = hyttegrender[pArea];
@@ -336,28 +339,28 @@ function pullCardData(pArea, home){
   // Template elements for cards are cloned and appended.
   var templateElement = $('#cardTemplate').clone();
   templateElement.removeAttr("id");
-  templateElement.find("a").attr('href', PAData.area.toLowerCase()+'/'+PAData.name);
-  templateElement.find("img").attr('src', 'images/thumbnailsFilter/'+pArea+'.jpeg');
+  templateElement.find("a").attr('href', PAData.area.toLowerCase() + '/' + PAData.name);
+  templateElement.find("img").attr('src', 'images/thumbnailsFilter/' + pArea + '.jpeg');
 
   // Gets the total number of properties and the number of available properties, and makes an aray of prices
   totalProperties = PAData.properties.length;
   availableProperties = 0;
   priceArray = [];
-  for(j = 0; j < PAData.properties.length; j++){
+  for (j = 0; j < PAData.properties.length; j++) {
     priceArray.push(PAData.properties[j].price);
-    if(PAData.properties[j].availability == 'available'){
+    if (PAData.properties[j].availability == 'available') {
       availableProperties++;
     }
   }
   // Sorts the array of prices from cheapest to most expensive
   priceArray.sort(sortPrice);
-  templateElement.find(".price").html('Priser fra ' + priceArray[0] + '-' + priceArray[priceArray.length-1] + '.-');
+  templateElement.find(".price").html('Priser fra ' + priceArray[0] + '-' + priceArray[priceArray.length - 1] + '.-');
   templateElement.find(".availabilityText").html(availableProperties + ' av ' + totalProperties + ' ledige tomter');
   templateElement.find(".card-title").html(PAData.title);
   templateElement.find(".card-text").html(PAData.oneliner);
 
   // If this is the home page, additional information is appended that would be reduntant on the area page.
-  if(home == true){
+  if (home == true) {
     templateElement.find(".areaName").html(PAData.area);
     templateElement.addClass(PAData.area);
     templateElement.addClass(PAData.icons.join(" "));
@@ -365,6 +368,7 @@ function pullCardData(pArea, home){
   $('#cardContainer').append(templateElement);
   filterItems = $('.filter_item');
 }
-function sortPrice(a, b){
+
+function sortPrice(a, b) {
   return a - b;
 }

@@ -1,6 +1,8 @@
 <html lang="en">
-<!--<base href="/mmoigaar/webprosjekt_2/"> --> <!--Deployed -->
-<base href="/webprosjekt_2/"> <!-- Localhost -->
+<!--<base href="/mmoigaar/webprosjekt_2/"> -->
+<!--Deployed -->
+<base href="/webprosjekt_2/">
+<!-- Localhost -->
 
 <head>
   <!-- Required meta tags always come first -->
@@ -12,18 +14,32 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118058481-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-118058481-1');
   </script>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-W4F2TTN');</script>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W4F2TTN');
+  </script>
   <!-- End Google Tag Manager -->
 
   <title>Webprosjekt 2</title>
@@ -38,6 +54,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </head>
+
 <body onload="checkURL(window.location.pathname), loadNavItems()">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4F2TTN"
@@ -144,7 +161,7 @@
   <script src="json/hyttegrendDB.json"></script>
   <script src="json/omradeDB.json"></script>
   <!--jquery-->
-  <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <!--Google maps-->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3u0GAthz9ZNxSKfWsE_aOtTAWf3otOnk"></script>
   <!--JS files-->
@@ -174,4 +191,5 @@
   </li>
 
 </body>
+
 </html>
