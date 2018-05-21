@@ -520,6 +520,13 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 22px 50px 0 rgba(0,0,0,0.19);
   width: 100%;
   min-height: 100px;
 }
+
+.jumbotron {
+    background-color: #f8f9fa;
+    border: solid 2px;
+    border-color: #bebebe;
+}
+
 .hyttegrend_oneliner {
     font-weight: 700;
     font-size: 125%;
